@@ -1,19 +1,6 @@
-" Theme: PaperColor
-" Author: Nikyle Nguyen <NLKNguyen@MSN.com>
-" License: MIT
-" Source: http://github.com/NLKNguyen/papercolor-theme
+" PaperColorSlim: Based on <https://github.com/NLKNguyen/papercolor-theme>
+" Maintainer:   Samuel Roeca <samuel.roeca@gmail.com>
 
-" Vim color file
-" Maintainer:   Your name <youremail@something.com>
-" Last Change:
-" URL:
-
-" cool help screens
-" :he group-name
-" :he highlight-groups
-" :he cterm-colors
-
-" your pick:
 set background=dark
 highlight clear
 if exists("syntax_on")
@@ -21,18 +8,25 @@ if exists("syntax_on")
 endif
 let g:colors_name="PaperColorSlim"
 
-" OR
-
-" highlight clear Normal
-" set background&
-" highlight clear
-" if &background == "light"
-"   highlight Error ...
-"   ...
-" else
-"   highlight Error ...
-"   ...
-" endif
+" Standard: built-in
+" TODO highlight lCursor
+" TODO highlight CursorIM
+" TODO highlight TermCursor
+" TODO highlight TermCursorNC
+" TODO highlight ErrorMsg
+" TODO highlight IncSearch
+" TODO highlight Substitute
+" TODO highlight MsgArea
+" TODO highlight MsgSeparator
+" TODO highlight NormalNC
+" TODO highlight PmenuSbar
+" TODO highlight PmenuThumb
+" TODO highlight QuickFixLine
+" TODO highlight VisualNOS
+" TODO highlight Whitespace
+" TODO highlight Menu
+" TODO highlight Scrollbar
+" TODO highlight Tooltip
 
 highlight ColorColumn         guifg=none         guibg=#303030  gui=none
 highlight Conceal             guifg=#585858      guibg=#1c1c1c  gui=none
@@ -77,6 +71,9 @@ highlight NormalFloat         guifg=#c6c6c6      guibg=#303030  gui=none
 highlight Pmenu               guifg=#c6c6c6      guibg=#303030  gui=none
 highlight PmenuSel            guifg=#bcbcbc      guibg=#585858  gui=none
 
+" Standard: Vim-preferred names
+" TODO highlight Underlined
+
 highlight Comment             guifg=#808080      guibg=none     gui=italic
 highlight Constant            guifg=#ff5faf      guibg=none     gui=none
 highlight String              guifg=#d7af5f      guibg=none     gui=none
@@ -109,36 +106,64 @@ highlight Delimiter           guifg=#5fafd7      guibg=none     gui=none
 highlight SpecialComment      guifg=#808080      guibg=none     gui=bold
 highlight Debug               guifg=#ff5faf      guibg=none     gui=none
 highlight Underlined          guifg=#ff5faf      guibg=none     gui=none
-highlight Error               guifg=#af0000      guibg=#ffd7ff  gui=none
-highlight Todo                guifg=#00af5f      guibg=#eeeeee  gui=bold
+highlight Error               guifg=red1         guibg=none     gui=none
+highlight Todo                guifg=#00af5f      guibg=none     gui=bold
+highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 
-highlight helpStar            guifg=cyan1        guibg=none     gui=none
-highlight helpIgnore          guifg=cyan1        guibg=none     gui=none
-highlight helpBacktick        guifg=cyan1        guibg=none     gui=none
+" Standard: Neovim treesitter
+" <https://github.com/nvim-treesitter/nvim-treesitter/blob/c3b526fe51d6f4dd1dda099d69258909d0abb531/doc/nvim-treesitter.txt#L398>
 
-highlight pythonFunction      guifg=#5fafd7      guibg=none     gui=bold
+" TODO highlight TSError
+" TODO highlight TSPunctDelimiter
+" TODO highlight TSPunctBracket
+" TODO highlight TSPunctSpecial
+" TODO highlight TSConstant
+" TODO highlight TSConstBuiltin
+" TODO highlight TSConstMacro
+" TODO highlight TSString
+" TODO highlight TSStringRegex
+" TODO highlight TSStringEscape
+" TODO highlight TSCharacter
+" TODO highlight TSNumber
+" TODO highlight TSBoolean
+" TODO highlight TSFloat
+" TODO highlight TSFunction
+" TODO highlight TSFuncBuiltin
+" TODO highlight TSFuncMacro
+" TODO highlight TSParameter
+" TODO highlight TSParameterReference
+" TODO highlight TSMethod
+" TODO highlight TSField
+" TODO highlight TSProperty
+" TODO highlight TSConstructor
+" TODO highlight TSConditional
+" TODO highlight TSRepeat
+" TODO highlight TSLabel
+" TODO highlight TSOperator
+" TODO highlight TSKeyword
+" TODO highlight TSKeywordFunction
+" TODO highlight TSException
+" TODO highlight TSType
+" TODO highlight TSTypeBuiltin
+" TODO highlight TSNamespace
+" TODO highlight TSInclude
+" TODO highlight TSAnnotation
+" TODO highlight TSText
+" TODO highlight TSStrong
+" TODO highlight TSEmphasis
+" TODO highlight TSUnderline
+" TODO highlight TSTitle
+" TODO highlight TSLiteral
+" TODO highlight TSURI
+" TODO highlight TSVariable
+" TODO highlight TSVariableBuiltin
+
+" Non Standard: language-specific overrides
+" Note: keep these to an absolute minimum
 
 highlight QuickScopePrimary   guifg=LimeGreen    guibg=none     gui=underline
 highlight QuickScopeSecondary guifg=turquoise1   guibg=none     gui=underline
-
-" NA Underlined
-" NA Ignore
-
-" NA highlight lCursor
-" NA highlight CursorIM
-" NA highlight TermCursor
-" NA highlight TermCursorNC
-" NA highlight ErrorMsg
-" NA highlight IncSearch
-" NA highlight Substitute
-" NA highlight MsgArea
-" NA highlight MsgSeparator
-" NA highlight NormalNC
-" NA highlight PmenuSbar
-" NA highlight PmenuThumb
-" NA highlight QuickFixLine
-" NA highlight VisualNOS
-" NA highlight Whitespace
-" NA highlight Menu
-" NA highlight Scrollbar
-" NA highlight Tooltip
+highlight helpBacktick        guifg=cyan1        guibg=none     gui=none
+highlight helpIgnore          guifg=cyan1        guibg=none     gui=none
+highlight helpStar            guifg=cyan1        guibg=none     gui=none
+highlight pythonFunction      guifg=#5fafd7      guibg=none     gui=bold
