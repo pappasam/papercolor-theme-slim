@@ -119,6 +119,7 @@ highlight TSConstBuiltin      guifg=#d7af00      guibg=none     gui=none
 highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=bold
 highlight TSConstructor       guifg=#5fafd7      guibg=none     gui=none
 highlight TSField             guifg=#d0d0d0      guibg=none     gui=none
+highlight TSType              guifg=#af87d7      guibg=none     gui=none
 highlight TSTypeBuiltin       guifg=#af87d7      guibg=none     gui=bold
 
 " Notes:
