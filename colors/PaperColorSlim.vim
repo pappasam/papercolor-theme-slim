@@ -75,11 +75,11 @@ highlight ErrorMsg            guifg=#af005f      guibg=#5f0000  gui=none
 " TODO highlight Underlined
 
 highlight Comment             guifg=#808080      guibg=none     gui=italic
-highlight Constant            guifg=#ff5faf      guibg=none     gui=none
+highlight Constant            guifg=#d0d0d0      guibg=none     gui=none
 highlight String              guifg=#d7af5f      guibg=none     gui=none
 highlight Character           guifg=#d7af5f      guibg=none     gui=none
 highlight Number              guifg=#ff5faf      guibg=none     gui=none
-highlight Boolean             guifg=#ff5faf      guibg=none     gui=bold
+highlight Boolean             guifg=#d7af00      guibg=none     gui=bold
 highlight Float               guifg=#ff5faf      guibg=none     gui=none
 highlight Identifier          guifg=#d7875f      guibg=none     gui=none
 highlight Function            guifg=#5fafd7      guibg=none     gui=none
@@ -87,19 +87,19 @@ highlight Statement           guifg=#afd700      guibg=none     gui=none
 highlight Conditional         guifg=#af87d7      guibg=none     gui=bold
 highlight Repeat              guifg=#af87d7      guibg=none     gui=bold
 highlight Label               guifg=#00afaf      guibg=none     gui=none
-highlight Operator            guifg=#5fafd7      guibg=none     gui=none
-highlight Keyword             guifg=#00afaf      guibg=none     gui=none
+highlight Operator            guifg=#00afaf      guibg=none     gui=none
+highlight Keyword             guifg=#afd700      guibg=none     gui=none
 highlight Exception           guifg=#5faf5f      guibg=none     gui=none
 highlight PreProc             guifg=#00afaf      guibg=none     gui=none
-highlight Include             guifg=#5faf5f      guibg=none     gui=none
+highlight Include             guifg=#afd700      guibg=none     gui=none
 highlight Define              guifg=#00afaf      guibg=none     gui=none
 highlight Macro               guifg=#00afaf      guibg=none     gui=none
 highlight PreCondit           guifg=#5fafd7      guibg=none     gui=none
-highlight Type                guifg=#afd700      guibg=none     gui=bold
+highlight Type                guifg=#af87d7      guibg=none     gui=none
 highlight StorageClass        guifg=#d7875f      guibg=none     gui=bold
 highlight Structure           guifg=#00afaf      guibg=none     gui=bold
 highlight Typedef             guifg=#afd700      guibg=none     gui=bold
-highlight Special             guifg=#5faf5f      guibg=none     gui=none
+highlight Special             guifg=#d7875f      guibg=none     gui=none
 highlight SpecialChar         guifg=#d0d0d0      guibg=none     gui=none
 highlight Tag                 guifg=#d7af00      guibg=none     gui=none
 highlight Delimiter           guifg=#5fafd7      guibg=none     gui=none
@@ -113,6 +113,8 @@ highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 " Standard: Neovim treesitter
 " <https://github.com/nvim-treesitter/nvim-treesitter/blob/c3b526fe51d6f4dd1dda099d69258909d0abb531/doc/nvim-treesitter.txt#L398>
 
+highlight TSMethod            guifg=#5fafd7      guibg=none     gui=none
+highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=none
 " TODO highlight TSError
 " TODO highlight TSPunctDelimiter
 " TODO highlight TSPunctBracket
@@ -125,14 +127,16 @@ highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 " TODO highlight TSStringEscape
 " TODO highlight TSCharacter
 " TODO highlight TSNumber
+" TODO highlight TSInclude
 " TODO highlight TSBoolean
+" TODO highlight TSConstBuiltin
 " TODO highlight TSFloat
 " TODO highlight TSFunction
 " TODO highlight TSFuncBuiltin
 " TODO highlight TSFuncMacro
 " TODO highlight TSParameter
 " TODO highlight TSParameterReference
-" TODO highlight TSMethod
+" TODO highlight TSFuncMacro
 " TODO highlight TSField
 " TODO highlight TSProperty
 " TODO highlight TSConstructor
@@ -156,14 +160,14 @@ highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 " TODO highlight TSLiteral
 " TODO highlight TSURI
 " TODO highlight TSVariable
-" TODO highlight TSVariableBuiltin
 
 " Non Standard: language-specific overrides
 " Note: keep these to an absolute minimum
 
 highlight QuickScopePrimary   guifg=#afd700      guibg=none     gui=underline
 highlight QuickScopeSecondary guifg=#00afaf      guibg=none     gui=underline
+highlight diffAdded           guifg=#5faf5f      guibg=none     gui=none
+highlight diffRemoved         guifg=#ff5faf      guibg=none     gui=none
 highlight helpBacktick        guifg=#5fafd7      guibg=none     gui=none
 highlight helpIgnore          guifg=#5fafd7      guibg=none     gui=none
 highlight helpStar            guifg=#5fafd7      guibg=none     gui=none
-highlight pythonFunction      guifg=#5fafd7      guibg=none     gui=bold
