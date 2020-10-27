@@ -13,7 +13,6 @@ let g:colors_name="PaperColorSlim"
 " TODO highlight CursorIM
 " TODO highlight TermCursor
 " TODO highlight TermCursorNC
-" TODO highlight ErrorMsg
 " TODO highlight IncSearch
 " TODO highlight Substitute
 " TODO highlight MsgArea
@@ -41,7 +40,7 @@ highlight DiffDelete          guifg=#af005f      guibg=#5f0000  gui=none
 highlight DiffText            guifg=#5fffff      guibg=#008787  gui=none
 highlight EndOfBuffer         guifg=#1c1c1c      guibg=none     gui=none
 highlight VertSplit           guifg=#5f8787      guibg=#1c1c1c  gui=none
-highlight Folded              guifg=gray69       guibg=gray22   gui=none
+highlight Folded              guifg=#bcbcbc      guibg=#3a3a3a  gui=none
 highlight FoldColumn          guifg=#d787ff      guibg=#1c1c1c  gui=none
 highlight SignColumn          guifg=#d7af00      guibg=#1c1c1c  gui=none
 highlight LineNr              guifg=#585858      guibg=#1c1c1c  gui=none
@@ -53,23 +52,24 @@ highlight NonText             guifg=#585858      guibg=#1c1c1c  gui=none
 highlight Question            guifg=#d7af5f      guibg=none     gui=none
 highlight Search              guifg=#000000      guibg=#00875f  gui=none
 highlight SpecialKey          guifg=#585858      guibg=none     gui=none
-highlight SpellBad            guifg=red1         guibg=none     gui=underline,italic
-highlight SpellCap            guifg=yellow       guibg=none     gui=underline,italic
-highlight SpellLocal          guifg=magenta      guibg=none     gui=underline,italic
-highlight SpellRare           guifg=ForestGreen  guibg=none     gui=underline,italic
+highlight SpellBad            guifg=#af005f      guibg=#5f0000  gui=underline,italic
+highlight SpellCap            guifg=#ffff00      guibg=none     gui=underline,italic
+highlight SpellLocal          guifg=#ff5faf      guibg=none     gui=underline,italic
+highlight SpellRare           guifg=#5faf5f      guibg=none     gui=underline,italic
 highlight StatusLine          guifg=#1c1c1c      guibg=#5f8787  gui=none
 highlight StatusLineNC        guifg=#bcbcbc      guibg=#3a3a3a  gui=none
 highlight TabLine             guifg=#bcbcbc      guibg=#585858  gui=none
 highlight TabLineFill         guifg=#262626      guibg=#262626  gui=none
 highlight TabLineSel          guifg=#121212      guibg=#00afaf  gui=none
 highlight Title               guifg=#5fafd7      guibg=none     gui=bold
-highlight Visual              guifg=gray12       guibg=gray     gui=none
+highlight Visual              guifg=#bcbcbc      guibg=#3a3a3a  gui=none
 highlight WarningMsg          guifg=#afd700      guibg=none     gui=none
 highlight WildMenu            guifg=#1c1c1c      guibg=#afd700  gui=none
 
 highlight NormalFloat         guifg=#c6c6c6      guibg=#303030  gui=none
 highlight Pmenu               guifg=#c6c6c6      guibg=#303030  gui=none
 highlight PmenuSel            guifg=#bcbcbc      guibg=#585858  gui=none
+highlight ErrorMsg            guifg=#af005f      guibg=#5f0000  gui=none
 
 " Standard: Vim-preferred names
 " TODO highlight Underlined
@@ -106,7 +106,7 @@ highlight Delimiter           guifg=#5fafd7      guibg=none     gui=none
 highlight SpecialComment      guifg=#808080      guibg=none     gui=bold
 highlight Debug               guifg=#ff5faf      guibg=none     gui=none
 highlight Underlined          guifg=#ff5faf      guibg=none     gui=none
-highlight Error               guifg=red1         guibg=none     gui=none
+highlight Error               guifg=#af005f      guibg=#5f0000  gui=none
 highlight Todo                guifg=#00af5f      guibg=none     gui=bold
 highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 
@@ -161,9 +161,9 @@ highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 " Non Standard: language-specific overrides
 " Note: keep these to an absolute minimum
 
-highlight QuickScopePrimary   guifg=LimeGreen    guibg=none     gui=underline
-highlight QuickScopeSecondary guifg=turquoise1   guibg=none     gui=underline
-highlight helpBacktick        guifg=cyan1        guibg=none     gui=none
-highlight helpIgnore          guifg=cyan1        guibg=none     gui=none
-highlight helpStar            guifg=cyan1        guibg=none     gui=none
+highlight QuickScopePrimary   guifg=#afd700      guibg=none     gui=underline
+highlight QuickScopeSecondary guifg=#00afaf      guibg=none     gui=underline
+highlight helpBacktick        guifg=#5fafd7      guibg=none     gui=none
+highlight helpIgnore          guifg=#5fafd7      guibg=none     gui=none
+highlight helpStar            guifg=#5fafd7      guibg=none     gui=none
 highlight pythonFunction      guifg=#5fafd7      guibg=none     gui=bold
