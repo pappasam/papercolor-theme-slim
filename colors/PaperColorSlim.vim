@@ -9,22 +9,22 @@ endif
 let g:colors_name="PaperColorSlim"
 
 " Standard: built-in
-" TODO highlight lCursor
-" TODO highlight CursorIM
-" TODO highlight TermCursor
-" TODO highlight TermCursorNC
-" TODO highlight IncSearch
-" TODO highlight Substitute
-" TODO highlight MsgArea
-" TODO highlight MsgSeparator
-" TODO highlight PmenuSbar
-" TODO highlight PmenuThumb
-" TODO highlight QuickFixLine
-" TODO highlight VisualNOS
-" TODO highlight Whitespace
-" TODO highlight Menu
-" TODO highlight Scrollbar
-" TODO highlight Tooltip
+" TODO lCursor
+" TODO CursorIM
+" TODO TermCursor
+" TODO TermCursorNC
+" TODO IncSearch
+" TODO Substitute
+" TODO MsgArea
+" TODO MsgSeparator
+" TODO PmenuSbar
+" TODO PmenuThumb
+" TODO QuickFixLine
+" TODO VisualNOS
+" TODO Whitespace
+" TODO Menu
+" TODO Scrollbar
+" TODO Tooltip
 
 highlight ColorColumn         guifg=none         guibg=#303030  gui=none
 highlight Conceal             guifg=#585858      guibg=#1c1c1c  gui=none
@@ -72,7 +72,7 @@ highlight PmenuSel            guifg=#bcbcbc      guibg=#585858  gui=none
 highlight ErrorMsg            guifg=#af005f      guibg=#5f0000  gui=none
 
 " Standard: Vim-preferred names
-" TODO highlight Underlined
+" TODO Underlined
 
 highlight Comment             guifg=#808080      guibg=none     gui=italic
 highlight Constant            guifg=#d0d0d0      guibg=none     gui=none
@@ -115,51 +115,58 @@ highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 
 highlight TSMethod            guifg=#5fafd7      guibg=none     gui=none
 highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=none
-" TODO highlight TSError
-" TODO highlight TSPunctDelimiter
-" TODO highlight TSPunctBracket
-" TODO highlight TSPunctSpecial
-" TODO highlight TSConstant
-" TODO highlight TSConstBuiltin
-" TODO highlight TSConstMacro
-" TODO highlight TSString
-" TODO highlight TSStringRegex
-" TODO highlight TSStringEscape
-" TODO highlight TSCharacter
-" TODO highlight TSNumber
-" TODO highlight TSInclude
-" TODO highlight TSBoolean
-" TODO highlight TSConstBuiltin
-" TODO highlight TSFloat
-" TODO highlight TSFunction
-" TODO highlight TSFuncBuiltin
-" TODO highlight TSFuncMacro
-" TODO highlight TSParameter
-" TODO highlight TSParameterReference
-" TODO highlight TSFuncMacro
-" TODO highlight TSField
-" TODO highlight TSProperty
-" TODO highlight TSConstructor
-" TODO highlight TSConditional
-" TODO highlight TSRepeat
-" TODO highlight TSLabel
-" TODO highlight TSOperator
-" TODO highlight TSKeyword
-" TODO highlight TSKeywordFunction
-" TODO highlight TSException
-" TODO highlight TSType
-" TODO highlight TSTypeBuiltin
-" TODO highlight TSNamespace
-" TODO highlight TSInclude
-" TODO highlight TSAnnotation
-" TODO highlight TSText
-" TODO highlight TSStrong
-" TODO highlight TSEmphasis
-" TODO highlight TSUnderline
-" TODO highlight TSTitle
-" TODO highlight TSLiteral
-" TODO highlight TSURI
-" TODO highlight TSVariable
+highlight TSConstBuiltin      guifg=#d7af00      guibg=none     gui=none
+highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=bold
+highlight TSConstructor       guifg=#5fafd7      guibg=none     gui=none
+highlight TSField             guifg=#d0d0d0      guibg=none     gui=none
+highlight TSTypeBuiltin       guifg=#af87d7      guibg=none     gui=bold
+
+" Notes:
+" TSError
+" TSPunctDelimiter
+" TSPunctBracket
+" TSPunctSpecial
+" TSConstant
+" TSConstBuiltin
+" TSConstMacro
+" TSString
+" TSStringRegex
+" TSStringEscape
+" TSCharacter
+" TSNumber
+" TSInclude
+" TSBoolean
+" TSConstBuiltin
+" TSFloat
+" TSFunction
+" TSFuncBuiltin
+" TSFuncMacro
+" TSParameter
+" TSParameterReference
+" TSFuncMacro
+" TSField
+" TSProperty
+" TSConstructor
+" TSConditional
+" TSRepeat
+" TSLabel
+" TSOperator
+" TSKeyword
+" TSKeywordFunction
+" TSException
+" TSType
+" TSTypeBuiltin
+" TSNamespace
+" TSInclude
+" TSAnnotation
+" TSText
+" TSStrong
+" TSEmphasis
+" TSUnderline
+" TSTitle
+" TSLiteral
+" TSURI
+" TSVariable
 
 " Non Standard: language-specific overrides
 " Note: keep these to an absolute minimum
