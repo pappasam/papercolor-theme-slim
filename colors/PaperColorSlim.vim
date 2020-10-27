@@ -17,7 +17,6 @@ let g:colors_name="PaperColorSlim"
 " TODO highlight Substitute
 " TODO highlight MsgArea
 " TODO highlight MsgSeparator
-" TODO highlight NormalNC
 " TODO highlight PmenuSbar
 " TODO highlight PmenuThumb
 " TODO highlight QuickFixLine
@@ -32,6 +31,7 @@ highlight Conceal             guifg=#585858      guibg=#1c1c1c  gui=none
 highlight Cursor              guifg=#c6c6c6      guibg=#1c1c1c  gui=none
 highlight CursorColumn        guifg=none         guibg=#303030  gui=none
 highlight Normal              guifg=#d0d0d0      guibg=#1c1c1c  gui=none
+highlight NormalNC            guifg=#d0d0d0      guibg=#1c1c1c  gui=none
 highlight CursorLine          guifg=none         guibg=#303030  gui=none
 highlight Directory           guifg=#00afaf      guibg=none     gui=none
 highlight DiffAdd             guifg=#87d700      guibg=#005f00  gui=none
