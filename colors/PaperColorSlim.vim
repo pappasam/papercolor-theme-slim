@@ -43,14 +43,11 @@
 " TODO CursorIM
 " TODO TermCursor
 " TODO TermCursorNC
-" TODO IncSearch
-" TODO Substitute
 " TODO MsgArea
 " TODO MsgSeparator
 " TODO PmenuSbar
 " TODO PmenuThumb
 " TODO QuickFixLine
-" TODO VisualNOS
 " TODO Whitespace
 " TODO Menu
 " TODO Scrollbar
@@ -126,6 +123,7 @@ if &background == 'light'
   highlight ErrorMsg            guifg=#af0000      guibg=#ffd7ff  gui=none
   highlight FoldColumn          guifg=#0087af      guibg=#fffff0  gui=none
   highlight Folded              guifg=#444444      guibg=#e4e4e4  gui=none
+  highlight IncSearch           guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight LineNr              guifg=#444444      guibg=#fffff0  gui=none
   highlight MatchParen          guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight ModeMsg             guifg=#5f8700      guibg=none     gui=none
@@ -146,12 +144,14 @@ if &background == 'light'
   highlight SpellRare           guifg=#d70000      guibg=none     gui=underline,italic
   highlight StatusLine          guifg=#fffff0      guibg=#005f87  gui=none
   highlight StatusLineNC        guifg=#444444      guibg=#c6c6c6  gui=none
+  highlight Substitute          guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight TabLine             guifg=#444444      guibg=#c6c6c6  gui=none
   highlight TabLineFill         guifg=#005f87      guibg=#005f87  gui=none
   highlight TabLineSel          guifg=#444444      guibg=#e4e4e4  gui=none
   highlight Title               guifg=#0087af      guibg=none     gui=bold
   highlight VertSplit           guifg=#005f87      guibg=#fffff0  gui=none
   highlight Visual              guifg=#4e4e4e      guibg=#c6c6c6  gui=none
+  highlight VisualNOS           guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight WarningMsg          guifg=#d70087      guibg=none     gui=none
   highlight WildMenu            guifg=#fffff0      guibg=#d70087  gui=none
 
@@ -227,6 +227,7 @@ else
   highlight ErrorMsg            guifg=#af005f      guibg=#5f0000  gui=none
   highlight FoldColumn          guifg=#d787ff      guibg=#1c1c1c  gui=none
   highlight Folded              guifg=#bcbcbc      guibg=#3a3a3a  gui=none
+  highlight IncSearch           guifg=#444444      guibg=#e4e4e4  gui=none
   highlight LineNr              guifg=#585858      guibg=#1c1c1c  gui=none
   highlight MatchParen          guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight ModeMsg             guifg=#d7af5f      guibg=none     gui=none
@@ -238,7 +239,7 @@ else
   highlight Pmenu               guifg=#c6c6c6      guibg=#303030  gui=none
   highlight PmenuSel            guifg=#bcbcbc      guibg=#585858  gui=none
   highlight Question            guifg=#d7af5f      guibg=none     gui=none
-  highlight Search              guifg=#000000      guibg=#00875f  gui=none
+  highlight Search              guifg=#444444      guibg=#c6c6c6  gui=none
   highlight SignColumn          guifg=#d7af00      guibg=#1c1c1c  gui=none
   highlight SpecialKey          guifg=#585858      guibg=none     gui=none
   highlight SpellBad            guifg=#af005f      guibg=#5f0000  gui=underline,italic
@@ -247,12 +248,14 @@ else
   highlight SpellRare           guifg=#5faf5f      guibg=none     gui=underline,italic
   highlight StatusLine          guifg=#1c1c1c      guibg=#5f8787  gui=none
   highlight StatusLineNC        guifg=#bcbcbc      guibg=#3a3a3a  gui=none
+  highlight Substitute          guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight TabLine             guifg=#bcbcbc      guibg=#585858  gui=none
   highlight TabLineFill         guifg=#262626      guibg=#262626  gui=none
   highlight TabLineSel          guifg=#121212      guibg=#00afaf  gui=none
   highlight Title               guifg=#5fafd7      guibg=none     gui=bold
   highlight VertSplit           guifg=#5f8787      guibg=#1c1c1c  gui=none
   highlight Visual              guifg=#c6c6c6      guibg=#4e4e4e  gui=none
+  highlight VisualNOS           guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight WarningMsg          guifg=#afd700      guibg=none     gui=none
   highlight WildMenu            guifg=#1c1c1c      guibg=#afd700  gui=none
 
