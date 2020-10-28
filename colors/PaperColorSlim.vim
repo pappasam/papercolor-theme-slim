@@ -134,8 +134,8 @@ if &background == 'light'
   highlight Normal              guifg=#444444      guibg=#fffff0  gui=none
   highlight NormalFloat         guifg=#444444      guibg=#e4e4e4  gui=none
   highlight NormalNC            guifg=#444444      guibg=#fffff0  gui=none
-  highlight Pmenu               guifg=#c6c6c6      guibg=#e4e4e4  gui=none
-  highlight PmenuSel            guifg=#444444      guibg=#444444  gui=none
+  highlight Pmenu               guifg=#444444      guibg=#e4e4e4  gui=none
+  highlight PmenuSel            guifg=#e4e4e4      guibg=#444444  gui=none
   highlight Question            guifg=#5f8700      guibg=none     gui=none
   highlight Search              guifg=#444444      guibg=#e4e4e4  gui=none
   highlight SignColumn          guifg=#008700      guibg=#fffff0  gui=none
