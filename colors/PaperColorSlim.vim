@@ -146,7 +146,7 @@ if &background == 'light'
   highlight SpellRare           guifg=#d70000      guibg=none     gui=underline,italic
   highlight StatusLine          guifg=#fffff0      guibg=#005f87  gui=none
   highlight StatusLineNC        guifg=#444444      guibg=#c6c6c6  gui=none
-  highlight TabLine             guifg=#444444      guibg=#444444  gui=none
+  highlight TabLine             guifg=#444444      guibg=#c6c6c6  gui=none
   highlight TabLineFill         guifg=#005f87      guibg=#005f87  gui=none
   highlight TabLineSel          guifg=#444444      guibg=#e4e4e4  gui=none
   highlight Title               guifg=#0087af      guibg=none     gui=bold
