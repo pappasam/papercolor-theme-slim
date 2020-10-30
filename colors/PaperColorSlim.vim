@@ -1,7 +1,7 @@
 " PaperColorSlim: Based on <https://github.com/NLKNguyen/papercolor-theme>
 " Maintainer:   Samuel Roeca <samuel.roeca@gmail.com>
 
-" Color Pallet:
+" Color Pallet: not exactly 1:1 in practice, but gives a rough gist
 " dark     light
 " #000000  #444444
 " #005f00  #afff87
