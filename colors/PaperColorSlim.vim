@@ -210,6 +210,12 @@ if &background == 'light'
   highlight helpBacktick        guifg=#0087af      guibg=none     gui=none
   highlight helpIgnore          guifg=#0087af      guibg=none     gui=none
   highlight helpStar            guifg=#0087af      guibg=none     gui=none
+  highlight htmlH1              guifg=#008700      guibg=none     gui=bold
+  highlight htmlH2              guifg=#0087af      guibg=none     gui=bold
+  highlight htmlH3              guifg=#8700af      guibg=none     gui=bold
+  highlight htmlH4              guifg=#d70087      guibg=none     gui=bold
+  highlight htmlH5              guifg=#d70087      guibg=none     gui=none
+  highlight htmlH6              guifg=#d70087      guibg=none     gui=italic
 else
   " Standard: built-in
   highlight ColorColumn         guifg=none         guibg=#303030  gui=none
@@ -314,4 +320,10 @@ else
   highlight helpBacktick        guifg=#5fafd7      guibg=none     gui=none
   highlight helpIgnore          guifg=#5fafd7      guibg=none     gui=none
   highlight helpStar            guifg=#5fafd7      guibg=none     gui=none
+  highlight htmlH1              guifg=#d7af00      guibg=none     gui=bold
+  highlight htmlH2              guifg=#5fafd7      guibg=none     gui=bold
+  highlight htmlH3              guifg=#af87d7      guibg=none     gui=bold
+  highlight htmlH4              guifg=#ff5faf      guibg=none     gui=bold
+  highlight htmlH5              guifg=#ff5faf      guibg=none     gui=none
+  highlight htmlH6              guifg=#ff5faf      guibg=none     gui=italic
 endif
