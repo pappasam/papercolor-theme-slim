@@ -205,8 +205,8 @@ if &background == 'light'
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#d70087      guibg=none     gui=underline
   highlight QuickScopeSecondary guifg=#e4e4e4      guibg=none     gui=underline
-  highlight diffAdded           guifg=#d70000      guibg=none     gui=none
-  highlight diffRemoved         guifg=#d75f00      guibg=none     gui=none
+  highlight diffAdded           guifg=#008700      guibg=none     gui=none
+  highlight diffRemoved         guifg=#d70000      guibg=none     gui=none
   highlight helpBacktick        guifg=#0087af      guibg=none     gui=none
   highlight helpIgnore          guifg=#0087af      guibg=none     gui=none
   highlight helpStar            guifg=#0087af      guibg=none     gui=none
