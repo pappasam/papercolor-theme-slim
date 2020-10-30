@@ -50,6 +50,37 @@ colorscheme PaperColorSlim
 
 - You may change to the light/dark variant at any time by running `:set background=light` or `:set background=dark`
 
+## Customization
+
+To ensure the codebase runs efficiently and predictably for most users, very little abstraction / logic is tolerated within PaperColorSlim itself. That said, you can configure virtually anything you want with Vim's native syntax highlighting tooling. What follows are some common configuration customizations requested by users, along with their solution.
+
+### Transparent background
+
+Some users want the background of their Vim to match their terminal's background color. To achieve this with PaperColorSlim, put the following code somewhere in your `vimrc`:
+
+```vim
+augroup custom_papercolorslim_transparent_background
+  autocmd!
+  autocmd ColorScheme PaperColorSlim highlight Conceal      guibg=none
+  autocmd ColorScheme PaperColorSlim highlight Cursor       guibg=none
+  autocmd ColorScheme PaperColorSlim highlight CursorLineNr guibg=none
+  autocmd ColorScheme PaperColorSlim highlight FoldColumn   guibg=none
+  autocmd ColorScheme PaperColorSlim highlight Ignore       guibg=none
+  autocmd ColorScheme PaperColorSlim highlight LineNr       guibg=none
+  autocmd ColorScheme PaperColorSlim highlight NonText      guibg=none
+  autocmd ColorScheme PaperColorSlim highlight Normal       guibg=none
+  autocmd ColorScheme PaperColorSlim highlight NormalNC     guibg=none
+  autocmd ColorScheme PaperColorSlim highlight SignColumn   guibg=none
+  autocmd ColorScheme PaperColorSlim highlight VertSplit    guibg=none
+augroup end
+```
+
+**Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/444444) when using `background=dark`, or [fffff0](https://www.color-hex.com/color/fffff0) when using `background=light`, PaperColorSlim may contrast poorly with your terminal's background. In this case, you will need to do one of the following:
+
+1. Use the PaperColorSlim-provided background colors (eg, don't put the above in your `vimrc`)
+2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
+3. Use a different Vim colorscheme that better-supports your background preferences
+
 ## Development
 
 If you want to contribute and assuming you use Neovim, I suggest installing and using [nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua). It will let you see the colors associated with the hex codes, greatly simplifying development.
