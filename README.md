@@ -75,7 +75,7 @@ augroup custom_papercolorslim_transparent_background
 augroup end
 ```
 
-**Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/444444) when using `background=dark`, or [fffff0](https://www.color-hex.com/color/fffff0) when using `background=light`, PaperColorSlim may contrast poorly with your terminal's background. In this case, you will need to do one of the following:
+**Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/1c1c1c) when using `background=dark`, or [fffff0](https://www.color-hex.com/color/fffff0) when using `background=light`, PaperColorSlim may contrast poorly with your terminal's background. In this case, you will need to do one of the following:
 
 1. Use the PaperColorSlim-provided background colors (eg, don't put the above in your `vimrc`)
 2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
