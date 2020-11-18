@@ -326,4 +326,5 @@ else
   highlight htmlH4              guifg=#ff5faf      guibg=none     gui=bold
   highlight htmlH5              guifg=#ff5faf      guibg=none     gui=none
   highlight htmlH6              guifg=#ff5faf      guibg=none     gui=italic
+  highlight yamlConstant        guifg=#d7af00      guibg=none     gui=bold
 endif
