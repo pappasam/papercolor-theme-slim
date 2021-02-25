@@ -188,7 +188,7 @@ if &background == 'light'
   highlight SpecialComment      guifg=#878787      guibg=none     gui=bold
   highlight Debug               guifg=#d75f00      guibg=none     gui=none
   highlight Underlined          guifg=#d75f00      guibg=none     gui=none
-  highlight Error               guifg=#af0000      guibg=#ffd7ff  gui=none
+  highlight Error               guifg=#e60000      guibg=none     gui=bold
   highlight Todo                guifg=#00af5f      guibg=none     gui=bold
   highlight Ignore              guifg=#005f87      guibg=#fffff0  gui=none
 
@@ -298,7 +298,7 @@ else
   highlight SpecialComment      guifg=#808080      guibg=none     gui=bold
   highlight Debug               guifg=#ff5faf      guibg=none     gui=none
   highlight Underlined          guifg=#ff5faf      guibg=none     gui=none
-  highlight Error               guifg=#af005f      guibg=#5f0000  gui=none
+  highlight Error               guifg=#ff8080      guibg=none     gui=bold
   highlight Todo                guifg=#ff8700      guibg=none     gui=bold
   highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
 
