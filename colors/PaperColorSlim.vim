@@ -124,7 +124,7 @@ if &background == 'light'
   highlight FoldColumn          guifg=#0087af      guibg=#fffff0  gui=none
   highlight Folded              guifg=#444444      guibg=#e4e4e4  gui=none
   highlight IncSearch           guifg=#4e4e4e      guibg=#c6c6c6  gui=none
-  highlight LineNr              guifg=#444444      guibg=#fffff0  gui=none
+  highlight LineNr              guifg=#444444      guibg=none     gui=none
   highlight MatchParen          guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight ModeMsg             guifg=#5f8700      guibg=none     gui=none
   highlight MoreMsg             guifg=#5f8700      guibg=none     gui=none
@@ -234,7 +234,7 @@ else
   highlight FoldColumn          guifg=#d787ff      guibg=#1c1c1c  gui=none
   highlight Folded              guifg=#bcbcbc      guibg=#3a3a3a  gui=none
   highlight IncSearch           guifg=#444444      guibg=#e4e4e4  gui=none
-  highlight LineNr              guifg=#585858      guibg=#1c1c1c  gui=none
+  highlight LineNr              guifg=#585858      guibg=none     gui=none
   highlight MatchParen          guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight ModeMsg             guifg=#d7af5f      guibg=none     gui=none
   highlight MoreMsg             guifg=#d7af5f      guibg=none     gui=none
