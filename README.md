@@ -10,6 +10,18 @@ This is a slimmed down re-implementation of [papercolor-theme](https://github.co
 
 It targets Neovim's syntax groups, but it should technically work with regular Vim.
 
+## Examples
+
+The following examples show the dark (default) and light variants operating on same Python file (from [jedi-language-server](https://github.com/pappasam/jedi-language-server)). If you write another language, don't worry: PaperColorSlim supports them all!
+
+### Dark Theme
+
+![dark-theme](./img/screenshot-dark.png)
+
+### Light Theme
+
+![light-theme](./img/screenshot-light.png)
+
 ## Installation
 
 If using [vim-plug](https://github.com/junegunn/vim-plug), place the following line in the Plugin section of your inti.vim / vimrc:
