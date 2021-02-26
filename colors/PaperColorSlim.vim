@@ -109,11 +109,11 @@ let g:colors_name="PaperColorSlim"
 if &background == 'light'
   " Standard: built-in
   highlight ColorColumn         guifg=none         guibg=#e4e4e4  gui=none
-  highlight Conceal             guifg=#444444      guibg=#fffff0  gui=none
-  highlight Cursor              guifg=#c6c6c6      guibg=#fffff0  gui=none
+  highlight Conceal             guifg=#444444      guibg=none     gui=none
+  highlight Cursor              guifg=#c6c6c6      guibg=none     gui=none
   highlight CursorColumn        guifg=none         guibg=#e4e4e4  gui=none
   highlight CursorLine          guifg=none         guibg=#e4e4e4  gui=none
-  highlight CursorLineNr        guifg=#af5f00      guibg=#fffff0  gui=none
+  highlight CursorLineNr        guifg=#af5f00      guibg=none     gui=none
   highlight DiffAdd             guifg=#008700      guibg=#afff87  gui=none
   highlight DiffChange          guifg=#444444      guibg=#ffd787  gui=none
   highlight DiffDelete          guifg=#af0000      guibg=#ffd7ff  gui=none
@@ -121,22 +121,22 @@ if &background == 'light'
   highlight Directory           guifg=#005f87      guibg=none     gui=none
   highlight EndOfBuffer         guifg=#fffff0      guibg=none     gui=none
   highlight ErrorMsg            guifg=#af0000      guibg=#ffd7ff  gui=none
-  highlight FoldColumn          guifg=#0087af      guibg=#fffff0  gui=none
+  highlight FoldColumn          guifg=#0087af      guibg=none     gui=none
   highlight Folded              guifg=#444444      guibg=#e4e4e4  gui=none
   highlight IncSearch           guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight LineNr              guifg=#444444      guibg=none     gui=none
   highlight MatchParen          guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight ModeMsg             guifg=#5f8700      guibg=none     gui=none
   highlight MoreMsg             guifg=#5f8700      guibg=none     gui=none
-  highlight NonText             guifg=#444444      guibg=#fffff0  gui=none
+  highlight NonText             guifg=#444444      guibg=none     gui=none
   highlight Normal              guifg=#444444      guibg=#fffff0  gui=none
   highlight NormalFloat         guifg=#444444      guibg=#e4e4e4  gui=none
-  highlight NormalNC            guifg=#444444      guibg=#fffff0  gui=none
+  highlight NormalNC            guifg=#444444      guibg=none     gui=none
   highlight Pmenu               guifg=#444444      guibg=#e4e4e4  gui=none
   highlight PmenuSel            guifg=#e4e4e4      guibg=#444444  gui=none
   highlight Question            guifg=#5f8700      guibg=none     gui=none
   highlight Search              guifg=#444444      guibg=#e4e4e4  gui=none
-  highlight SignColumn          guifg=#008700      guibg=#fffff0  gui=none
+  highlight SignColumn          guifg=#008700      guibg=none     gui=none
   highlight SpecialKey          guifg=#444444      guibg=none     gui=none
   highlight SpellBad            guifg=#af0000      guibg=#ffd7ff  gui=underline,italic
   highlight SpellCap            guifg=#af5f00      guibg=none     gui=underline,italic
@@ -149,7 +149,7 @@ if &background == 'light'
   highlight TabLineFill         guifg=#005f87      guibg=#005f87  gui=none
   highlight TabLineSel          guifg=#444444      guibg=#e4e4e4  gui=none
   highlight Title               guifg=#0087af      guibg=none     gui=bold
-  highlight VertSplit           guifg=#005f87      guibg=#fffff0  gui=none
+  highlight VertSplit           guifg=#005f87      guibg=none     gui=none
   highlight Visual              guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight VisualNOS           guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight WarningMsg          guifg=#d70087      guibg=none     gui=none
@@ -190,7 +190,7 @@ if &background == 'light'
   highlight Underlined          guifg=#d75f00      guibg=none     gui=none
   highlight Error               guifg=#e60000      guibg=none     gui=bold
   highlight Todo                guifg=#00af5f      guibg=none     gui=bold
-  highlight Ignore              guifg=#005f87      guibg=#fffff0  gui=none
+  highlight Ignore              guifg=#005f87      guibg=none     gui=none
 
   " Standard: Neovim treesitter
   highlight TSConstBuiltin      guifg=#008700      guibg=none     gui=none
@@ -219,11 +219,11 @@ if &background == 'light'
 else
   " Standard: built-in
   highlight ColorColumn         guifg=none         guibg=#303030  gui=none
-  highlight Conceal             guifg=#585858      guibg=#1c1c1c  gui=none
-  highlight Cursor              guifg=#c6c6c6      guibg=#1c1c1c  gui=none
+  highlight Conceal             guifg=#585858      guibg=none     gui=none
+  highlight Cursor              guifg=#c6c6c6      guibg=none     gui=none
   highlight CursorColumn        guifg=none         guibg=#303030  gui=none
   highlight CursorLine          guifg=none         guibg=#303030  gui=none
-  highlight CursorLineNr        guifg=#ffff00      guibg=#1c1c1c  gui=none
+  highlight CursorLineNr        guifg=#ffff00      guibg=none     gui=none
   highlight DiffAdd             guifg=#87d700      guibg=#005f00  gui=none
   highlight DiffChange          guifg=#d0d0d0      guibg=#005f5f  gui=none
   highlight DiffDelete          guifg=#af005f      guibg=#5f0000  gui=none
@@ -231,22 +231,22 @@ else
   highlight Directory           guifg=#00afaf      guibg=none     gui=none
   highlight EndOfBuffer         guifg=#1c1c1c      guibg=none     gui=none
   highlight ErrorMsg            guifg=#af005f      guibg=#5f0000  gui=none
-  highlight FoldColumn          guifg=#d787ff      guibg=#1c1c1c  gui=none
+  highlight FoldColumn          guifg=#d787ff      guibg=none     gui=none
   highlight Folded              guifg=#bcbcbc      guibg=#3a3a3a  gui=none
   highlight IncSearch           guifg=#444444      guibg=#e4e4e4  gui=none
   highlight LineNr              guifg=#585858      guibg=none     gui=none
   highlight MatchParen          guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight ModeMsg             guifg=#d7af5f      guibg=none     gui=none
   highlight MoreMsg             guifg=#d7af5f      guibg=none     gui=none
-  highlight NonText             guifg=#585858      guibg=#1c1c1c  gui=none
+  highlight NonText             guifg=#585858      guibg=none     gui=none
   highlight Normal              guifg=#d0d0d0      guibg=#1c1c1c  gui=none
   highlight NormalFloat         guifg=#c6c6c6      guibg=#303030  gui=none
-  highlight NormalNC            guifg=#d0d0d0      guibg=#1c1c1c  gui=none
+  highlight NormalNC            guifg=#d0d0d0      guibg=none     gui=none
   highlight Pmenu               guifg=#c6c6c6      guibg=#303030  gui=none
   highlight PmenuSel            guifg=#bcbcbc      guibg=#585858  gui=none
   highlight Question            guifg=#d7af5f      guibg=none     gui=none
   highlight Search              guifg=#444444      guibg=#c6c6c6  gui=none
-  highlight SignColumn          guifg=#d7af00      guibg=#1c1c1c  gui=none
+  highlight SignColumn          guifg=#d7af00      guibg=none     gui=none
   highlight SpecialKey          guifg=#585858      guibg=none     gui=none
   highlight SpellBad            guifg=#af005f      guibg=#5f0000  gui=underline,italic
   highlight SpellCap            guifg=#ffff00      guibg=none     gui=underline,italic
@@ -259,7 +259,7 @@ else
   highlight TabLineFill         guifg=#262626      guibg=#262626  gui=none
   highlight TabLineSel          guifg=#121212      guibg=#00afaf  gui=none
   highlight Title               guifg=#5fafd7      guibg=none     gui=bold
-  highlight VertSplit           guifg=#5f8787      guibg=#1c1c1c  gui=none
+  highlight VertSplit           guifg=#5f8787      guibg=none     gui=none
   highlight Visual              guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight VisualNOS           guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight WarningMsg          guifg=#afd700      guibg=none     gui=none
@@ -300,7 +300,7 @@ else
   highlight Underlined          guifg=#ff5faf      guibg=none     gui=none
   highlight Error               guifg=#ff8080      guibg=none     gui=bold
   highlight Todo                guifg=#ff8700      guibg=none     gui=bold
-  highlight Ignore              guifg=#303030      guibg=#1c1c1c  gui=none
+  highlight Ignore              guifg=#303030      guibg=none     gui=none
 
   " Standard: Neovim treesitter
   highlight TSConstBuiltin      guifg=#d7af00      guibg=none     gui=none
