@@ -49,7 +49,7 @@ if &background == 'light'
   highlight TabLine             guifg=#444444      guibg=#c6c6c6  gui=none
   highlight TabLineFill         guifg=#005f87      guibg=#005f87  gui=none
   highlight TabLineSel          guifg=#444444      guibg=#e4e4e4  gui=none
-  highlight Title               guifg=#0087af      guibg=none     gui=bold
+  highlight Title               guifg=#5f8700      guibg=none     gui=bold
   highlight VertSplit           guifg=#005f87      guibg=none     gui=none
   highlight Visual              guifg=#4e4e4e      guibg=#c6c6c6  gui=none
   highlight VisualNOS           guifg=#4e4e4e      guibg=#c6c6c6  gui=none
@@ -160,7 +160,7 @@ else
   highlight TabLine             guifg=#bcbcbc      guibg=#585858  gui=none
   highlight TabLineFill         guifg=#262626      guibg=#262626  gui=none
   highlight TabLineSel          guifg=#121212      guibg=#00afaf  gui=none
-  highlight Title               guifg=#5fafd7      guibg=none     gui=bold
+  highlight Title               guifg=#d7af5f      guibg=none     gui=bold
   highlight VertSplit           guifg=#5f8787      guibg=none     gui=none
   highlight Visual              guifg=#c6c6c6      guibg=#4e4e4e  gui=none
   highlight VisualNOS           guifg=#c6c6c6      guibg=#4e4e4e  gui=none
