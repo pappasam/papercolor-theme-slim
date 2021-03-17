@@ -150,7 +150,7 @@ else
   highlight Search              guifg=#444444      guibg=#c6c6c6  gui=none
   highlight SignColumn          guifg=#d7af00      guibg=none     gui=none
   highlight SpecialKey          guifg=#585858      guibg=none     gui=none
-  highlight SpellBad            guifg=#af005f      guibg=#5f0000  gui=underline,italic
+  highlight SpellBad            guifg=#e60000      guibg=none     gui=underline,italic
   highlight SpellCap            guifg=#ffff00      guibg=none     gui=underline,italic
   highlight SpellLocal          guifg=#ff5faf      guibg=none     gui=underline,italic
   highlight SpellRare           guifg=#5faf5f      guibg=none     gui=underline,italic
