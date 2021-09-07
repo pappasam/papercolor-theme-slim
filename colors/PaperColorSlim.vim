@@ -96,7 +96,6 @@ if &background == 'light'
   " Standard: Neovim treesitter
   highlight TSConstBuiltin      guifg=#008700      guibg=none     gui=none
   highlight TSConstructor       guifg=#0087af      guibg=none     gui=none
-  highlight TSField             guifg=#444444      guibg=none     gui=none
   highlight TSFuncBuiltin       guifg=#0087af      guibg=none     gui=bold
   highlight TSMethod            guifg=#0087af      guibg=none     gui=none
   highlight TSType              guifg=#8700af      guibg=none     gui=none
@@ -207,7 +206,6 @@ else
   " Standard: Neovim treesitter
   highlight TSConstBuiltin      guifg=#d7af00      guibg=none     gui=none
   highlight TSConstructor       guifg=#5fafd7      guibg=none     gui=none
-  highlight TSField             guifg=#d0d0d0      guibg=none     gui=none
   highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=bold
   highlight TSMethod            guifg=#5fafd7      guibg=none     gui=none
   highlight TSType              guifg=#af87d7      guibg=none     gui=none
