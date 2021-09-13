@@ -72,7 +72,7 @@ if &background == 'light'
   highlight Label               guifg=#005f87      guibg=none     gui=none
   highlight Operator            guifg=#005f87      guibg=none     gui=none
   highlight Keyword             guifg=#d70087      guibg=none     gui=none
-  highlight Exception           guifg=#d70000      guibg=none     gui=none
+  highlight Exception           guifg=#d70087      guibg=none     gui=none
   highlight PreProc             guifg=#005f87      guibg=none     gui=none
   highlight Include             guifg=#d70087      guibg=none     gui=none
   highlight Define              guifg=#005f87      guibg=none     gui=none
@@ -181,7 +181,7 @@ else
   highlight Label               guifg=#00afaf      guibg=none     gui=none
   highlight Operator            guifg=#00afaf      guibg=none     gui=none
   highlight Keyword             guifg=#afd700      guibg=none     gui=none
-  highlight Exception           guifg=#5faf5f      guibg=none     gui=none
+  highlight Exception           guifg=#afd700      guibg=none     gui=none
   highlight PreProc             guifg=#00afaf      guibg=none     gui=none
   highlight Include             guifg=#afd700      guibg=none     gui=none
   highlight Define              guifg=#00afaf      guibg=none     gui=none
