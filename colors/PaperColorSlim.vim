@@ -88,7 +88,7 @@ if &background == 'light'
   highlight Delimiter           guifg=#0087af      guibg=none     gui=none
   highlight SpecialComment      guifg=#878787      guibg=none     gui=bold
   highlight Debug               guifg=#d75f00      guibg=none     gui=none
-  highlight Underlined          guifg=#d75f00      guibg=none     gui=none
+  highlight Underlined          guifg=none         guibg=none     gui=underline
   highlight Error               guifg=#e60000      guibg=none     gui=bold
   highlight Todo                guifg=#00af5f      guibg=none     gui=bold
   highlight Ignore              guifg=#005f87      guibg=none     gui=none
@@ -198,7 +198,7 @@ else
   highlight Delimiter           guifg=#5fafd7      guibg=none     gui=none
   highlight SpecialComment      guifg=#808080      guibg=none     gui=bold
   highlight Debug               guifg=#ff5faf      guibg=none     gui=none
-  highlight Underlined          guifg=#ff5faf      guibg=none     gui=none
+  highlight Underlined          guifg=none         guibg=none     gui=underline
   highlight Error               guifg=#ff8080      guibg=none     gui=bold
   highlight Todo                guifg=#ff8700      guibg=none     gui=bold
   highlight Ignore              guifg=#303030      guibg=none     gui=none
