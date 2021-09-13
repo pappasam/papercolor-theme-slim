@@ -58,7 +58,7 @@ if &background == 'light'
 
   " Standard: Vim-preferred names
   highlight Comment             guifg=#878787      guibg=none     gui=italic
-  highlight Constant            guifg=#444444      guibg=none     gui=none
+  highlight Constant            guifg=none         guibg=none     gui=bold
   highlight String              guifg=#5f8700      guibg=none     gui=none
   highlight Character           guifg=#5f8700      guibg=none     gui=none
   highlight Number              guifg=#d75f00      guibg=none     gui=none
@@ -94,13 +94,13 @@ if &background == 'light'
   highlight Ignore              guifg=#005f87      guibg=none     gui=none
 
   " Standard: Neovim treesitter
-  highlight TSConstBuiltin      guifg=#008700      guibg=none     gui=none
   highlight TSConstructor       guifg=#0087af      guibg=none     gui=none
   highlight TSFuncBuiltin       guifg=#0087af      guibg=none     gui=bold
   highlight TSMethod            guifg=#0087af      guibg=none     gui=none
   highlight TSType              guifg=#8700af      guibg=none     gui=none
   highlight TSTypeBuiltin       guifg=#8700af      guibg=none     gui=bold
-  highlight TSVariableBuiltin   guifg=#d70000      guibg=none     gui=none
+  highlight TSNamespace         guifg=#8700af      guibg=none     gui=bold
+  highlight TSVariableBuiltin   guifg=#d70000      guibg=none     gui=bold
 
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#d70087      guibg=none     gui=underline
@@ -116,7 +116,6 @@ if &background == 'light'
   highlight htmlH4              guifg=#d70087      guibg=none     gui=bold
   highlight htmlH5              guifg=#d70087      guibg=none     gui=none
   highlight htmlH6              guifg=#d70087      guibg=none     gui=italic
-  highlight yamlConstant        guifg=#008700      guibg=none     gui=bold
 else
   " Standard: built-in
   highlight ColorColumn         guifg=none         guibg=#303030  gui=none
@@ -168,7 +167,7 @@ else
 
   " Standard: Vim-preferred names
   highlight Comment             guifg=#808080      guibg=none     gui=italic
-  highlight Constant            guifg=#d0d0d0      guibg=none     gui=none
+  highlight Constant            guifg=none         guibg=none     gui=bold
   highlight String              guifg=#d7af5f      guibg=none     gui=none
   highlight Character           guifg=#d7af5f      guibg=none     gui=none
   highlight Number              guifg=#ff5faf      guibg=none     gui=none
@@ -204,13 +203,13 @@ else
   highlight Ignore              guifg=#303030      guibg=none     gui=none
 
   " Standard: Neovim treesitter
-  highlight TSConstBuiltin      guifg=#d7af00      guibg=none     gui=none
   highlight TSConstructor       guifg=#5fafd7      guibg=none     gui=none
   highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=bold
   highlight TSMethod            guifg=#5fafd7      guibg=none     gui=none
   highlight TSType              guifg=#af87d7      guibg=none     gui=none
   highlight TSTypeBuiltin       guifg=#af87d7      guibg=none     gui=bold
-  highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=none
+  highlight TSNamespace         guifg=#af87d7      guibg=none     gui=bold
+  highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=bold
 
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#afd700      guibg=none     gui=underline
@@ -226,7 +225,6 @@ else
   highlight htmlH4              guifg=#ff5faf      guibg=none     gui=bold
   highlight htmlH5              guifg=#ff5faf      guibg=none     gui=none
   highlight htmlH6              guifg=#ff5faf      guibg=none     gui=italic
-  highlight yamlConstant        guifg=#d7af00      guibg=none     gui=bold
 endif
 
 " Reference:
