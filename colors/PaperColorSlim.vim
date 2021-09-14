@@ -83,7 +83,7 @@ if &background == 'light'
   highlight Structure           guifg=#005f87      guibg=none     gui=bold
   highlight Typedef             guifg=#d70087      guibg=none     gui=bold
   highlight Special             guifg=#005f87      guibg=none     gui=none
-  highlight SpecialChar         guifg=#444444      guibg=none     gui=none
+  highlight SpecialChar         guifg=#008700      guibg=none     gui=none
   highlight Tag                 guifg=#008700      guibg=none     gui=none
   highlight Delimiter           guifg=#0087af      guibg=none     gui=none
   highlight SpecialComment      guifg=#878787      guibg=none     gui=bold
@@ -192,7 +192,7 @@ else
   highlight Structure           guifg=#00afaf      guibg=none     gui=bold
   highlight Typedef             guifg=#afd700      guibg=none     gui=bold
   highlight Special             guifg=#d7875f      guibg=none     gui=none
-  highlight SpecialChar         guifg=#d0d0d0      guibg=none     gui=none
+  highlight SpecialChar         guifg=#d7af00      guibg=none     gui=none
   highlight Tag                 guifg=#d7af00      guibg=none     gui=none
   highlight Delimiter           guifg=#5fafd7      guibg=none     gui=none
   highlight SpecialComment      guifg=#808080      guibg=none     gui=bold
