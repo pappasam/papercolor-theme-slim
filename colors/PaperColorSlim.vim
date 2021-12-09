@@ -101,6 +101,7 @@ if &background == 'light'
   highlight TSTypeBuiltin       guifg=#8700af      guibg=none     gui=bold
   highlight TSNamespace         guifg=#8700af      guibg=none     gui=bold
   highlight TSVariableBuiltin   guifg=#d70000      guibg=none     gui=bold
+  highlight TSConstBuiltin      guifg=#d70000      guibg=none     gui=bold
 
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#d70087      guibg=none     gui=underline
@@ -210,6 +211,7 @@ else
   highlight TSTypeBuiltin       guifg=#af87d7      guibg=none     gui=bold
   highlight TSNamespace         guifg=#af87d7      guibg=none     gui=bold
   highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=bold
+  highlight TSConstBuiltin      guifg=#5faf5f      guibg=none     gui=bold
 
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#afd700      guibg=none     gui=underline
