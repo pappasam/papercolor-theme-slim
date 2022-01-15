@@ -8,19 +8,9 @@ This is a slimmed down re-implementation of [papercolor-theme](https://github.co
 4. Limits highlight groups to: [built-in](https://neovim.io/doc/user/syntax.html#highlight-default), [preferred](https://neovim.io/doc/user/syntax.html#W18), [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/blob/333e1ab7768336d33c0e654a412ce0cb763f1da2/doc/nvim-treesitter.txt#L398), and a couple non-standard overrides at [the author](https://samroeca.com/pages/about.html)'s discretion. This results in consistent highlighting across languages, but may sacrifice highlighting granularity in some cases.
 5. Supports both `background=light` and `background=dark`
 
-It targets Neovim's syntax groups, but it should technically work with regular Vim.
+It targets Neovim's syntax groups, but it should technically work with regular Vim. The following screenshot shows the dark (default) and light variants operating on same Python file (from [jedi-language-server](https://github.com/pappasam/jedi-language-server)). If you write another language, don't worry: PaperColorSlim supports them all!
 
-## Examples
-
-The following examples show the dark (default) and light variants operating on same Python file (from [jedi-language-server](https://github.com/pappasam/jedi-language-server)). If you write another language, don't worry: PaperColorSlim supports them all!
-
-### Dark Theme
-
-![dark-theme](./img/screenshot-dark.png)
-
-### Light Theme
-
-![light-theme](./img/screenshot-light.png)
+![screenshot](./img/screenshot.png)
 
 ## Installation
 
@@ -96,6 +86,10 @@ augroup custom_papercolor_slim_light_background
         \ endif
 augroup end
 ```
+
+Notice how the light background is slightly different from the original while the dark background stays the same?
+
+![screenshot override](./img/screenshot-background-override.png)
 
 ## Development
 
