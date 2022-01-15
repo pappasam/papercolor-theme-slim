@@ -78,7 +78,7 @@ augroup end
 Suppose, hypothetically, that you like the guibg color for &background == 'dark' but want to change the guibg color for &background == 'light' to '#fffff0'. You can do this by adding the following snippet to your vimrc:
 
 ```vim
-augroup custom_papercolor_slim_light_background
+augroup custom_papercolorslim_light_background
   autocmd!
   autocmd ColorScheme PaperColorSlim
         \ if &background == 'light' |
