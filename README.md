@@ -64,7 +64,7 @@ colorscheme PaperColorSlim
 
 ## Customization
 
-You can configure virtually anything you want with Vim's native syntax highlighting tooling. What follows are some common configuration customizations requested by users, along with their solution.
+You can configure virtually anything you want with Vim's native syntax highlighting tooling and autocmds. What follows are some common configuration customizations requested by users, along with their solution.
 
 ### Transparent background
 
@@ -82,6 +82,20 @@ augroup end
 1. Use the PaperColorSlim-provided background colors (eg, don't put the above in your `vimrc`)
 2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
 3. Use a different Vim colorscheme that better-supports your background preferences
+
+### Override color for only one &background type
+
+Suppose, hypothetically, that you like the guibg color for &background == 'dark' but want to change the guibg color for &background == 'light' to '#fffff0'. You can do this by adding the following snippet to your vimrc:
+
+```vim
+augroup custom_papercolor_slim_light_background
+  autocmd!
+  autocmd ColorScheme PaperColorSlim
+        \ if &background == 'light' |
+        \ execute 'highlight Normal guibg=#fffff0' |
+        \ endif
+augroup end
+```
 
 ## Development
 
