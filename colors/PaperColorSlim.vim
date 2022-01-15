@@ -30,7 +30,7 @@ if &background == 'light'
   highlight ModeMsg             guifg=#5f8700      guibg=none     gui=none
   highlight MoreMsg             guifg=#5f8700      guibg=none     gui=none
   highlight NonText             guifg=#444444      guibg=none     gui=none
-  highlight Normal              guifg=#444444      guibg=#fffff0  gui=none
+  highlight Normal              guifg=#444444      guibg=#eeeeee  gui=none
   highlight NormalFloat         guifg=#444444      guibg=#e4e4e4  gui=none
   highlight NormalNC            guifg=#444444      guibg=none     gui=none
   highlight Pmenu               guifg=#444444      guibg=#e4e4e4  gui=none
