@@ -75,7 +75,7 @@ augroup end
 
 ### Override color for only one &background type
 
-Suppose, hypothetically, that you like the guibg color for &background == 'dark' but want to change the guibg color for &background == 'light' to '#fffff0'. You can do this by adding the following snippet to your vimrc:
+Suppose, hypothetically, that you like the default guibg color for &background == 'dark' but want to change the guibg color for &background == 'light' to [#fffff0](https://www.color-hex.com/color/fffff0). You can do this by adding the following snippet to your vimrc:
 
 ```vim
 augroup custom_papercolorslim_light_background
