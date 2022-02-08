@@ -39,10 +39,10 @@ if &background == 'light'
   highlight Search              guifg=#444444      guibg=#e4e4e4  gui=none
   highlight SignColumn          guifg=#008700      guibg=none     gui=none
   highlight SpecialKey          guifg=#444444      guibg=none     gui=none
-  highlight SpellBad            guifg=#af0000      guibg=#ffd7ff  gui=underline,italic
-  highlight SpellCap            guifg=#af5f00      guibg=none     gui=underline,italic
-  highlight SpellLocal          guifg=#d75f00      guibg=none     gui=underline,italic
-  highlight SpellRare           guifg=#d70000      guibg=none     gui=underline,italic
+  highlight SpellBad            guifg=#af0000      guibg=#ffd7ff  gui=undercurl,italic
+  highlight SpellCap            guifg=#af5f00      guibg=none     gui=undercurl,italic
+  highlight SpellLocal          guifg=#d75f00      guibg=none     gui=undercurl,italic
+  highlight SpellRare           guifg=#d70000      guibg=none     gui=undercurl,italic
   highlight StatusLine          guifg=#fffff0      guibg=#005f87  gui=none
   highlight StatusLineNC        guifg=#444444      guibg=#c6c6c6  gui=none
   highlight Substitute          guifg=#4e4e4e      guibg=#c6c6c6  gui=none
@@ -149,10 +149,10 @@ else
   highlight Search              guifg=#444444      guibg=#c6c6c6  gui=none
   highlight SignColumn          guifg=#d7af00      guibg=none     gui=none
   highlight SpecialKey          guifg=#585858      guibg=none     gui=none
-  highlight SpellBad            guifg=#e60000      guibg=none     gui=underline,italic
-  highlight SpellCap            guifg=#ffff00      guibg=none     gui=underline,italic
-  highlight SpellLocal          guifg=#ff5faf      guibg=none     gui=underline,italic
-  highlight SpellRare           guifg=#5faf5f      guibg=none     gui=underline,italic
+  highlight SpellBad            guifg=#e60000      guibg=none     gui=undercurl,italic
+  highlight SpellCap            guifg=#ffff00      guibg=none     gui=undercurl,italic
+  highlight SpellLocal          guifg=#ff5faf      guibg=none     gui=undercurl,italic
+  highlight SpellRare           guifg=#5faf5f      guibg=none     gui=undercurl,italic
   highlight StatusLine          guifg=#1c1c1c      guibg=#5f8787  gui=none
   highlight StatusLineNC        guifg=#bcbcbc      guibg=#3a3a3a  gui=none
   highlight Substitute          guifg=#c6c6c6      guibg=#4e4e4e  gui=none
