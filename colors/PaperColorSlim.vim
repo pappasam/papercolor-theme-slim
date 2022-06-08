@@ -8,6 +8,24 @@ endif
 let g:colors_name="PaperColorSlim"
 
 if &background == 'light'
+  " Neovim terminal colors
+  let g:terminal_color_0  = '#eeeeee'
+  let g:terminal_color_1  = '#af0000'
+  let g:terminal_color_2  = '#008700'
+  let g:terminal_color_3  = '#5f8700'
+  let g:terminal_color_4  = '#0087af'
+  let g:terminal_color_5  = '#878787'
+  let g:terminal_color_6  = '#005f87'
+  let g:terminal_color_7  = '#444444'
+  let g:terminal_color_8  = '#bcbcbc'
+  let g:terminal_color_9  = '#d70000'
+  let g:terminal_color_10 = '#d70087'
+  let g:terminal_color_11 = '#8700af'
+  let g:terminal_color_12 = '#d75f00'
+  let g:terminal_color_13 = '#d75f00'
+  let g:terminal_color_14 = '#005faf'
+  let g:terminal_color_15 = '#005f87'
+
   " Standard: built-in
   highlight ColorColumn         guifg=none         guibg=#e4e4e4  gui=none
   highlight Conceal             guifg=#444444      guibg=none     gui=none
@@ -118,6 +136,24 @@ if &background == 'light'
   highlight htmlH5              guifg=#d70087      guibg=none     gui=none
   highlight htmlH6              guifg=#d70087      guibg=none     gui=italic
 else
+  " Neovim terminal colors
+  let g:terminal_color_0  = '#1c1c1c'
+  let g:terminal_color_1  = '#af005f'
+  let g:terminal_color_2  = '#5faf00'
+  let g:terminal_color_3  = '#d7af5f'
+  let g:terminal_color_4  = '#5fafd7'
+  let g:terminal_color_5  = '#808080'
+  let g:terminal_color_6  = '#d7875f'
+  let g:terminal_color_7  = '#d0d0d0'
+  let g:terminal_color_8  = '#585858'
+  let g:terminal_color_9  = '#5faf5f'
+  let g:terminal_color_10 = '#afd700'
+  let g:terminal_color_11 = '#af87d7'
+  let g:terminal_color_12 = '#ffaf00'
+  let g:terminal_color_13 = '#ff5faf'
+  let g:terminal_color_14 = '#00afaf'
+  let g:terminal_color_15 = '#5f8787'
+
   " Standard: built-in
   highlight ColorColumn         guifg=none         guibg=#303030  gui=none
   highlight Conceal             guifg=#585858      guibg=none     gui=none
