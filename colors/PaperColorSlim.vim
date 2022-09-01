@@ -121,6 +121,16 @@ if &background == 'light'
   highlight TSVariableBuiltin   guifg=#d70000      guibg=none     gui=bold
   highlight TSConstBuiltin      guifg=#d70000      guibg=none     gui=bold
 
+  " for 0.8.0+
+  highlight @constructor        guifg=#0087af      guibg=none     gui=none
+  highlight @function.builtin   guifg=#0087af      guibg=none     gui=bold
+  highlight @method             guifg=#0087af      guibg=none     gui=none
+  highlight @type               guifg=#8700af      guibg=none     gui=none
+  highlight @type.builtin       guifg=#8700af      guibg=none     gui=bold
+  highlight @namespace          guifg=#8700af      guibg=none     gui=bold
+  highlight @variable.builtin   guifg=#d70000      guibg=none     gui=bold
+  highlight @constant.builtin   guifg=#d70000      guibg=none     gui=bold
+
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#d70087      guibg=none     gui=underline
   highlight QuickScopeSecondary guifg=#e4e4e4      guibg=none     gui=underline
@@ -248,6 +258,16 @@ else
   highlight TSNamespace         guifg=#af87d7      guibg=none     gui=bold
   highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=bold
   highlight TSConstBuiltin      guifg=#5faf5f      guibg=none     gui=bold
+
+  " for 0.8.0+
+  highlight @constructor        guifg=#5fafd7      guibg=none     gui=none
+  highlight @function.builtin   guifg=#5fafd7      guibg=none     gui=bold
+  highlight @method             guifg=#5fafd7      guibg=none     gui=none
+  highlight @type               guifg=#af87d7      guibg=none     gui=none
+  highlight @type.builtin       guifg=#af87d7      guibg=none     gui=bold
+  highlight @namespace          guifg=#af87d7      guibg=none     gui=bold
+  highlight @variable.builtin   guifg=#5faf5f      guibg=none     gui=bold
+  highlight @constant.builtin   guifg=#5faf5f      guibg=none     gui=bold
 
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#afd700      guibg=none     gui=underline
