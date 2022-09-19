@@ -122,25 +122,27 @@ if &background == 'light'
   highlight TSConstBuiltin      guifg=#d70000      guibg=none     gui=bold
 
   " for 0.8.0+
-  highlight @constructor        guifg=#0087af      guibg=none     gui=none
-  highlight @function           guifg=#0087af      guibg=none     gui=bold
-  highlight @function.builtin   guifg=#0087af      guibg=none     gui=bold
-  highlight @function.call      guifg=#0087af      guibg=none     gui=none
-  highlight @method             guifg=#0087af      guibg=none     gui=bold
-  highlight @method.builtin     guifg=#0087af      guibg=none     gui=bold
-  highlight @method.call        guifg=#0087af      guibg=none     gui=none
-  highlight @type               guifg=#8700af      guibg=none     gui=bold
-  highlight @type.builtin       guifg=#8700af      guibg=none     gui=bold
-  highlight @namespace          guifg=#8700af      guibg=none     gui=bold
-  highlight @variable.builtin   guifg=#d70000      guibg=none     gui=bold
-  highlight @constant.builtin   guifg=#d70000      guibg=none     gui=bold
-  highlight @text.title         guifg=#0087af      guibg=none     gui=bold
-  highlight @text.title.h1      guifg=#008700      guibg=none     gui=bold
-  highlight @text.title.h2      guifg=#0087af      guibg=none     gui=bold
-  highlight @text.title.h3      guifg=#8700af      guibg=none     gui=bold
-  highlight @text.title.h4      guifg=#d70087      guibg=none     gui=bold
-  highlight @text.title.h5      guifg=#d70087      guibg=none     gui=none
-  highlight @text.title.h6      guifg=#d70087      guibg=none     gui=italic
+  if has('nvim-0.8')
+    highlight @constructor        guifg=#0087af      guibg=none     gui=none
+    highlight @function           guifg=#0087af      guibg=none     gui=bold
+    highlight @function.builtin   guifg=#0087af      guibg=none     gui=bold
+    highlight @function.call      guifg=#0087af      guibg=none     gui=none
+    highlight @method             guifg=#0087af      guibg=none     gui=bold
+    highlight @method.builtin     guifg=#0087af      guibg=none     gui=bold
+    highlight @method.call        guifg=#0087af      guibg=none     gui=none
+    highlight @type               guifg=#8700af      guibg=none     gui=bold
+    highlight @type.builtin       guifg=#8700af      guibg=none     gui=bold
+    highlight @namespace          guifg=#8700af      guibg=none     gui=bold
+    highlight @variable.builtin   guifg=#d70000      guibg=none     gui=bold
+    highlight @constant.builtin   guifg=#d70000      guibg=none     gui=bold
+    highlight @text.title         guifg=#0087af      guibg=none     gui=bold
+    highlight @text.title.h1      guifg=#008700      guibg=none     gui=bold
+    highlight @text.title.h2      guifg=#0087af      guibg=none     gui=bold
+    highlight @text.title.h3      guifg=#8700af      guibg=none     gui=bold
+    highlight @text.title.h4      guifg=#d70087      guibg=none     gui=bold
+    highlight @text.title.h5      guifg=#d70087      guibg=none     gui=none
+    highlight @text.title.h6      guifg=#d70087      guibg=none     gui=italic
+  endif
 
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#d70087      guibg=none     gui=underline
@@ -271,26 +273,28 @@ else
   highlight TSConstBuiltin      guifg=#5faf5f      guibg=none     gui=bold
 
   " for 0.8.0+
-  highlight @constructor        guifg=#5fafd7      guibg=none     gui=none
-  highlight @function           guifg=#5fafd7      guibg=none     gui=bold
-  highlight @function.builtin   guifg=#5fafd7      guibg=none     gui=bold
-  highlight @function.call      guifg=#5fafd7      guibg=none     gui=none
-  highlight @method             guifg=#5fafd7      guibg=none     gui=bold
-  highlight @method.builtin     guifg=#5fafd7      guibg=none     gui=bold
-  highlight @method.call        guifg=#5fafd7      guibg=none     gui=none
-  highlight @type               guifg=#af87d7      guibg=none     gui=bold
-  highlight @type.builtin       guifg=#af87d7      guibg=none     gui=bold
-  highlight @namespace          guifg=#af87d7      guibg=none     gui=bold
-  highlight @variable.builtin   guifg=#5faf5f      guibg=none     gui=bold
-  highlight @constant.builtin   guifg=#5faf5f      guibg=none     gui=bold
-  highlight @text.title         guifg=#5fafd7      guibg=none     gui=bold
-  highlight @text.title.h1      guifg=#d7af00      guibg=none     gui=bold
-  highlight @text.title.h2      guifg=#5fafd7      guibg=none     gui=bold
-  highlight @text.title.h3      guifg=#af87d7      guibg=none     gui=bold
-  highlight @text.title.h4      guifg=#ff5faf      guibg=none     gui=bold
-  highlight @text.title.h5      guifg=#ff5faf      guibg=none     gui=none
-  highlight @text.title.h6      guifg=#ff5faf      guibg=none     gui=italic
-
+  if has('nvim-0.8')
+    highlight @constructor        guifg=#5fafd7      guibg=none     gui=none
+    highlight @function           guifg=#5fafd7      guibg=none     gui=bold
+    highlight @function.builtin   guifg=#5fafd7      guibg=none     gui=bold
+    highlight @function.call      guifg=#5fafd7      guibg=none     gui=none
+    highlight @method             guifg=#5fafd7      guibg=none     gui=bold
+    highlight @method.builtin     guifg=#5fafd7      guibg=none     gui=bold
+    highlight @method.call        guifg=#5fafd7      guibg=none     gui=none
+    highlight @type               guifg=#af87d7      guibg=none     gui=bold
+    highlight @type.builtin       guifg=#af87d7      guibg=none     gui=bold
+    highlight @namespace          guifg=#af87d7      guibg=none     gui=bold
+    highlight @variable.builtin   guifg=#5faf5f      guibg=none     gui=bold
+    highlight @constant.builtin   guifg=#5faf5f      guibg=none     gui=bold
+    highlight @text.title         guifg=#5fafd7      guibg=none     gui=bold
+    highlight @text.title.h1      guifg=#d7af00      guibg=none     gui=bold
+    highlight @text.title.h2      guifg=#5fafd7      guibg=none     gui=bold
+    highlight @text.title.h3      guifg=#af87d7      guibg=none     gui=bold
+    highlight @text.title.h4      guifg=#ff5faf      guibg=none     gui=bold
+    highlight @text.title.h5      guifg=#ff5faf      guibg=none     gui=none
+    highlight @text.title.h6      guifg=#ff5faf      guibg=none     gui=italic
+  endif
+  
   " Non Standard: language-specific overrides, keep to absolute minimum
   highlight QuickScopePrimary   guifg=#afd700      guibg=none     gui=underline
   highlight QuickScopeSecondary guifg=#00afaf      guibg=none     gui=underline
