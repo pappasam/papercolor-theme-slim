@@ -116,7 +116,8 @@ if &background == 'light'
   highlight TSFunction          guifg=#0087af      guibg=none     gui=italic
   highlight TSFunctionCall      guifg=#0087af      guibg=none     gui=none
   highlight TSFuncBuiltin       guifg=#0087af      guibg=none     gui=none
-  highlight TSMethod            guifg=#0087af      guibg=none     gui=none
+  highlight TSMethod            guifg=#0087af      guibg=none     gui=italic
+  highlight TSMethodCall        guifg=#0087af      guibg=none     gui=none
   highlight TSType              guifg=#8700af      guibg=none     gui=bold
   highlight TSTypeBuiltin       guifg=#8700af      guibg=none     gui=bold
   highlight TSNamespace         guifg=#8700af      guibg=none     gui=bold
@@ -246,7 +247,8 @@ else
   highlight TSFunction          guifg=#5fafd7      guibg=none     gui=italic
   highlight TSFunctionCall      guifg=#5fafd7      guibg=none     gui=none
   highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=none
-  highlight TSMethod            guifg=#5fafd7      guibg=none     gui=none
+  highlight TSMethod            guifg=#5fafd7      guibg=none     gui=italic
+  highlight TSMethodCall        guifg=#5fafd7      guibg=none     gui=none
   highlight TSType              guifg=#af87d7      guibg=none     gui=bold
   highlight TSTypeBuiltin       guifg=#af87d7      guibg=none     gui=bold
   highlight TSNamespace         guifg=#af87d7      guibg=none     gui=bold
