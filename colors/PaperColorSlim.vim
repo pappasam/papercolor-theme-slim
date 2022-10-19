@@ -113,6 +113,7 @@ if &background == 'light'
 
   " Standard: Neovim treesitter
   if has('nvim-0.8')
+    highlight @constant.builtin   guifg=#d70000      guibg=none     gui=bold
     highlight @constructor        guifg=#0087af      guibg=none     gui=none
     highlight @function           guifg=#0087af      guibg=none     gui=italic
     highlight @function.builtin   guifg=#0087af      guibg=none     gui=none
@@ -120,11 +121,7 @@ if &background == 'light'
     highlight @method             guifg=#0087af      guibg=none     gui=italic
     highlight @method.builtin     guifg=#0087af      guibg=none     gui=none
     highlight @method.call        guifg=#0087af      guibg=none     gui=none
-    highlight @type               guifg=#8700af      guibg=none     gui=bold
-    highlight @type.builtin       guifg=#8700af      guibg=none     gui=bold
     highlight @namespace          guifg=#8700af      guibg=none     gui=bold
-    highlight @variable.builtin   guifg=#d70000      guibg=none     gui=bold
-    highlight @constant.builtin   guifg=#d70000      guibg=none     gui=bold
     highlight @text.title         guifg=#0087af      guibg=none     gui=bold
     highlight @text.title.h1      guifg=#008700      guibg=none     gui=bold
     highlight @text.title.h2      guifg=#0087af      guibg=none     gui=bold
@@ -132,18 +129,22 @@ if &background == 'light'
     highlight @text.title.h4      guifg=#d70087      guibg=none     gui=bold
     highlight @text.title.h5      guifg=#d70087      guibg=none     gui=none
     highlight @text.title.h6      guifg=#d70087      guibg=none     gui=italic
+    highlight @type               guifg=#8700af      guibg=none     gui=bold
+    highlight @type.builtin       guifg=#8700af      guibg=none     gui=bold
+    highlight @variable           guifg=#444444      guibg=none     gui=none
+    highlight @variable.builtin   guifg=#d70000      guibg=none     gui=bold
   else
+    highlight TSConstBuiltin      guifg=#d70000      guibg=none     gui=bold
     highlight TSConstructor       guifg=#0087af      guibg=none     gui=none
+    highlight TSFuncBuiltin       guifg=#0087af      guibg=none     gui=none
     highlight TSFunction          guifg=#0087af      guibg=none     gui=italic
     highlight TSFunctionCall      guifg=#0087af      guibg=none     gui=none
-    highlight TSFuncBuiltin       guifg=#0087af      guibg=none     gui=none
     highlight TSMethod            guifg=#0087af      guibg=none     gui=italic
     highlight TSMethodCall        guifg=#0087af      guibg=none     gui=none
+    highlight TSNamespace         guifg=#8700af      guibg=none     gui=bold
     highlight TSType              guifg=#8700af      guibg=none     gui=bold
     highlight TSTypeBuiltin       guifg=#8700af      guibg=none     gui=bold
-    highlight TSNamespace         guifg=#8700af      guibg=none     gui=bold
     highlight TSVariableBuiltin   guifg=#d70000      guibg=none     gui=bold
-    highlight TSConstBuiltin      guifg=#d70000      guibg=none     gui=bold
   endif
 
   " Non Standard: language-specific overrides, keep to absolute minimum
@@ -266,6 +267,7 @@ else
 
   " Standard: Neovim treesitter
   if has('nvim-0.8')
+    highlight @constant.builtin   guifg=#5faf5f      guibg=none     gui=bold
     highlight @constructor        guifg=#5fafd7      guibg=none     gui=none
     highlight @function           guifg=#5fafd7      guibg=none     gui=italic
     highlight @function.builtin   guifg=#5fafd7      guibg=none     gui=none
@@ -273,11 +275,7 @@ else
     highlight @method             guifg=#5fafd7      guibg=none     gui=italic
     highlight @method.builtin     guifg=#5fafd7      guibg=none     gui=none
     highlight @method.call        guifg=#5fafd7      guibg=none     gui=none
-    highlight @type               guifg=#af87d7      guibg=none     gui=bold
-    highlight @type.builtin       guifg=#af87d7      guibg=none     gui=bold
     highlight @namespace          guifg=#af87d7      guibg=none     gui=bold
-    highlight @variable.builtin   guifg=#5faf5f      guibg=none     gui=bold
-    highlight @constant.builtin   guifg=#5faf5f      guibg=none     gui=bold
     highlight @text.title         guifg=#5fafd7      guibg=none     gui=bold
     highlight @text.title.h1      guifg=#d7af00      guibg=none     gui=bold
     highlight @text.title.h2      guifg=#5fafd7      guibg=none     gui=bold
@@ -285,18 +283,22 @@ else
     highlight @text.title.h4      guifg=#ff5faf      guibg=none     gui=bold
     highlight @text.title.h5      guifg=#ff5faf      guibg=none     gui=none
     highlight @text.title.h6      guifg=#ff5faf      guibg=none     gui=italic
+    highlight @type               guifg=#af87d7      guibg=none     gui=bold
+    highlight @type.builtin       guifg=#af87d7      guibg=none     gui=bold
+    highlight @variable           guifg=#d0d0d0      guibg=none     gui=none
+    highlight @variable.builtin   guifg=#5faf5f      guibg=none     gui=bold
   else
+    highlight TSConstBuiltin      guifg=#5faf5f      guibg=none     gui=bold
     highlight TSConstructor       guifg=#5fafd7      guibg=none     gui=none
+    highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=none
     highlight TSFunction          guifg=#5fafd7      guibg=none     gui=italic
     highlight TSFunctionCall      guifg=#5fafd7      guibg=none     gui=none
-    highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=none
     highlight TSMethod            guifg=#5fafd7      guibg=none     gui=italic
     highlight TSMethodCall        guifg=#5fafd7      guibg=none     gui=none
+    highlight TSNamespace         guifg=#af87d7      guibg=none     gui=bold
     highlight TSType              guifg=#af87d7      guibg=none     gui=bold
     highlight TSTypeBuiltin       guifg=#af87d7      guibg=none     gui=bold
-    highlight TSNamespace         guifg=#af87d7      guibg=none     gui=bold
     highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=bold
-    highlight TSConstBuiltin      guifg=#5faf5f      guibg=none     gui=bold
   endif
 
   " Non Standard: language-specific overrides, keep to absolute minimum
