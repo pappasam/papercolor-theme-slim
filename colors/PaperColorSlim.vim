@@ -122,6 +122,7 @@ if &background == 'light'
     highlight @method.builtin     guifg=#0087af      guibg=none     gui=none
     highlight @method.call        guifg=#0087af      guibg=none     gui=none
     highlight @namespace          guifg=#8700af      guibg=none     gui=bold
+    highlight @text.literal       guifg=none         guibg=none     gui=none
     highlight @text.title         guifg=#0087af      guibg=none     gui=bold
     highlight @text.title.h1      guifg=#008700      guibg=none     gui=bold
     highlight @text.title.h2      guifg=#0087af      guibg=none     gui=bold
@@ -276,6 +277,7 @@ else
     highlight @method.builtin     guifg=#5fafd7      guibg=none     gui=none
     highlight @method.call        guifg=#5fafd7      guibg=none     gui=none
     highlight @namespace          guifg=#af87d7      guibg=none     gui=bold
+    highlight @text.literal       guifg=none         guibg=none     gui=none
     highlight @text.title         guifg=#5fafd7      guibg=none     gui=bold
     highlight @text.title.h1      guifg=#d7af00      guibg=none     gui=bold
     highlight @text.title.h2      guifg=#5fafd7      guibg=none     gui=bold
