@@ -115,10 +115,10 @@ if &background == 'light'
   if has('nvim-0.8')
     highlight @constant.builtin   guifg=#d70000      guibg=none     gui=bold
     highlight @constructor        guifg=#0087af      guibg=none     gui=none
-    highlight @function           guifg=#0087af      guibg=none     gui=italic
+    highlight @function           guifg=#0087af      guibg=none     gui=none
     highlight @function.builtin   guifg=#0087af      guibg=none     gui=bold
     highlight @function.call      guifg=#0087af      guibg=none     gui=none
-    highlight @method             guifg=#0087af      guibg=none     gui=italic
+    highlight @method             guifg=#0087af      guibg=none     gui=none
     highlight @method.builtin     guifg=#0087af      guibg=none     gui=bold
     highlight @method.call        guifg=#0087af      guibg=none     gui=none
     highlight @namespace          guifg=#8700af      guibg=none     gui=bold
@@ -272,10 +272,10 @@ else
   if has('nvim-0.8')
     highlight @constant.builtin   guifg=#5faf5f      guibg=none     gui=bold
     highlight @constructor        guifg=#5fafd7      guibg=none     gui=none
-    highlight @function           guifg=#5fafd7      guibg=none     gui=italic
+    highlight @function           guifg=#5fafd7      guibg=none     gui=none
     highlight @function.builtin   guifg=#5fafd7      guibg=none     gui=bold
     highlight @function.call      guifg=#5fafd7      guibg=none     gui=none
-    highlight @method             guifg=#5fafd7      guibg=none     gui=italic
+    highlight @method             guifg=#5fafd7      guibg=none     gui=none
     highlight @method.builtin     guifg=#5fafd7      guibg=none     gui=bold
     highlight @method.call        guifg=#5fafd7      guibg=none     gui=none
     highlight @namespace          guifg=#af87d7      guibg=none     gui=bold
