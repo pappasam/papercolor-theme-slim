@@ -134,7 +134,7 @@ if &background == 'light'
     highlight @text.title.h4      guifg=#d70087      guibg=none     gui=bold
     highlight @text.title.h5      guifg=#d70087      guibg=none     gui=none
     highlight @text.title.h6      guifg=#d70087      guibg=none     gui=italic
-    highlight @type               guifg=#8700af      guibg=none     gui=bold
+    highlight @type               guifg=#8700af      guibg=none     gui=none
     highlight @type.builtin       guifg=#8700af      guibg=none     gui=bold
     highlight @variable           guifg=#444444      guibg=none     gui=none
     highlight @variable.builtin   guifg=#d70000      guibg=none     gui=bold
@@ -293,7 +293,7 @@ else
     highlight @text.title.h4      guifg=#ff5faf      guibg=none     gui=bold
     highlight @text.title.h5      guifg=#ff5faf      guibg=none     gui=none
     highlight @text.title.h6      guifg=#ff5faf      guibg=none     gui=italic
-    highlight @type               guifg=#af87d7      guibg=none     gui=bold
+    highlight @type               guifg=#af87d7      guibg=none     gui=none
     highlight @type.builtin       guifg=#af87d7      guibg=none     gui=bold
     highlight @variable           guifg=#d0d0d0      guibg=none     gui=none
     highlight @variable.builtin   guifg=#5faf5f      guibg=none     gui=bold
