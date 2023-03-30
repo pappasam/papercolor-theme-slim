@@ -154,8 +154,6 @@ if &background == 'light'
   endif
 
   " Non Standard: language-specific overrides, keep to absolute minimum
-  highlight QuickScopePrimary   guifg=#d70087      guibg=none     gui=underline
-  highlight QuickScopeSecondary guifg=#e4e4e4      guibg=none     gui=underline
   highlight diffAdded           guifg=#008700      guibg=none     gui=none
   highlight diffRemoved         guifg=#d70000      guibg=none     gui=none
   highlight helpBacktick        guifg=#0087af      guibg=none     gui=none
@@ -314,8 +312,6 @@ else
   endif
 
   " Non Standard: language-specific overrides, keep to absolute minimum
-  highlight QuickScopePrimary   guifg=#afd700      guibg=none     gui=underline
-  highlight QuickScopeSecondary guifg=#00afaf      guibg=none     gui=underline
   highlight diffAdded           guifg=#5faf5f      guibg=none     gui=none
   highlight diffRemoved         guifg=#ff5faf      guibg=none     gui=none
   highlight helpBacktick        guifg=#5fafd7      guibg=none     gui=none
