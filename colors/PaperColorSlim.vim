@@ -122,6 +122,7 @@ if &background == 'light'
     highlight @method.builtin     guifg=#0087af      guibg=none     gui=bold
     highlight @method.call        guifg=#0087af      guibg=none     gui=none
     highlight @namespace          guifg=#8700af      guibg=none     gui=bold
+    highlight @string.escape      guifg=#005f87      guibg=none     gui=none
     highlight @tag.attribute      guifg=#005f87      guibg=none     gui=none
     highlight @tag.delimiter      guifg=#005f87      guibg=none     gui=none
     highlight @text.emphasis      guifg=none         guibg=none     gui=italic
@@ -280,6 +281,7 @@ else
     highlight @method.builtin     guifg=#5fafd7      guibg=none     gui=bold
     highlight @method.call        guifg=#5fafd7      guibg=none     gui=none
     highlight @namespace          guifg=#af87d7      guibg=none     gui=bold
+    highlight @string.escape      guifg=#d7875f      guibg=none     gui=none
     highlight @tag.attribute      guifg=#d7875f      guibg=none     gui=none
     highlight @tag.delimiter      guifg=#00afaf      guibg=none     gui=none
     highlight @text.emphasis      guifg=none         guibg=none     gui=italic
