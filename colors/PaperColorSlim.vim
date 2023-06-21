@@ -129,12 +129,12 @@ if &background == 'light'
     highlight @text.literal       guifg=none         guibg=none     gui=none
     highlight @text.strong        guifg=none         guibg=none     gui=bold
     highlight @text.title         guifg=#0087af      guibg=none     gui=bold
-    highlight @text.title.h1      guifg=#008700      guibg=none     gui=bold
-    highlight @text.title.h2      guifg=#0087af      guibg=none     gui=bold
-    highlight @text.title.h3      guifg=#8700af      guibg=none     gui=bold
-    highlight @text.title.h4      guifg=#d70087      guibg=none     gui=bold
-    highlight @text.title.h5      guifg=#d70087      guibg=none     gui=none
-    highlight @text.title.h6      guifg=#d70087      guibg=none     gui=italic
+    highlight @text.title.1       guifg=#008700      guibg=none     gui=bold
+    highlight @text.title.2       guifg=#0087af      guibg=none     gui=bold
+    highlight @text.title.3       guifg=#8700af      guibg=none     gui=bold
+    highlight @text.title.4       guifg=#d70087      guibg=none     gui=bold
+    highlight @text.title.5       guifg=#d70087      guibg=none     gui=none
+    highlight @text.title.6       guifg=#d70087      guibg=none     gui=italic
     highlight @type               guifg=#8700af      guibg=none     gui=none
     highlight @type.builtin       guifg=#8700af      guibg=none     gui=bold
     highlight @type.definition    guifg=#8700af      guibg=none     gui=none
@@ -288,12 +288,12 @@ else
     highlight @text.literal       guifg=none         guibg=none     gui=none
     highlight @text.strong        guifg=none         guibg=none     gui=bold
     highlight @text.title         guifg=#5fafd7      guibg=none     gui=bold
-    highlight @text.title.h1      guifg=#d7af00      guibg=none     gui=bold
-    highlight @text.title.h2      guifg=#5fafd7      guibg=none     gui=bold
-    highlight @text.title.h3      guifg=#af87d7      guibg=none     gui=bold
-    highlight @text.title.h4      guifg=#ff5faf      guibg=none     gui=bold
-    highlight @text.title.h5      guifg=#ff5faf      guibg=none     gui=none
-    highlight @text.title.h6      guifg=#ff5faf      guibg=none     gui=italic
+    highlight @text.title.1       guifg=#d7af00      guibg=none     gui=bold
+    highlight @text.title.2       guifg=#5fafd7      guibg=none     gui=bold
+    highlight @text.title.3       guifg=#af87d7      guibg=none     gui=bold
+    highlight @text.title.4       guifg=#ff5faf      guibg=none     gui=bold
+    highlight @text.title.5       guifg=#ff5faf      guibg=none     gui=none
+    highlight @text.title.6       guifg=#ff5faf      guibg=none     gui=italic
     highlight @type               guifg=#af87d7      guibg=none     gui=none
     highlight @type.builtin       guifg=#af87d7      guibg=none     gui=bold
     highlight @type.definition    guifg=#af87d7      guibg=none     gui=none
