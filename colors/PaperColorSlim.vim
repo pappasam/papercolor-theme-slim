@@ -1,6 +1,17 @@
 " PaperColorSlim: Based on <https://github.com/NLKNguyen/papercolor-theme>
 " Maintainer:   Samuel Roeca <samuel.roeca@gmail.com>
 
+" Color Pallet: not exactly 1:1 in practice, but gives a rough gist
+"  dark     light  <>  dark     light  <>  dark     light  <>  dark     light
+" #d7875f  #005f87 <> #5fafd7  #0087af <> #262626  #005f87 <> #000000  #444444
+" #d787ff  #0087af <> #5fffff  #0087af <> #303030  #e4e4e4 <> #005f00  #afff87
+" #d7af00  #008700 <> #808080  #878787 <> #3a3a3a  #d0d0d0 <> #005f5f  #ffd787
+" #d7af5f  #5f8700 <> #87d700  #008700 <> #4e4e4e  #c6c6c6 <> #00875f  #ffff5f
+" #ff5faf  #d75f00 <> #af005f  #af0000 <> #585858  #bcbcbc <> #008787  #ffffd7
+" #ff8700  #00af5f <> #af87d7  #8700af <> #5f0000  #ffd7ff <> #00afaf  #e4e4e4
+" #ffff00  #af5f00 <> #afd700  #d70087 <> #5f8787  #005f87 <> #121212  #444444
+" #bcbcbc  #444444 <> #5faf5f  #d70000 <> #1c1c1c  #fffff0
+
 highlight clear
 if exists("syntax_on")
   syntax reset
@@ -126,7 +137,7 @@ if &background == 'light'
     highlight @tag.attribute      guifg=#005f87      guibg=none     gui=none
     highlight @tag.delimiter      guifg=#005f87      guibg=none     gui=none
     highlight @text.emphasis      guifg=none         guibg=none     gui=italic
-    highlight @text.literal       guifg=none         guibg=none     gui=none
+    highlight @text.literal       guifg=#5f8700         guibg=none     gui=none
     highlight @text.strong        guifg=none         guibg=none     gui=bold
     highlight @text.title         guifg=#0087af      guibg=none     gui=bold
     highlight @text.title.1       guifg=#008700      guibg=none     gui=bold
@@ -140,18 +151,6 @@ if &background == 'light'
     highlight @type.definition    guifg=#8700af      guibg=none     gui=none
     highlight @variable           guifg=#444444      guibg=none     gui=none
     highlight @variable.builtin   guifg=#d70000      guibg=none     gui=bold
-  else
-    highlight TSConstBuiltin      guifg=#d70000      guibg=none     gui=bold
-    highlight TSConstructor       guifg=#0087af      guibg=none     gui=none
-    highlight TSFuncBuiltin       guifg=#0087af      guibg=none     gui=none
-    highlight TSFunction          guifg=#0087af      guibg=none     gui=italic
-    highlight TSFunctionCall      guifg=#0087af      guibg=none     gui=none
-    highlight TSMethod            guifg=#0087af      guibg=none     gui=italic
-    highlight TSMethodCall        guifg=#0087af      guibg=none     gui=none
-    highlight TSNamespace         guifg=#8700af      guibg=none     gui=bold
-    highlight TSType              guifg=#8700af      guibg=none     gui=bold
-    highlight TSTypeBuiltin       guifg=#8700af      guibg=none     gui=bold
-    highlight TSVariableBuiltin   guifg=#d70000      guibg=none     gui=bold
   endif
 
   " Non Standard: language-specific overrides, keep to absolute minimum
@@ -160,12 +159,6 @@ if &background == 'light'
   highlight helpBacktick        guifg=#0087af      guibg=none     gui=none
   highlight helpIgnore          guifg=#0087af      guibg=none     gui=none
   highlight helpStar            guifg=#0087af      guibg=none     gui=none
-  highlight htmlH1              guifg=#008700      guibg=none     gui=bold
-  highlight htmlH2              guifg=#0087af      guibg=none     gui=bold
-  highlight htmlH3              guifg=#8700af      guibg=none     gui=bold
-  highlight htmlH4              guifg=#d70087      guibg=none     gui=bold
-  highlight htmlH5              guifg=#d70087      guibg=none     gui=none
-  highlight htmlH6              guifg=#d70087      guibg=none     gui=italic
 else
   " Neovim terminal colors
   let g:terminal_color_0  = '#1c1c1c'
@@ -285,7 +278,7 @@ else
     highlight @tag.attribute      guifg=#d7875f      guibg=none     gui=none
     highlight @tag.delimiter      guifg=#00afaf      guibg=none     gui=none
     highlight @text.emphasis      guifg=none         guibg=none     gui=italic
-    highlight @text.literal       guifg=none         guibg=none     gui=none
+    highlight @text.literal       guifg=#d7af5f      guibg=none     gui=none
     highlight @text.strong        guifg=none         guibg=none     gui=bold
     highlight @text.title         guifg=#5fafd7      guibg=none     gui=bold
     highlight @text.title.1       guifg=#d7af00      guibg=none     gui=bold
@@ -299,18 +292,6 @@ else
     highlight @type.definition    guifg=#af87d7      guibg=none     gui=none
     highlight @variable           guifg=#d0d0d0      guibg=none     gui=none
     highlight @variable.builtin   guifg=#5faf5f      guibg=none     gui=bold
-  else
-    highlight TSConstBuiltin      guifg=#5faf5f      guibg=none     gui=bold
-    highlight TSConstructor       guifg=#5fafd7      guibg=none     gui=none
-    highlight TSFuncBuiltin       guifg=#5fafd7      guibg=none     gui=none
-    highlight TSFunction          guifg=#5fafd7      guibg=none     gui=italic
-    highlight TSFunctionCall      guifg=#5fafd7      guibg=none     gui=none
-    highlight TSMethod            guifg=#5fafd7      guibg=none     gui=italic
-    highlight TSMethodCall        guifg=#5fafd7      guibg=none     gui=none
-    highlight TSNamespace         guifg=#af87d7      guibg=none     gui=bold
-    highlight TSType              guifg=#af87d7      guibg=none     gui=bold
-    highlight TSTypeBuiltin       guifg=#af87d7      guibg=none     gui=bold
-    highlight TSVariableBuiltin   guifg=#5faf5f      guibg=none     gui=bold
   endif
 
   " Non Standard: language-specific overrides, keep to absolute minimum
@@ -319,49 +300,4 @@ else
   highlight helpBacktick        guifg=#5fafd7      guibg=none     gui=none
   highlight helpIgnore          guifg=#5fafd7      guibg=none     gui=none
   highlight helpStar            guifg=#5fafd7      guibg=none     gui=none
-  highlight htmlH1              guifg=#d7af00      guibg=none     gui=bold
-  highlight htmlH2              guifg=#5fafd7      guibg=none     gui=bold
-  highlight htmlH3              guifg=#af87d7      guibg=none     gui=bold
-  highlight htmlH4              guifg=#ff5faf      guibg=none     gui=bold
-  highlight htmlH5              guifg=#ff5faf      guibg=none     gui=none
-  highlight htmlH6              guifg=#ff5faf      guibg=none     gui=italic
 endif
-
-" Reference:
-" ----------------------------------------------------------------
-
-" Color Pallet: not exactly 1:1 in practice, but gives a rough gist
-" dark     light
-" #000000  #444444
-" #005f00  #afff87
-" #005f5f  #ffd787
-" #00875f  #ffff5f
-" #008787  #ffffd7
-" #00afaf  #e4e4e4
-" #121212  #444444
-" #1c1c1c  #fffff0
-" #262626  #005f87
-" #303030  #e4e4e4
-" #3a3a3a  #d0d0d0
-" #4e4e4e  #c6c6c6
-" #585858  #bcbcbc
-" #5f0000  #ffd7ff
-" #5f8787  #005f87
-" #5faf5f  #d70000
-" #5fafd7  #0087af
-" #5fffff  #0087af
-" #808080  #878787
-" #87d700  #008700
-" #af005f  #af0000
-" #af87d7  #8700af
-" #afd700  #d70087
-" #bcbcbc  #444444
-" #c6c6c6  #005f87
-" #d0d0d0  #444444
-" #d7875f  #005f87
-" #d787ff  #0087af
-" #d7af00  #008700
-" #d7af5f  #5f8700
-" #ff5faf  #d75f00
-" #ff8700  #00af5f
-" #ffff00  #af5f00
