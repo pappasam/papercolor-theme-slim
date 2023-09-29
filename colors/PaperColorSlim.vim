@@ -1,7 +1,8 @@
 " PaperColorSlim: Based on <https://github.com/NLKNguyen/papercolor-theme>
 " Maintainer: Samuel Roeca <samuel.roeca@gmail.com>
+" Palette & Preamble {{{
 
-" Color Pallet: not exactly 1:1 in practice, but gives a rough gist
+" not exactly 1:1 in practice, but gives a rough gist
 "  dark     light  <>  dark     light  <>  dark     light  <>  dark     light
 " #d7875f  #005f87 <> #5fafd7  #0087af <> #262626  #005f87 <> #000000  #444444
 " #d787ff  #0087af <> #5fffff  #0087af <> #303030  #e4e4e4 <> #005f00  #afff87
@@ -17,6 +18,9 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name="PaperColorSlim"
+
+" }}}
+" Dark {{{
 
 if &background == 'dark'
   " Neovim terminal colors
@@ -54,7 +58,7 @@ if &background == 'dark'
   highlight ErrorMsg            guifg=#af005f guibg=#5f0000 gui=none
   highlight FoldColumn          guifg=#d787ff guibg=none    gui=none
   highlight Folded              guifg=#bcbcbc guibg=#3a3a3a gui=none
-  highlight IncSearch           guifg=#444444 guibg=#e4e4e4 gui=none
+  highlight IncSearch           guifg=#87d700 guibg=#005f00 gui=none
   highlight LineNr              guifg=#808080 guibg=none    gui=none
   highlight MatchParen          guifg=#c6c6c6 guibg=#4e4e4e gui=none
   highlight ModeMsg             guifg=#d7af5f guibg=none    gui=none
@@ -75,7 +79,7 @@ if &background == 'dark'
   highlight SpellRare           guifg=#5faf5f guibg=none    gui=undercurl,italic
   highlight StatusLine          guifg=#1c1c1c guibg=#5f8787 gui=none
   highlight StatusLineNC        guifg=#bcbcbc guibg=#3a3a3a gui=none
-  highlight Substitute          guifg=#c6c6c6 guibg=#4e4e4e gui=none
+  highlight Substitute          guifg=#87d700 guibg=#005f00 gui=none
   highlight TabLine             guifg=#bcbcbc guibg=#585858 gui=none
   highlight TabLineFill         guifg=#262626 guibg=#262626 gui=none
   highlight TabLineSel          guifg=#121212 guibg=#00afaf gui=none
@@ -160,6 +164,8 @@ if &background == 'dark'
   highlight helpBacktick        guifg=#5fafd7 guibg=none    gui=none
   highlight helpIgnore          guifg=#5fafd7 guibg=none    gui=none
   highlight helpStar            guifg=#5fafd7 guibg=none    gui=none
+" }}}
+" Light {{{
 else
   " Neovim terminal colors
   let g:terminal_color_0  = '#eeeeee'
@@ -196,7 +202,7 @@ else
   highlight ErrorMsg            guifg=#af0000 guibg=#ffd7ff gui=none
   highlight FoldColumn          guifg=#0087af guibg=none    gui=none
   highlight Folded              guifg=#444444 guibg=#e4e4e4 gui=none
-  highlight IncSearch           guifg=#4e4e4e guibg=#c6c6c6 gui=none
+  highlight IncSearch           guifg=#008700 guibg=#afff87 gui=none
   highlight LineNr              guifg=#878787 guibg=none    gui=none
   highlight MatchParen          guifg=#4e4e4e guibg=#c6c6c6 gui=none
   highlight ModeMsg             guifg=#5f8700 guibg=none    gui=none
@@ -217,7 +223,7 @@ else
   highlight SpellRare           guifg=#d70000 guibg=none    gui=undercurl,italic
   highlight StatusLine          guifg=#fffff0 guibg=#005f87 gui=none
   highlight StatusLineNC        guifg=#444444 guibg=#c6c6c6 gui=none
-  highlight Substitute          guifg=#4e4e4e guibg=#c6c6c6 gui=none
+  highlight Substitute          guifg=#008700 guibg=#afff87 gui=none
   highlight TabLine             guifg=#444444 guibg=#c6c6c6 gui=none
   highlight TabLineFill         guifg=#005f87 guibg=#005f87 gui=none
   highlight TabLineSel          guifg=#444444 guibg=#e4e4e4 gui=none
@@ -303,3 +309,5 @@ else
   highlight helpIgnore          guifg=#0087af guibg=none    gui=none
   highlight helpStar            guifg=#0087af guibg=none    gui=none
 endif
+
+" }}}
