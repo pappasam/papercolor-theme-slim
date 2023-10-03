@@ -3,21 +3,20 @@
 This is a slimmed down re-implementation of [papercolor-theme](https://github.com/NLKNguyen/papercolor-theme) that:
 
 1. Supports [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) for Neovim 0.8+.
-2. Has no abstraction, making color mapping super simple
-3. Targets gui options (`guifg`, `guibg`, `gui`) with [truecolor](https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9) support. If you're using a modern terminal ([alacritty](https://github.com/alacritty/alacritty), [iterm2](https://en.wikipedia.org/wiki/ITerm2), [gnome terminal](https://en.wikipedia.org/wiki/GNOME_Terminal), etc), you probably have truecolor support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have truecolor support. NOTE: I'd be happy to add cterm support, if this interests you please submit a PR.
-4. Limits highlight groups to: [built-in](https://neovim.io/doc/user/syntax.html#highlight-default), [preferred](https://neovim.io/doc/user/syntax.html#W18), [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/blob/333e1ab7768336d33c0e654a412ce0cb763f1da2/doc/nvim-treesitter.txt#L398), and a couple non-standard overrides at [the author](https://samroeca.com/pages/about.html)'s discretion. This results in consistent highlighting across languages, but may sacrifice highlighting granularity in some cases.
-5. Supports both `background=light` and `background=dark`
+2. Has no abstraction, making color mapping super simple.
+3. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor](https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9) support. If you're using a modern terminal ([alacritty](https://github.com/alacritty/alacritty), [iterm2](https://en.wikipedia.org/wiki/ITerm2), [gnome terminal](https://en.wikipedia.org/wiki/GNOME_Terminal), etc), you probably have `truecolor` support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support. NOTE: I'd be happy to add `cterm` support, if this interests you please submit a PR.
+4. Limits highlight groups to: [built-in](https://neovim.io/doc/user/syntax.html#highlight-default), [preferred](https://neovim.io/doc/user/syntax.html#W18), and [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/blob/333e1ab7768336d33c0e654a412ce0cb763f1da2/doc/nvim-treesitter.txt#L398). This results in consistent highlighting across languages, but may sacrifice highlighting granularity in some cases.
+5. Supports both `background=light` and `background=dark`.
 
-It targets Neovim's syntax groups, but it should technically work with regular Vim. The following screenshot shows the dark (default) and light variants operating on same Python file (from [jedi-language-server](https://github.com/pappasam/jedi-language-server)). If you write another language, don't worry: PaperColorSlim supports them all!
+It targets Neovim's syntax groups, but it should technically also work with Vim. The following screenshot shows the dark (default) and light variants operating on same Python file (from [jedi-language-server](https://github.com/pappasam/jedi-language-server)). If you write another language, don't worry: PaperColorSlim supports them all!
 
 ![screenshot](./img/screenshot.png)
 
 ## Installation
 
-If using [vim-plug](https://github.com/junegunn/vim-plug), place the following line in the Plugin section of your inti.vim / vimrc:
+If using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-" ~/.vimrc
 Plug 'pappasam/papercolor-theme-slim'
 ```
 
@@ -29,28 +28,22 @@ Then run the Ex command:
 
 I personally use [vim-packager](https://github.com/kristijanhusak/vim-packager), so if you'd like to go down the "package" rabbit hole, I suggest giving that a try.
 
-## Configuration
+## Dark and light
 
-Place the following in your `~/.vimrc` or your `~/.config/nvim/init.vim`:
-
-### Dark variant
+We use the dark variant by default:
 
 ```vim
 colorscheme PaperColorSlim
 ```
 
-### Light variant
-
-If you prefer the light background:
+The light variant can be used at start-up by setting `background=light` before loading this colorscheme.
 
 ```vim
 set background=light
 colorscheme PaperColorSlim
 ```
 
-### Notes
-
-- You may change to the light/dark variant at any time by running `:set background=light` or `:set background=dark`
+You may change to the light/dark variant at any time by running `:set background=light` or `:set background=dark`
 
 ## Customization
 
@@ -89,7 +82,7 @@ augroup end
 
 Notice how the light background is slightly different from the original while the dark background stays the same?
 
-![screenshot override](./img/screenshot-background-override.png)
+![Screenshot override](./img/screenshot-background-override.png)
 
 ## Development
 

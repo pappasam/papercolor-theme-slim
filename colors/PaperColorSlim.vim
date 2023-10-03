@@ -41,7 +41,7 @@ if &background == 'dark'
   let g:terminal_color_14 = '#00afaf'
   let g:terminal_color_15 = '#5f8787'
 
-  " Standard: built-in
+  " Built-in
   highlight ColorColumn         guifg=none    guibg=#303030 gui=none
   highlight Conceal             guifg=#585858 guibg=none    gui=none
   highlight Cursor              guifg=#c6c6c6 guibg=none    gui=none
@@ -90,7 +90,7 @@ if &background == 'dark'
   highlight WarningMsg          guifg=#afd700 guibg=none    gui=none
   highlight WildMenu            guifg=#1c1c1c guibg=#afd700 gui=none
 
-  " Standard: Vim-preferred
+  " Vim-preferred
   highlight Comment             guifg=#808080 guibg=none    gui=italic
   highlight Constant            guifg=none    guibg=none    gui=bold
   highlight String              guifg=#d7af5f guibg=none    gui=none
@@ -127,7 +127,7 @@ if &background == 'dark'
   highlight Todo                guifg=#ff8700 guibg=none    gui=bold
   highlight Ignore              guifg=#303030 guibg=none    gui=none
 
-  " Standard: treesitter
+  " Neovim Treesitter
   if has('nvim-0.8')
     highlight @constant.builtin guifg=#5faf5f guibg=none    gui=bold
     highlight @constructor      guifg=#5fafd7 guibg=none    gui=none
@@ -162,12 +162,6 @@ if &background == 'dark'
     highlight @variable.builtin guifg=#5faf5f guibg=none    gui=bold
   endif
 
-  " Non Standard
-  highlight diffAdded           guifg=#5faf5f guibg=none    gui=none
-  highlight diffRemoved         guifg=#ff5faf guibg=none    gui=none
-  highlight helpBacktick        guifg=#5fafd7 guibg=none    gui=none
-  highlight helpIgnore          guifg=#5fafd7 guibg=none    gui=none
-  highlight helpStar            guifg=#5fafd7 guibg=none    gui=none
 " }}}
 " Light {{{
 else
@@ -189,7 +183,7 @@ else
   let g:terminal_color_14 = '#005faf'
   let g:terminal_color_15 = '#005f87'
 
-  " Standard: built-in
+  " Built-in
   highlight ColorColumn         guifg=none    guibg=#e4e4e4 gui=none
   highlight Conceal             guifg=#444444 guibg=none    gui=none
   highlight Cursor              guifg=#c6c6c6 guibg=none    gui=none
@@ -238,7 +232,7 @@ else
   highlight WarningMsg          guifg=#d70087 guibg=none    gui=none
   highlight WildMenu            guifg=#fffff0 guibg=#d70087 gui=none
 
-  " Standard: Vim-preferred
+  " Vim-preferred
   highlight Comment             guifg=#878787 guibg=none    gui=italic
   highlight Constant            guifg=none    guibg=none    gui=bold
   highlight String              guifg=#5f8700 guibg=none    gui=none
@@ -275,7 +269,7 @@ else
   highlight Todo                guifg=#00af5f guibg=none    gui=bold
   highlight Ignore              guifg=#005f87 guibg=none    gui=none
 
-  " Standard: treesitter
+  " Neovim Treesitter
   if has('nvim-0.8')
     highlight @constant.builtin guifg=#d70000 guibg=none    gui=bold
     highlight @constructor      guifg=#0087af guibg=none    gui=none
@@ -309,13 +303,6 @@ else
     highlight @variable         guifg=#444444 guibg=none    gui=none
     highlight @variable.builtin guifg=#d70000 guibg=none    gui=bold
   endif
-
-  " Non Standard
-  highlight diffAdded           guifg=#008700 guibg=none    gui=none
-  highlight diffRemoved         guifg=#d70000 guibg=none    gui=none
-  highlight helpBacktick        guifg=#0087af guibg=none    gui=none
-  highlight helpIgnore          guifg=#0087af guibg=none    gui=none
-  highlight helpStar            guifg=#0087af guibg=none    gui=none
 endif
 
 " }}}
