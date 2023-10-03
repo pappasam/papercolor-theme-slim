@@ -141,6 +141,10 @@ if &background == 'dark'
     highlight @string.escape    guifg=#d7875f guibg=none    gui=none
     highlight @tag.attribute    guifg=#d7875f guibg=none    gui=none
     highlight @tag.delimiter    guifg=#00afaf guibg=none    gui=none
+    highlight @text.diff.add    guifg=#87d700 guibg=#005f00 gui=none
+    highlight @text.diff.change guifg=#d0d0d0 guibg=#005f5f gui=none
+    highlight @text.diff.delete guifg=#af005f guibg=#5f0000 gui=none
+    highlight @text.diff        guifg=#5fffff guibg=#008787 gui=none
     highlight @text.emphasis    guifg=none    guibg=none    gui=italic
     highlight @text.literal     guifg=#d7af5f guibg=none    gui=none
     highlight @text.strong      guifg=none    guibg=none    gui=bold
@@ -286,6 +290,10 @@ else
     highlight @tag.attribute    guifg=#005f87 guibg=none    gui=none
     highlight @tag.delimiter    guifg=#005f87 guibg=none    gui=none
     highlight @text.emphasis    guifg=none    guibg=none    gui=italic
+    highlight @text.diff.add    guifg=#008700 guibg=#afff87 gui=none
+    highlight @text.diff.change guifg=#444444 guibg=#ffd787 gui=none
+    highlight @text.diff.delete guifg=#af0000 guibg=#ffd7ff gui=none
+    highlight @text.diff        guifg=#0087af guibg=#ffffd7 gui=none
     highlight @text.literal     guifg=#5f8700 guibg=none    gui=none
     highlight @text.strong      guifg=none    guibg=none    gui=bold
     highlight @text.title       guifg=#0087af guibg=none    gui=bold
