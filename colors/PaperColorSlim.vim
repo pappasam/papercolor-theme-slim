@@ -141,8 +141,8 @@ if &background == 'dark'
     highlight @string.escape    guifg=#d7875f guibg=none    gui=none
     highlight @tag.attribute    guifg=#d7875f guibg=none    gui=none
     highlight @tag.delimiter    guifg=#00afaf guibg=none    gui=none
-    highlight @text.diff.add    guifg=#87d700 guibg=none    gui=none
-    highlight @text.diff.delete guifg=#af005f guibg=none    gui=none
+    highlight @text.diff.add    guifg=none    guibg=#006400 gui=none
+    highlight @text.diff.delete guifg=none    guibg=#8b0000 gui=none
     highlight @text.emphasis    guifg=none    guibg=none    gui=italic
     highlight @text.literal     guifg=#d7af5f guibg=none    gui=none
     highlight @text.strong      guifg=none    guibg=none    gui=bold
