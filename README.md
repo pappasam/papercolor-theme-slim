@@ -1,14 +1,16 @@
 # PaperColorSlim Colorscheme
 
-This is a slimmed down re-implementation of [papercolor-theme](https://github.com/NLKNguyen/papercolor-theme) that:
+This is a slimmed down re-implementation of [papercolor-theme] that:
 
-1. Supports [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) for Neovim 0.8+.
+1. Supports [nvim-treesitter] for Neovim 0.8+.
 2. Has no abstraction, making color mapping super simple.
-3. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor](https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9) support. If you're using a modern terminal ([alacritty](https://github.com/alacritty/alacritty), [iterm2](https://en.wikipedia.org/wiki/ITerm2), [gnome terminal](https://en.wikipedia.org/wiki/GNOME_Terminal), etc), you probably have `truecolor` support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support. NOTE: I'd be happy to add `cterm` support, if this interests you please submit a PR.
-4. Limits highlight groups to: [built-in](https://neovim.io/doc/user/syntax.html#highlight-default), [preferred](https://neovim.io/doc/user/syntax.html#W18), and [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/blob/333e1ab7768336d33c0e654a412ce0cb763f1da2/doc/nvim-treesitter.txt#L398). This results in consistent highlighting across languages, but may sacrifice highlighting granularity in some cases.
+3. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
+4. Limits highlight groups to: [built-in groups], [preferred groups], and [nvim-treesitter groups]. This results in consistent highlighting across languages, but may sacrifice highlighting granularity in some cases.
 5. Supports both `background=light` and `background=dark`.
 
-It targets Neovim's syntax groups, but it should technically also work with Vim. The following screenshot shows the dark (default) and light variants operating on same Python file (from [jedi-language-server](https://github.com/pappasam/jedi-language-server)). If you write another language, don't worry: PaperColorSlim supports them all!
+_NOTE: I'd be happy to add `cterm` support. If this interests you, please submit a Pull Request._
+
+It targets Neovim's syntax groups, but it should technically also work with Vim. The following screenshot shows the dark (default) and light variants operating on same Python file. If you write another language, don't worry: PaperColorSlim supports them all!
 
 ![screenshot](./img/screenshot.png)
 
@@ -86,10 +88,17 @@ Notice how the light background is slightly different from the original while th
 
 ## Development
 
-If you want to contribute and assuming you use Neovim, I suggest installing and using [nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua). It will let you see the colors associated with the hex codes, greatly simplifying development.
+If you want to contribute and assuming you use Neovim, I suggest installing and using [nvim-colorizer]. It will let you see the colors associated with the hex codes, greatly simplifying development.
 
-## Written by
+## Credits
 
-Samuel Roeca _samuel.roeca@gmail.com_
+Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme] over the years!
 
-Special thanks to [Nikyle Nguyen](https://github.com/NLKNguyen) and all their great work on [papercolor-theme](https://github.com/NLKNguyen/papercolor-theme) over the years!
+[built-in groups]: https://neovim.io/doc/user/syntax.html#highlight-default
+[nvim-treesitter groups]: https://github.com/nvim-treesitter/nvim-treesitter/blob/957f3f8c15a88ef0f0c77ecd13edf2e2578f176e/CONTRIBUTING.md#highlights
+[nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
+[papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
+[preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
+[truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
+[nvim-colorizer]: https://github.com/norcalli/nvim-colorizer.lua
+[Nikyle Nguyen]: https://github.com/NLKNguyen
