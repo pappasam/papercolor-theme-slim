@@ -87,6 +87,7 @@ if &background == 'dark'
   highlight VertSplit           guifg=#5f8787 guibg=NONE    gui=NONE
   highlight Visual              guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
   highlight VisualNOS           guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
+  highlight Whitespace          guifg=#4e4e4e guibg=NONE    gui=NONE
   highlight WarningMsg          guifg=#afd700 guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#1c1c1c guibg=#afd700 gui=NONE
 
@@ -227,6 +228,7 @@ else
   highlight VertSplit           guifg=#005f87 guibg=NONE    gui=NONE
   highlight Visual              guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
   highlight VisualNOS           guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
+  highlight Whitespace          guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight WarningMsg          guifg=#d70087 guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#fffff0 guibg=#d70087 gui=NONE
 
