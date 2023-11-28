@@ -19,6 +19,40 @@ if exists("syntax_on")
 endif
 let g:colors_name="PaperColorSlim"
 
+if has('nvim-0.8')
+  " Link LSP Semantic Highlighting to treesitter styles
+  highlight link @lsp.type.boolean @boolean
+  highlight link @lsp.type.builtinType @type.builtin
+  highlight link @lsp.type.comment @comment
+  highlight link @lsp.type.enum @type
+  highlight link @lsp.type.enumMember @constant
+  highlight link @lsp.type.escapeSequence @string.escape
+  highlight link @lsp.type.formatSpecifier @punctuation.special
+  highlight link @lsp.type.interface @type
+  highlight link @lsp.type.keyword @keyword
+  highlight link @lsp.type.namespace @namespace
+  highlight link @lsp.type.number @number
+  highlight link @lsp.type.operator @operator
+  highlight link @lsp.type.parameter @parameter
+  highlight link @lsp.type.property @property
+  highlight link @lsp.type.selfKeyword @variable.builtin
+  highlight link @lsp.type.typeAlias @type.definition
+  highlight link @lsp.type.unresolvedReference @error
+  highlight link @lsp.type.variable NONE " use treesitter styles for regular variables
+  highlight link @lsp.typemod.class.defaultLibrary @type.builtin
+  highlight link @lsp.typemod.enum.defaultLibrary @type.builtin
+  highlight link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
+  highlight link @lsp.typemod.function.defaultLibrary @function.builtin
+  highlight link @lsp.typemod.keyword.async @keyword.coroutine
+  highlight link @lsp.typemod.macro.defaultLibrary @function.builtin
+  highlight link @lsp.typemod.method.defaultLibrary @function.builtin
+  highlight link @lsp.typemod.operator.injected @operator
+  highlight link @lsp.typemod.string.injected @string
+  highlight link @lsp.typemod.type.defaultLibrary @type.builtin
+  highlight link @lsp.typemod.variable.defaultLibrary @variable.builtin
+  highlight link @lsp.typemod.variable.injected @variable
+endif
+
 " }}}
 " Dark {{{
 
