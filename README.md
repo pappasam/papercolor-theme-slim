@@ -100,5 +100,5 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
-[nvim-colorizer]: https://github.com/norcalli/nvim-colorizer.lua
+[nvim-colorizer]: https://github.com/NvChad/nvim-colorizer.lua
 [Nikyle Nguyen]: https://github.com/NLKNguyen
