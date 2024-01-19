@@ -21,64 +21,72 @@ let g:colors_name="PaperColorSlim"
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
-  highlight link @constant.builtin StorageClass
-  highlight link @constructor      Function
-  highlight link @function         Function
-  highlight      @function.builtin gui=bold
-  highlight link @function.call    Function
-  highlight link @method           Function
-  highlight      @method.builtin   gui=bold
-  highlight link @method.call      Function
-  highlight link @namespace        StorageClass
-  highlight link @string.escape    Special
-  highlight link @tag.attribute    Special
-  highlight link @tag.delimiter    Operator
-  highlight link @markup.heading   pcsHtmlHeader
-  highlight link @markup.heading.1 pcsHtmlHeader1
-  highlight link @markup.heading.2 pcsHtmlHeader2
-  highlight link @markup.heading.3 pcsHtmlHeader3
-  highlight link @markup.heading.4 pcsHtmlHeader4
-  highlight link @markup.heading.5 pcsHtmlHeader5
-  highlight link @markup.heading.6 pcsHtmlHeader6
-  highlight link @markup.literal   String
-  highlight      @markup.strong    gui=bold
-  highlight link @type             Type
-  highlight      @type.builtin     gui=bold
-  highlight link @type.definition  Typedef
-  highlight link @variable         NormalNC
-  highlight      @variable.builtin gui=bold
+  highlight link @constant.builtin  StorageClass
+  highlight link @constructor       Function
+  highlight link @diff.plus         DiffAdd
+  highlight link @diff.minus        DiffDelete
+  highlight link @diff.delta        DiffChange
+  highlight link @function          Function
+  highlight      @function.builtin  gui=bold
+  highlight link @function.call     Function
+  highlight link @method            Function
+  highlight      @method.builtin    gui=bold
+  highlight link @method.call       Function
+  highlight link @markup.heading    pcsHtmlHeader
+  highlight link @markup.heading.1  pcsHtmlHeader1
+  highlight link @markup.heading.2  pcsHtmlHeader2
+  highlight link @markup.heading.3  pcsHtmlHeader3
+  highlight link @markup.heading.4  pcsHtmlHeader4
+  highlight link @markup.heading.5  pcsHtmlHeader5
+  highlight link @markup.heading.6  pcsHtmlHeader6
+  highlight link @markup.raw.block  String
+  highlight link @markup.link.label pcsHtmlAnchor
+  highlight link @markup.link.url   Underlined
+  highlight link @markup.list       Repeat
+  highlight link @markup.literal    String
+  highlight link @markup.raw        String
+  highlight      @markup.strong     gui=bold
+  highlight link @namespace         StorageClass
+  highlight link @string.escape     Special
+  highlight link @tag.attribute     Special
+  highlight link @tag.delimiter     Operator
+  highlight link @type              Type
+  highlight      @type.builtin      gui=bold
+  highlight link @type.definition   Typedef
+  highlight link @variable          NormalNC
+  highlight      @variable.builtin  gui=bold
 
   " Link LSP Semantic Highlighting to treesitter styles
-  highlight link @lsp.type.boolean @boolean
-  highlight link @lsp.type.builtinType @type.builtin
-  highlight link @lsp.type.comment @comment
-  highlight link @lsp.type.enum @type
-  highlight link @lsp.type.enumMember @constant
-  highlight link @lsp.type.escapeSequence @string.escape
-  highlight link @lsp.type.formatSpecifier @punctuation.special
-  highlight link @lsp.type.interface @type
-  highlight link @lsp.type.keyword @keyword
-  highlight link @lsp.type.namespace @namespace
-  highlight link @lsp.type.number @number
-  highlight link @lsp.type.operator @operator
-  highlight link @lsp.type.parameter @parameter
-  highlight link @lsp.type.property @property
-  highlight link @lsp.type.selfKeyword @variable.builtin
-  highlight link @lsp.type.typeAlias @type.definition
-  highlight link @lsp.type.unresolvedReference @error
-  highlight link @lsp.type.variable NONE " use treesitter styles for regular variables
-  highlight link @lsp.typemod.class.defaultLibrary @type.builtin
-  highlight link @lsp.typemod.enum.defaultLibrary @type.builtin
+  highlight link @lsp.type.boolean                      @boolean
+  highlight link @lsp.type.builtinType                  @type.builtin
+  highlight link @lsp.type.comment                      @comment
+  highlight link @lsp.type.enum                         @type
+  highlight link @lsp.type.enumMember                   @constant
+  highlight link @lsp.type.escapeSequence               @string.escape
+  highlight link @lsp.type.formatSpecifier              @punctuation.special
+  highlight link @lsp.type.interface                    @type
+  highlight link @lsp.type.keyword                      @keyword
+  highlight link @lsp.type.namespace                    @namespace
+  highlight link @lsp.type.number                       @number
+  highlight link @lsp.type.operator                     @operator
+  highlight link @lsp.type.parameter                    @parameter
+  highlight link @lsp.type.property                     @property
+  highlight link @lsp.type.selfKeyword                  @variable.builtin
+  highlight link @lsp.type.typeAlias                    @type.definition
+  highlight link @lsp.type.unresolvedReference          @error
+  highlight link @lsp.type.variable                     NONE " use treesitter styles for regular variables
+  highlight link @lsp.typemod.class.defaultLibrary      @type.builtin
+  highlight link @lsp.typemod.enum.defaultLibrary       @type.builtin
   highlight link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
-  highlight link @lsp.typemod.function.defaultLibrary @function.builtin
-  highlight link @lsp.typemod.keyword.async @keyword.coroutine
-  highlight link @lsp.typemod.macro.defaultLibrary @function.builtin
-  highlight link @lsp.typemod.method.defaultLibrary @function.builtin
-  highlight link @lsp.typemod.operator.injected @operator
-  highlight link @lsp.typemod.string.injected @string
-  highlight link @lsp.typemod.type.defaultLibrary @type.builtin
-  highlight link @lsp.typemod.variable.defaultLibrary @variable.builtin
-  highlight link @lsp.typemod.variable.injected @variable
+  highlight link @lsp.typemod.function.defaultLibrary   @function.builtin
+  highlight link @lsp.typemod.keyword.async             @keyword.coroutine
+  highlight link @lsp.typemod.macro.defaultLibrary      @function.builtin
+  highlight link @lsp.typemod.method.defaultLibrary     @function.builtin
+  highlight link @lsp.typemod.operator.injected         @operator
+  highlight link @lsp.typemod.string.injected           @string
+  highlight link @lsp.typemod.type.defaultLibrary       @type.builtin
+  highlight link @lsp.typemod.variable.defaultLibrary   @variable.builtin
+  highlight link @lsp.typemod.variable.injected         @variable
 endif
 
 " }}}
@@ -111,9 +119,9 @@ if &background == 'dark'
   highlight CursorColumn        guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLine          guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLineNr        guifg=#ffff00 guibg=NONE    gui=NONE
-  highlight DiffAdd             guifg=#87d700 guibg=#005f00 gui=NONE
+  highlight DiffAdd             guifg=#d0d0d0 guibg=#005f00 gui=NONE
   highlight DiffChange          guifg=#d0d0d0 guibg=#005f5f gui=NONE
-  highlight DiffDelete          guifg=#af005f guibg=#5f0000 gui=NONE
+  highlight DiffDelete          guifg=#d0d0d0 guibg=#5f0000 gui=NONE
   highlight DiffText            guifg=#5fffff guibg=#008787 gui=NONE
   highlight Directory           guifg=#00afaf guibg=NONE    gui=NONE
   highlight EndOfBuffer         guifg=#1c1c1c guibg=NONE    gui=NONE
@@ -189,6 +197,9 @@ if &background == 'dark'
   highlight Error               guifg=#ff8080 guibg=NONE    gui=bold
   highlight Todo                guifg=#ff8700 guibg=NONE    gui=bold
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
+
+  " PaperColorSlim Custom
+  highlight pcsHtmlAnchor       guifg=#00afaf guibg=NONE    gui=underline
   highlight pcsHtmlHeader       guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
@@ -226,9 +237,9 @@ else
   highlight CursorColumn        guifg=NONE    guibg=#e4e4e4 gui=NONE
   highlight CursorLine          guifg=NONE    guibg=#e4e4e4 gui=NONE
   highlight CursorLineNr        guifg=#af5f00 guibg=NONE    gui=NONE
-  highlight DiffAdd             guifg=#008700 guibg=#afff87 gui=NONE
+  highlight DiffAdd             guifg=#444444 guibg=#afff87 gui=NONE
   highlight DiffChange          guifg=#444444 guibg=#ffd787 gui=NONE
-  highlight DiffDelete          guifg=#af0000 guibg=#ffd7ff gui=NONE
+  highlight DiffDelete          guifg=#444444 guibg=#ffd7ff gui=NONE
   highlight DiffText            guifg=#0087af guibg=#ffffd7 gui=NONE
   highlight Directory           guifg=#005f87 guibg=NONE    gui=NONE
   highlight EndOfBuffer         guifg=#fffff0 guibg=NONE    gui=NONE
@@ -305,7 +316,8 @@ else
   highlight Todo                guifg=#00af5f guibg=NONE    gui=bold
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
-  " Custom
+  " PaperColorSlim Custom
+  highlight pcsHtmlAnchor       guifg=#005f87 guibg=NONE    gui=underline
   highlight pcsHtmlHeader       guifg=#0087af guibg=NONE    gui=bold
   highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
