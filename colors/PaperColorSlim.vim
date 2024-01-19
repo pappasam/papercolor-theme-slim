@@ -39,12 +39,13 @@ if has('nvim-0.8')
   highlight link @markup.heading.4  pcsHtmlHeader4
   highlight link @markup.heading.5  pcsHtmlHeader5
   highlight link @markup.heading.6  pcsHtmlHeader6
-  highlight link @markup.raw.block  String
+  highlight      @markup.italic     gui=italic
   highlight link @markup.link.label pcsHtmlAnchor
   highlight link @markup.link.url   Underlined
   highlight link @markup.list       Repeat
   highlight link @markup.literal    String
   highlight link @markup.raw        String
+  highlight link @markup.raw.block  String
   highlight      @markup.strong     gui=bold
   highlight link @namespace         StorageClass
   highlight link @string.escape     Special
