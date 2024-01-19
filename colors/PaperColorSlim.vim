@@ -20,6 +20,34 @@ endif
 let g:colors_name="PaperColorSlim"
 
 if has('nvim-0.8')
+  " Link nvim-treesitter matchers
+  highlight link @constant.builtin StorageClass
+  highlight link @constructor      Function
+  highlight link @function         Function
+  highlight      @function.builtin gui=bold
+  highlight link @function.call    Function
+  highlight link @method           Function
+  highlight      @method.builtin   gui=bold
+  highlight link @method.call      Function
+  highlight link @namespace        StorageClass
+  highlight link @string.escape    Special
+  highlight link @tag.attribute    Special
+  highlight link @tag.delimiter    Operator
+  highlight link @markup.heading   pcsHtmlHeader
+  highlight link @markup.heading.1 pcsHtmlHeader1
+  highlight link @markup.heading.2 pcsHtmlHeader2
+  highlight link @markup.heading.3 pcsHtmlHeader3
+  highlight link @markup.heading.4 pcsHtmlHeader4
+  highlight link @markup.heading.5 pcsHtmlHeader5
+  highlight link @markup.heading.6 pcsHtmlHeader6
+  highlight link @markup.literal   String
+  highlight      @markup.strong    gui=bold
+  highlight link @type             Type
+  highlight      @type.builtin     gui=bold
+  highlight link @type.definition  Typedef
+  highlight link @variable         NormalNC
+  highlight      @variable.builtin gui=bold
+
   " Link LSP Semantic Highlighting to treesitter styles
   highlight link @lsp.type.boolean @boolean
   highlight link @lsp.type.builtinType @type.builtin
@@ -161,39 +189,13 @@ if &background == 'dark'
   highlight Error               guifg=#ff8080 guibg=NONE    gui=bold
   highlight Todo                guifg=#ff8700 guibg=NONE    gui=bold
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
-
-  " Neovim Treesitter
-  if has('nvim-0.8')
-    highlight @constant.builtin guifg=#5faf5f guibg=NONE    gui=bold
-    highlight @constructor      guifg=#5fafd7 guibg=NONE    gui=NONE
-    highlight @function         guifg=#5fafd7 guibg=NONE    gui=NONE
-    highlight @function.builtin guifg=#5fafd7 guibg=NONE    gui=bold
-    highlight @function.call    guifg=#5fafd7 guibg=NONE    gui=NONE
-    highlight @method           guifg=#5fafd7 guibg=NONE    gui=NONE
-    highlight @method.builtin   guifg=#5fafd7 guibg=NONE    gui=bold
-    highlight @method.call      guifg=#5fafd7 guibg=NONE    gui=NONE
-    highlight @namespace        guifg=#af87d7 guibg=NONE    gui=bold
-    highlight @string.escape    guifg=#d7875f guibg=NONE    gui=NONE
-    highlight @tag.attribute    guifg=#d7875f guibg=NONE    gui=NONE
-    highlight @tag.delimiter    guifg=#00afaf guibg=NONE    gui=NONE
-    highlight @text.diff.add    guifg=#afd700 guibg=NONE    gui=NONE
-    highlight @text.diff.delete guifg=#ff5faf guibg=NONE    gui=NONE
-    highlight @text.emphasis    guifg=NONE    guibg=NONE    gui=italic
-    highlight @text.literal     guifg=#d7af5f guibg=NONE    gui=NONE
-    highlight @text.strong      guifg=NONE    guibg=NONE    gui=bold
-    highlight @text.title       guifg=#5fafd7 guibg=NONE    gui=bold
-    highlight @text.title.1     guifg=#d7af00 guibg=NONE    gui=bold
-    highlight @text.title.2     guifg=#5fafd7 guibg=NONE    gui=bold
-    highlight @text.title.3     guifg=#af87d7 guibg=NONE    gui=bold
-    highlight @text.title.4     guifg=#ff5faf guibg=NONE    gui=bold
-    highlight @text.title.5     guifg=#ff5faf guibg=NONE    gui=NONE
-    highlight @text.title.6     guifg=#ff5faf guibg=NONE    gui=italic
-    highlight @type             guifg=#af87d7 guibg=NONE    gui=NONE
-    highlight @type.builtin     guifg=#af87d7 guibg=NONE    gui=bold
-    highlight @type.definition  guifg=#af87d7 guibg=NONE    gui=NONE
-    highlight @variable         guifg=#d0d0d0 guibg=NONE    gui=NONE
-    highlight @variable.builtin guifg=#5faf5f guibg=NONE    gui=bold
-  endif
+  highlight pcsHtmlHeader       guifg=#5fafd7 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader3      guifg=#af87d7 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader4      guifg=#ff5faf guibg=NONE    gui=bold
+  highlight pcsHtmlHeader5      guifg=#ff5faf guibg=NONE    gui=NONE
+  highlight pcsHtmlHeader6      guifg=#ff5faf guibg=NONE    gui=italic
 
 " }}}
 " Light {{{
@@ -303,38 +305,14 @@ else
   highlight Todo                guifg=#00af5f guibg=NONE    gui=bold
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
-  " Neovim Treesitter
-  if has('nvim-0.8')
-    highlight @constant.builtin guifg=#d70000 guibg=NONE    gui=bold
-    highlight @constructor      guifg=#0087af guibg=NONE    gui=NONE
-    highlight @function         guifg=#0087af guibg=NONE    gui=NONE
-    highlight @function.builtin guifg=#0087af guibg=NONE    gui=bold
-    highlight @function.call    guifg=#0087af guibg=NONE    gui=NONE
-    highlight @method           guifg=#0087af guibg=NONE    gui=NONE
-    highlight @method.builtin   guifg=#0087af guibg=NONE    gui=bold
-    highlight @method.call      guifg=#0087af guibg=NONE    gui=NONE
-    highlight @namespace        guifg=#8700af guibg=NONE    gui=bold
-    highlight @string.escape    guifg=#005f87 guibg=NONE    gui=NONE
-    highlight @tag.attribute    guifg=#005f87 guibg=NONE    gui=NONE
-    highlight @tag.delimiter    guifg=#005f87 guibg=NONE    gui=NONE
-    highlight @text.emphasis    guifg=NONE    guibg=NONE    gui=italic
-    highlight @text.diff.add    guifg=#008700 guibg=NONE    gui=NONE
-    highlight @text.diff.delete guifg=#d70087 guibg=NONE    gui=NONE
-    highlight @text.literal     guifg=#5f8700 guibg=NONE    gui=NONE
-    highlight @text.strong      guifg=NONE    guibg=NONE    gui=bold
-    highlight @text.title       guifg=#0087af guibg=NONE    gui=bold
-    highlight @text.title.1     guifg=#008700 guibg=NONE    gui=bold
-    highlight @text.title.2     guifg=#0087af guibg=NONE    gui=bold
-    highlight @text.title.3     guifg=#8700af guibg=NONE    gui=bold
-    highlight @text.title.4     guifg=#d70087 guibg=NONE    gui=bold
-    highlight @text.title.5     guifg=#d70087 guibg=NONE    gui=NONE
-    highlight @text.title.6     guifg=#d70087 guibg=NONE    gui=italic
-    highlight @type             guifg=#8700af guibg=NONE    gui=NONE
-    highlight @type.builtin     guifg=#8700af guibg=NONE    gui=bold
-    highlight @type.definition  guifg=#8700af guibg=NONE    gui=NONE
-    highlight @variable         guifg=#444444 guibg=NONE    gui=NONE
-    highlight @variable.builtin guifg=#d70000 guibg=NONE    gui=bold
-  endif
+  " Custom
+  highlight pcsHtmlHeader       guifg=#0087af guibg=NONE    gui=bold
+  highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
+  highlight pcsHtmlHeader3      guifg=#8700af guibg=NONE    gui=bold
+  highlight pcsHtmlHeader4      guifg=#d70087 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader5      guifg=#d70087 guibg=NONE    gui=NONE
+  highlight pcsHtmlHeader6      guifg=#d70087 guibg=NONE    gui=italic
 endif
 
 " }}}
