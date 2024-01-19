@@ -21,41 +21,42 @@ let g:colors_name="PaperColorSlim"
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
-  highlight link @constant.builtin  StorageClass
-  highlight link @constructor       Function
-  highlight link @diff.plus         DiffAdd
-  highlight link @diff.minus        DiffDelete
-  highlight link @diff.delta        DiffChange
-  highlight link @function          Function
-  highlight      @function.builtin  gui=bold
-  highlight link @function.call     Function
-  highlight link @method            Function
-  highlight      @method.builtin    gui=bold
-  highlight link @method.call       Function
-  highlight link @markup.heading    pcsHtmlHeader
-  highlight link @markup.heading.1  pcsHtmlHeader1
-  highlight link @markup.heading.2  pcsHtmlHeader2
-  highlight link @markup.heading.3  pcsHtmlHeader3
-  highlight link @markup.heading.4  pcsHtmlHeader4
-  highlight link @markup.heading.5  pcsHtmlHeader5
-  highlight link @markup.heading.6  pcsHtmlHeader6
-  highlight      @markup.italic     gui=italic
-  highlight link @markup.link.label pcsHtmlAnchor
-  highlight link @markup.link.url   Underlined
-  highlight link @markup.list       Repeat
-  highlight link @markup.literal    String
-  highlight link @markup.raw        String
-  highlight link @markup.raw.block  String
-  highlight      @markup.strong     gui=bold
-  highlight link @namespace         StorageClass
-  highlight link @string.escape     Special
-  highlight link @tag.attribute     Special
-  highlight link @tag.delimiter     Operator
-  highlight link @type              Type
-  highlight      @type.builtin      gui=bold
-  highlight link @type.definition   Typedef
-  highlight link @variable          NormalNC
-  highlight      @variable.builtin  gui=bold
+  highlight link @constant.builtin   StorageClass
+  highlight link @constructor        Function
+  highlight link @diff.plus          DiffAdd
+  highlight link @diff.minus         DiffDelete
+  highlight link @diff.delta         DiffChange
+  highlight link @function           Function
+  highlight      @function.builtin   gui=bold
+  highlight link @function.call      Function
+  highlight link @method             Function
+  highlight      @method.builtin     gui=bold
+  highlight link @method.call        Function
+  highlight link @markup.heading     pcsHtmlHeader
+  highlight link @markup.heading.1   pcsHtmlHeader1
+  highlight link @markup.heading.2   pcsHtmlHeader2
+  highlight link @markup.heading.3   pcsHtmlHeader3
+  highlight link @markup.heading.4   pcsHtmlHeader4
+  highlight link @markup.heading.5   pcsHtmlHeader5
+  highlight link @markup.heading.6   pcsHtmlHeader6
+  highlight      @markup.italic      gui=italic
+  highlight link @markup.link.label  pcsHtmlAnchor
+  highlight link @markup.link.url    Underlined
+  highlight link @markup.list        Repeat
+  highlight link @markup.literal     String
+  highlight link @markup.raw         String
+  highlight link @markup.raw.block   String
+  highlight      @markup.strong      gui=bold
+  highlight link @namespace          StorageClass
+  highlight link @string.escape      Special
+  highlight link @string.special.url Underlined
+  highlight link @tag.attribute      Special
+  highlight link @tag.delimiter      Operator
+  highlight link @type               Type
+  highlight      @type.builtin       gui=bold
+  highlight link @type.definition    Typedef
+  highlight link @variable           NormalNC
+  highlight      @variable.builtin   gui=bold
 
   " Link LSP Semantic Highlighting to treesitter styles
   highlight link @lsp.type.boolean                      @boolean
