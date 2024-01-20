@@ -48,6 +48,7 @@ if has('nvim-0.8')
   highlight link @markup.raw         String
   highlight link @markup.raw.block   String
   highlight      @markup.strong      gui=bold
+  highlight link @module             StorageClass
   highlight link @namespace          StorageClass
   highlight link @string.escape      Special
   highlight link @string.special.url Underlined
