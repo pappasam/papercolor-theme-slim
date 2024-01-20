@@ -21,7 +21,7 @@ let g:colors_name="PaperColorSlim"
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
-  highlight link @constant.builtin   StorageClass
+  highlight link @constant.builtin   pcsConstantBuiltin
   highlight link @constructor        Function
   highlight link @diff.plus          DiffAdd
   highlight link @diff.minus         DiffDelete
@@ -32,7 +32,7 @@ if has('nvim-0.8')
   highlight link @method             Function
   highlight      @method.builtin     gui=bold
   highlight link @method.call        Function
-  highlight link @markup.heading     pcsHtmlHeader
+  highlight link @markup.heading     Title
   highlight link @markup.heading.1   pcsHtmlHeader1
   highlight link @markup.heading.2   pcsHtmlHeader2
   highlight link @markup.heading.3   pcsHtmlHeader3
@@ -203,8 +203,8 @@ if &background == 'dark'
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
+  highlight pcsConstantBuiltin  guifg=#ff5faf guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#00afaf guibg=NONE    gui=underline
-  highlight pcsHtmlHeader       guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsHtmlHeader3      guifg=#af87d7 guibg=NONE    gui=bold
@@ -321,8 +321,8 @@ else
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
+  highlight pcsConstantBuiltin  guifg=#d70087 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#005f87 guibg=NONE    gui=underline
-  highlight pcsHtmlHeader       guifg=#0087af guibg=NONE    gui=bold
   highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
   highlight pcsHtmlHeader3      guifg=#8700af guibg=NONE    gui=bold
