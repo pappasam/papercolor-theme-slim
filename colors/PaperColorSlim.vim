@@ -27,10 +27,10 @@ if has('nvim-0.8')
   highlight link @diff.minus         DiffDelete
   highlight link @diff.delta         DiffChange
   highlight link @function           Function
-  highlight      @function.builtin   gui=bold
+  highlight link @function.builtin   pcsFunctionBuiltin
   highlight link @function.call      Function
   highlight link @method             Function
-  highlight      @method.builtin     gui=bold
+  highlight link @method.builtin     pcsFunctionBuiltin
   highlight link @method.call        Function
   highlight link @markup.heading     Title
   highlight link @markup.heading.1   pcsHtmlHeader1
@@ -55,10 +55,10 @@ if has('nvim-0.8')
   highlight link @tag.attribute      Special
   highlight link @tag.delimiter      Operator
   highlight link @type               Type
-  highlight      @type.builtin       gui=bold
+  highlight link @type.builtin       pcsTypeBuiltin
   highlight link @type.definition    Typedef
   highlight link @variable           NormalNC
-  highlight      @variable.builtin   gui=bold
+  highlight link @variable.builtin   pcsVariableBuiltin
 
   " Link LSP Semantic Highlighting to treesitter styles
   highlight link @lsp.type.boolean                      @boolean
@@ -204,6 +204,9 @@ if &background == 'dark'
 
   " PaperColorSlim Custom
   highlight pcsConstantBuiltin  guifg=#ff5faf guibg=NONE    gui=bold
+  highlight pcsFunctionBuiltin  guifg=#5fafd7 guibg=NONE    gui=bold
+  highlight pcsTypeBuiltin      guifg=#af87d7 guibg=NONE    gui=bold
+  highlight pcsVariableBuiltin  guifg=#00afaf guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#00afaf guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
@@ -322,6 +325,9 @@ else
 
   " PaperColorSlim Custom
   highlight pcsConstantBuiltin  guifg=#d70087 guibg=NONE    gui=bold
+  highlight pcsFunctionBuiltin  guifg=#0087af guibg=NONE    gui=bold
+  highlight pcsTypeBuiltin      guifg=#8700af guibg=NONE    gui=bold
+  highlight pcsVariableBuiltin  guifg=#005f87 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#005f87 guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
