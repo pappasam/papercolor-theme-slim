@@ -182,7 +182,7 @@ if &background == 'dark'
   highlight Operator            guifg=#00afaf guibg=NONE    gui=NONE
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Exception           guifg=#afd700 guibg=NONE    gui=NONE
-  highlight PreProc             guifg=#00afaf guibg=NONE    gui=NONE
+  highlight PreProc             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Include             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Define              guifg=#00afaf guibg=NONE    gui=NONE
   highlight Macro               guifg=#00afaf guibg=NONE    gui=NONE
@@ -303,7 +303,7 @@ else
   highlight Operator            guifg=#005f87 guibg=NONE    gui=NONE
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Exception           guifg=#d70087 guibg=NONE    gui=NONE
-  highlight PreProc             guifg=#005f87 guibg=NONE    gui=NONE
+  highlight PreProc             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Include             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Define              guifg=#005f87 guibg=NONE    gui=NONE
   highlight Macro               guifg=#005f87 guibg=NONE    gui=NONE
