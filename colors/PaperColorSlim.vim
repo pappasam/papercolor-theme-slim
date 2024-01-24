@@ -170,7 +170,7 @@ if &background == 'dark'
   highlight Comment             guifg=#808080 guibg=NONE    gui=italic
   highlight Constant            guifg=#d0d0d0 guibg=NONE    gui=bold
   highlight String              guifg=#d7af5f guibg=NONE    gui=NONE
-  highlight Character           guifg=#d7af5f guibg=NONE    gui=NONE
+  highlight Character           guifg=#d7af5f guibg=NONE    gui=bold,italic
   highlight Number              guifg=#ff5faf guibg=NONE    gui=NONE
   highlight Boolean             guifg=#d7af00 guibg=NONE    gui=bold
   highlight Float               guifg=#ff5faf guibg=NONE    gui=NONE
@@ -291,7 +291,7 @@ else
   highlight Comment             guifg=#878787 guibg=NONE    gui=italic
   highlight Constant            guifg=#444444 guibg=NONE    gui=bold
   highlight String              guifg=#5f8700 guibg=NONE    gui=NONE
-  highlight Character           guifg=#5f8700 guibg=NONE    gui=NONE
+  highlight Character           guifg=#5f8700 guibg=NONE    gui=bold,italic
   highlight Number              guifg=#d75f00 guibg=NONE    gui=NONE
   highlight Boolean             guifg=#008700 guibg=NONE    gui=bold
   highlight Float               guifg=#d75f00 guibg=NONE    gui=NONE
