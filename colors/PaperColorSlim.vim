@@ -21,17 +21,16 @@ let g:colors_name="PaperColorSlim"
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
+  highlight      @markup.italic      gui=italic
+  highlight      @markup.strong      gui=bold
   highlight link @constant.builtin   pcsConstantBuiltin
   highlight link @constructor        Function
-  highlight link @diff.plus          DiffAdd
-  highlight link @diff.minus         DiffDelete
   highlight link @diff.delta         DiffChange
+  highlight link @diff.minus         DiffDelete
+  highlight link @diff.plus          DiffAdd
   highlight link @function           Function
   highlight link @function.builtin   pcsFunctionBuiltin
   highlight link @function.call      Function
-  highlight link @method             Function
-  highlight link @method.builtin     pcsFunctionBuiltin
-  highlight link @method.call        Function
   highlight link @markup.heading     Title
   highlight link @markup.heading.1   pcsHtmlHeader1
   highlight link @markup.heading.2   pcsHtmlHeader2
@@ -39,7 +38,6 @@ if has('nvim-0.8')
   highlight link @markup.heading.4   pcsHtmlHeader4
   highlight link @markup.heading.5   pcsHtmlHeader5
   highlight link @markup.heading.6   pcsHtmlHeader6
-  highlight      @markup.italic      gui=italic
   highlight link @markup.link.label  pcsHtmlAnchor
   highlight link @markup.link.url    Underlined
   highlight link @markup.link.vimdoc pcsHtmlAnchor
@@ -47,7 +45,9 @@ if has('nvim-0.8')
   highlight link @markup.literal     String
   highlight link @markup.raw         String
   highlight link @markup.raw.block   String
-  highlight      @markup.strong      gui=bold
+  highlight link @method             Function
+  highlight link @method.builtin     pcsFunctionBuiltin
+  highlight link @method.call        Function
   highlight link @module             StorageClass
   highlight link @namespace          StorageClass
   highlight link @string.escape      Special
@@ -58,8 +58,8 @@ if has('nvim-0.8')
   highlight link @type.builtin       pcsTypeBuiltin
   highlight link @type.definition    Typedef
   highlight link @variable           NormalNC
-  highlight link @variable.parameter Identifier
   highlight link @variable.builtin   pcsVariableBuiltin
+  highlight link @variable.parameter Identifier
 
   " Link LSP Semantic Highlighting to treesitter styles
   highlight link @lsp.type.boolean                      @boolean
@@ -193,7 +193,7 @@ if &background == 'dark'
   highlight Structure           guifg=#00afaf guibg=NONE    gui=bold
   highlight Typedef             guifg=#afd700 guibg=NONE    gui=bold
   highlight Special             guifg=#ff8700 guibg=NONE    gui=NONE
-  highlight SpecialChar         guifg=#d7af5f guibg=NONE    gui=bold
+  highlight SpecialChar         guifg=#d7af5f guibg=NONE    gui=italic
   highlight Tag                 guifg=#d7af00 guibg=NONE    gui=NONE
   highlight Delimiter           guifg=#5fafd7 guibg=NONE    gui=NONE
   highlight SpecialComment      guifg=#808080 guibg=NONE    gui=bold
@@ -314,7 +314,7 @@ else
   highlight Structure           guifg=#005f87 guibg=NONE    gui=bold
   highlight Typedef             guifg=#d70087 guibg=NONE    gui=bold
   highlight Special             guifg=#00af5f guibg=NONE    gui=NONE
-  highlight SpecialChar         guifg=#5f8700 guibg=NONE    gui=bold
+  highlight SpecialChar         guifg=#5f8700 guibg=NONE    gui=italic
   highlight Tag                 guifg=#008700 guibg=NONE    gui=NONE
   highlight Delimiter           guifg=#0087af guibg=NONE    gui=NONE
   highlight SpecialComment      guifg=#878787 guibg=NONE    gui=bold
