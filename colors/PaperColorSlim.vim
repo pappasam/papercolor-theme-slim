@@ -41,7 +41,7 @@ if has('nvim-0.8')
   highlight link @markup.link.label  pcsHtmlAnchor
   highlight link @markup.link.url    Underlined
   highlight link @markup.link.vimdoc pcsHtmlAnchor
-  highlight link @markup.list        Repeat
+  highlight link @markup.list        Delimiter
   highlight link @markup.literal     String
   highlight link @markup.raw         String
   highlight link @markup.raw.block   String
