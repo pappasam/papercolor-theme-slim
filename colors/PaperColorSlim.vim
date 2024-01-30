@@ -184,7 +184,7 @@ if &background == 'dark'
   highlight Conditional         guifg=#af87d7 guibg=NONE    gui=bold
   highlight Repeat              guifg=#af87d7 guibg=NONE    gui=bold
   highlight Label               guifg=#00afaf guibg=NONE    gui=NONE
-  highlight Operator            guifg=#00afaf guibg=NONE    gui=NONE
+  highlight Operator            guifg=#00afaf guibg=NONE    gui=bold
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Exception           guifg=#afd700 guibg=NONE    gui=NONE
   highlight PreProc             guifg=#afd700 guibg=NONE    gui=NONE
@@ -305,7 +305,7 @@ else
   highlight Conditional         guifg=#8700af guibg=NONE    gui=bold
   highlight Repeat              guifg=#8700af guibg=NONE    gui=bold
   highlight Label               guifg=#005f87 guibg=NONE    gui=NONE
-  highlight Operator            guifg=#005f87 guibg=NONE    gui=NONE
+  highlight Operator            guifg=#005f87 guibg=NONE    gui=bold
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Exception           guifg=#d70087 guibg=NONE    gui=NONE
   highlight PreProc             guifg=#d70087 guibg=NONE    gui=NONE
