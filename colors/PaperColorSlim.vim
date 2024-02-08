@@ -66,6 +66,9 @@ if has('nvim-0.8')
   highlight link @variable.builtin    pcsVariableBuiltin
   highlight link @variable.parameter  Identifier
 
+  " Language-specific overrides
+  highlight link @variable.parameter.bash NormalNC
+
   " Link LSP Semantic Highlighting to treesitter styles
   highlight link @lsp.type.boolean                      @boolean
   highlight link @lsp.type.builtinType                  @type.builtin
