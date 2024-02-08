@@ -32,9 +32,10 @@ if has('nvim-0.8')
   highlight link @function.builtin    pcsFunctionBuiltin
   highlight link @function.call       Function
   highlight link @keyword.conditional Conditional
+  highlight link @keyword.directive   SpecialComment
   highlight link @keyword.exception   Exception
-  highlight link @keyword.repeat      Repeat
   highlight link @keyword.operator    Operator
+  highlight link @keyword.repeat      Repeat
   highlight link @markup.heading      Title
   highlight link @markup.heading.1    pcsHtmlHeader1
   highlight link @markup.heading.2    pcsHtmlHeader2
