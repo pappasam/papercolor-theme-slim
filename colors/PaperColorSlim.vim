@@ -19,6 +19,9 @@ if exists("syntax_on")
 endif
 let g:colors_name="PaperColorSlim"
 
+" }}}
+" Linking {{{
+
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
   highlight      @markup.italic       gui=italic
