@@ -218,7 +218,7 @@ if &background == 'dark'
   highlight pcsConstantBuiltin  guifg=#ff5faf guibg=NONE    gui=bold
   highlight pcsFunctionBuiltin  guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#af87d7 guibg=NONE    gui=bold
-  highlight pcsVariableBuiltin  guifg=#00afaf guibg=NONE    gui=bold
+  highlight pcsVariableBuiltin  guifg=#5faf5f guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#5fafd7 guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
@@ -339,7 +339,7 @@ else
   highlight pcsConstantBuiltin  guifg=#d70087 guibg=NONE    gui=bold
   highlight pcsFunctionBuiltin  guifg=#0087af guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#8700af guibg=NONE    gui=bold
-  highlight pcsVariableBuiltin  guifg=#005f87 guibg=NONE    gui=bold
+  highlight pcsVariableBuiltin  guifg=#d70000 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#0087af guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
