@@ -200,7 +200,7 @@ if &background == 'dark'
   highlight Macro               guifg=#00afaf guibg=NONE    gui=NONE
   highlight PreCondit           guifg=#5fafd7 guibg=NONE    gui=NONE
   highlight Type                guifg=#af87d7 guibg=NONE    gui=NONE
-  highlight StorageClass        guifg=#d7875f guibg=NONE    gui=bold
+  highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=bold
   highlight Structure           guifg=#00afaf guibg=NONE    gui=bold
   highlight Typedef             guifg=#afd700 guibg=NONE    gui=bold
   highlight Special             guifg=#ff8700 guibg=NONE    gui=NONE
@@ -321,7 +321,7 @@ else
   highlight Macro               guifg=#005f87 guibg=NONE    gui=NONE
   highlight PreCondit           guifg=#0087af guibg=NONE    gui=NONE
   highlight Type                guifg=#8700af guibg=NONE    gui=NONE
-  highlight StorageClass        guifg=#005f87 guibg=NONE    gui=bold
+  highlight StorageClass        guifg=#8700af guibg=NONE    gui=bold
   highlight Structure           guifg=#005f87 guibg=NONE    gui=bold
   highlight Typedef             guifg=#d70087 guibg=NONE    gui=bold
   highlight Special             guifg=#00af5f guibg=NONE    gui=NONE
