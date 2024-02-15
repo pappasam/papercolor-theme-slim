@@ -203,7 +203,7 @@ if &background == 'dark'
   highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=bold
   highlight Structure           guifg=#00afaf guibg=NONE    gui=bold
   highlight Typedef             guifg=#afd700 guibg=NONE    gui=bold
-  highlight Special             guifg=#ff8700 guibg=NONE    gui=NONE
+  highlight Special             guifg=NONE    guibg=NONE    gui=bold
   highlight SpecialChar         guifg=NONE    guibg=NONE    gui=NONE
   highlight Tag                 guifg=#d7af00 guibg=NONE    gui=NONE
   highlight Delimiter           guifg=#5fafd7 guibg=NONE    gui=NONE
@@ -215,7 +215,7 @@ if &background == 'dark'
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsConstantBuiltin  guifg=#ff5faf guibg=NONE    gui=bold
+  highlight pcsConstantBuiltin  guifg=#ff5faf guibg=NONE    gui=NONE
   highlight pcsFunctionBuiltin  guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#af87d7 guibg=NONE    gui=bold
   highlight pcsVariableBuiltin  guifg=#5faf5f guibg=NONE    gui=bold
@@ -324,7 +324,7 @@ else
   highlight StorageClass        guifg=#8700af guibg=NONE    gui=bold
   highlight Structure           guifg=#005f87 guibg=NONE    gui=bold
   highlight Typedef             guifg=#d70087 guibg=NONE    gui=bold
-  highlight Special             guifg=#00af5f guibg=NONE    gui=NONE
+  highlight Special             guifg=NONE    guibg=NONE    gui=bold
   highlight SpecialChar         guifg=NONE    guibg=NONE    gui=NONE
   highlight Tag                 guifg=#008700 guibg=NONE    gui=NONE
   highlight Delimiter           guifg=#0087af guibg=NONE    gui=NONE
@@ -336,7 +336,7 @@ else
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsConstantBuiltin  guifg=#d70087 guibg=NONE    gui=bold
+  highlight pcsConstantBuiltin  guifg=#d70087 guibg=NONE    gui=NONE
   highlight pcsFunctionBuiltin  guifg=#0087af guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#8700af guibg=NONE    gui=bold
   highlight pcsVariableBuiltin  guifg=#d70000 guibg=NONE    gui=bold
