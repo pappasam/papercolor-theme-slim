@@ -229,6 +229,7 @@ if &background == 'dark'
 
 " }}}
 " Light {{{
+
 else
   " Neovim terminal colors
   let g:terminal_color_0  = '#eeeeee'
