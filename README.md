@@ -82,10 +82,6 @@ augroup custom_papercolorslim_light_background
 augroup end
 ```
 
-Notice how the light background is slightly different from the original while the dark background stays the same?
-
-![Screenshot override](./img/screenshot-background-override.png)
-
 ### Modify highlight linking
 
 Sometimes you want to change the group that a plugin's matched group is linked to. Although this `colorscheme` doesn't handle that for you, it's trivial to do this linking yourself. Here are some examples from my vimrc for [gitsigns] and [nvim-tree]:
