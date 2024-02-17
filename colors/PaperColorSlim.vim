@@ -340,7 +340,7 @@ else
   highlight pcsConstantBuiltin  guifg=#d70087 guibg=NONE    gui=NONE
   highlight pcsFunctionBuiltin  guifg=#0087af guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#8700af guibg=NONE    gui=bold
-  highlight pcsVariableBuiltin  guifg=#d70000 guibg=NONE    gui=bold
+  highlight pcsVariableBuiltin  guifg=NONE    guibg=NONE    gui=bold " NOTE: differs from dark, the red burned my eyes
   highlight pcsHtmlAnchor       guifg=#0087af guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
