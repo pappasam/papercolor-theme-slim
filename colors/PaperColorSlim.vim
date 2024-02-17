@@ -337,7 +337,7 @@ else
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsConstantBuiltin  guifg=#d70087 guibg=NONE    gui=NONE
+  highlight pcsConstantBuiltin  guifg=#d75f00 guibg=NONE    gui=NONE
   highlight pcsFunctionBuiltin  guifg=#0087af guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#8700af guibg=NONE    gui=bold
   highlight pcsVariableBuiltin  guifg=NONE    guibg=NONE    gui=bold " NOTE: differs from dark, the red burned my eyes
