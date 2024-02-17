@@ -26,7 +26,7 @@ if has('nvim-0.8')
   " Link nvim-treesitter matchers
   highlight      @markup.italic       gui=italic
   highlight      @markup.strong       gui=bold
-  highlight link @constant.builtin    pcsConstantBuiltin
+  highlight link @constant.builtin    Boolean
   highlight link @constructor         Function
   highlight link @diff.delta          DiffChange
   highlight link @diff.minus          DiffDelete
@@ -66,7 +66,7 @@ if has('nvim-0.8')
   highlight link @type.builtin        pcsTypeBuiltin
   highlight link @type.definition     Typedef
   highlight link @variable            NormalNC
-  highlight link @variable.builtin    pcsVariableBuiltin
+  highlight link @variable.builtin    Boolean
   highlight link @variable.parameter  Identifier
 
   " Language-specific overrides
@@ -215,10 +215,8 @@ if &background == 'dark'
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsConstantBuiltin  guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsFunctionBuiltin  guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#af87d7 guibg=NONE    gui=bold
-  highlight pcsVariableBuiltin  guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#5fafd7 guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
@@ -337,10 +335,8 @@ else
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsConstantBuiltin  guifg=#008700 guibg=NONE    gui=bold
   highlight pcsFunctionBuiltin  guifg=#0087af guibg=NONE    gui=bold
   highlight pcsTypeBuiltin      guifg=#8700af guibg=NONE    gui=bold
-  highlight pcsVariableBuiltin  guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#0087af guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
