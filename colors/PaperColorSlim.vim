@@ -183,7 +183,7 @@ if &background == 'dark'
   highlight String              guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Character           guifg=#d7af5f guibg=NONE    gui=bold,italic
   highlight Number              guifg=#ff5faf guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#d7af00 guibg=NONE    gui=bold
+  highlight Boolean             guifg=#5faf5f guibg=NONE    gui=bold
   highlight Float               guifg=#ff5faf guibg=NONE    gui=NONE
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
   highlight Function            guifg=#5fafd7 guibg=NONE    gui=NONE
@@ -282,7 +282,7 @@ else
   highlight SpellBad            guifg=#af0000 guibg=#ffd7ff gui=undercurl,italic
   highlight SpellCap            guifg=#af5f00 guibg=NONE    gui=undercurl,italic
   highlight SpellLocal          guifg=#d75f00 guibg=NONE    gui=undercurl,italic
-  highlight SpellRare           guifg=#d70000 guibg=NONE    gui=undercurl,italic
+  highlight SpellRare           guifg=#008700 guibg=NONE    gui=undercurl,italic
   highlight StatusLine          guifg=#fffff0 guibg=#005f87 gui=NONE
   highlight StatusLineNC        guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight Substitute          guifg=#008700 guibg=#afff87 gui=NONE
