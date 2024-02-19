@@ -139,7 +139,7 @@ if &background == 'dark'
   highlight DiffChange          guifg=#d0d0d0 guibg=#005f5f gui=NONE
   highlight DiffDelete          guifg=#d0d0d0 guibg=#5f0000 gui=NONE
   highlight DiffText            guifg=#5fffff guibg=#008787 gui=NONE
-  highlight Directory           guifg=#00afaf guibg=NONE    gui=NONE
+  highlight Directory           guifg=#5fafd7 guibg=NONE    gui=bold
   highlight EndOfBuffer         guifg=#1c1c1c guibg=NONE    gui=NONE
   highlight ErrorMsg            guifg=#af005f guibg=#5f0000 gui=NONE
   highlight FoldColumn          guifg=#d787ff guibg=NONE    gui=NONE
@@ -190,7 +190,7 @@ if &background == 'dark'
   highlight Statement           guifg=#afd700 guibg=NONE    gui=NONE
   highlight Conditional         guifg=#af87d7 guibg=NONE    gui=bold
   highlight Repeat              guifg=#af87d7 guibg=NONE    gui=bold
-  highlight Label               guifg=#00afaf guibg=NONE    gui=NONE
+  highlight Label               guifg=#00afaf guibg=NONE    gui=bold
   highlight Operator            guifg=#00afaf guibg=NONE    gui=bold
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Exception           guifg=#afd700 guibg=NONE    gui=NONE
@@ -259,7 +259,7 @@ else
   highlight DiffChange          guifg=#444444 guibg=#ffd787 gui=NONE
   highlight DiffDelete          guifg=#444444 guibg=#ffd7ff gui=NONE
   highlight DiffText            guifg=#0087af guibg=#ffffd7 gui=NONE
-  highlight Directory           guifg=#005f87 guibg=NONE    gui=NONE
+  highlight Directory           guifg=#0087af guibg=NONE    gui=bold
   highlight EndOfBuffer         guifg=#fffff0 guibg=NONE    gui=NONE
   highlight ErrorMsg            guifg=#af0000 guibg=#ffd7ff gui=NONE
   highlight FoldColumn          guifg=#0087af guibg=NONE    gui=NONE
@@ -310,7 +310,7 @@ else
   highlight Statement           guifg=#d70087 guibg=NONE    gui=NONE
   highlight Conditional         guifg=#8700af guibg=NONE    gui=bold
   highlight Repeat              guifg=#8700af guibg=NONE    gui=bold
-  highlight Label               guifg=#005f87 guibg=NONE    gui=NONE
+  highlight Label               guifg=#005f87 guibg=NONE    gui=bold
   highlight Operator            guifg=#005f87 guibg=NONE    gui=bold
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Exception           guifg=#d70087 guibg=NONE    gui=NONE
@@ -324,7 +324,7 @@ else
   highlight Structure           guifg=#005f87 guibg=NONE    gui=bold
   highlight Typedef             guifg=#d70087 guibg=NONE    gui=bold
   highlight Special             guifg=#8700af guibg=NONE    gui=NONE
-  highlight SpecialChar         guifg=#5f8700    guibg=NONE    gui=NONE
+  highlight SpecialChar         guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Tag                 guifg=#008700 guibg=NONE    gui=NONE
   highlight Delimiter           guifg=#0087af guibg=NONE    gui=NONE
   highlight SpecialComment      guifg=#878787 guibg=NONE    gui=bold
