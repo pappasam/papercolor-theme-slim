@@ -183,7 +183,7 @@ if &background == 'dark'
   highlight String              guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Character           guifg=#d7af5f guibg=NONE    gui=bold,italic
   highlight Number              guifg=#ff5faf guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#5faf5f guibg=NONE    gui=NONE
+  highlight Boolean             guifg=#d7af00 guibg=NONE    gui=NONE
   highlight Float               guifg=#ff5faf guibg=NONE    gui=NONE
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
   highlight Function            guifg=#5fafd7 guibg=NONE    gui=NONE
