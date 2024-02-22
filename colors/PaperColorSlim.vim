@@ -32,7 +32,7 @@ if has('nvim-0.8')
   highlight link @diff.minus          DiffDelete
   highlight link @diff.plus           DiffAdd
   highlight link @function            Function
-  highlight link @function.builtin    pcsFunctionBuiltin
+  highlight link @function.builtin    Function
   highlight link @function.call       Function
   highlight link @keyword.conditional Conditional
   highlight link @keyword.directive   SpecialComment
@@ -54,7 +54,7 @@ if has('nvim-0.8')
   highlight link @markup.raw          String
   highlight link @markup.raw.block    String
   highlight link @method              Function
-  highlight link @method.builtin      pcsFunctionBuiltin
+  highlight link @method.builtin      Function
   highlight link @method.call         Function
   highlight link @module              StorageClass
   highlight link @namespace           StorageClass
@@ -63,7 +63,7 @@ if has('nvim-0.8')
   highlight link @tag.attribute       Identifier
   highlight link @tag.delimiter       Operator
   highlight link @type                Type
-  highlight link @type.builtin        pcsTypeBuiltin
+  highlight link @type.builtin        Type
   highlight link @type.definition     Typedef
   highlight link @variable            NormalNC
   highlight link @variable.builtin    Boolean
@@ -183,7 +183,7 @@ if &background == 'dark'
   highlight String              guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Character           guifg=#d7af5f guibg=NONE    gui=bold,italic
   highlight Number              guifg=#ff5faf guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#5faf5f guibg=NONE    gui=bold
+  highlight Boolean             guifg=#5faf5f guibg=NONE    gui=NONE
   highlight Float               guifg=#ff5faf guibg=NONE    gui=NONE
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
   highlight Function            guifg=#5fafd7 guibg=NONE    gui=NONE
@@ -215,8 +215,6 @@ if &background == 'dark'
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsFunctionBuiltin  guifg=#5fafd7 guibg=NONE    gui=bold
-  highlight pcsTypeBuiltin      guifg=#af87d7 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#5fafd7 guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
@@ -303,7 +301,7 @@ else
   highlight String              guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Character           guifg=#5f8700 guibg=NONE    gui=bold,italic
   highlight Number              guifg=#d75f00 guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#008700 guibg=NONE    gui=bold
+  highlight Boolean             guifg=#008700 guibg=NONE    gui=NONE
   highlight Float               guifg=#d75f00 guibg=NONE    gui=NONE
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
   highlight Function            guifg=#0087af guibg=NONE    gui=NONE
@@ -335,8 +333,6 @@ else
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsFunctionBuiltin  guifg=#0087af guibg=NONE    gui=bold
-  highlight pcsTypeBuiltin      guifg=#8700af guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#0087af guibg=NONE    gui=underline
   highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
   highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
