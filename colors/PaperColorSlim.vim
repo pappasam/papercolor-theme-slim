@@ -203,7 +203,7 @@ if &background == 'dark'
   highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=bold
   highlight Structure           guifg=#00afaf guibg=NONE    gui=bold
   highlight Typedef             guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
-  highlight Special             guifg=#af87d7 guibg=NONE    gui=NONE
+  highlight Special             guifg=#5fafd7 guibg=NONE    gui=bold
   highlight SpecialChar         guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Tag                 guifg=#d7af00 guibg=NONE    gui=NONE
   highlight Delimiter           guifg=#5fafd7 guibg=NONE    gui=NONE
@@ -321,7 +321,7 @@ else
   highlight StorageClass        guifg=#8700af guibg=NONE    gui=bold
   highlight Structure           guifg=#005f87 guibg=NONE    gui=bold
   highlight Typedef             guifg=#8700af guibg=NONE    gui=nocombine,NONE
-  highlight Special             guifg=#8700af guibg=NONE    gui=NONE
+  highlight Special             guifg=#0087af guibg=NONE    gui=bold
   highlight SpecialChar         guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Tag                 guifg=#008700 guibg=NONE    gui=NONE
   highlight Delimiter           guifg=#0087af guibg=NONE    gui=NONE
