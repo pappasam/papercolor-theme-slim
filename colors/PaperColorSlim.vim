@@ -27,12 +27,12 @@ if has('nvim-0.8')
   highlight      @markup.italic       gui=italic
   highlight      @markup.strong       gui=bold
   highlight link @constant.builtin    Boolean
-  highlight link @constructor         pcsFunctionBoldItalic
+  highlight link @constructor         pcsFunctionBold
   highlight link @diff.delta          DiffChange
   highlight link @diff.minus          DiffDelete
   highlight link @diff.plus           DiffAdd
   highlight link @function            Function
-  highlight link @function.builtin    pcsFunctionBoldItalic
+  highlight link @function.builtin    pcsFunctionBold
   highlight link @function.call       Function
   highlight link @keyword.conditional Conditional
   highlight link @keyword.directive   SpecialComment
@@ -188,8 +188,8 @@ if &background == 'dark'
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
   highlight Function            guifg=#5fafd7 guibg=NONE    gui=NONE
   highlight Statement           guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#af87d7 guibg=NONE    gui=bold
-  highlight Repeat              guifg=#af87d7 guibg=NONE    gui=bold
+  highlight Conditional         guifg=#af87d7 guibg=NONE    gui=bold,italic
+  highlight Repeat              guifg=#af87d7 guibg=NONE    gui=bold,italic
   highlight Label               guifg=#00afaf guibg=NONE    gui=bold
   highlight Operator            guifg=#00afaf guibg=NONE    gui=bold
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
@@ -215,14 +215,14 @@ if &background == 'dark'
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsFunctionBoldItalic guifg=#5fafd7 guibg=NONE    gui=bold,italic
-  highlight pcsHtmlAnchor         guifg=#5fafd7 guibg=NONE    gui=underline
-  highlight pcsHtmlHeader1        guifg=#d7af00 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader2        guifg=#5fafd7 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader3        guifg=#af87d7 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader4        guifg=#ff5faf guibg=NONE    gui=bold
-  highlight pcsHtmlHeader5        guifg=#ff5faf guibg=NONE    gui=NONE
-  highlight pcsHtmlHeader6        guifg=#ff5faf guibg=NONE    gui=italic
+  highlight pcsFunctionBold     guifg=#5fafd7 guibg=NONE    gui=bold
+  highlight pcsHtmlAnchor       guifg=#5fafd7 guibg=NONE    gui=underline
+  highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader3      guifg=#af87d7 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader4      guifg=#ff5faf guibg=NONE    gui=bold
+  highlight pcsHtmlHeader5      guifg=#ff5faf guibg=NONE    gui=NONE
+  highlight pcsHtmlHeader6      guifg=#ff5faf guibg=NONE    gui=italic
 
 " }}}
 " Light {{{
@@ -307,8 +307,8 @@ else
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
   highlight Function            guifg=#0087af guibg=NONE    gui=NONE
   highlight Statement           guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#8700af guibg=NONE    gui=bold
-  highlight Repeat              guifg=#8700af guibg=NONE    gui=bold
+  highlight Conditional         guifg=#8700af guibg=NONE    gui=bold,italic
+  highlight Repeat              guifg=#8700af guibg=NONE    gui=bold,italic
   highlight Label               guifg=#005f87 guibg=NONE    gui=bold
   highlight Operator            guifg=#005f87 guibg=NONE    gui=bold
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
@@ -334,14 +334,14 @@ else
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
 
   " PaperColorSlim Custom
-  highlight pcsFunctionBoldItalic guifg=#0087af guibg=NONE    gui=bold
-  highlight pcsHtmlAnchor         guifg=#0087af guibg=NONE    gui=underline
-  highlight pcsHtmlHeader1        guifg=#008700 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader2        guifg=#0087af guibg=NONE    gui=bold
-  highlight pcsHtmlHeader3        guifg=#8700af guibg=NONE    gui=bold
-  highlight pcsHtmlHeader4        guifg=#d70087 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader5        guifg=#d70087 guibg=NONE    gui=NONE
-  highlight pcsHtmlHeader6        guifg=#d70087 guibg=NONE    gui=italic
+  highlight pcsFunctionBold     guifg=#0087af guibg=NONE    gui=bold
+  highlight pcsHtmlAnchor       guifg=#0087af guibg=NONE    gui=underline
+  highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
+  highlight pcsHtmlHeader3      guifg=#8700af guibg=NONE    gui=bold
+  highlight pcsHtmlHeader4      guifg=#d70087 guibg=NONE    gui=bold
+  highlight pcsHtmlHeader5      guifg=#d70087 guibg=NONE    gui=NONE
+  highlight pcsHtmlHeader6      guifg=#d70087 guibg=NONE    gui=italic
 endif
 
 " }}}
