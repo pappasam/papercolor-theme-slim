@@ -188,8 +188,8 @@ if &background == 'dark'
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
   highlight Function            guifg=#5fafd7 guibg=NONE    gui=NONE
   highlight Statement           guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#af87d7 guibg=NONE    gui=bold,italic
-  highlight Repeat              guifg=#af87d7 guibg=NONE    gui=bold,italic
+  highlight Conditional         guifg=#afd700 guibg=NONE    gui=NONE
+  highlight Repeat              guifg=#afd700 guibg=NONE    gui=NONE
   highlight Label               guifg=#00afaf guibg=NONE    gui=bold
   highlight Operator            guifg=#00afaf guibg=NONE    gui=bold
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
@@ -307,8 +307,8 @@ else
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
   highlight Function            guifg=#0087af guibg=NONE    gui=NONE
   highlight Statement           guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#8700af guibg=NONE    gui=bold,italic
-  highlight Repeat              guifg=#8700af guibg=NONE    gui=bold,italic
+  highlight Conditional         guifg=#d70087 guibg=NONE    gui=NONE
+  highlight Repeat              guifg=#d70087 guibg=NONE    gui=NONE
   highlight Label               guifg=#005f87 guibg=NONE    gui=bold
   highlight Operator            guifg=#005f87 guibg=NONE    gui=bold
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
