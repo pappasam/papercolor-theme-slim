@@ -24,53 +24,56 @@ let g:colors_name="PaperColorSlim"
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
-  highlight      @markup.italic       gui=italic
-  highlight      @markup.strong       gui=bold
-  highlight link @constant.builtin    Boolean
-  highlight link @constructor         pcsFunctionBold
-  highlight link @diff.delta          DiffChange
-  highlight link @diff.minus          DiffDelete
-  highlight link @diff.plus           DiffAdd
-  highlight link @function            Function
-  highlight link @function.builtin    pcsFunctionBold
-  highlight link @function.call       Function
-  highlight link @keyword.conditional Conditional
-  highlight link @keyword.directive   SpecialComment
-  highlight link @keyword.exception   Exception
-  highlight link @keyword.operator    Operator
-  highlight link @keyword.repeat      Repeat
-  highlight link @markup.heading      Title
-  highlight link @markup.heading.1    pcsHtmlHeader1
-  highlight link @markup.heading.2    pcsHtmlHeader2
-  highlight link @markup.heading.3    pcsHtmlHeader3
-  highlight link @markup.heading.4    pcsHtmlHeader4
-  highlight link @markup.heading.5    pcsHtmlHeader5
-  highlight link @markup.heading.6    pcsHtmlHeader6
-  highlight link @markup.link.label   pcsHtmlAnchor
-  highlight link @markup.link.url     Underlined
-  highlight link @markup.link.vimdoc  pcsHtmlAnchor
-  highlight link @markup.list         Delimiter
-  highlight link @markup.literal      String
-  highlight link @markup.raw          String
-  highlight link @markup.raw.block    String
-  highlight link @method              Function
-  highlight link @method.builtin      Function
-  highlight link @method.call         Function
-  highlight link @module              StorageClass
-  highlight link @namespace           StorageClass
-  highlight link @string.escape       Special
-  highlight link @string.special.url  Underlined
-  highlight link @tag.attribute       Identifier
-  highlight link @tag.delimiter       Operator
-  highlight link @type                Type
-  highlight link @type.builtin        Type
-  highlight link @type.definition     Typedef
-  highlight link @variable            NormalNC
-  highlight link @variable.builtin    Boolean
-  highlight link @variable.parameter  Identifier
+  highlight      @markup.italic                         gui=italic
+  highlight      @markup.strong                         gui=bold
+  highlight link @attribute                             NONE
+  highlight link @constant.builtin                      Boolean
+  highlight link @constructor                           pcsFunctionBold
+  highlight link @diff.delta                            DiffChange
+  highlight link @diff.minus                            DiffDelete
+  highlight link @diff.plus                             DiffAdd
+  highlight link @function                              Function
+  highlight link @function.builtin                      pcsFunctionBold
+  highlight link @function.call                         Function
+  highlight link @function.macro                        Macro
+  highlight link @keyword.conditional                   Conditional
+  highlight link @keyword.directive                     SpecialComment
+  highlight link @keyword.exception                     Exception
+  highlight link @keyword.operator                      Operator
+  highlight link @keyword.repeat                        Repeat
+  highlight link @keyword.directive.define              Define
+  highlight link @markup.heading                        Title
+  highlight link @markup.heading.1                      pcsHtmlHeader1
+  highlight link @markup.heading.2                      pcsHtmlHeader2
+  highlight link @markup.heading.3                      pcsHtmlHeader3
+  highlight link @markup.heading.4                      pcsHtmlHeader4
+  highlight link @markup.heading.5                      pcsHtmlHeader5
+  highlight link @markup.heading.6                      pcsHtmlHeader6
+  highlight link @markup.link.label                     pcsHtmlAnchor
+  highlight link @markup.link.url                       Underlined
+  highlight link @markup.link.vimdoc                    pcsHtmlAnchor
+  highlight link @markup.list                           Delimiter
+  highlight link @markup.literal                        String
+  highlight link @markup.raw                            String
+  highlight link @markup.raw.block                      String
+  highlight link @method                                Function
+  highlight link @method.builtin                        Function
+  highlight link @method.call                           Function
+  highlight link @module                                StorageClass
+  highlight link @namespace                             StorageClass
+  highlight link @string.escape                         Special
+  highlight link @string.special.url                    Underlined
+  highlight link @tag.attribute                         Identifier
+  highlight link @tag.delimiter                         Operator
+  highlight link @type                                  Type
+  highlight link @type.builtin                          Type
+  highlight link @type.definition                       Typedef
+  highlight link @variable                              NormalNC
+  highlight link @variable.builtin                      Boolean
+  highlight link @variable.parameter                    Identifier
 
   " Language-specific overrides
-  highlight link @variable.parameter.bash NormalNC
+  highlight link @variable.parameter.bash               NormalNC
 
   " Link LSP Semantic Highlighting to treesitter styles
   highlight link @lsp.type.boolean                      @boolean
@@ -196,8 +199,8 @@ if &background == 'dark'
   highlight Exception           guifg=#afd700 guibg=NONE    gui=NONE
   highlight PreProc             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Include             guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Define              guifg=#00afaf guibg=NONE    gui=NONE
-  highlight Macro               guifg=#00afaf guibg=NONE    gui=NONE
+  highlight Define              guifg=#afd700 guibg=NONE    gui=NONE
+  highlight Macro               guifg=#5faf5f guibg=NONE    gui=bold
   highlight PreCondit           guifg=#5fafd7 guibg=NONE    gui=NONE
   highlight Type                guifg=#af87d7 guibg=NONE    gui=NONE
   highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=bold
@@ -315,8 +318,8 @@ else
   highlight Exception           guifg=#d70087 guibg=NONE    gui=NONE
   highlight PreProc             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Include             guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Define              guifg=#005f87 guibg=NONE    gui=NONE
-  highlight Macro               guifg=#005f87 guibg=NONE    gui=NONE
+  highlight Define              guifg=#d70087 guibg=NONE    gui=NONE
+  highlight Macro               guifg=#008700 guibg=NONE    gui=bold
   highlight PreCondit           guifg=#0087af guibg=NONE    gui=NONE
   highlight Type                guifg=#8700af guibg=NONE    gui=NONE
   highlight StorageClass        guifg=#8700af guibg=NONE    gui=bold
