@@ -186,10 +186,10 @@ if &background == 'dark'
   highlight String              guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Character           guifg=#d7af5f guibg=NONE    gui=bold,italic
   highlight Number              guifg=#ff5faf guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#d7af00 guibg=NONE    gui=NONE
+  highlight Boolean             guifg=#d7af00 guibg=NONE    gui=bold
   highlight Float               guifg=#ff5faf guibg=NONE    gui=NONE
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
-  highlight Function            guifg=#5fafd7 guibg=NONE    gui=NONE
+  highlight Function            guifg=#5fafd7 guibg=NONE    gui=nocombine,NONE
   highlight Statement           guifg=#afd700 guibg=NONE    gui=NONE
   highlight Conditional         guifg=#afd700 guibg=NONE    gui=NONE
   highlight Repeat              guifg=#afd700 guibg=NONE    gui=NONE
@@ -305,10 +305,10 @@ else
   highlight String              guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Character           guifg=#5f8700 guibg=NONE    gui=bold,italic
   highlight Number              guifg=#d75f00 guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#008700 guibg=NONE    gui=NONE
+  highlight Boolean             guifg=#008700 guibg=NONE    gui=bold
   highlight Float               guifg=#d75f00 guibg=NONE    gui=NONE
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
-  highlight Function            guifg=#0087af guibg=NONE    gui=NONE
+  highlight Function            guifg=#0087af guibg=NONE    gui=nocombine,NONE
   highlight Statement           guifg=#d70087 guibg=NONE    gui=NONE
   highlight Conditional         guifg=#d70087 guibg=NONE    gui=NONE
   highlight Repeat              guifg=#d70087 guibg=NONE    gui=NONE
