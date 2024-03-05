@@ -39,7 +39,7 @@ if has('nvim-0.8')
   highlight link @keyword.conditional                   Conditional
   highlight link @keyword.directive                     SpecialComment
   highlight link @keyword.exception                     Exception
-  highlight link @keyword.operator                      Operator
+  highlight link @keyword.operator                      Keyword
   highlight link @keyword.repeat                        Repeat
   highlight link @keyword.directive.define              Define
   highlight link @markup.heading                        Title
