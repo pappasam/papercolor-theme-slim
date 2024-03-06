@@ -69,7 +69,7 @@ if has('nvim-0.8')
   highlight link @type.builtin                          Type
   highlight link @type.definition                       Typedef
   highlight link @variable                              NormalNC
-  highlight link @variable.builtin                      Boolean
+  highlight link @variable.builtin                      Macro
   highlight link @variable.parameter                    Identifier
 
   " Language-specific overrides
@@ -284,7 +284,7 @@ else
   highlight SpellBad            guifg=#af0000 guibg=#ffd7ff gui=undercurl,italic
   highlight SpellCap            guifg=#af5f00 guibg=NONE    gui=undercurl,italic
   highlight SpellLocal          guifg=#d75f00 guibg=NONE    gui=undercurl,italic
-  highlight SpellRare           guifg=#008700 guibg=NONE    gui=undercurl,italic
+  highlight SpellRare           guifg=#d70000 guibg=NONE    gui=undercurl,italic
   highlight StatusLine          guifg=#fffff0 guibg=#005f87 gui=NONE
   highlight StatusLineNC        guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight Substitute          guifg=#008700 guibg=#afff87 gui=NONE
@@ -305,7 +305,7 @@ else
   highlight String              guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Character           guifg=#5f8700 guibg=NONE    gui=bold,italic
   highlight Number              guifg=#d75f00 guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#008700 guibg=NONE    gui=bold
+  highlight Boolean             guifg=#d70000 guibg=NONE    gui=bold
   highlight Float               guifg=#d75f00 guibg=NONE    gui=NONE
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
   highlight Function            guifg=#0087af guibg=NONE    gui=nocombine,NONE
