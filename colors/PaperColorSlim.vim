@@ -73,7 +73,7 @@ if has('nvim-0.8')
   highlight link @variable.parameter                    Identifier
 
   " Language-specific overrides
-  highlight link @variable.parameter.bash               NormalNC
+  highlight link @constructor.lua                       NONE
 
   " Link LSP Semantic Highlighting to treesitter styles
   highlight link @lsp.type.boolean                      @boolean
