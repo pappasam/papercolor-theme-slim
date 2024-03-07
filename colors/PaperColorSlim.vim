@@ -163,7 +163,7 @@ if &background == 'dark'
   highlight SignColumn          guifg=#d7af00 guibg=NONE    gui=NONE
   highlight SpecialKey          guifg=#585858 guibg=NONE    gui=NONE
   highlight SpellBad            guifg=#e60000 guibg=NONE    gui=undercurl,italic
-  highlight SpellCap            guifg=#ffff00 guibg=NONE    gui=undercurl,italic
+  highlight SpellCap            guifg=#5faf5f guibg=NONE    gui=undercurl,italic
   highlight SpellLocal          guifg=#ff5faf guibg=NONE    gui=undercurl,italic
   highlight SpellRare           guifg=#5faf5f guibg=NONE    gui=undercurl,italic
   highlight StatusLine          guifg=#1c1c1c guibg=#5f8787 gui=NONE
@@ -241,7 +241,7 @@ else
   let g:terminal_color_6  = '#005f87'
   let g:terminal_color_7  = '#444444'
   let g:terminal_color_8  = '#bcbcbc'
-  let g:terminal_color_9  = '#d70000'
+  let g:terminal_color_9  = '#af5f00'
   let g:terminal_color_10 = '#d70087'
   let g:terminal_color_11 = '#8700af'
   let g:terminal_color_12 = '#d75f00'
@@ -284,7 +284,7 @@ else
   highlight SpellBad            guifg=#af0000 guibg=#ffd7ff gui=undercurl,italic
   highlight SpellCap            guifg=#af5f00 guibg=NONE    gui=undercurl,italic
   highlight SpellLocal          guifg=#d75f00 guibg=NONE    gui=undercurl,italic
-  highlight SpellRare           guifg=#d70000 guibg=NONE    gui=undercurl,italic
+  highlight SpellRare           guifg=#af5f00 guibg=NONE    gui=undercurl,italic
   highlight StatusLine          guifg=#fffff0 guibg=#005f87 gui=NONE
   highlight StatusLineNC        guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight Substitute          guifg=#008700 guibg=#afff87 gui=NONE
@@ -305,7 +305,7 @@ else
   highlight String              guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Character           guifg=#5f8700 guibg=NONE    gui=bold,italic
   highlight Number              guifg=#d75f00 guibg=NONE    gui=NONE
-  highlight Boolean             guifg=#d70000 guibg=NONE    gui=bold
+  highlight Boolean             guifg=#af5f00 guibg=NONE    gui=bold
   highlight Float               guifg=#d75f00 guibg=NONE    gui=NONE
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
   highlight Function            guifg=#0087af guibg=NONE    gui=nocombine,NONE
