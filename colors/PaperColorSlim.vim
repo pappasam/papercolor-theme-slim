@@ -143,7 +143,7 @@ if &background == 'dark'
   highlight DiffDelete          guifg=#d0d0d0 guibg=#5f0000 gui=NONE
   highlight DiffText            guifg=#5fffff guibg=#008787 gui=NONE
   highlight Directory           guifg=#5fafd7 guibg=NONE    gui=bold
-  highlight EndOfBuffer         guifg=#1c1c1c guibg=NONE    gui=NONE
+  highlight EndOfBuffer         guifg=#585858 guibg=NONE    gui=NONE
   highlight ErrorMsg            guifg=#af005f guibg=#5f0000 gui=NONE
   highlight FoldColumn          guifg=#d787ff guibg=NONE    gui=NONE
   highlight Folded              guifg=#bcbcbc guibg=#3a3a3a gui=NONE
@@ -262,7 +262,7 @@ else
   highlight DiffDelete          guifg=#444444 guibg=#ffd7ff gui=NONE
   highlight DiffText            guifg=#0087af guibg=#ffffd7 gui=NONE
   highlight Directory           guifg=#0087af guibg=NONE    gui=bold
-  highlight EndOfBuffer         guifg=#eeeeee guibg=NONE    gui=NONE
+  highlight EndOfBuffer         guifg=#444444 guibg=NONE    gui=NONE
   highlight ErrorMsg            guifg=#af0000 guibg=#ffd7ff gui=NONE
   highlight FoldColumn          guifg=#0087af guibg=NONE    gui=NONE
   highlight Folded              guifg=#444444 guibg=#e4e4e4 gui=NONE
@@ -271,16 +271,16 @@ else
   highlight MatchParen          guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
   highlight ModeMsg             guifg=#5f8700 guibg=NONE    gui=NONE
   highlight MoreMsg             guifg=#5f8700 guibg=NONE    gui=NONE
-  highlight NonText             guifg=#444444 guibg=NONE    gui=NONE
+  highlight NonText             guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight Normal              guifg=#444444 guibg=#eeeeee gui=NONE
   highlight NormalFloat         guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight NormalNC            guifg=#444444 guibg=NONE    gui=NONE
   highlight Pmenu               guifg=#444444 guibg=#e4e4e4 gui=NONE
-  highlight PmenuSel            guifg=#e4e4e4 guibg=#444444 gui=NONE
+  highlight PmenuSel            guifg=#e4e4e4 guibg=#c6c6c6 gui=NONE
   highlight Question            guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Search              guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight SignColumn          guifg=#008700 guibg=NONE    gui=NONE
-  highlight SpecialKey          guifg=#444444 guibg=NONE    gui=NONE
+  highlight SpecialKey          guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight SpellBad            guifg=#af0000 guibg=#ffd7ff gui=undercurl,italic
   highlight SpellCap            guifg=#af5f00 guibg=NONE    gui=undercurl,italic
   highlight SpellLocal          guifg=#d75f00 guibg=NONE    gui=undercurl,italic
