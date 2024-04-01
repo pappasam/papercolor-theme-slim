@@ -262,7 +262,7 @@ else
   highlight DiffDelete          guifg=#444444 guibg=#ffd7ff gui=NONE
   highlight DiffText            guifg=#0087af guibg=#ffffd7 gui=NONE
   highlight Directory           guifg=#0087af guibg=NONE    gui=bold
-  highlight EndOfBuffer         guifg=#fffff0 guibg=NONE    gui=NONE
+  highlight EndOfBuffer         guifg=#eeeeee guibg=NONE    gui=NONE
   highlight ErrorMsg            guifg=#af0000 guibg=#ffd7ff gui=NONE
   highlight FoldColumn          guifg=#0087af guibg=NONE    gui=NONE
   highlight Folded              guifg=#444444 guibg=#e4e4e4 gui=NONE
