@@ -28,7 +28,7 @@ if has('nvim-0.8')
   highlight      @markup.strong                         gui=bold
   highlight link @attribute                             NONE
   highlight link @constant.builtin                      Boolean
-  highlight link @constructor                           pcsFunctionBold
+  highlight link @constructor                           Function
   highlight link @diff.delta                            DiffChange
   highlight link @diff.minus                            DiffDelete
   highlight link @diff.plus                             DiffAdd
