@@ -56,7 +56,7 @@ if has('nvim-0.8')
   highlight link @markup.list                           Delimiter
   highlight link @markup.literal                        String
   highlight link @markup.raw                            String
-  highlight link @markup.raw.block                      String
+  highlight link @markup.raw.block                      NormalNC
   highlight link @method                                Function
   highlight link @method.builtin                        Function
   highlight link @method.call                           Function
