@@ -200,7 +200,7 @@ if &background == 'dark'
   highlight PreProc             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Include             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Define              guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Macro               guifg=#5faf5f guibg=NONE    gui=bold
+  highlight Macro               guifg=#5faf5f guibg=NONE    gui=NONE
   highlight PreCondit           guifg=#5fafd7 guibg=NONE    gui=NONE
   highlight Type                guifg=#af87d7 guibg=NONE    gui=NONE
   highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=bold
@@ -319,7 +319,7 @@ else
   highlight PreProc             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Include             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Define              guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Macro               guifg=#008700 guibg=NONE    gui=bold
+  highlight Macro               guifg=#008700 guibg=NONE    gui=NONE
   highlight PreCondit           guifg=#0087af guibg=NONE    gui=NONE
   highlight Type                guifg=#8700af guibg=NONE    gui=NONE
   highlight StorageClass        guifg=#8700af guibg=NONE    gui=bold
