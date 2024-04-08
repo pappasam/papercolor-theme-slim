@@ -26,6 +26,7 @@ if has('nvim-0.8')
   " Link nvim-treesitter matchers
   highlight      @markup.italic                         gui=italic
   highlight      @markup.strong                         gui=bold
+  highlight      @variable.builtin                      gui=bold,italic
   highlight link @attribute                             NONE
   highlight link @constant.builtin                      Boolean
   highlight link @constructor                           Function
@@ -69,7 +70,6 @@ if has('nvim-0.8')
   highlight link @type.builtin                          Type
   highlight link @type.definition                       Typedef
   highlight link @variable                              NormalNC
-  highlight link @variable.builtin                      Macro
   highlight link @variable.parameter                    Identifier
 
   " Language-specific overrides
@@ -154,9 +154,9 @@ if &background == 'dark'
   highlight MoreMsg             guifg=#d7af5f guibg=NONE    gui=NONE
   highlight NonText             guifg=#585858 guibg=NONE    gui=NONE
   highlight Normal              guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
-  highlight NormalFloat         guifg=#c6c6c6 guibg=#303030 gui=NONE
+  highlight NormalFloat         guifg=#d0d0d0 guibg=#303030 gui=NONE
   highlight NormalNC            guifg=#d0d0d0 guibg=NONE    gui=NONE
-  highlight Pmenu               guifg=#c6c6c6 guibg=#303030 gui=NONE
+  highlight Pmenu               guifg=#d0d0d0 guibg=#303030 gui=NONE
   highlight PmenuSel            guifg=#bcbcbc guibg=#585858 gui=NONE
   highlight Question            guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Search              guifg=#444444 guibg=#c6c6c6 gui=NONE
