@@ -171,7 +171,7 @@ if &background == 'dark'
   highlight Substitute          guifg=#87d700 guibg=#005f00 gui=NONE
   highlight TabLine             guifg=#bcbcbc guibg=#585858 gui=NONE
   highlight TabLineFill         guifg=#262626 guibg=#262626 gui=NONE
-  highlight TabLineSel          guifg=#121212 guibg=#00afaf gui=NONE
+  highlight TabLineSel          guifg=#121212 guibg=#5f8787 gui=NONE
   highlight Title               guifg=#5fafd7 guibg=NONE    gui=bold
   highlight VertSplit           guifg=#5f8787 guibg=NONE    gui=NONE
   highlight Visual              guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
@@ -281,7 +281,7 @@ else
   highlight Search              guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight SignColumn          guifg=#008700 guibg=NONE    gui=NONE
   highlight SpecialKey          guifg=#c6c6c6 guibg=NONE    gui=NONE
-  highlight SpellBad            guifg=#af0000 guibg=#ffd7ff gui=undercurl,italic
+  highlight SpellBad            guifg=#af0000 guibg=NONE    gui=undercurl,italic
   highlight SpellCap            guifg=#af5f00 guibg=NONE    gui=undercurl,italic
   highlight SpellLocal          guifg=#d75f00 guibg=NONE    gui=undercurl,italic
   highlight SpellRare           guifg=#af5f00 guibg=NONE    gui=undercurl,italic
