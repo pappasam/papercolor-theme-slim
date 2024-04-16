@@ -22,6 +22,8 @@ let g:colors_name="PaperColorSlim"
 " }}}
 " Linking {{{
 
+highlight link Macro Define
+
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
   highlight      @markup.italic                         gui=italic
@@ -40,7 +42,7 @@ if has('nvim-0.8')
   highlight link @keyword.conditional                   Conditional
   highlight link @keyword.directive                     SpecialComment
   highlight link @keyword.exception                     Exception
-  highlight link @keyword.operator                      Keyword
+  highlight link @keyword.operator                      Operator
   highlight link @keyword.repeat                        Repeat
   highlight link @keyword.directive.define              Define
   highlight link @markup.heading                        Title
@@ -191,17 +193,16 @@ if &background == 'dark'
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
   highlight Function            guifg=#5fafd7 guibg=NONE    gui=nocombine,NONE
   highlight Statement           guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Repeat              guifg=#afd700 guibg=NONE    gui=NONE
+  highlight Conditional         guifg=#afd700 guibg=NONE    gui=italic
+  highlight Repeat              guifg=#afd700 guibg=NONE    gui=italic
   highlight Label               guifg=#00afaf guibg=NONE    gui=bold
   highlight Operator            guifg=#00afaf guibg=NONE    gui=bold
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Exception           guifg=#afd700 guibg=NONE    gui=NONE
+  highlight Exception           guifg=#afd700 guibg=NONE    gui=italic
   highlight PreProc             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Include             guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Define              guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Macro               guifg=#5faf5f guibg=NONE    gui=NONE
-  highlight PreCondit           guifg=#5fafd7 guibg=NONE    gui=NONE
+  highlight Define              guifg=#5faf5f guibg=NONE    gui=NONE
+  highlight PreCondit           guifg=#5faf5f guibg=NONE    gui=italic
   highlight Type                guifg=#af87d7 guibg=NONE    gui=NONE
   highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=bold
   highlight Structure           guifg=#00afaf guibg=NONE    gui=bold
@@ -310,17 +311,16 @@ else
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
   highlight Function            guifg=#0087af guibg=NONE    gui=nocombine,NONE
   highlight Statement           guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Repeat              guifg=#d70087 guibg=NONE    gui=NONE
+  highlight Conditional         guifg=#d70087 guibg=NONE    gui=italic
+  highlight Repeat              guifg=#d70087 guibg=NONE    gui=italic
   highlight Label               guifg=#005f87 guibg=NONE    gui=bold
   highlight Operator            guifg=#005f87 guibg=NONE    gui=bold
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Exception           guifg=#d70087 guibg=NONE    gui=NONE
+  highlight Exception           guifg=#d70087 guibg=NONE    gui=italic
   highlight PreProc             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Include             guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Define              guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Macro               guifg=#008700 guibg=NONE    gui=NONE
-  highlight PreCondit           guifg=#0087af guibg=NONE    gui=NONE
+  highlight Define              guifg=#008700 guibg=NONE    gui=NONE
+  highlight PreCondit           guifg=#008700 guibg=NONE    gui=italic
   highlight Type                guifg=#8700af guibg=NONE    gui=NONE
   highlight StorageClass        guifg=#8700af guibg=NONE    gui=bold
   highlight Structure           guifg=#005f87 guibg=NONE    gui=bold
