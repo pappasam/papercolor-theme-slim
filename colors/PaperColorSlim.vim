@@ -22,7 +22,7 @@ let g:colors_name="PaperColorSlim"
 " }}}
 " Linking {{{
 
-highlight link Macro Define
+highlight link Macro   Define
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
@@ -194,19 +194,19 @@ if &background == 'dark'
   highlight Identifier          guifg=#d7875f guibg=NONE    gui=NONE
   highlight Function            guifg=#5fafd7 guibg=NONE    gui=nocombine,NONE
   highlight Statement           guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#afd700 guibg=NONE    gui=italic
-  highlight Repeat              guifg=#afd700 guibg=NONE    gui=italic
+  highlight Conditional         guifg=#afd700 guibg=NONE    gui=NONE
+  highlight Repeat              guifg=#afd700 guibg=NONE    gui=NONE
   highlight Label               guifg=#00afaf guibg=NONE    gui=bold
   highlight Operator            guifg=#00afaf guibg=NONE    gui=bold
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Exception           guifg=#afd700 guibg=NONE    gui=italic
+  highlight Exception           guifg=#afd700 guibg=NONE    gui=NONE
   highlight PreProc             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Include             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Define              guifg=#5faf5f guibg=NONE    gui=NONE
-  highlight PreCondit           guifg=#5faf5f guibg=NONE    gui=italic
+  highlight PreCondit           guifg=#5faf5f guibg=NONE    gui=NONE
   highlight Type                guifg=#af87d7 guibg=NONE    gui=NONE
-  highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=bold
-  highlight Structure           guifg=#00afaf guibg=NONE    gui=bold
+  highlight StorageClass        guifg=#af87d7 guibg=NONE    gui=NONE
+  highlight Structure           guifg=#af87d7 guibg=NONE    gui=NONE
   highlight Typedef             guifg=#af87d7 guibg=NONE    gui=NONE
   highlight Special             guifg=#5fafd7 guibg=NONE    gui=bold
   highlight SpecialChar         guifg=#d7af5f guibg=NONE    gui=NONE
@@ -312,19 +312,19 @@ else
   highlight Identifier          guifg=#005f87 guibg=NONE    gui=NONE
   highlight Function            guifg=#0087af guibg=NONE    gui=nocombine,NONE
   highlight Statement           guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Conditional         guifg=#d70087 guibg=NONE    gui=italic
-  highlight Repeat              guifg=#d70087 guibg=NONE    gui=italic
+  highlight Conditional         guifg=#d70087 guibg=NONE    gui=NONE
+  highlight Repeat              guifg=#d70087 guibg=NONE    gui=NONE
   highlight Label               guifg=#005f87 guibg=NONE    gui=bold
   highlight Operator            guifg=#005f87 guibg=NONE    gui=bold
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Exception           guifg=#d70087 guibg=NONE    gui=italic
+  highlight Exception           guifg=#d70087 guibg=NONE    gui=NONE
   highlight PreProc             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Include             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Define              guifg=#008700 guibg=NONE    gui=NONE
-  highlight PreCondit           guifg=#008700 guibg=NONE    gui=italic
+  highlight PreCondit           guifg=#008700 guibg=NONE    gui=NONE
   highlight Type                guifg=#8700af guibg=NONE    gui=NONE
-  highlight StorageClass        guifg=#8700af guibg=NONE    gui=bold
-  highlight Structure           guifg=#005f87 guibg=NONE    gui=bold
+  highlight StorageClass        guifg=#8700af guibg=NONE    gui=NONE
+  highlight Structure           guifg=#8700af guibg=NONE    gui=NONE
   highlight Typedef             guifg=#8700af guibg=NONE    gui=NONE
   highlight Special             guifg=#0087af guibg=NONE    gui=bold
   highlight SpecialChar         guifg=#5f8700 guibg=NONE    gui=NONE
