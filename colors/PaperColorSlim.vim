@@ -196,7 +196,7 @@ if &background == 'dark'
   highlight Statement           guifg=#afd700 guibg=NONE    gui=NONE
   highlight Conditional         guifg=#afd700 guibg=NONE    gui=NONE
   highlight Repeat              guifg=#afd700 guibg=NONE    gui=NONE
-  highlight Label               guifg=#00afaf guibg=NONE    gui=bold
+  highlight Label               guifg=#afd700 guibg=NONE    gui=italic
   highlight Operator            guifg=#00afaf guibg=NONE    gui=bold
   highlight Keyword             guifg=#afd700 guibg=NONE    gui=NONE
   highlight Exception           guifg=#afd700 guibg=NONE    gui=NONE
@@ -314,7 +314,7 @@ else
   highlight Statement           guifg=#d70087 guibg=NONE    gui=NONE
   highlight Conditional         guifg=#d70087 guibg=NONE    gui=NONE
   highlight Repeat              guifg=#d70087 guibg=NONE    gui=NONE
-  highlight Label               guifg=#005f87 guibg=NONE    gui=bold
+  highlight Label               guifg=#d70087 guibg=NONE    gui=italic
   highlight Operator            guifg=#005f87 guibg=NONE    gui=bold
   highlight Keyword             guifg=#d70087 guibg=NONE    gui=NONE
   highlight Exception           guifg=#d70087 guibg=NONE    gui=NONE
