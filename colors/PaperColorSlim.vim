@@ -211,7 +211,7 @@ if &background == 'dark'
   highlight Special             guifg=#5fafd7 guibg=NONE    gui=bold
   highlight SpecialChar         guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Tag                 guifg=#d7af00 guibg=NONE    gui=NONE
-  highlight Delimiter           guifg=#5fafd7 guibg=NONE    gui=NONE
+  highlight Delimiter           guifg=#00afaf guibg=NONE    gui=NONE
   highlight SpecialComment      guifg=#808080 guibg=NONE    gui=bold
   highlight Debug               guifg=#ff5faf guibg=NONE    gui=NONE
   highlight Underlined          guifg=NONE    guibg=NONE    gui=underline
@@ -329,7 +329,7 @@ else
   highlight Special             guifg=#0087af guibg=NONE    gui=bold
   highlight SpecialChar         guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Tag                 guifg=#008700 guibg=NONE    gui=NONE
-  highlight Delimiter           guifg=#0087af guibg=NONE    gui=NONE
+  highlight Delimiter           guifg=#005f87 guibg=NONE    gui=NONE
   highlight SpecialComment      guifg=#878787 guibg=NONE    gui=bold
   highlight Debug               guifg=#d75f00 guibg=NONE    gui=NONE
   highlight Underlined          guifg=NONE    guibg=NONE    gui=underline
