@@ -184,7 +184,7 @@ if &background == 'dark'
   highlight WildMenu            guifg=#1c1c1c guibg=#afd700 gui=NONE
 
   " Vim-preferred
-  highlight Comment             guifg=#808080 guibg=NONE    gui=italic
+  highlight Comment             guifg=#808080 guibg=NONE    gui=NONE
   highlight Constant            guifg=#d0d0d0 guibg=NONE    gui=bold
   highlight String              guifg=#d7af5f guibg=NONE    gui=NONE
   highlight Character           guifg=#d7af5f guibg=NONE    gui=bold
@@ -302,7 +302,7 @@ else
   highlight WildMenu            guifg=#fffff0 guibg=#d70087 gui=NONE
 
   " Vim-preferred
-  highlight Comment             guifg=#878787 guibg=NONE    gui=italic
+  highlight Comment             guifg=#878787 guibg=NONE    gui=NONE
   highlight Constant            guifg=#444444 guibg=NONE    gui=bold
   highlight String              guifg=#5f8700 guibg=NONE    gui=NONE
   highlight Character           guifg=#5f8700 guibg=NONE    gui=bold
