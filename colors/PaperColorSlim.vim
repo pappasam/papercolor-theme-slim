@@ -22,7 +22,10 @@ let g:colors_name="PaperColorSlim"
 " }}}
 " Linking {{{
 
-highlight link Macro   Define
+highlight  link Macro   Define
+highlight! link Added   DiffAdd
+highlight! link Changed DiffChange
+highlight! link Removed DiffDelete
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
