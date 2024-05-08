@@ -161,7 +161,7 @@ if &background == 'dark'
   highlight NormalNC            guifg=#d0d0d0 guibg=NONE    gui=NONE
   highlight Pmenu               guifg=#d0d0d0 guibg=#303030 gui=NONE
   highlight PmenuSel            guifg=#bcbcbc guibg=#585858 gui=NONE
-  highlight Question            guifg=#d7af5f guibg=NONE    gui=NONE
+  highlight Question            guifg=#afd700 guibg=NONE    gui=NONE
   highlight Search              guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight SignColumn          guifg=#d7af00 guibg=NONE    gui=NONE
   highlight SpecialKey          guifg=#585858 guibg=NONE    gui=NONE
@@ -175,7 +175,7 @@ if &background == 'dark'
   highlight TabLine             guifg=#bcbcbc guibg=#585858 gui=NONE
   highlight TabLineFill         guifg=#262626 guibg=#262626 gui=NONE
   highlight TabLineSel          guifg=#121212 guibg=#5f8787 gui=NONE
-  highlight Title               guifg=#5fafd7 guibg=NONE    gui=bold
+  highlight Title               guifg=#d7af00 guibg=NONE    gui=bold
   highlight VertSplit           guifg=#5f8787 guibg=NONE    gui=NONE
   highlight Visual              guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
   highlight VisualNOS           guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
@@ -279,7 +279,7 @@ else
   highlight NormalNC            guifg=#444444 guibg=NONE    gui=NONE
   highlight Pmenu               guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight PmenuSel            guifg=#e4e4e4 guibg=#c6c6c6 gui=NONE
-  highlight Question            guifg=#5f8700 guibg=NONE    gui=NONE
+  highlight Question            guifg=#d70087 guibg=NONE    gui=NONE
   highlight Search              guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight SignColumn          guifg=#008700 guibg=NONE    gui=NONE
   highlight SpecialKey          guifg=#c6c6c6 guibg=NONE    gui=NONE
@@ -293,7 +293,7 @@ else
   highlight TabLine             guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight TabLineFill         guifg=#005f87 guibg=#005f87 gui=NONE
   highlight TabLineSel          guifg=#444444 guibg=#e4e4e4 gui=NONE
-  highlight Title               guifg=#0087af guibg=NONE    gui=bold
+  highlight Title               guifg=#008700 guibg=NONE    gui=bold
   highlight VertSplit           guifg=#005f87 guibg=NONE    gui=NONE
   highlight Visual              guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
   highlight VisualNOS           guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
