@@ -22,10 +22,11 @@ let g:colors_name="PaperColorSlim"
 " }}}
 " Linking {{{
 
-highlight  link Macro   Define
-highlight! link Added   DiffAdd
-highlight! link Changed DiffChange
-highlight! link Removed DiffDelete
+highlight  link Macro      Define
+highlight  link FoldColumn LineNr
+highlight! link Added      DiffAdd
+highlight! link Changed    DiffChange
+highlight! link Removed    DiffDelete
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
@@ -151,7 +152,6 @@ if &background == 'dark'
   highlight Directory           guifg=#5fafd7 guibg=NONE    gui=bold
   highlight EndOfBuffer         guifg=#585858 guibg=NONE    gui=NONE
   highlight ErrorMsg            guifg=#af005f guibg=#5f0000 gui=NONE
-  highlight FoldColumn          guifg=#d787ff guibg=NONE    gui=NONE
   highlight Folded              guifg=#bcbcbc guibg=#3a3a3a gui=NONE
   highlight IncSearch           guifg=#87d700 guibg=#005f00 gui=NONE
   highlight LineNr              guifg=#808080 guibg=NONE    gui=NONE
@@ -269,7 +269,6 @@ else
   highlight Directory           guifg=#0087af guibg=NONE    gui=bold
   highlight EndOfBuffer         guifg=#444444 guibg=NONE    gui=NONE
   highlight ErrorMsg            guifg=#af0000 guibg=#ffd7ff gui=NONE
-  highlight FoldColumn          guifg=#0087af guibg=NONE    gui=NONE
   highlight Folded              guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight IncSearch           guifg=#008700 guibg=#afff87 gui=NONE
   highlight LineNr              guifg=#878787 guibg=NONE    gui=NONE
