@@ -72,6 +72,7 @@ if has('nvim-0.8')
   highlight link @namespace                             StorageClass
   highlight link @string.escape                         Special
   highlight link @string.special.url                    Underlined
+  highlight link @string.special.path                   Underlined
   highlight link @tag.attribute                         Identifier
   highlight link @tag.delimiter                         Operator
   highlight link @type                                  Type
