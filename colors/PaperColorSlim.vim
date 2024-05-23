@@ -80,6 +80,7 @@ if has('nvim-0.8')
   highlight link @type.definition                       Typedef
   highlight link @variable                              NormalNC
   highlight link @variable.parameter                    Identifier
+  highlight link @variable.member                       Identifier
 
   " Language-specific overrides
   highlight link @constructor.lua                       NONE
