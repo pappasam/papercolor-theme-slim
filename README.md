@@ -2,11 +2,15 @@
 
 This is a slimmed down, [truecolor]-focused re-implementation of [papercolor-theme] that:
 
-1. Supports [nvim-treesitter] and [nvim lsp semantic highlights] and for Neovim 0.8+.
-2. Has no abstraction, which simplifies user color mapping overrides.
-3. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
-4. Limits highlight groups to: [built-in groups], [preferred groups], [nvim-treesitter groups], and [nvim lsp semantic highlights]. This results in consistent highlighting across languages, but may sacrifice highlighting granularity in some cases.
-5. Supports both `background=light` and `background=dark`.
+1. Has no abstraction, which simplifies user color mapping overrides.
+2. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
+3. Limited to the following highlight groups for consistentcy across languages
+   - [built-in groups]
+   - [preferred groups]
+   - [lsp-semantic-highlight]
+   - [diagnostic-highlight]
+   - [nvim-treesitter highlights]
+4. Supports both `background=light` and `background=dark`.
 
 _NOTE: I'd be happy to add `cterm` support. If this interests you, please submit a Pull Request._
 
@@ -112,11 +116,12 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [Nikyle Nguyen]: https://github.com/NLKNguyen
 [built-in groups]: https://neovim.io/doc/user/syntax.html#highlight-default
 [gitsigns]: https://github.com/lewis6991/gitsigns.nvim
-[nvim lsp semantic highlights]: https://neovim.io/doc/user/lsp.html#lsp-semantic-highlight
+[lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
 [nvim-colorizer]: https://github.com/NvChad/nvim-colorizer.lua
 [nvim-tree]: https://github.com/nvim-tree/nvim-tree.lua
-[nvim-treesitter groups]: https://github.com/nvim-treesitter/nvim-treesitter/blob/957f3f8c15a88ef0f0c77ecd13edf2e2578f176e/CONTRIBUTING.md#highlights
+[nvim-treesitter highlights]: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
 [nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
+[diagnostic-highlight]: https://neovim.io/doc/user/diagnostic.html#_highlights
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
