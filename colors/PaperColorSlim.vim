@@ -172,10 +172,10 @@ if &background == 'dark'
   highlight Search              guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight SignColumn          guifg=#d7af00 guibg=NONE    gui=NONE
   highlight SpecialKey          guifg=#585858 guibg=NONE    gui=NONE
-  highlight SpellBad            guifg=#e60000 guibg=NONE    gui=undercurl,italic
-  highlight SpellCap            guifg=#d7af00 guibg=NONE    gui=undercurl,italic
-  highlight SpellLocal          guifg=#00afaf guibg=NONE    gui=undercurl,italic
-  highlight SpellRare           guifg=#5f8787 guibg=NONE    gui=undercurl,italic
+  highlight SpellBad            guifg=#d787ff guibg=NONE    gui=undercurl,italic
+  highlight SpellCap            guifg=#ffff00 guibg=NONE    gui=undercurl,italic
+  highlight SpellLocal          guifg=#5fffff guibg=NONE    gui=undercurl,italic
+  highlight SpellRare           guifg=#5fffff guibg=NONE    gui=undercurl,italic
   highlight StatusLine          guifg=#1c1c1c guibg=#5f8787 gui=NONE
   highlight StatusLineNC        guifg=#bcbcbc guibg=#3a3a3a gui=NONE
   highlight Substitute          guifg=#87d700 guibg=#005f00 gui=NONE
@@ -227,10 +227,10 @@ if &background == 'dark'
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
 
   " Diagnostics
-  highlight DiagnosticError          guifg=#e60000 guibg=NONE gui=NONE
-  highlight DiagnosticWarn           guifg=#d7af00 guibg=NONE gui=NONE
-  highlight DiagnosticInfo           guifg=#00afaf guibg=NONE gui=NONE
-  highlight DiagnosticHint           guifg=#5f8787 guibg=NONE gui=NONE
+  highlight DiagnosticError          guifg=#d787ff guibg=NONE gui=NONE
+  highlight DiagnosticWarn           guifg=#ffff00 guibg=NONE gui=NONE
+  highlight DiagnosticInfo           guifg=#5fffff guibg=NONE gui=NONE
+  highlight DiagnosticHint           guifg=#5fffff guibg=NONE gui=NONE
   highlight DiagnosticOk             guifg=#5faf5f guibg=NONE gui=NONE
   highlight DiagnosticUnderlineError guifg=NONE    guibg=NONE gui=undercurl
   highlight DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE gui=undercurl
@@ -359,7 +359,7 @@ else
   highlight DiagnosticError          guifg=#af0000 guibg=NONE gui=NONE
   highlight DiagnosticWarn           guifg=#af5f00 guibg=NONE gui=NONE
   highlight DiagnosticInfo           guifg=#005faf guibg=NONE gui=NONE
-  highlight DiagnosticHint           guifg=#005f87 guibg=NONE gui=NONE
+  highlight DiagnosticHint           guifg=#005faf guibg=NONE gui=NONE
   highlight DiagnosticOk             guifg=#008700 guibg=NONE gui=NONE
   highlight DiagnosticUnderlineError guifg=NONE    guibg=NONE gui=undercurl
   highlight DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE gui=undercurl
