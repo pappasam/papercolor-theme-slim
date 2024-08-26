@@ -173,9 +173,9 @@ if &background == 'dark'
   highlight SignColumn          guifg=#d7af00 guibg=NONE    gui=NONE
   highlight SpecialKey          guifg=#585858 guibg=NONE    gui=NONE
   highlight SpellBad            guifg=#e60000 guibg=NONE    gui=undercurl,italic
-  highlight SpellCap            guifg=#5faf5f guibg=NONE    gui=undercurl,italic
-  highlight SpellLocal          guifg=#ff5faf guibg=NONE    gui=undercurl,italic
-  highlight SpellRare           guifg=#5faf5f guibg=NONE    gui=undercurl,italic
+  highlight SpellCap            guifg=#d7af00 guibg=NONE    gui=undercurl,italic
+  highlight SpellLocal          guifg=#00afaf guibg=NONE    gui=undercurl,italic
+  highlight SpellRare           guifg=#5f8787 guibg=NONE    gui=undercurl,italic
   highlight StatusLine          guifg=#1c1c1c guibg=#5f8787 gui=NONE
   highlight StatusLineNC        guifg=#bcbcbc guibg=#3a3a3a gui=NONE
   highlight Substitute          guifg=#87d700 guibg=#005f00 gui=NONE
@@ -225,6 +225,18 @@ if &background == 'dark'
   highlight Error               guifg=#ff8080 guibg=NONE    gui=bold
   highlight Todo                guifg=#ff8700 guibg=NONE    gui=bold
   highlight Ignore              guifg=#303030 guibg=NONE    gui=NONE
+
+  " Diagnostics
+  highlight DiagnosticError          guifg=#e60000 guibg=NONE gui=NONE
+  highlight DiagnosticWarn           guifg=#d7af00 guibg=NONE gui=NONE
+  highlight DiagnosticInfo           guifg=#00afaf guibg=NONE gui=NONE
+  highlight DiagnosticHint           guifg=#5f8787 guibg=NONE gui=NONE
+  highlight DiagnosticOk             guifg=#5faf5f guibg=NONE gui=NONE
+  highlight DiagnosticUnderlineError guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineHint  guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineOk    guifg=NONE    guibg=NONE gui=undercurl
 
   " PaperColorSlim Custom
   highlight pcsFunctionBold     guifg=#5fafd7 guibg=NONE    gui=bold
@@ -291,8 +303,8 @@ else
   highlight SpecialKey          guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight SpellBad            guifg=#af0000 guibg=NONE    gui=undercurl,italic
   highlight SpellCap            guifg=#af5f00 guibg=NONE    gui=undercurl,italic
-  highlight SpellLocal          guifg=#d75f00 guibg=NONE    gui=undercurl,italic
-  highlight SpellRare           guifg=#af5f00 guibg=NONE    gui=undercurl,italic
+  highlight SpellLocal          guifg=#005faf guibg=NONE    gui=undercurl,italic
+  highlight SpellRare           guifg=#005f87 guibg=NONE    gui=undercurl,italic
   highlight StatusLine          guifg=#fffff0 guibg=#005f87 gui=NONE
   highlight StatusLineNC        guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight Substitute          guifg=#008700 guibg=#afff87 gui=NONE
@@ -342,6 +354,18 @@ else
   highlight Error               guifg=#e60000 guibg=NONE    gui=bold
   highlight Todo                guifg=#00af5f guibg=NONE    gui=bold
   highlight Ignore              guifg=#005f87 guibg=NONE    gui=NONE
+
+  " Diagnostics
+  highlight DiagnosticError          guifg=#af0000 guibg=NONE gui=NONE
+  highlight DiagnosticWarn           guifg=#af5f00 guibg=NONE gui=NONE
+  highlight DiagnosticInfo           guifg=#005faf guibg=NONE gui=NONE
+  highlight DiagnosticHint           guifg=#005f87 guibg=NONE gui=NONE
+  highlight DiagnosticOk             guifg=#008700 guibg=NONE gui=NONE
+  highlight DiagnosticUnderlineError guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineHint  guifg=NONE    guibg=NONE gui=undercurl
+  highlight DiagnosticUnderlineOk    guifg=NONE    guibg=NONE gui=undercurl
 
   " PaperColorSlim Custom
   highlight pcsFunctionBold     guifg=#0087af guibg=NONE    gui=bold
