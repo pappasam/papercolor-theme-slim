@@ -11,10 +11,7 @@ This is a slimmed down, [truecolor]-focused re-implementation of [papercolor-the
    - [diagnostic-highlight]
    - [nvim-treesitter highlights]
 4. Supports both `background=light` and `background=dark`.
-
-_NOTE: I'd be happy to add `cterm` support. If this interests you, please submit a Pull Request._
-
-It targets Neovim's syntax groups, but it should technically also work with Vim. The following screenshot shows the dark (default) and light variants operating on same Python file. If you write another language, don't worry: PaperColorSlim supports them all!
+5. Is compatible with both Vim and Neovim.
 
 ![Screenshot](./img/screenshot.png)
 
