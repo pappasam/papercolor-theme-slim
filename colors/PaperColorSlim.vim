@@ -144,8 +144,8 @@ if &background == 'dark'
   " Built-in
   highlight ColorColumn         guifg=NONE    guibg=#303030 gui=NONE
   highlight Conceal             guifg=#585858 guibg=NONE    gui=NONE
-  highlight Cursor              guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight CurSearch           guifg=#87d700 guibg=#005f00 gui=NONE
+  highlight Cursor              guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight CursorColumn        guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLine          guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLineNr        guifg=#ffff00 guibg=NONE    gui=NONE
@@ -186,9 +186,10 @@ if &background == 'dark'
   highlight VertSplit           guifg=#5f8787 guibg=NONE    gui=NONE
   highlight Visual              guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
   highlight VisualNOS           guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
-  highlight Whitespace          guifg=#4e4e4e guibg=NONE    gui=NONE
   highlight WarningMsg          guifg=#afd700 guibg=NONE    gui=NONE
+  highlight Whitespace          guifg=#4e4e4e guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#1c1c1c guibg=#afd700 gui=NONE
+  highlight WinSeparator        guifg=#5f8787 guibg=NONE    gui=NONE
 
   " Vim-preferred
   highlight Comment             guifg=#808080 guibg=NONE    gui=NONE
@@ -273,8 +274,8 @@ else
   " Built-in
   highlight ColorColumn         guifg=NONE    guibg=#e4e4e4 gui=NONE
   highlight Conceal             guifg=#444444 guibg=NONE    gui=NONE
-  highlight Cursor              guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight CurSearch           guifg=#008700 guibg=#afff87 gui=NONE
+  highlight Cursor              guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight CursorColumn        guifg=NONE    guibg=#e4e4e4 gui=NONE
   highlight CursorLine          guifg=NONE    guibg=#e4e4e4 gui=NONE
   highlight CursorLineNr        guifg=#af5f00 guibg=NONE    gui=NONE
@@ -315,9 +316,10 @@ else
   highlight VertSplit           guifg=#005f87 guibg=NONE    gui=NONE
   highlight Visual              guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
   highlight VisualNOS           guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
-  highlight Whitespace          guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight WarningMsg          guifg=#d70087 guibg=NONE    gui=NONE
+  highlight Whitespace          guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#fffff0 guibg=#d70087 gui=NONE
+  highlight WinSeparator        guifg=#005f87 guibg=NONE    gui=NONE
 
   " Vim-preferred
   highlight Comment             guifg=#878787 guibg=NONE    gui=NONE
