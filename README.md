@@ -4,7 +4,7 @@ This is a slimmed down, [truecolor]-focused re-implementation of [papercolor-the
 
 1. Has no abstraction, which simplifies user color mapping overrides.
 2. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
-3. Limited to the following highlight groups for consistentcy across languages
+3. Limited to the following highlight groups for consistency across languages
    - [built-in groups]
    - [preferred groups]
    - [lsp-semantic-highlight]
@@ -65,7 +65,7 @@ augroup end
 
 **Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/1c1c1c) when using `background=dark`, or [#eeeeee](https://www.color-hex.com/color/eeeeee) when using `background=light`, PaperColorSlim may not contrast well with your terminal's background. In this case, you will need to do one of the following:
 
-1. Use the PaperColorSlim-provided background colors (eg, don't put the above in your `vimrc`)
+1. Use the PaperColorSlim-provided background colors (e.g., don't put the above in your `vimrc`)
 2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
 3. Use a different Vim `colorscheme` that better-supports your background preferences
 
