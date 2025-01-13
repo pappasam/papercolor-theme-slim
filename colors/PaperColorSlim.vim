@@ -167,7 +167,7 @@ if &background == 'dark'
   highlight NormalFloat         guifg=#d0d0d0 guibg=#303030 gui=NONE
   highlight NormalNC            guifg=#d0d0d0 guibg=NONE    gui=NONE
   highlight Pmenu               guifg=#d0d0d0 guibg=#303030 gui=NONE
-  highlight PmenuSel            guifg=#bcbcbc guibg=#585858 gui=NONE
+  highlight PmenuSel            guifg=#d0d0d0 guibg=#585858 gui=NONE
   highlight Question            guifg=#afd700 guibg=NONE    gui=NONE
   highlight Search              guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight SignColumn          guifg=#d7af00 guibg=NONE    gui=NONE
@@ -297,7 +297,7 @@ else
   highlight NormalFloat         guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight NormalNC            guifg=#444444 guibg=NONE    gui=NONE
   highlight Pmenu               guifg=#444444 guibg=#e4e4e4 gui=NONE
-  highlight PmenuSel            guifg=#e4e4e4 guibg=#c6c6c6 gui=NONE
+  highlight PmenuSel            guifg=#444444 guibg=#c6c6c6 gui=NONE
   highlight Question            guifg=#d70087 guibg=NONE    gui=NONE
   highlight Search              guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight SignColumn          guifg=#008700 guibg=NONE    gui=NONE
