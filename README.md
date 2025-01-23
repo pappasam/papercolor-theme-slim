@@ -2,7 +2,7 @@
 
 This is a slimmed down, [truecolor]-focused re-implementation of [papercolor-theme] that:
 
-1. Has no abstraction, which simplifies user color mapping overrides.
+1. Has **no abstraction**, which [maximizes performance](https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/) and simplifies user color mapping overrides.
 2. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
 3. Limited to the following highlight groups for consistency across languages
    - [built-in groups]
