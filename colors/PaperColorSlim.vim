@@ -20,13 +20,15 @@ endif
 let g:colors_name="PaperColorSlim"
 
 " }}}
-" Linking {{{
+" Dark and Light {{{
 
-highlight  link Macro      Define
-highlight  link FoldColumn LineNr
-highlight! link Added      DiffAdd
-highlight! link Changed    DiffChange
-highlight! link Removed    DiffDelete
+highlight SnippetTabstop gui=underdotted
+
+highlight  link Macro          Define
+highlight  link FoldColumn     LineNr
+highlight! link Added          DiffAdd
+highlight! link Changed        DiffChange
+highlight! link Removed        DiffDelete
 
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
@@ -120,7 +122,7 @@ if has('nvim-0.8')
 endif
 
 " }}}
-" Dark {{{
+" Only Dark {{{
 
 if &background == 'dark'
   " Neovim terminal colors
@@ -164,7 +166,7 @@ if &background == 'dark'
   highlight MoreMsg             guifg=#d7af5f guibg=NONE    gui=NONE
   highlight NonText             guifg=#585858 guibg=NONE    gui=NONE
   highlight Normal              guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
-  highlight NormalFloat         guifg=#d0d0d0 guibg=#303030 gui=NONE
+  highlight NormalFloat         guifg=#d0d0d0 guibg=#262626 gui=NONE
   highlight NormalNC            guifg=#d0d0d0 guibg=NONE    gui=NONE
   highlight Pmenu               guifg=#d0d0d0 guibg=#303030 gui=NONE
   highlight PmenuSel            guifg=#d0d0d0 guibg=#585858 gui=NONE
@@ -184,8 +186,8 @@ if &background == 'dark'
   highlight TabLineSel          guifg=#121212 guibg=#5f8787 gui=NONE
   highlight Title               guifg=#d7af00 guibg=NONE    gui=bold
   highlight VertSplit           guifg=#5f8787 guibg=NONE    gui=NONE
-  highlight Visual              guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
-  highlight VisualNOS           guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
+  highlight Visual              guifg=NONE    guibg=#303030 gui=NONE
+  highlight VisualNOS           guifg=NONE    guibg=#303030 gui=NONE
   highlight WarningMsg          guifg=#afd700 guibg=NONE    gui=NONE
   highlight Whitespace          guifg=#4e4e4e guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#1c1c1c guibg=#afd700 gui=NONE
@@ -250,7 +252,7 @@ if &background == 'dark'
   highlight pcsHtmlHeader6      guifg=#ff5faf guibg=NONE    gui=italic
 
 " }}}
-" Light {{{
+" Only Light {{{
 
 else
   " Neovim terminal colors
@@ -314,8 +316,8 @@ else
   highlight TabLineSel          guifg=#444444 guibg=#e4e4e4 gui=NONE
   highlight Title               guifg=#008700 guibg=NONE    gui=bold
   highlight VertSplit           guifg=#005f87 guibg=NONE    gui=NONE
-  highlight Visual              guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
-  highlight VisualNOS           guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
+  highlight Visual              guifg=NONE    guibg=#c6c6c6 gui=NONE
+  highlight VisualNOS           guifg=NONE    guibg=#c6c6c6 gui=NONE
   highlight WarningMsg          guifg=#d70087 guibg=NONE    gui=NONE
   highlight Whitespace          guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#fffff0 guibg=#d70087 gui=NONE
