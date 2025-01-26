@@ -102,6 +102,13 @@ augroup custom_highlight_linking
 augroup end
 ```
 
+## FAQ
+
+### Why not rewrite in Lua?
+
+1. As of January 2025, in this instance, a Vimscript implementation is (very marginally) faster than a Lua implementation. Special thanks to [darthbanana13](https://github.com/darthbanana13) for their robust profiling efforts. See [this issue thread](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more details.
+2. Current goals include support for both Vim and Neovim. An implementation in Lua would remove support for Vim.
+
 ## Development
 
 If you want to contribute and assuming you use Neovim, I suggest installing and using [nvim-colorizer]. It will let you see the colors associated with the hex codes, greatly simplifying development.
