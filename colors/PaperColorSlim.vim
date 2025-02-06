@@ -1,6 +1,6 @@
 " PaperColorSlim: Based on <https://github.com/NLKNguyen/papercolor-theme>
 " Maintainer: Samuel Roeca <samuel.roeca@gmail.com>
-" Palette & Preamble {{{
+" Preamble {{{
 
 " not exactly 1:1 in practice, but gives a rough gist
 "  dark     light  <>  dark     light  <>  dark     light  <>  dark     light
@@ -20,7 +20,7 @@ endif
 let g:colors_name="PaperColorSlim"
 
 " }}}
-" Dark and Light {{{
+" Both {{{
 
 highlight SnippetTabstop gui=underdotted
 
@@ -122,7 +122,7 @@ if has('nvim-0.8')
 endif
 
 " }}}
-" Only Dark {{{
+" Dark {{{
 
 if &background == 'dark'
   " Neovim terminal colors
@@ -251,8 +251,8 @@ if &background == 'dark'
   highlight pcsHtmlHeader5      guifg=#ff5faf guibg=NONE    gui=NONE
   highlight pcsHtmlHeader6      guifg=#ff5faf guibg=NONE    gui=italic
 
-" }}}
-" Only Light {{{
+  " }}}
+  " Light {{{
 
 else
   " Neovim terminal colors
