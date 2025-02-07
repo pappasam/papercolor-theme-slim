@@ -187,7 +187,7 @@ if &background == 'dark'
   highlight Title               guifg=#d7af00 guibg=NONE    gui=bold
   highlight VertSplit           guifg=#5f8787 guibg=NONE    gui=NONE
   highlight Visual              guifg=NONE    guibg=#303030 gui=NONE
-  highlight VisualNOS           guifg=NONE    guibg=#303030 gui=NONE
+  highlight VisualNOS           guifg=NONE    guibg=#585858 gui=NONE
   highlight WarningMsg          guifg=#afd700 guibg=NONE    gui=NONE
   highlight Whitespace          guifg=#4e4e4e guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#1c1c1c guibg=#afd700 gui=NONE
@@ -317,7 +317,7 @@ else
   highlight Title               guifg=#008700 guibg=NONE    gui=bold
   highlight VertSplit           guifg=#005f87 guibg=NONE    gui=NONE
   highlight Visual              guifg=NONE    guibg=#c6c6c6 gui=NONE
-  highlight VisualNOS           guifg=NONE    guibg=#c6c6c6 gui=NONE
+  highlight VisualNOS           guifg=NONE    guibg=#a6a6a6 gui=NONE
   highlight WarningMsg          guifg=#d70087 guibg=NONE    gui=NONE
   highlight Whitespace          guifg=#c6c6c6 guibg=NONE    gui=NONE
   highlight WildMenu            guifg=#fffff0 guibg=#d70087 gui=NONE
