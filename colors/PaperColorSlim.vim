@@ -7,11 +7,8 @@ if exists("syntax_on")
 endif
 let g:colors_name="PaperColorSlim"
 
-highlight  link Macro          Define
-highlight  link FoldColumn     LineNr
-highlight! link Added          DiffAdd
-highlight! link Changed        DiffChange
-highlight! link Removed        DiffDelete
+highlight link Macro          Define
+highlight link FoldColumn     LineNr
 if has('nvim-0.8')
   " Link nvim-treesitter matchers
   highlight      @markup.italic                         gui=italic
@@ -127,8 +124,11 @@ if &background == 'dark' " Dark
   highlight CursorLine               guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLineNr             guifg=#ffff00 guibg=NONE    gui=NONE
   highlight DiffAdd                  guifg=#ffffff guibg=#1a4400 gui=NONE
+  highlight Added                    guifg=#ffffff guibg=#1a4400 gui=NONE
   highlight DiffChange               guifg=#ffffff guibg=#1a4747 gui=NONE
+  highlight Changed                  guifg=#ffffff guibg=#1a4747 gui=NONE
   highlight DiffDelete               guifg=#ffffff guibg=#661111 gui=NONE
+  highlight Removed                  guifg=#ffffff guibg=#661111 gui=NONE
   highlight DiffText                 guifg=#ffffff guibg=#005757 gui=NONE
   highlight Directory                guifg=#5fafd7 guibg=NONE    gui=bold
   highlight EndOfBuffer              guifg=#585858 guibg=NONE    gui=NONE
@@ -250,8 +250,11 @@ else " Light
   highlight CursorLine               guifg=NONE    guibg=#e4e4e4 gui=NONE
   highlight CursorLineNr             guifg=#af5f00 guibg=NONE    gui=NONE
   highlight DiffAdd                  guifg=#0a2600 guibg=#90ee90 gui=NONE
+  highlight Added                    guifg=#0a2600 guibg=#90ee90 gui=NONE
   highlight DiffChange               guifg=#0a0a0a guibg=#ffd75f gui=NONE
+  highlight Changed                  guifg=#0a0a0a guibg=#ffd75f gui=NONE
   highlight DiffDelete               guifg=#660000 guibg=#ffc0cb gui=NONE
+  highlight Removed                  guifg=#660000 guibg=#ffc0cb gui=NONE
   highlight DiffText                 guifg=#003366 guibg=#add8e6 gui=NONE
   highlight Directory                guifg=#0087af guibg=NONE    gui=bold
   highlight EndOfBuffer              guifg=#444444 guibg=NONE    gui=NONE
