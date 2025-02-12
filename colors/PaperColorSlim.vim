@@ -244,12 +244,12 @@ if &background == 'dark'
   " PaperColorSlim Custom
   highlight pcsFunctionBold     guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#00afaf guibg=NONE    gui=underline
-  highlight pcsHtmlHeader1      guifg=#d7af00 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader2      guifg=#5fafd7 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader3      guifg=#af87d7 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader4      guifg=#ff5faf guibg=NONE    gui=bold
-  highlight pcsHtmlHeader5      guifg=#ff5faf guibg=NONE    gui=NONE
-  highlight pcsHtmlHeader6      guifg=#ff5faf guibg=NONE    gui=italic
+  highlight pcsHtmlHeader1      guifg=#d7af00               gui=bold
+  highlight pcsHtmlHeader2      guifg=#5fafd7               gui=bold
+  highlight pcsHtmlHeader3      guifg=#af87d7               gui=bold
+  highlight pcsHtmlHeader4      guifg=#ff5faf               gui=bold
+  highlight pcsHtmlHeader5      guifg=#ff5faf               gui=NONE
+  highlight pcsHtmlHeader6      guifg=#ff5faf               gui=italic
 
   " }}}
   " Light {{{
@@ -374,12 +374,12 @@ else
   " PaperColorSlim Custom
   highlight pcsFunctionBold     guifg=#0087af guibg=NONE    gui=bold
   highlight pcsHtmlAnchor       guifg=#005f87 guibg=NONE    gui=underline
-  highlight pcsHtmlHeader1      guifg=#008700 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader2      guifg=#0087af guibg=NONE    gui=bold
-  highlight pcsHtmlHeader3      guifg=#8700af guibg=NONE    gui=bold
-  highlight pcsHtmlHeader4      guifg=#d70087 guibg=NONE    gui=bold
-  highlight pcsHtmlHeader5      guifg=#d70087 guibg=NONE    gui=NONE
-  highlight pcsHtmlHeader6      guifg=#d70087 guibg=NONE    gui=italic
+  highlight pcsHtmlHeader1      guifg=#008700               gui=bold
+  highlight pcsHtmlHeader2      guifg=#0087af               gui=bold
+  highlight pcsHtmlHeader3      guifg=#8700af               gui=bold
+  highlight pcsHtmlHeader4      guifg=#d70087               gui=bold
+  highlight pcsHtmlHeader5      guifg=#d70087               gui=NONE
+  highlight pcsHtmlHeader6      guifg=#d70087               gui=italic
 endif
 
 " }}}
