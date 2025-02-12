@@ -1,8 +1,8 @@
 # PaperColorSlim Colorscheme
 
-This is a slimmed down, [truecolor]-focused re-implementation of [papercolor-theme] that:
+This is a slimmed down re-implementation of [papercolor-theme] that:
 
-1. Has **no abstraction**, which [maximizes performance](https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/) and simplifies user color mapping overrides.
+1. Has **no abstraction**, which [maximizes performance] and simplifies user color mapping overrides.
 2. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
 3. Limited to the following highlight groups for consistency across languages
    - [built-in groups]
@@ -11,25 +11,13 @@ This is a slimmed down, [truecolor]-focused re-implementation of [papercolor-the
    - [diagnostic-highlight]
    - [nvim-treesitter highlights]
 4. Supports both `background=light` and `background=dark`.
-5. Is compatible with both Vim and Neovim.
+5. Only supports Neovim 0.8+ (when treesitter matchers landed).
 
 ![Screenshot](./img/screenshot.png)
 
 ## Installation
 
-If using [vim-plug](https://github.com/junegunn/vim-plug):
-
-```vim
-Plug 'pappasam/papercolor-theme-slim'
-```
-
-Then run the Ex command:
-
-```vim
-:PlugInstall
-```
-
-I personally use [vim-packager](https://github.com/kristijanhusak/vim-packager), so if you'd like to go down the "package" rabbit hole, I suggest giving that a try.
+This is a normal [Neovim Package]. Install it like you would any other colorscheme, consulting your package manager's documentation.
 
 ## Dark and light
 
@@ -50,11 +38,11 @@ You may change to the light/dark variant at any time by running `:set background
 
 ## Customization
 
-You can configure virtually anything you want with Vim's native syntax highlighting tooling and `autocmds`. What follows are some common configuration customization requests by users, along with their solution.
+You can configure virtually anything you want with native syntax highlighting tooling and `autocmds`. What follows are some common configuration customization requests by users, along with their solution.
 
 ### Transparent background
 
-Some users want the background of their Vim to match their terminal's background color. To achieve this with PaperColorSlim, put the following code somewhere in your `vimrc`:
+Some users want the background to match their terminal's background color. To achieve this with PaperColorSlim, put the following code somewhere in your `vimrc`:
 
 ```vim
 augroup custom_papercolorslim_transparent_background
@@ -67,7 +55,7 @@ augroup end
 
 1. Use the PaperColorSlim-provided background colors (e.g., don't put the above in your `vimrc`)
 2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
-3. Use a different Vim `colorscheme` that better-supports your background preferences
+3. Use a different `colorscheme` that better-supports your background preferences
 
 ### Override color for only one &background type
 
@@ -106,22 +94,21 @@ augroup end
 
 ### Why not rewrite in Lua?
 
-1. As of January 2025, in this instance, a Vimscript implementation is (very marginally) faster than a Lua implementation. Special thanks to [darthbanana13](https://github.com/darthbanana13) for their robust profiling efforts. See [this issue thread](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more details.
-2. Current goals include support for both Vim and Neovim. An implementation in Lua would remove support for Vim.
+As of January 2025, in this instance, a Vimscript implementation is (very marginally) faster than a Lua implementation. Special thanks to [darthbanana13] for their robust profiling efforts.
 
-## Development
-
-If you want to contribute and assuming you use Neovim, I suggest installing and using [nvim-colorizer]. It will let you see the colors associated with the hex codes, greatly simplifying development.
+See [here](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more details.
 
 ## Credits
 
 Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme] over the years!
 
+[darthbanana13]: https://github.com/darthbanana13
+[maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
+[Neovim Package]: https://neovim.io/doc/user/usr_05.html#_adding-a-package
 [Nikyle Nguyen]: https://github.com/NLKNguyen
 [built-in groups]: https://neovim.io/doc/user/syntax.html#highlight-default
 [gitsigns]: https://github.com/lewis6991/gitsigns.nvim
 [lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
-[nvim-colorizer]: https://github.com/NvChad/nvim-colorizer.lua
 [nvim-tree]: https://github.com/nvim-tree/nvim-tree.lua
 [nvim-treesitter highlights]: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
 [nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
