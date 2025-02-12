@@ -1,102 +1,100 @@
 " PaperColorSlim: Based on <https://github.com/NLKNguyen/papercolor-theme>
 " Maintainer: Samuel Roeca <samuel.roeca@gmail.com>
 
+" Preamble
 highlight clear
 if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name="PaperColorSlim"
-
+" Built-in
 highlight link Macro          Define
 highlight link FoldColumn     LineNr
-if has('nvim-0.8')
-  " Link nvim-treesitter matchers
-  highlight      @markup.italic                         gui=italic
-  highlight      @markup.strong                         gui=bold
-  highlight      @variable.builtin                      gui=bold,italic
-  highlight link @attribute                             NONE
-  highlight link @attribute.builtin                     Constant
-  highlight link @constant.builtin                      Boolean
-  highlight link @constructor                           Function
-  highlight link @diff.delta                            DiffChange
-  highlight link @diff.minus                            DiffDelete
-  highlight link @diff.plus                             DiffAdd
-  highlight link @function                              Function
-  highlight link @function.builtin                      pcsFunctionBold
-  highlight link @function.call                         Function
-  highlight link @function.macro                        Macro
-  highlight link @keyword.conditional                   Conditional
-  highlight link @keyword.directive                     SpecialComment
-  highlight link @keyword.exception                     Exception
-  highlight link @keyword.operator                      Operator
-  highlight link @keyword.repeat                        Repeat
-  highlight link @keyword.return                        Conditional
-  highlight link @keyword.directive.define              Define
-  highlight link @markup.heading                        Title
-  highlight link @markup.heading.1                      pcsHtmlHeader1
-  highlight link @markup.heading.2                      pcsHtmlHeader2
-  highlight link @markup.heading.3                      pcsHtmlHeader3
-  highlight link @markup.heading.4                      pcsHtmlHeader4
-  highlight link @markup.heading.5                      pcsHtmlHeader5
-  highlight link @markup.heading.6                      pcsHtmlHeader6
-  highlight link @markup.link.label                     pcsHtmlAnchor
-  highlight link @markup.link.markdown_inline           NONE
-  highlight link @markup.link.url                       Underlined
-  highlight link @markup.link.vimdoc                    pcsHtmlAnchor
-  highlight link @markup.list                           Delimiter
-  highlight link @markup.literal                        String
-  highlight link @markup.raw                            String
-  highlight link @markup.raw.block                      NormalNC
-  highlight link @method                                Function
-  highlight link @method.builtin                        Function
-  highlight link @method.call                           Function
-  highlight link @module                                StorageClass
-  highlight link @namespace                             StorageClass
-  highlight link @string.escape                         Special
-  highlight link @string.special.url                    Underlined
-  highlight link @string.special.path                   Underlined
-  highlight link @tag.attribute                         Identifier
-  highlight link @tag.delimiter                         Operator
-  highlight link @type                                  Type
-  highlight link @type.builtin                          Type
-  highlight link @type.definition                       Typedef
-  highlight link @variable                              NormalNC
-  highlight link @variable.parameter                    Identifier
-  highlight link @variable.member                       Identifier
-  " Language-specific overrides
-  highlight link @constructor.lua                       NONE
-  " Link LSP Semantic Highlighting to treesitter styles
-  highlight link @lsp.type.boolean                      @boolean
-  highlight link @lsp.type.builtinType                  @type.builtin
-  highlight link @lsp.type.comment                      @comment
-  highlight link @lsp.type.enum                         @type
-  highlight link @lsp.type.enumMember                   @constant
-  highlight link @lsp.type.escapeSequence               @string.escape
-  highlight link @lsp.type.formatSpecifier              @punctuation.special
-  highlight link @lsp.type.interface                    @type
-  highlight link @lsp.type.keyword                      @keyword
-  highlight link @lsp.type.namespace                    @namespace
-  highlight link @lsp.type.number                       @number
-  highlight link @lsp.type.operator                     @operator
-  highlight link @lsp.type.parameter                    @variable.parameter
-  highlight link @lsp.type.property                     @property
-  highlight link @lsp.type.selfKeyword                  @variable.builtin
-  highlight link @lsp.type.typeAlias                    @type.definition
-  highlight link @lsp.type.unresolvedReference          @comment.error
-  highlight link @lsp.type.variable                     NONE " use treesitter styles for regular variables
-  highlight link @lsp.typemod.class.defaultLibrary      @type.builtin
-  highlight link @lsp.typemod.enum.defaultLibrary       @type.builtin
-  highlight link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
-  highlight link @lsp.typemod.function.defaultLibrary   @function.builtin
-  highlight link @lsp.typemod.keyword.async             @keyword.coroutine
-  highlight link @lsp.typemod.macro.defaultLibrary      @function.builtin
-  highlight link @lsp.typemod.method.defaultLibrary     @function.builtin
-  highlight link @lsp.typemod.operator.injected         @operator
-  highlight link @lsp.typemod.string.injected           @string
-  highlight link @lsp.typemod.type.defaultLibrary       @type.builtin
-  highlight link @lsp.typemod.variable.defaultLibrary   @variable.builtin
-  highlight link @lsp.typemod.variable.injected         @variable
-endif
+" nvim-treesitter matchers
+highlight      @markup.italic                         gui=italic
+highlight      @markup.strong                         gui=bold
+highlight      @variable.builtin                      gui=bold,italic
+highlight link @attribute                             NONE
+highlight link @attribute.builtin                     Constant
+highlight link @constant.builtin                      Boolean
+highlight link @constructor                           Function
+highlight link @diff.delta                            DiffChange
+highlight link @diff.minus                            DiffDelete
+highlight link @diff.plus                             DiffAdd
+highlight link @function                              Function
+highlight link @function.builtin                      pcsFunctionBold
+highlight link @function.call                         Function
+highlight link @function.macro                        Macro
+highlight link @keyword.conditional                   Conditional
+highlight link @keyword.directive                     SpecialComment
+highlight link @keyword.exception                     Exception
+highlight link @keyword.operator                      Operator
+highlight link @keyword.repeat                        Repeat
+highlight link @keyword.return                        Conditional
+highlight link @keyword.directive.define              Define
+highlight link @markup.heading                        Title
+highlight link @markup.heading.1                      pcsHtmlHeader1
+highlight link @markup.heading.2                      pcsHtmlHeader2
+highlight link @markup.heading.3                      pcsHtmlHeader3
+highlight link @markup.heading.4                      pcsHtmlHeader4
+highlight link @markup.heading.5                      pcsHtmlHeader5
+highlight link @markup.heading.6                      pcsHtmlHeader6
+highlight link @markup.link.label                     pcsHtmlAnchor
+highlight link @markup.link.markdown_inline           NONE
+highlight link @markup.link.url                       Underlined
+highlight link @markup.link.vimdoc                    pcsHtmlAnchor
+highlight link @markup.list                           Delimiter
+highlight link @markup.literal                        String
+highlight link @markup.raw                            String
+highlight link @markup.raw.block                      NormalNC
+highlight link @method                                Function
+highlight link @method.builtin                        Function
+highlight link @method.call                           Function
+highlight link @module                                StorageClass
+highlight link @namespace                             StorageClass
+highlight link @string.escape                         Special
+highlight link @string.special.url                    Underlined
+highlight link @string.special.path                   Underlined
+highlight link @tag.attribute                         Identifier
+highlight link @tag.delimiter                         Operator
+highlight link @type                                  Type
+highlight link @type.builtin                          Type
+highlight link @type.definition                       Typedef
+highlight link @variable.parameter                    Identifier
+highlight link @variable.member                       Identifier
+" Language-specific overrides
+highlight link @constructor.lua                       NONE
+" Link LSP Semantic Highlighting to treesitter styles
+highlight link @lsp.type.boolean                      @boolean
+highlight link @lsp.type.builtinType                  @type.builtin
+highlight link @lsp.type.comment                      @comment
+highlight link @lsp.type.enum                         @type
+highlight link @lsp.type.enumMember                   @constant
+highlight link @lsp.type.escapeSequence               @string.escape
+highlight link @lsp.type.formatSpecifier              @punctuation.special
+highlight link @lsp.type.interface                    @type
+highlight link @lsp.type.keyword                      @keyword
+highlight link @lsp.type.namespace                    @namespace
+highlight link @lsp.type.number                       @number
+highlight link @lsp.type.operator                     @operator
+highlight link @lsp.type.parameter                    @variable.parameter
+highlight link @lsp.type.property                     @property
+highlight link @lsp.type.selfKeyword                  @variable.builtin
+highlight link @lsp.type.typeAlias                    @type.definition
+highlight link @lsp.type.unresolvedReference          @comment.error
+highlight link @lsp.type.variable                     NONE " use treesitter styles for regular variables
+highlight link @lsp.typemod.class.defaultLibrary      @type.builtin
+highlight link @lsp.typemod.enum.defaultLibrary       @type.builtin
+highlight link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
+highlight link @lsp.typemod.function.defaultLibrary   @function.builtin
+highlight link @lsp.typemod.keyword.async             @keyword.coroutine
+highlight link @lsp.typemod.macro.defaultLibrary      @function.builtin
+highlight link @lsp.typemod.method.defaultLibrary     @function.builtin
+highlight link @lsp.typemod.operator.injected         @operator
+highlight link @lsp.typemod.string.injected           @string
+highlight link @lsp.typemod.type.defaultLibrary       @type.builtin
+highlight link @lsp.typemod.variable.defaultLibrary   @variable.builtin
+highlight link @lsp.typemod.variable.injected         @variable
 if &background == 'dark' " Dark
   " Neovim terminal colors
   let g:terminal_color_0  = '#1c1c1c'
@@ -214,6 +212,8 @@ if &background == 'dark' " Dark
   highlight DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl
   highlight DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
   highlight DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
+  " nvim-treesitter matchers
+  highlight @variable                guifg=#d0d0d0 guibg=NONE    gui=NONE
   " PaperColorSlim Custom
   highlight pcsFunctionBold          guifg=#5fafd7 guibg=NONE    gui=bold
   highlight pcsHtmlAnchor            guifg=#00afaf guibg=NONE    gui=underline
@@ -340,6 +340,8 @@ else " Light
   highlight DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl
   highlight DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
   highlight DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
+  " nvim-treesitter matchers
+  highlight @variable                guifg=#444444 guibg=NONE    gui=NONE
   " PaperColorSlim Custom
   highlight pcsFunctionBold          guifg=#0087af guibg=NONE    gui=bold
   highlight pcsHtmlAnchor            guifg=#005f87 guibg=NONE    gui=underline
@@ -350,8 +352,7 @@ else " Light
   highlight pcsHtmlHeader5           guifg=#d70087 guibg=NONE    gui=underline
   highlight pcsHtmlHeader6           guifg=#d70087 guibg=NONE    gui=underline,italic
 endif
-
-" not exactly 1:1 in practice, but gives a rough gist
+" Palette: not exactly 1:1 in practice, but gives a rough gist
 "    d        l    <>    d        l    <>    d        l    <>    d        l
 " #d7875f  #005f87 <> #5fafd7  #0087af <> #262626  #005f87 <> #000000  #444444
 " #d787ff  #0087af <> #5fffff  #0087af <> #303030  #e4e4e4 <> #005f00  #afff87
