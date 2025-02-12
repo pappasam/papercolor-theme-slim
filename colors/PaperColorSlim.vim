@@ -7,10 +7,8 @@ if exists("syntax_on")
 endif
 let g:colors_name="PaperColorSlim"
 
-highlight  link CursorColumn   ColorColumn
-highlight  link CursorLine     ColorColumn
-highlight  link FoldColumn     LineNr
 highlight  link Macro          Define
+highlight  link FoldColumn     LineNr
 highlight! link Added          DiffAdd
 highlight! link Changed        DiffChange
 highlight! link Removed        DiffDelete
@@ -125,6 +123,8 @@ if &background == 'dark' " Dark
   highlight Conceal                  guifg=#585858 guibg=NONE    gui=NONE
   highlight CurSearch                guifg=#87d700 guibg=#005f00 gui=NONE
   highlight Cursor                   guifg=#c6c6c6 guibg=NONE    gui=NONE
+  highlight CursorColumn             guifg=NONE    guibg=#303030 gui=NONE
+  highlight CursorLine               guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLineNr             guifg=#ffff00 guibg=NONE    gui=NONE
   highlight DiffAdd                  guifg=#ffffff guibg=#1a4400 gui=NONE
   highlight DiffChange               guifg=#ffffff guibg=#1a4747 gui=NONE
@@ -246,6 +246,8 @@ else " Light
   highlight Conceal                  guifg=#444444 guibg=NONE    gui=NONE
   highlight CurSearch                guifg=#008700 guibg=#afff87 gui=NONE
   highlight Cursor                   guifg=#c6c6c6 guibg=NONE    gui=NONE
+  highlight CursorColumn             guifg=NONE    guibg=#e4e4e4 gui=NONE
+  highlight CursorLine               guifg=NONE    guibg=#e4e4e4 gui=NONE
   highlight CursorLineNr             guifg=#af5f00 guibg=NONE    gui=NONE
   highlight DiffAdd                  guifg=#0a2600 guibg=#90ee90 gui=NONE
   highlight DiffChange               guifg=#0a0a0a guibg=#ffd75f gui=NONE
