@@ -129,10 +129,10 @@ if &background == 'dark' " Dark
   highlight CursorColumn             guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLine               guifg=NONE    guibg=#303030 gui=NONE
   highlight CursorLineNr             guifg=#ffff00 guibg=NONE    gui=NONE
-  highlight DiffAdd                  guifg=NONE    guibg=#183300 gui=NONE
-  highlight DiffChange               guifg=NONE    guibg=#183939 gui=NONE
-  highlight DiffDelete               guifg=NONE    guibg=#550d0d gui=NONE
-  highlight DiffText                 guifg=NONE    guibg=#004f4f gui=NONE
+  highlight DiffAdd                  guifg=NONE    guibg=#152b00 gui=NONE
+  highlight DiffChange               guifg=NONE    guibg=#153333 gui=NONE
+  highlight DiffDelete               guifg=NONE    guibg=#4a0b0b gui=NONE
+  highlight DiffText                 guifg=NONE    guibg=#004646 gui=NONE
   highlight Directory                guifg=#5fafd7 guibg=NONE    gui=bold
   highlight EndOfBuffer              guifg=#585858 guibg=NONE    gui=NONE
   highlight ErrorMsg                 guifg=#af005f guibg=#5f0000 gui=NONE
