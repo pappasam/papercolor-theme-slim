@@ -10,8 +10,8 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
    - [lsp-semantic-highlight]
    - [diagnostic-highlight]
    - [nvim-treesitter highlights]
-4. Supports both `background=light` and `background=dark`.
-5. Only supports Neovim 0.8+ (when treesitter matchers landed).
+4. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
+5. Only supports Neovim 0.8+ (the release that landed treesitter's syntax matchers).
 
 ![Screenshot](./img/screenshot.png)
 
@@ -27,66 +27,69 @@ We use the dark variant by default:
 colorscheme PaperColorSlim
 ```
 
-The light variant can be used at start-up by setting `background=light` before loading this colorscheme.
+The light variant is available under this name:
 
 ```vim
-set background=light
-colorscheme PaperColorSlim
+colorscheme PaperColorSlimLight
 ```
 
-You may change to the light/dark variant at any time by running `:set background=light` or `:set background=dark`
+If you want to use Neovim's `'background'` option, you can place the following in your `init.vim` to automatically select light or dark based on this value.
 
-## Customization
+```vim
+if &background == 'dark'
+  colorscheme PaperColorSlim
+else
+  colorscheme PaperColorSlimLight
+endif
+```
 
-You can configure virtually anything you want with native syntax highlighting tooling and `autocmds`. What follows are some common configuration customization requests by users, along with their solution.
+## Customization with Autocmds
+
+You can configure virtually anything you want with native syntax highlighting tooling and `autocmds`. What follows are some common configuration customization requests by users, along with their solution. For all of these recommendations, place the recommend `augroup`s in your `init.vim` **before** you initialize your colorscheme with `colorscheme PaperColorSlim` or `colorscheme PaperColorSlimLight`.
 
 ### Transparent background
 
-Some users want the background to match their terminal's background color. To achieve this with PaperColorSlim, put the following code somewhere in your `vimrc`:
+Some users want the background to match their terminal's background color.
 
 ```vim
-augroup custom_papercolorslim_transparent_background
+augroup change_me_please
   autocmd!
-  autocmd ColorScheme PaperColorSlim highlight Normal guibg=NONE
+  autocmd ColorScheme PaperColorSlim,PaperColorSlimLight
+        \ highlight Normal guibg=NONE
 augroup end
 ```
 
-**Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/1c1c1c) when using `background=dark`, or [#eeeeee](https://www.color-hex.com/color/eeeeee) when using `background=light`, PaperColorSlim may not contrast well with your terminal's background. In this case, you will need to do one of the following:
+**Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/1c1c1c) when using `PaperColorSlim`, or [#eeeeee](https://www.color-hex.com/color/eeeeee) when using `PaperColorSlimLight`, the theme may not contrast well with your terminal's background. In this case, you will need to do one of the following:
 
-1. Use the PaperColorSlim-provided background colors (e.g., don't put the above in your `vimrc`)
+1. Use the PaperColorSlim's colors (e.g., don't put the above in your `init.vim`)
 2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
 3. Use a different `colorscheme` that better-supports your background preferences
 
-### Override color for only one &background type
+### Override color for only one variant
 
-Suppose, hypothetically, that you like the default `guibg` color for &background == 'dark' but want to change the `guibg` color for &background == 'light' to [#fffff0](https://www.color-hex.com/color/fffff0). You can do this by adding the following snippet to your vimrc:
+Suppose, hypothetically, that you like the default `guibg` color for `PaperColorSlimLight` to [#fffff0](https://www.color-hex.com/color/fffff0).
 
 ```vim
-augroup custom_papercolorslim_light_background
+augroup change_me_please
   autocmd!
-  autocmd ColorScheme PaperColorSlim
-        \ if &background == 'light' |
-        \ execute 'highlight Normal guibg=#fffff0' |
-        \ endif
+  autocmd ColorScheme PaperColorSlimLight
+        \ highlight Normal guibg=#fffff0
 augroup end
 ```
 
-### Modify highlight linking
+### Support specific plugins
 
-Sometimes you want to change the group that a plugin's matched group is linked to. Although this `colorscheme` doesn't handle that for you, it's trivial to do this linking yourself. Here are some examples from my vimrc for [gitsigns] and [nvim-tree]:
+Sometimes you want to customize your experience for a specific plugin's syntax groups. Here are some examples for [gitsigns] and [gv.vim]:
 
 ```vim
-augroup custom_highlight_linking
+augroup change_me_please
   autocmd!
-  autocmd ColorScheme PaperColorSlim
-        \ highlight link GitSignsAddNr DiffAdd |
-        \ highlight link GitSignsChangeNr DiffChange |
-        \ highlight link GitSignsDeleteNr DiffDelete |
-        \ highlight link GitSignsDeleteNr DiffDelete |
-        \ highlight link NvimTreeExecFile PreProc |
-        \ highlight link NvimTreeImageFile NONE |
-        \ highlight link NvimTreeSpecialFile NONE |
-        \ highlight link NvimTreeSymlink NONE
+  autocmd ColorScheme PaperColorSlim,PaperColorSlimLight
+        \ highlight link diffAdded DiffAdd |
+        \ highlight link diffRemoved DiffDelete |
+        \ highlight GitSignsAddInline gui=underdouble |
+        \ highlight GitSignsDeleteInline gui=underdouble |
+        \ highlight GitSignsChangeInline gui=underdouble
 augroup end
 ```
 
@@ -109,7 +112,7 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [built-in groups]: https://neovim.io/doc/user/syntax.html#highlight-default
 [gitsigns]: https://github.com/lewis6991/gitsigns.nvim
 [lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
-[nvim-tree]: https://github.com/nvim-tree/nvim-tree.lua
+[gv.vim]: https://github.com/junegunn/gv.vim
 [nvim-treesitter highlights]: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
 [nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
