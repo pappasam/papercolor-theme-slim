@@ -67,7 +67,7 @@ highlight link @type.builtin                          Type
 highlight link @type.definition                       Typedef
 highlight link @variable                              NormalNC
 highlight link @variable.parameter                    Identifier
-highlight link @variable.member                       Identifier
+highlight link @variable.member                       NormalNC
 " Language-specific overrides
 highlight link @constructor.lua                       NONE
 " Link LSP Semantic Highlighting to treesitter styles
