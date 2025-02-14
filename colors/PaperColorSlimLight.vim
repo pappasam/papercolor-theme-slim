@@ -16,10 +16,7 @@ highlight link Added          DiffAdd
 highlight link Changed        DiffChange
 highlight link Removed        DiffDelete
 " nvim-treesitter matchers
-highlight      @markup.italic                         gui=italic
-highlight      @markup.strong                         gui=bold
-highlight      @variable.builtin                      gui=bold,italic
-highlight link @attribute                             NONE
+highlight      @attribute                             gui=italic
 highlight link @attribute.builtin                     Constant
 highlight link @constant.builtin                      Boolean
 highlight link @constructor                           Function
@@ -44,6 +41,7 @@ highlight link @markup.heading.3                      pcsHtmlHeader3
 highlight link @markup.heading.4                      pcsHtmlHeader4
 highlight link @markup.heading.5                      pcsHtmlHeader5
 highlight link @markup.heading.6                      pcsHtmlHeader6
+highlight      @markup.italic                         gui=italic
 highlight link @markup.link.label                     pcsHtmlAnchor
 highlight link @markup.link.markdown_inline           NONE
 highlight link @markup.link.url                       Underlined
@@ -52,6 +50,7 @@ highlight link @markup.list                           Delimiter
 highlight link @markup.literal                        String
 highlight link @markup.raw                            String
 highlight link @markup.raw.block                      NormalNC
+highlight      @markup.strong                         gui=bold
 highlight link @method                                Function
 highlight link @method.builtin                        Function
 highlight link @method.call                           Function
@@ -66,8 +65,9 @@ highlight link @type                                  Type
 highlight link @type.builtin                          Type
 highlight link @type.definition                       Typedef
 highlight link @variable                              NormalNC
-highlight link @variable.parameter                    Identifier
-highlight link @variable.member                       NormalNC
+highlight      @variable.builtin                      gui=bold
+highlight      @variable.parameter                    gui=italic
+highlight link @variable.member                       Identifier
 " Language-specific overrides
 highlight link @constructor.lua                       NONE
 " Link LSP Semantic Highlighting to treesitter styles
