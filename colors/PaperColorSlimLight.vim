@@ -1,4 +1,4 @@
-" PaperColorSlimLight: Based on <https://github.com/NLKNguyen/papercolor-theme>
+" PaperColorSlimLight: guibg=#eeeeee
 " Maintainer: Samuel Roeca <samuel.roeca@gmail.com>
 highlight clear
 highlight clear @variable

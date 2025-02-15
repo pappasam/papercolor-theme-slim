@@ -1,4 +1,4 @@
-" PaperColorSlim: Based on <https://github.com/NLKNguyen/papercolor-theme>
+" PaperColorSlim: guibg=#1c1c1c
 " Maintainer: Samuel Roeca <samuel.roeca@gmail.com>
 highlight clear
 highlight clear @variable
