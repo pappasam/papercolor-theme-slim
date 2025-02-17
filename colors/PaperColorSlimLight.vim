@@ -162,8 +162,8 @@ highlight TabLineFill              guifg=#005f87 guibg=#005f87 gui=NONE
 highlight TabLineSel               guifg=#444444 guibg=#e4e4e4 gui=NONE
 highlight Title                    guifg=#008700 guibg=NONE    gui=bold
 highlight VertSplit                guifg=#005f87 guibg=NONE    gui=NONE
-highlight Visual                   guifg=NONE    guibg=#c6c6c6 gui=NONE
-highlight VisualNOS                guifg=NONE    guibg=#a6a6a6 gui=NONE
+highlight Visual                   guifg=#444444 guibg=#c6c6c6 gui=NONE
+highlight VisualNOS                guifg=#444444 guibg=#a6a6a6 gui=NONE
 highlight WarningMsg               guifg=#d70087 guibg=NONE    gui=NONE
 highlight Whitespace               guifg=#c6c6c6 guibg=NONE    gui=NONE
 highlight WildMenu                 guifg=#fffff0 guibg=#d70087 gui=NONE
