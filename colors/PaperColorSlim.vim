@@ -16,7 +16,7 @@ highlight link Added          DiffAdd
 highlight link Changed        DiffChange
 highlight link Removed        DiffDelete
 " nvim-treesitter matchers
-highlight      @attribute                             gui=italic
+highlight link @attribute                             NormalNC
 highlight link @attribute.builtin                     Constant
 highlight link @constant.builtin                      Boolean
 highlight link @constructor                           Function
@@ -66,7 +66,7 @@ highlight link @type.builtin                          Type
 highlight link @type.definition                       Typedef
 highlight link @variable                              NormalNC
 highlight      @variable.builtin                      gui=bold
-highlight      @variable.parameter                    gui=italic
+highlight link @variable.parameter                    NormalNC
 highlight link @variable.member                       Identifier
 " Language-specific overrides
 highlight link @constructor.lua                       NONE
