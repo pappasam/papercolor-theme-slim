@@ -66,11 +66,11 @@ highlight link @type.builtin                          Type
 highlight link @type.definition                       Typedef
 highlight link @variable                              NormalNC
 highlight      @variable.builtin                      gui=bold
-highlight link @variable.parameter                    NormalNC
+highlight      @variable.parameter guifg=#87afaf guibg=NONE gui=NONE
 highlight link @variable.member                       Identifier
 " Language-specific overrides
 highlight link @constructor.lua                       NONE
-" Link LSP Semantic Highlighting to treesitter styles
+" LSP Semantic Highlighting
 highlight link @lsp.type.boolean                      @boolean
 highlight link @lsp.type.builtinType                  @type.builtin
 highlight link @lsp.type.comment                      @comment
@@ -222,4 +222,4 @@ highlight pcsHtmlHeader2           guifg=#5fafd7 guibg=NONE    gui=underline,bol
 highlight pcsHtmlHeader3           guifg=#af87d7 guibg=NONE    gui=underline,bold
 highlight pcsHtmlHeader4           guifg=#ff5faf guibg=NONE    gui=underline,bold
 highlight pcsHtmlHeader5           guifg=#ff5faf guibg=NONE    gui=underline
-highlight pcsHtmlHeader6           guifg=#ff5faf guibg=NONE    gui=underline,italic
+highlight pcsHtmlHeader6           guifg=#ff5faf guibg=NONE    gui=underline
