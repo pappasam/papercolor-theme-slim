@@ -83,7 +83,6 @@ Sometimes you want to customize your experience for a specific plugin's syntax g
 
 ```vim
 function s:papercolor_slim_linking()
-  highlight link @aicomment DiagnosticInfo
   highlight link GitSignsAddInline GitSignsAdd
   highlight link GitSignsChangeInline GitSignsChange
   highlight link GitSignsDeleteInline GitSignsDelete
