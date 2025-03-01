@@ -79,17 +79,25 @@ augroup end
 
 ### Support specific plugins
 
-Sometimes you want to customize your experience for a specific plugin's syntax groups. Here are some examples for [gitsigns] and [gv.vim]:
+Sometimes you want to customize your experience for a specific plugin's syntax groups. Here are some examples for [snacks.nvim], [gitsigns], and [gv.vim]:
 
 ```vim
-augroup change_me_please
+function s:papercolor_slim_linking()
+  highlight link @aicomment DiagnosticInfo
+  highlight link GitSignsAddInline GitSignsAdd
+  highlight link GitSignsChangeInline GitSignsChange
+  highlight link GitSignsDeleteInline GitSignsDelete
+  highlight link SnacksPicker Normal
+  highlight link SnacksPickerBorder Normal
+  highlight link SnacksPickerInputBorder Normal
+  highlight link SnacksPickerPathHidden Normal
+  highlight link diffAdded DiffAdd
+  highlight link diffRemoved DiffDelete
+endfunction
+
+augroup colorscheme_overrides_custom
   autocmd!
-  autocmd ColorScheme PaperColorSlim,PaperColorSlimLight
-        \ highlight link diffAdded DiffAdd |
-        \ highlight link diffRemoved DiffDelete |
-        \ highlight GitSignsAddInline gui=underdouble |
-        \ highlight GitSignsDeleteInline gui=underdouble |
-        \ highlight GitSignsChangeInline gui=underdouble
+  autocmd ColorScheme PaperColorSlim,PaperColorSlimLight call s:papercolor_slim_linking()
 augroup end
 ```
 
@@ -101,21 +109,55 @@ As of January 2025, in this instance, a Vimscript implementation is (very margin
 
 See [here](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more details.
 
+### Visual Selection is barely visible for me
+
+Personally, I prefer a lighter touch when it comes to Visual coloring. That said, I understand points about accessibility / visibility.
+
+Luckily, you can customize things to make things feel right. To make Visual highlights stand out a bit more, add one of the following before you load your colorscheme.
+
+#### Vim
+
+```vim
+function s:papercolor_slim_linking()
+  highlight clear Visual
+  highlight link Visual StatusLine
+endfunction
+
+augroup colorscheme_overrides_custom
+  autocmd!
+  autocmd ColorScheme PaperColorSlim,PaperColorSlimLight call s:papercolor_slim_linking()
+augroup end
+```
+
+#### Lua
+
+```lua
+vim.api.nvim_create_autocmd("ColorScheme", {
+  group = vim.api.nvim_create_augroup("selection_color_override", { clear = true }),
+    pattern = { "PaperColorSlim" },
+    callback = function()
+    vim.cmd("highlight clear Visual")
+    vim.cmd("highlight link Visual StatusLine")
+  end,
+})
+```
+
 ## Credits
 
 Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme] over the years!
 
-[darthbanana13]: https://github.com/darthbanana13
-[maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
 [Neovim Package]: https://neovim.io/doc/user/usr_05.html#_adding-a-package
 [Nikyle Nguyen]: https://github.com/NLKNguyen
 [built-in groups]: https://neovim.io/doc/user/syntax.html#highlight-default
+[darthbanana13]: https://github.com/darthbanana13
+[diagnostic-highlight]: https://neovim.io/doc/user/diagnostic.html#_highlights
 [gitsigns]: https://github.com/lewis6991/gitsigns.nvim
-[lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
 [gv.vim]: https://github.com/junegunn/gv.vim
+[lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
+[maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
 [nvim-treesitter highlights]: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
 [nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
-[diagnostic-highlight]: https://neovim.io/doc/user/diagnostic.html#_highlights
+[snacks.nvim]: https://github.com/folke/snacks.nvim
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
