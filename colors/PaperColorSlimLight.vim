@@ -8,6 +8,7 @@ highlight clear Removed
 if exists("syntax_on")
   syntax reset
 endif
+set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
 let g:colors_name="PaperColorSlimLight"
 " Built-in
 highlight link Macro          Define
@@ -122,7 +123,8 @@ let g:terminal_color_15 = '#005f87'
 highlight ColorColumn              guifg=NONE    guibg=#e4e4e4 gui=NONE
 highlight Conceal                  guifg=#444444 guibg=NONE    gui=NONE
 highlight CurSearch                guifg=#008700 guibg=#afff87 gui=NONE
-highlight Cursor                   guifg=#c6c6c6 guibg=NONE    gui=NONE
+highlight Cursor                   guifg=#eeeeee guibg=#444444 gui=NONE
+highlight TermCursor               guifg=#eeeeee guibg=#444444 gui=NONE
 highlight CursorColumn             guifg=NONE    guibg=#e4e4e4 gui=NONE
 highlight CursorLine               guifg=NONE    guibg=#e4e4e4 gui=NONE
 highlight CursorLineNr             guifg=#af5f00 guibg=NONE    gui=NONE

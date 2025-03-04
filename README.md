@@ -3,7 +3,7 @@
 This is a slimmed down re-implementation of [papercolor-theme] that:
 
 1. Has **no abstraction**, which [maximizes performance] and simplifies user color mapping overrides.
-2. Targets `gui` options (`guifg`, `guibg`, `gui`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
+2. Targets `gui` options (`guifg`, `guibg`, `gui`, `guicursor`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
 3. Limited to the following highlight groups for consistency across languages
    - [built-in groups]
    - [preferred groups]
@@ -139,6 +139,17 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     vim.cmd("highlight link Visual StatusLine")
   end,
 })
+```
+
+### My cursor preference is overridden
+
+If you're super specific about your terminal cursor, add the following to your configuration.
+
+```vim
+augroup colorscheme_overrides_custom
+  autocmd!
+  autocmd ColorScheme * set guicursor=<your-config-here>
+augroup end
 ```
 
 ## Credits
