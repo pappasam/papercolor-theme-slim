@@ -1,13 +1,13 @@
 " PaperColorSlimLight: guibg=#eeeeee
 " Maintainer: Samuel Roeca <samuel.roeca@gmail.com>
 highlight clear
+if exists("syntax_on")
+  syntax reset
+endif
 highlight clear @variable
 highlight clear Added
 highlight clear Changed
 highlight clear Removed
-if exists("syntax_on")
-  syntax reset
-endif
 set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
 let g:colors_name="PaperColorSlimLight"
 " Built-in
