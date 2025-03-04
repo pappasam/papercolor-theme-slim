@@ -4,6 +4,7 @@ highlight clear
 if exists("syntax_on")
   syntax reset
 endif
+" Clear items from built-in colorscheme
 highlight clear @variable
 highlight clear Added
 highlight clear Changed
