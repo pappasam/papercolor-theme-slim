@@ -45,18 +45,14 @@ endif
 
 ## Customization with Autocmds
 
-You can configure virtually anything you want with native syntax highlighting tooling and `autocmds`. What follows are some common configuration customization requests by users, along with their solution. For all of these recommendations, place the recommend `augroup`s in your `init.vim` **before** you initialize your colorscheme with `colorscheme PaperColorSlim` or `colorscheme PaperColorSlimLight`.
+You can configure virtually anything you want with native syntax highlighting tooling and [autocmd]. What follows are some common configuration customization requests by users, along with their solution. Example configuration below should be defined **before** you initialize your colorscheme.
 
 ### Transparent background
 
 Some users want the background to match their terminal's background color.
 
 ```vim
-augroup change_me_please
-  autocmd!
-  autocmd ColorScheme PaperColorSlim,PaperColorSlimLight
-        \ highlight Normal guibg=NONE
-augroup end
+autocmd ColorScheme PaperColorSlim,PaperColorSlimLight highlight Normal guibg=NONE
 ```
 
 **Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/1c1c1c) when using `PaperColorSlim`, or [#eeeeee](https://www.color-hex.com/color/eeeeee) when using `PaperColorSlimLight`, the theme may not contrast well with your terminal's background. In this case, you will need to do one of the following:
@@ -70,11 +66,7 @@ augroup end
 Suppose, hypothetically, that you like the default `guibg` color for `PaperColorSlimLight` to [#fffff0](https://www.color-hex.com/color/fffff0).
 
 ```vim
-augroup change_me_please
-  autocmd!
-  autocmd ColorScheme PaperColorSlimLight
-        \ highlight Normal guibg=#fffff0
-augroup end
+autocmd ColorScheme PaperColorSlimLight highlight Normal guibg=#fffff0
 ```
 
 ### Support specific plugins
@@ -195,7 +187,7 @@ See [here](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more 
 
 ### I don't like specific color choices
 
-I'm open to feedback, but if we disagree, you can override anything easily for yourself. See above for customizing things to your liking with autocmds.
+I'm open to feedback, but if we disagree, you can override anything easily for yourself. See above for customizing things to your liking with [autocmd].
 
 ### My cursor preference is overridden
 
@@ -227,3 +219,4 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
 [snacks.nvim]: https://github.com/folke/snacks.nvim
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
+[autocmd]: https://neovim.io/doc/user/autocmd.html
