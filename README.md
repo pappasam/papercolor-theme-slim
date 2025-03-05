@@ -6,10 +6,11 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
 2. Targets `gui` options (`guifg`, `guibg`, `gui`, `guicursor`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
 3. Limited to the following highlight groups for consistency across languages
    - [built-in groups]
-   - [preferred groups]
-   - [lsp-semantic-highlight]
    - [diagnostic-highlight]
+   - [html-vim]
+   - [lsp-semantic-highlight]
    - [nvim-treesitter highlights]
+   - [preferred groups]
 4. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
 5. Only supports Neovim 0.8+ (the release that landed treesitter's syntax matchers).
 
@@ -203,11 +204,13 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 
 [Neovim Package]: https://neovim.io/doc/user/usr_05.html#_adding-a-package
 [Nikyle Nguyen]: https://github.com/NLKNguyen
+[autocmd]: https://neovim.io/doc/user/autocmd.html
 [built-in groups]: https://neovim.io/doc/user/syntax.html#highlight-default
 [darthbanana13]: https://github.com/darthbanana13
 [diagnostic-highlight]: https://neovim.io/doc/user/diagnostic.html#_highlights
 [gitsigns]: https://github.com/lewis6991/gitsigns.nvim
 [gv.vim]: https://github.com/junegunn/gv.vim
+[html-vim]: https://neovim.io/doc/user/syntax.html#html.vim
 [lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
 [maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
 [nvim-treesitter highlights]: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
@@ -216,4 +219,3 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
 [snacks.nvim]: https://github.com/folke/snacks.nvim
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
-[autocmd]: https://neovim.io/doc/user/autocmd.html
