@@ -194,10 +194,7 @@ I'm open to feedback, but if we disagree, you can override anything easily for y
 If you're super specific about your terminal cursor, add the following to your configuration.
 
 ```vim
-augroup colorscheme_overrides_custom
-  autocmd!
-  autocmd ColorScheme * set guicursor=<your-config-here>
-augroup end
+autocmd ColorScheme * set guicursor=<your-config-here>
 ```
 
 ## Credits
