@@ -50,6 +50,7 @@ highlight link @markup.link.url                       Underlined
 highlight link @markup.link.vimdoc                    pcsHtmlAnchor
 highlight link @markup.list                           Delimiter
 highlight link @markup.literal                        String
+highlight      @markup.quote.markdown                 gui=italic,underline
 highlight link @markup.raw                            String
 highlight link @markup.raw.block                      NormalNC
 highlight      @markup.strong                         gui=bold
