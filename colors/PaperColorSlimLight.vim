@@ -11,6 +11,7 @@ highlight clear Changed
 highlight clear Removed
 set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
 let g:colors_name="PaperColorSlimLight"
+" Linking ------------------------------------------------------------------
 " Built-in
 highlight link Macro          Define
 highlight link FoldColumn     LineNr
@@ -37,23 +38,23 @@ highlight link @keyword.repeat                        Repeat
 highlight link @keyword.return                        Conditional
 highlight link @keyword.directive.define              Define
 highlight link @markup.heading                        Title
-highlight link @markup.heading.1                      pcsHtmlHeader1
-highlight link @markup.heading.2                      pcsHtmlHeader2
-highlight link @markup.heading.3                      pcsHtmlHeader3
-highlight link @markup.heading.4                      pcsHtmlHeader4
-highlight link @markup.heading.5                      pcsHtmlHeader5
-highlight link @markup.heading.6                      pcsHtmlHeader6
-highlight      @markup.italic                         gui=italic
-highlight link @markup.link.label                     pcsHtmlAnchor
+highlight link @markup.heading.1                      htmlH1
+highlight link @markup.heading.2                      htmlH2
+highlight link @markup.heading.3                      htmlH3
+highlight link @markup.heading.4                      htmlH4
+highlight link @markup.heading.5                      htmlH5
+highlight link @markup.heading.6                      htmlH6
+highlight link @markup.italic                         htmlItalic
+highlight link @markup.link.label                     htmlAnchor
 highlight link @markup.link.markdown_inline           NONE
 highlight link @markup.link.url                       Underlined
-highlight link @markup.link.vimdoc                    pcsHtmlAnchor
+highlight link @markup.link.vimdoc                    htmlAnchor
 highlight link @markup.list                           Delimiter
 highlight link @markup.literal                        String
-highlight      @markup.quote.markdown                 gui=italic,underline
+highlight link @markup.quote.markdown                 htmlUnderlineItalic
 highlight link @markup.raw                            String
 highlight link @markup.raw.block                      NormalNC
-highlight      @markup.strong                         gui=bold
+highlight link @markup.strong                         htmlBold
 highlight link @method                                Function
 highlight link @method.builtin                        Function
 highlight link @method.call                           Function
@@ -68,8 +69,8 @@ highlight link @type                                  Type
 highlight link @type.builtin                          Type
 highlight link @type.definition                       Typedef
 highlight link @variable                              NormalNC
-highlight      @variable.builtin                      gui=bold
-highlight      @variable.parameter guifg=#945d2d guibg=NONE gui=NONE
+highlight link @variable.builtin                      htmlBold
+highlight link @variable.parameter                    pcsParameter
 highlight link @variable.member                       Identifier
 " Language-specific overrides
 highlight link @constructor.lua                       NONE
@@ -104,6 +105,10 @@ highlight link @lsp.typemod.string.injected           @string
 highlight link @lsp.typemod.type.defaultLibrary       @type.builtin
 highlight link @lsp.typemod.variable.defaultLibrary   @variable.builtin
 highlight link @lsp.typemod.variable.injected         @variable
+" Html
+highlight link htmlUnderline                          Underlined
+highlight link htmlTitle                              Title
+" Colors -------------------------------------------------------------------
 " Neovim terminal colors
 let g:terminal_color_0  = '#eeeeee'
 let g:terminal_color_1  = '#af0000'
@@ -218,12 +223,19 @@ highlight DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE    gui=undercurl
 highlight DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl
 highlight DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
 highlight DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
+" HTML sections
+highlight htmlAnchor               guifg=#005f87 guibg=NONE    gui=underline
+highlight htmlH1                   guifg=#008700 guibg=NONE    gui=underline,bold
+highlight htmlH2                   guifg=#0087af guibg=NONE    gui=underline,bold
+highlight htmlH3                   guifg=#8700af guibg=NONE    gui=underline,bold
+highlight htmlH4                   guifg=#d70087 guibg=NONE    gui=underline,bold
+highlight htmlH5                   guifg=#d70087 guibg=NONE    gui=underline
+highlight htmlH6                   guifg=#d70087 guibg=NONE    gui=underline
+highlight htmlBold                 guifg=NONE    guibg=NONE    gui=bold
+highlight htmlBoldUnderline        guifg=NONE    guibg=NONE    gui=bold,underline
+highlight htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underline,italic
+highlight htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
+highlight htmlItalic               guifg=NONE    guibg=NONE    gui=italic
 " PaperColorSlim Custom
 highlight pcsFunctionBold          guifg=#0087af guibg=NONE    gui=bold
-highlight pcsHtmlAnchor            guifg=#005f87 guibg=NONE    gui=underline
-highlight pcsHtmlHeader1           guifg=#008700 guibg=NONE    gui=underline,bold
-highlight pcsHtmlHeader2           guifg=#0087af guibg=NONE    gui=underline,bold
-highlight pcsHtmlHeader3           guifg=#8700af guibg=NONE    gui=underline,bold
-highlight pcsHtmlHeader4           guifg=#d70087 guibg=NONE    gui=underline,bold
-highlight pcsHtmlHeader5           guifg=#d70087 guibg=NONE    gui=underline
-highlight pcsHtmlHeader6           guifg=#d70087 guibg=NONE    gui=underline
+highlight pcsParameter             guifg=#945d2d guibg=NONE    gui=NONE
