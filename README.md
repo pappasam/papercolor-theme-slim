@@ -79,26 +79,111 @@ augroup end
 
 ### Support specific plugins
 
-Sometimes you want to customize your experience for a specific plugin's syntax groups. Here are some examples for [snacks.nvim], [gitsigns], and [gv.vim]:
+Sometimes you want to customize your experience for a specific plugin's syntax groups. See my full example below with overrides supporting [snacks.nvim], [gitsigns], and [gv.vim]:
+
+<details>
+<summary>Full example</summary>
+<br>
 
 ```vim
 function s:papercolor_slim_linking()
-  highlight link GitSignsAddInline GitSignsAdd
-  highlight link GitSignsChangeInline GitSignsChange
-  highlight link GitSignsDeleteInline GitSignsDelete
+  highlight link @aicomment DiagnosticInfo
   highlight link SnacksPicker Normal
   highlight link SnacksPickerBorder Normal
   highlight link SnacksPickerInputBorder Normal
-  highlight link SnacksPickerPathHidden Normal
+  highlight link SnacksPickerPathHidden SnacksPickerFile
+  highlight link SnacksPickerPathIgnored SnacksPickerFile
+  highlight link SnacksPickerListCursorLine CursorLine
   highlight link diffAdded DiffAdd
   highlight link diffRemoved DiffDelete
+
+  " Regular Git signs
+  highlight link GitSignsAdd          DiffAdd
+  highlight link GitSignsChange       DiffChange
+  highlight link GitSignsDelete       DiffDelete
+  highlight link GitSignsChangedelete GitSignsChange
+  highlight link GitSignsTopdelete    GitSignsDelete
+  highlight link GitSignsUntracked    GitSignsAdd
+
+  " Number column highlights
+  highlight link GitSignsAddNr          DiffAdd
+  highlight link GitSignsChangeNr       DiffChange
+  highlight link GitSignsDeleteNr       DiffDelete
+  highlight link GitSignsChangedeleteNr GitSignsChangeNr
+  highlight link GitSignsTopdeleteNr    GitSignsDeleteNr
+  highlight link GitSignsUntrackedNr    GitSignsAddNr
+
+  " Line highlights
+  highlight link GitSignsAddLn          DiffAdd
+  highlight link GitSignsChangeLn       DiffChange
+  highlight link GitSignsChangedeleteLn GitSignsChangeLn
+  highlight link GitSignsUntrackedLn    GitSignsAddLn
+
+  " Cursor line highlights
+  highlight link GitSignsAddCul          GitSignsAdd
+  highlight link GitSignsChangeCul       GitSignsChange
+  highlight link GitSignsDeleteCul       GitSignsDelete
+  highlight link GitSignsChangedeleteCul GitSignsChangeCul
+  highlight link GitSignsTopdeleteCul    GitSignsDeleteCul
+  highlight link GitSignsUntrackedCul    GitSignsAddCul
+
+  " Staged Git signs
+  highlight link GitSignsStagedAdd          GitSignsAdd
+  highlight link GitSignsStagedChange       GitSignsChange
+  highlight link GitSignsStagedDelete       GitSignsDelete
+  highlight link GitSignsStagedChangedelete GitSignsStagedChange
+  highlight link GitSignsStagedTopdelete    GitSignsStagedDelete
+  highlight link GitSignsStagedUntracked    GitSignsStagedAdd
+
+  " Staged number column highlights
+  highlight link GitSignsStagedAddNr          GitSignsAddNr
+  highlight link GitSignsStagedChangeNr       GitSignsChangeNr
+  highlight link GitSignsStagedDeleteNr       GitSignsDeleteNr
+  highlight link GitSignsStagedChangedeleteNr GitSignsStagedChangeNr
+  highlight link GitSignsStagedTopdeleteNr    GitSignsStagedDeleteNr
+  highlight link GitSignsStagedUntrackedNr    GitSignsStagedAddNr
+
+  " Staged line highlights
+  highlight link GitSignsStagedAddLn          GitSignsAddLn
+  highlight link GitSignsStagedChangeLn       GitSignsChangeLn
+  highlight link GitSignsStagedChangedeleteLn GitSignsStagedChangeLn
+  highlight link GitSignsStagedUntrackedLn    GitSignsStagedAddLn
+
+  " Staged cursor line highlights
+  highlight link GitSignsStagedAddCul          GitSignsAddCul
+  highlight link GitSignsStagedChangeCul       GitSignsChangeCul
+  highlight link GitSignsStagedDeleteCul       GitSignsDeleteCul
+  highlight link GitSignsStagedChangedeleteCul GitSignsStagedChangeCul
+  highlight link GitSignsStagedTopdeleteCul    GitSignsStagedDeleteCul
+  highlight link GitSignsStagedUntrackedCul    GitSignsStagedAddCul
+
+  " Preview highlights
+  highlight link GitSignsAddPreview      DiffAdd
+  highlight link GitSignsDeletePreview   DiffDelete
+  highlight link GitSignsCurrentLineBlame NonText
+
+  " Inline highlights (using your custom links)
+  highlight link GitSignsAddInline       GitSignsAdd
+  highlight link GitSignsChangeInline    GitSignsChange
+  highlight link GitSignsDeleteInline    GitSignsDelete
+  highlight link GitSignsAddLnInline     GitSignsAddInline
+  highlight link GitSignsChangeLnInline  GitSignsChangeInline
+  highlight link GitSignsDeleteLnInline  GitSignsDeleteInline
+
+  " Virtual line highlights
+  highlight link GitSignsDeleteVirtLn       DiffDelete
+  highlight link GitSignsDeleteVirtLnInLine GitSignsDeleteLnInline
+  highlight link GitSignsVirtLnum           GitSignsDeleteVirtLn
 endfunction
 
 augroup colorscheme_overrides_custom
   autocmd!
   autocmd ColorScheme PaperColorSlim,PaperColorSlimLight call s:papercolor_slim_linking()
+  autocmd TextYankPost * silent! lua vim.highlight.on_yank({higroup="VisualNOS", timeout=200})
 augroup end
 ```
+
+</details>
 
 ## FAQ
 
@@ -108,38 +193,9 @@ As of January 2025, in this instance, a Vimscript implementation is (very margin
 
 See [here](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more details.
 
-### Visual Selection is barely visible for me
+### I don't like specific color choices
 
-Personally, I prefer a lighter touch when it comes to Visual coloring. That said, I understand points about accessibility / visibility.
-
-Luckily, you can customize things to make things feel right. To make Visual highlights stand out a bit more, add one of the following before you load your colorscheme.
-
-#### Vim
-
-```vim
-function s:papercolor_slim_linking()
-  highlight clear Visual
-  highlight link Visual StatusLine
-endfunction
-
-augroup colorscheme_overrides_custom
-  autocmd!
-  autocmd ColorScheme PaperColorSlim,PaperColorSlimLight call s:papercolor_slim_linking()
-augroup end
-```
-
-#### Lua
-
-```lua
-vim.api.nvim_create_autocmd("ColorScheme", {
-  group = vim.api.nvim_create_augroup("selection_color_override", { clear = true }),
-    pattern = { "PaperColorSlim" },
-    callback = function()
-    vim.cmd("highlight clear Visual")
-    vim.cmd("highlight link Visual StatusLine")
-  end,
-})
-```
+I'm open to feedback, but if we disagree, you can override anything easily for yourself. See above for customizing things to your liking with autocmds.
 
 ### My cursor preference is overridden
 
