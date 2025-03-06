@@ -9,6 +9,7 @@ highlight clear @variable
 highlight clear Added
 highlight clear Changed
 highlight clear Removed
+highlight clear NonText
 set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
 let g:colors_name="PaperColorSlim"
 " Linking ------------------------------------------------------------------
@@ -18,6 +19,7 @@ highlight link FoldColumn     LineNr
 highlight link Added          DiffAdd
 highlight link Changed        DiffChange
 highlight link Removed        DiffDelete
+highlight link NonText        Comment
 " nvim-treesitter matchers
 highlight link @attribute                             NormalNC
 highlight link @attribute.builtin                     Constant
@@ -148,7 +150,6 @@ highlight LineNr                   guifg=#808080 guibg=NONE    gui=NONE
 highlight MatchParen               guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
 highlight ModeMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 highlight MoreMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
-highlight NonText                  guifg=#585858 guibg=NONE    gui=NONE
 highlight Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
 highlight NormalFloat              guifg=#d0d0d0 guibg=#262626 gui=NONE
 highlight NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=NONE
