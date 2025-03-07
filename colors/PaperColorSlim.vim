@@ -191,7 +191,7 @@ highlight Function                 guifg=#5fafd7 guibg=NONE    gui=nocombine,NON
 highlight Statement                guifg=#afd700 guibg=NONE    gui=NONE
 highlight Conditional              guifg=#afd700 guibg=NONE    gui=NONE
 highlight Repeat                   guifg=#afd700 guibg=NONE    gui=NONE
-highlight Label                    guifg=#afd700 guibg=NONE    gui=NONE
+highlight Label                    guifg=#00afaf guibg=NONE    gui=bold,italic
 highlight Operator                 guifg=#00afaf guibg=NONE    gui=bold
 highlight Keyword                  guifg=#afd700 guibg=NONE    gui=NONE
 highlight Exception                guifg=#afd700 guibg=NONE    gui=NONE
