@@ -191,8 +191,8 @@ highlight Function                 guifg=#0087af guibg=NONE    gui=nocombine,NON
 highlight Statement                guifg=#d70087 guibg=NONE    gui=NONE
 highlight Conditional              guifg=#d70087 guibg=NONE    gui=NONE
 highlight Repeat                   guifg=#d70087 guibg=NONE    gui=NONE
-highlight Label                    guifg=#d70087 guibg=NONE    gui=NONE
-highlight Operator                 guifg=#005f87 guibg=NONE    gui=bold
+highlight Label                    guifg=#005faf guibg=NONE    gui=bold,italic
+highlight Operator                 guifg=#005faf guibg=NONE    gui=bold
 highlight Keyword                  guifg=#d70087 guibg=NONE    gui=NONE
 highlight Exception                guifg=#d70087 guibg=NONE    gui=NONE
 highlight PreProc                  guifg=#d70087 guibg=NONE    gui=NONE
