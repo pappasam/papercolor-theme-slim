@@ -1,4 +1,4 @@
-" PaperColorSlim: #1c1c1c (author: Samuel Roeca <samuel.roeca@gmail.com>)
+" PaperColorSlim (written by Samuel Roeca <samuel.roeca@gmail.com>)
 highlight clear
 if exists("syntax_on")
   syntax reset

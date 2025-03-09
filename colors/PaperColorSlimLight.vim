@@ -1,4 +1,4 @@
-" PaperColorSlimLight #eeeeee (author: Samuel Roeca <samuel.roeca@gmail.com>)
+" PaperColorSlimLight (written by Samuel Roeca <samuel.roeca@gmail.com>)
 highlight clear
 if exists("syntax_on")
   syntax reset
