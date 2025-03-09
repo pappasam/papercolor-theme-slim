@@ -1,5 +1,3 @@
-npm warn exec The following package was not found and will be installed: prettier@3.5.3
-
 # PaperColorSlim Colorscheme
 
 This is a slimmed down re-implementation of [papercolor-theme] that:
