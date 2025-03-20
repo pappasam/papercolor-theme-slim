@@ -140,6 +140,7 @@ highlight clear Added
 highlight clear Changed
 highlight clear Removed
 highlight clear NonText
+highlight clear QuickFixLine
 " built-in
 highlight link Macro                                  Define
 highlight link FoldColumn                             LineNr
@@ -147,6 +148,7 @@ highlight link Added                                  DiffAdd
 highlight link Changed                                DiffChange
 highlight link Removed                                DiffDelete
 highlight link NonText                                Comment
+highlight link QuickFixLine                           CursorLine
 " nvim-treesitter matchers (general)
 highlight link @attribute                             NormalNC
 highlight link @attribute.builtin                     Constant
