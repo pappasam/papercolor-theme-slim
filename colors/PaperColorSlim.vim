@@ -93,10 +93,10 @@ highlight PreProc                  guifg=#afd700 guibg=NONE    gui=NONE
 highlight Include                  guifg=#afd700 guibg=NONE    gui=NONE
 highlight Define                   guifg=#5faf5f guibg=NONE    gui=NONE
 highlight PreCondit                guifg=#5faf5f guibg=NONE    gui=NONE
-highlight Type                     guifg=#af87d7 guibg=NONE    gui=NONE
+highlight Type                     guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
 highlight StorageClass             guifg=#af87d7 guibg=NONE    gui=NONE
 highlight Structure                guifg=#af87d7 guibg=NONE    gui=NONE
-highlight Typedef                  guifg=#af87d7 guibg=NONE    gui=NONE
+highlight Typedef                  guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
 highlight Special                  guifg=#5fafd7 guibg=NONE    gui=bold
 highlight SpecialChar              guifg=#d7af5f guibg=NONE    gui=NONE
 highlight Tag                      guifg=#d7af00 guibg=NONE    gui=NONE
@@ -151,7 +151,7 @@ highlight link NonText                                Comment
 highlight link QuickFixLine                           CursorLine
 " nvim-treesitter matchers (general)
 highlight link @attribute                             NONE
-highlight link @attribute.builtin                     Constant
+highlight link @attribute.builtin                     NONE
 highlight link @constant.builtin                      Boolean
 highlight link @constructor                           NONE
 highlight link @diff.delta                            DiffChange
