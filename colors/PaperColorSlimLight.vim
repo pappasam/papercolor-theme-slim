@@ -94,8 +94,8 @@ highlight Include                  guifg=#d70087 guibg=NONE    gui=NONE
 highlight Define                   guifg=#008700 guibg=NONE    gui=NONE
 highlight PreCondit                guifg=#008700 guibg=NONE    gui=NONE
 highlight Type                     guifg=#8700af guibg=NONE    gui=nocombine,NONE
-highlight StorageClass             guifg=#8700af guibg=NONE    gui=NONE
-highlight Structure                guifg=#8700af guibg=NONE    gui=NONE
+highlight StorageClass             guifg=#8700af guibg=NONE    gui=nocombine,NONE
+highlight Structure                guifg=#8700af guibg=NONE    gui=nocombine,NONE
 highlight Typedef                  guifg=#8700af guibg=NONE    gui=nocombine,NONE
 highlight Special                  guifg=#0087af guibg=NONE    gui=bold
 highlight SpecialChar              guifg=#5f8700 guibg=NONE    gui=NONE
