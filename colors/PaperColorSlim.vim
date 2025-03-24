@@ -197,7 +197,7 @@ highlight link @tag.delimiter                         Operator
 highlight link @type                                  Type
 highlight link @type.builtin                          Type
 highlight link @type.definition                       Typedef
-highlight link @variable                              NormalNC
+highlight link @variable                              NONE
 highlight link @variable.builtin                      htmlBold
 highlight link @variable.parameter                    pcsParameter
 highlight link @variable.member                       Identifier
