@@ -20,31 +20,14 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
 
 This is a normal [Neovim Package]. Install it like you would any other colorscheme, consulting your package manager's documentation.
 
-## Dark and light
-
-We use the dark variant by default:
+## Variants
 
 ```vim
-colorscheme PaperColorSlim
+colorscheme PaperColorSlim " dark variant
+colorscheme PaperColorSlimLight " light variant
 ```
 
-The light variant is available under this name:
-
-```vim
-colorscheme PaperColorSlimLight
-```
-
-If you want to use Neovim's `'background'` option, you can place the following in your `init.vim` to automatically select light or dark based on this value.
-
-```vim
-if &background == 'dark'
-  colorscheme PaperColorSlim
-else
-  colorscheme PaperColorSlimLight
-endif
-```
-
-## Customization with Autocmds
+## Customization
 
 You can configure virtually anything you want with native syntax highlighting tooling and [autocmd]. What follows are some common configuration customization requests by users, along with their solution. Example configuration below should be defined **before** you initialize your colorscheme.
 
@@ -62,7 +45,7 @@ autocmd ColorScheme PaperColorSlim,PaperColorSlimLight highlight Normal guibg=NO
 2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
 3. Use a different `colorscheme` that better-supports your background preferences
 
-### Override color for only one variant
+### Override colors
 
 Suppose, hypothetically, that you like the default `guibg` color for `PaperColorSlimLight` to [#fffff0](https://www.color-hex.com/color/fffff0).
 
@@ -70,7 +53,7 @@ Suppose, hypothetically, that you like the default `guibg` color for `PaperColor
 autocmd ColorScheme PaperColorSlimLight highlight Normal guibg=#fffff0
 ```
 
-### Support specific plugins
+### Third party plugin support
 
 Sometimes you want to customize your experience for a specific plugin's syntax groups. See my full example below with overrides supporting [snacks.nvim] and [gv.vim]:
 
