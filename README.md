@@ -18,7 +18,7 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
 
 ## Installation
 
-This is a normal [Neovim Package]. Install it like you would any other [colorscheme], consulting your package manager's documentation.
+This is a normal [Neovim Package]. Install it like you would any other [colorscheme].
 
 ## Variants
 
