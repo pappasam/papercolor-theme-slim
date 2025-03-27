@@ -18,7 +18,7 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
 
 ## Installation
 
-This is a normal [Neovim Package]. Install it like you would any other colorscheme, consulting your package manager's documentation.
+This is a normal [Neovim Package]. Install it like you would any other [colorscheme], consulting your package manager's documentation.
 
 ## Variants
 
@@ -29,7 +29,7 @@ colorscheme PaperColorSlimLight " light variant
 
 ## Customization
 
-You can configure virtually anything you want with native syntax highlighting tooling and [autocmd]. What follows are some common configuration customization requests by users, along with their solution. Example configuration below should be defined **before** you initialize your colorscheme.
+You can configure virtually anything you want with native syntax highlighting tooling and [Autocmd]. What follows are some common configuration customization requests by users, along with their solution. Example configuration below should be defined **before** you initialize your colorscheme.
 
 ### Transparent background
 
@@ -100,10 +100,11 @@ autocmd ColorScheme * set guicursor=<your-config-here>
 
 Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme] over the years!
 
+[Autocmd]: https://neovim.io/doc/user/autocmd.html
 [Neovim Package]: https://neovim.io/doc/user/usr_05.html#_adding-a-package
 [Nikyle Nguyen]: https://github.com/NLKNguyen
-[autocmd]: https://neovim.io/doc/user/autocmd.html
 [built-in groups]: https://neovim.io/doc/user/syntax.html#highlight-default
+[colorscheme]: https://neovim.io/doc/user/usr_06.html#%3Asyn-default-override
 [darthbanana13]: https://github.com/darthbanana13
 [diagnostic-highlight]: https://neovim.io/doc/user/diagnostic.html#_highlights
 [gitsigns]: https://github.com/lewis6991/gitsigns.nvim
