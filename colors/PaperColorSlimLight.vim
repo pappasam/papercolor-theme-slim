@@ -39,6 +39,8 @@ highlight Directory                guifg=#0087af guibg=NONE    gui=bold
 highlight EndOfBuffer              guifg=#444444 guibg=NONE    gui=NONE
 highlight ErrorMsg                 guifg=#af0000 guibg=#ffd7ff gui=NONE
 highlight Folded                   guifg=#444444 guibg=#e4e4e4 gui=NONE
+highlight FloatTitle               guifg=#008700 guibg=#e4e4e4 gui=bold
+highlight FloatFooter              guifg=#0087af guibg=#e4e4e4 gui=italic
 highlight IncSearch                guifg=#008700 guibg=#afff87 gui=NONE
 highlight LineNr                   guifg=#878787 guibg=NONE    gui=NONE
 highlight MatchParen               guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
