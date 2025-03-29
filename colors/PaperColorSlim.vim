@@ -38,6 +38,8 @@ highlight DiffText                 guifg=NONE    guibg=#004f4f gui=NONE
 highlight Directory                guifg=#5fafd7 guibg=NONE    gui=bold
 highlight EndOfBuffer              guifg=#585858 guibg=NONE    gui=NONE
 highlight ErrorMsg                 guifg=#af005f guibg=#5f0000 gui=NONE
+highlight FloatTitle               guifg=#d7af00 guibg=#262626 gui=bold
+highlight FloatFooter              guifg=#5fafd7 guibg=#262626 gui=italic
 highlight Folded                   guifg=#bcbcbc guibg=#3a3a3a gui=NONE
 highlight IncSearch                guifg=#87d700 guibg=#005f00 gui=NONE
 highlight LineNr                   guifg=#808080 guibg=NONE    gui=NONE
