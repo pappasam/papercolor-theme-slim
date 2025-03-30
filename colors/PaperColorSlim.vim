@@ -5,6 +5,7 @@ if exists("syntax_on")
 endif
 let g:colors_name="PaperColorSlim"
 set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
+set winborder=rounded
 " Non-Linking ---------------------------------------------------------------
 let g:terminal_color_0  = '#1c1c1c'
 let g:terminal_color_1  = '#af005f'
@@ -38,8 +39,6 @@ highlight DiffText                 guifg=NONE    guibg=#004f4f gui=NONE
 highlight Directory                guifg=#5fafd7 guibg=NONE    gui=bold
 highlight EndOfBuffer              guifg=#585858 guibg=NONE    gui=NONE
 highlight ErrorMsg                 guifg=#af005f guibg=#5f0000 gui=NONE
-highlight FloatTitle               guifg=#d7af00 guibg=#262626 gui=bold
-highlight FloatFooter              guifg=#5fafd7 guibg=#262626 gui=italic
 highlight Folded                   guifg=#bcbcbc guibg=#3a3a3a gui=NONE
 highlight IncSearch                guifg=#87d700 guibg=#005f00 gui=NONE
 highlight LineNr                   guifg=#808080 guibg=NONE    gui=NONE
@@ -47,7 +46,6 @@ highlight MatchParen               guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
 highlight ModeMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 highlight MoreMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 highlight Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
-highlight NormalFloat              guifg=#d0d0d0 guibg=#262626 gui=NONE
 highlight NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=NONE
 highlight Pmenu                    guifg=#d0d0d0 guibg=#303030 gui=NONE
 highlight PmenuSel                 guifg=#d0d0d0 guibg=#585858 gui=NONE
@@ -143,7 +141,13 @@ highlight clear Changed
 highlight clear Removed
 highlight clear NonText
 highlight clear QuickFixLine
+highlight clear NormalFloat
+highlight clear FloatTitle
+highlight clear FloatFooter
 " built-in
+highlight link NormalFloat                            Normal
+highlight link FloatTitle                             Title
+highlight link FloatFooter                            htmlItalic
 highlight link Macro                                  Define
 highlight link FoldColumn                             LineNr
 highlight link Added                                  DiffAdd
