@@ -11,6 +11,7 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
    - [lsp-semantic-highlight]
    - [nvim-treesitter highlights]
    - [preferred groups]
+   - _limited miscellaneous additions (see end of colorscheme)_
 4. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
 5. Only supports Neovim 0.8+ (the release that landed treesitter's syntax matchers).
 
