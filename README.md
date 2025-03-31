@@ -56,13 +56,12 @@ autocmd ColorScheme PaperColorSlimLight highlight Normal guibg=#fffff0
 
 ### Third party plugin support
 
-Sometimes you want to customize your experience for a specific plugin's syntax groups. See my full example below with overrides supporting [snacks.nvim] and [gv.vim]:
+Sometimes you want to customize your experience for a specific plugin's syntax groups. See my full example below with overrides supporting [snacks.nvim] and [telescope.nvim]:
 
 ```vim
 function s:papercolor_slim_linking()
   highlight link SnacksPickerListCursorLine CursorLine
-  highlight link diffAdded DiffAdd
-  highlight link diffRemoved DiffDelete
+  highlight link TelescopeSelection CursorLine
 endfunction
 
 augroup colorscheme_overrides_custom
@@ -113,8 +112,6 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [colorscheme]: https://neovim.io/doc/user/usr_06.html#%3Asyn-default-override
 [darthbanana13]: https://github.com/darthbanana13
 [diagnostic-highlight]: https://neovim.io/doc/user/diagnostic.html#_highlights
-[gitsigns]: https://github.com/lewis6991/gitsigns.nvim
-[gv.vim]: https://github.com/junegunn/gv.vim
 [html-vim]: https://neovim.io/doc/user/syntax.html#html.vim
 [lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
 [maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
@@ -123,4 +120,5 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
 [snacks.nvim]: https://github.com/folke/snacks.nvim
+[telescope.nvim]: https://github.com/nvim-telescope/telescope.nvim
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
