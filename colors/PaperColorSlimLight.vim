@@ -245,3 +245,6 @@ highlight link @lsp.typemod.variable.injected         @variable
 " html
 highlight link htmlUnderline                          Underlined
 highlight link htmlTitle                              Title
+" misc
+highlight link diffAdded                              DiffAdd
+highlight link diffRemoved                            DiffDelete
