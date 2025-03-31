@@ -4,7 +4,8 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
 
 1. Has **no abstraction**, which [maximizes performance] and simplifies user color mapping overrides.
 2. Targets `gui` options (`guifg`, `guibg`, `gui`, `guicursor`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
-3. Limited to the following highlight groups for consistency across languages
+3. Sets [guicursor] for consistent cursor highlighting, and [winborder] for consistent window border highlighting.
+4. Limited to the following highlight groups for consistency across languages
    - [built-in groups]
    - [diagnostic-highlight]
    - [html-vim]
@@ -12,8 +13,8 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
    - [nvim-treesitter highlights]
    - [preferred groups]
    - _limited miscellaneous additions (see end of colorscheme)_
-4. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
-5. Only supports Neovim 0.8+ (the release that landed treesitter's syntax matchers).
+5. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
+6. Only supports Neovim 0.8+ (the release that landed treesitter's syntax matchers).
 
 ![Screenshot](./img/screenshot.png)
 
@@ -112,6 +113,7 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [colorscheme]: https://neovim.io/doc/user/usr_06.html#%3Asyn-default-override
 [darthbanana13]: https://github.com/darthbanana13
 [diagnostic-highlight]: https://neovim.io/doc/user/diagnostic.html#_highlights
+[guicursor]: https://neovim.io/doc/user/options.html#'guicursor'
 [html-vim]: https://neovim.io/doc/user/syntax.html#html.vim
 [lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
 [maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
@@ -122,3 +124,4 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [snacks.nvim]: https://github.com/folke/snacks.nvim
 [telescope.nvim]: https://github.com/nvim-telescope/telescope.nvim
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
+[winborder]: https://neovim.io/doc/user/options.html#'winborder'
