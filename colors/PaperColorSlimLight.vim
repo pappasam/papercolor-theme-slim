@@ -132,6 +132,7 @@ highlight htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underlin
 highlight htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
 highlight htmlItalic               guifg=NONE    guibg=NONE    gui=italic
 " custom
+highlight pcsClassBold             guifg=#8700af guibg=NONE    gui=bold
 highlight pcsFunctionBold          guifg=#0087af guibg=NONE    gui=bold
 highlight pcsParameter             guifg=#945d2d guibg=NONE    gui=NONE
 " Linking -------------------------------------------------------------------
@@ -219,8 +220,10 @@ highlight link @lsp.type.enum                         @type
 highlight link @lsp.type.enumMember                   @constant
 highlight link @lsp.type.escapeSequence               @string.escape
 highlight link @lsp.type.formatSpecifier              @punctuation.special
+highlight link @lsp.type.function                     Function
 highlight link @lsp.type.interface                    @type
 highlight link @lsp.type.keyword                      @keyword
+highlight link @lsp.type.method                       Function
 highlight link @lsp.type.namespace                    @namespace
 highlight link @lsp.type.number                       @number
 highlight link @lsp.type.operator                     @operator
@@ -231,12 +234,15 @@ highlight link @lsp.type.typeAlias                    @type.definition
 highlight link @lsp.type.unresolvedReference          @comment.error
 highlight link @lsp.type.variable                     NONE
 highlight link @lsp.typemod.class.defaultLibrary      @type.builtin
+highlight link @lsp.typemod.class.definition          pcsClassBold
 highlight link @lsp.typemod.enum.defaultLibrary       @type.builtin
 highlight link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
 highlight link @lsp.typemod.function.defaultLibrary   @function.builtin
+highlight link @lsp.typemod.function.definition       @function
 highlight link @lsp.typemod.keyword.async             @keyword.coroutine
 highlight link @lsp.typemod.macro.defaultLibrary      @function.builtin
 highlight link @lsp.typemod.method.defaultLibrary     @function.builtin
+highlight link @lsp.typemod.method.definition         @function.method
 highlight link @lsp.typemod.operator.injected         @operator
 highlight link @lsp.typemod.string.injected           @string
 highlight link @lsp.typemod.type.defaultLibrary       @type.builtin
