@@ -212,9 +212,7 @@ highlight link @variable.member                       Identifier
 highlight link @constructor.lua                       NONE
 highlight link @markup.link.markdown_inline           NONE
 highlight link @markup.quote.markdown                 htmlUnderlineItalic
-" lsp semantic highlighting
-highlight link @lsp.mod.definition                    htmlBold
-highlight link @lsp.mod.declaration                   htmlBold
+" lsp.type.<id>
 highlight link @lsp.type.boolean                      @boolean
 highlight link @lsp.type.builtinType                  @type.builtin
 highlight link @lsp.type.comment                      @comment
@@ -235,18 +233,17 @@ highlight link @lsp.type.selfKeyword                  @variable.builtin
 highlight link @lsp.type.typeAlias                    @type.definition
 highlight link @lsp.type.unresolvedReference          @comment.error
 highlight link @lsp.type.variable                     NONE
-highlight link @lsp.typemod.class.defaultLibrary      @type.builtin
-highlight link @lsp.typemod.enum.defaultLibrary       @type.builtin
-highlight link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
-highlight link @lsp.typemod.function.defaultLibrary   @function.builtin
-highlight link @lsp.typemod.keyword.async             @keyword.coroutine
-highlight link @lsp.typemod.macro.defaultLibrary      @function.builtin
-highlight link @lsp.typemod.method.defaultLibrary     @function.builtin
-highlight link @lsp.typemod.operator.injected         @operator
-highlight link @lsp.typemod.string.injected           @string
-highlight link @lsp.typemod.type.defaultLibrary       @type.builtin
-highlight link @lsp.typemod.variable.defaultLibrary   @variable.builtin
-highlight link @lsp.typemod.variable.injected         @variable
+" lsp.typemod.<id>.[definition,declaration]
+highlight link @lsp.typemod.class.declaration         htmlBold
+highlight link @lsp.typemod.class.definition          htmlBold
+highlight link @lsp.typemod.function.declaration      htmlBold
+highlight link @lsp.typemod.function.definition       htmlBold
+highlight link @lsp.typemod.namespace.declaration     htmlBold
+highlight link @lsp.typemod.namespace.definition      htmlBold
+highlight link @lsp.typemod.parameter.declaration     htmlItalic
+highlight link @lsp.typemod.parameter.definition      htmlItalic
+highlight link @lsp.typemod.struct.declaration        htmlBold
+highlight link @lsp.typemod.struct.definition         htmlBold
 " html
 highlight link htmlUnderline                          Underlined
 highlight link htmlTitle                              Title
