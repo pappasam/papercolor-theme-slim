@@ -218,7 +218,7 @@ highlight link @lsp.type.boolean                      @boolean
 highlight link @lsp.type.builtinType                  @type.builtin
 highlight link @lsp.type.comment                      @comment
 highlight link @lsp.type.enum                         @type
-highlight link @lsp.type.enumMember                   @constant
+highlight link @lsp.type.enumMember                   @variable.member
 highlight link @lsp.type.escapeSequence               @string.escape
 highlight link @lsp.type.formatSpecifier              @punctuation.special
 highlight link @lsp.type.function                     Function
