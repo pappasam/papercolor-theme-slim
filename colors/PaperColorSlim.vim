@@ -247,6 +247,8 @@ highlight link @lsp.typemod.namespace.declaration     htmlBold
 highlight link @lsp.typemod.namespace.definition      htmlBold
 highlight link @lsp.typemod.parameter.declaration     htmlItalic
 highlight link @lsp.typemod.parameter.definition      htmlItalic
+highlight link @lsp.typemod.property.declaration      htmlItalic
+highlight link @lsp.typemod.property.definition       htmlItalic
 highlight link @lsp.typemod.struct.declaration        htmlBold
 highlight link @lsp.typemod.struct.definition         htmlBold
 " html
