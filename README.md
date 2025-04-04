@@ -5,14 +5,7 @@ This is a slimmed down re-implementation of [papercolor-theme] that:
 1. Has **no abstraction**, which [maximizes performance] and simplifies user color mapping overrides.
 2. Targets `gui` options (`guifg`, `guibg`, `gui`, `guicursor`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
 3. Sets [guicursor] for consistent cursor highlighting, and [winborder] for consistent window border highlighting.
-4. Limited to the following highlight groups for consistency across languages
-   - [built-in groups]
-   - [diagnostic-highlight]
-   - [html-vim]
-   - [lsp-semantic-highlight]
-   - [nvim-treesitter highlights]
-   - [preferred groups]
-   - _limited miscellaneous additions (see end of colorscheme)_
+4. Limited to the following highlight groups for consistency across languages: [built-in groups], [diagnostic-highlight], [html-vim], [lsp-semantic-highlight], [nvim-treesitter highlights], [preferred groups], and some limited miscellaneous additions (see end of colorscheme).
 5. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
 6. Only supports Neovim 0.8+ (the release that landed treesitter's syntax matchers).
 
