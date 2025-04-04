@@ -96,7 +96,7 @@ highlight PreCondit                guifg=#5faf5f guibg=NONE    gui=NONE
 highlight Type                     guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
 highlight StorageClass             guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
 highlight Structure                guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
-highlight Typedef                  guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
+highlight Typedef                  guifg=#af87d7 guibg=NONE    gui=NONE
 highlight Special                  guifg=#5fafd7 guibg=NONE    gui=bold
 highlight SpecialChar              guifg=#d7af5f guibg=NONE    gui=NONE
 highlight Tag                      guifg=#d7af00 guibg=NONE    gui=NONE
@@ -132,6 +132,7 @@ highlight htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underlin
 highlight htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
 highlight htmlItalic               guifg=NONE    guibg=NONE    gui=italic
 " custom
+highlight pcsClassCombine          guifg=#af87d7 guibg=NONE    gui=NONE
 highlight pcsClassBold             guifg=#af87d7 guibg=NONE    gui=bold
 highlight pcsFunctionBold          guifg=#5fafd7 guibg=NONE    gui=bold
 highlight pcsParameter             guifg=#87afaf guibg=NONE    gui=NONE
@@ -203,7 +204,7 @@ highlight link @tag.attribute                         Identifier
 highlight link @tag.delimiter                         Operator
 highlight link @type                                  Type
 highlight link @type.builtin                          Type
-highlight link @type.definition                       Typedef
+highlight link @type.definition                       pcsClassBold
 highlight link @variable                              NONE
 highlight link @variable.builtin                      htmlBold
 highlight link @variable.parameter                    pcsParameter
@@ -230,7 +231,8 @@ highlight link @lsp.type.operator                     @operator
 highlight link @lsp.type.parameter                    @variable.parameter
 highlight link @lsp.type.property                     @property
 highlight link @lsp.type.selfKeyword                  @variable.builtin
-highlight link @lsp.type.typeAlias                    @type.definition
+highlight link @lsp.type.typeAlias                    pcsClassCombine
+highlight link @lsp.type.typeParameter                pcsClassCombine
 highlight link @lsp.type.unresolvedReference          @comment.error
 highlight link @lsp.type.variable                     NONE
 " lsp.typemod.<id>.[definition,declaration]
@@ -238,6 +240,8 @@ highlight link @lsp.typemod.class.declaration         htmlBold
 highlight link @lsp.typemod.class.definition          htmlBold
 highlight link @lsp.typemod.function.declaration      htmlBold
 highlight link @lsp.typemod.function.definition       htmlBold
+highlight link @lsp.typemod.method.declaration        htmlBold
+highlight link @lsp.typemod.method.definition         htmlBold
 highlight link @lsp.typemod.namespace.declaration     htmlBold
 highlight link @lsp.typemod.namespace.definition      htmlBold
 highlight link @lsp.typemod.parameter.declaration     htmlItalic
