@@ -74,7 +74,7 @@ highlight WildMenu                 guifg=#1c1c1c guibg=#afd700 gui=NONE
 highlight WinSeparator             guifg=#5f8787 guibg=NONE    gui=NONE
 " vim-preferred
 highlight Comment                  guifg=#808080 guibg=NONE    gui=NONE
-highlight Constant                 guifg=#d0d0d0 guibg=NONE    gui=bold
+highlight Constant                 guifg=#d0d0d0 guibg=NONE    gui=NONE
 highlight String                   guifg=#d7af5f guibg=NONE    gui=NONE
 highlight Character                guifg=#d7af5f guibg=NONE    gui=bold
 highlight Number                   guifg=#ff5faf guibg=NONE    gui=NONE
@@ -224,6 +224,7 @@ highlight link @lsp.type.formatSpecifier              @punctuation.special
 highlight link @lsp.type.function                     Function
 highlight link @lsp.type.interface                    @type
 highlight link @lsp.type.keyword                      @keyword
+highlight link @lsp.type.macro                        Macro
 highlight link @lsp.type.method                       Function
 highlight link @lsp.type.namespace                    @namespace
 highlight link @lsp.type.number                       @number
