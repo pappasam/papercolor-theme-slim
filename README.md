@@ -1,13 +1,12 @@
 # PaperColorSlim Colorscheme
 
-This is a slimmed down re-implementation of [papercolor-theme] that:
+This is a slimmed down re-implementation of [papercolor-theme] for Neovim 0.11+ that:
 
 1. Has **no abstraction**, which [maximizes performance] and simplifies user color mapping overrides.
 2. Targets `gui` options (`guifg`, `guibg`, `gui`, `guicursor`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
 3. Sets [guicursor] for consistent cursor highlighting, and [winborder] for consistent window border highlighting.
-4. Limited to the following highlight groups for consistency across languages: [built-in groups], [diagnostic-highlight], [html-vim], [lsp-semantic-highlight], [nvim-treesitter highlights], [preferred groups], and some limited miscellaneous additions (see end of colorscheme).
+4. Limited to the following highlight groups for consistency across languages: [built-in groups], [diagnostic-highlight], [html-vim], [lsp-semantic-highlight], [treesitter-highlight-groups], [preferred groups], and some limited miscellaneous additions (see end of colorscheme).
 5. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
-6. Only supports Neovim 0.8+ (the release that landed treesitter's syntax matchers).
 
 ![Screenshot](./img/screenshot.png)
 
@@ -110,11 +109,11 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [html-vim]: https://neovim.io/doc/user/syntax.html#html.vim
 [lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
 [maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
-[nvim-treesitter highlights]: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
 [nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
 [snacks.nvim]: https://github.com/folke/snacks.nvim
 [telescope.nvim]: https://github.com/nvim-telescope/telescope.nvim
+[treesitter-highlight-groups]: https://neovim.io/doc/user/treesitter.html#treesitter-highlight-groups
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
 [winborder]: https://neovim.io/doc/user/options.html#'winborder'
