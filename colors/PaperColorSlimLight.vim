@@ -65,7 +65,6 @@ highlight TabLine                  guifg=#444444 guibg=#c6c6c6 gui=NONE
 highlight TabLineFill              guifg=#005f87 guibg=#005f87 gui=NONE
 highlight TabLineSel               guifg=#444444 guibg=#e4e4e4 gui=NONE
 highlight Title                    guifg=#008700 guibg=NONE    gui=bold
-highlight VertSplit                guifg=#005f87 guibg=NONE    gui=NONE
 highlight Visual                   guifg=#fffff0 guibg=#0087af gui=NONE
 highlight VisualNOS                guifg=#444444 guibg=#00B5E6 gui=NONE
 highlight WarningMsg               guifg=#af5f00 guibg=NONE    gui=NONE
