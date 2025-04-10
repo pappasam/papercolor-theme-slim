@@ -80,7 +80,7 @@ highlight Number                   guifg=#d75f00 guibg=NONE    gui=NONE
 highlight Boolean                  guifg=#af5f00 guibg=NONE    gui=bold
 highlight Float                    guifg=#d75f00 guibg=NONE    gui=NONE
 highlight Identifier               guifg=#005f87 guibg=NONE    gui=NONE
-highlight Function                 guifg=#0087af guibg=NONE    gui=nocombine,NONE
+highlight Function                 guifg=#0087af guibg=NONE    gui=NONE
 highlight Statement                guifg=#d70087 guibg=NONE    gui=NONE
 highlight Conditional              guifg=#d70087 guibg=NONE    gui=NONE
 highlight Repeat                   guifg=#d70087 guibg=NONE    gui=NONE
