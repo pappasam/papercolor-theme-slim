@@ -157,7 +157,7 @@ highlight link Removed                                DiffDelete
 highlight link NonText                                Comment
 highlight link QuickFixLine                           CursorLine
 " nvim-treesitter matchers (general)
-highlight link @attribute                             NONE
+highlight link @attribute                             Label
 highlight link @attribute.builtin                     NONE
 highlight link @constant.builtin                      Boolean
 highlight link @constructor                           NONE
