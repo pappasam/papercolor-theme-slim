@@ -90,10 +90,10 @@ highlight Keyword                  guifg=#d70087 guibg=NONE    gui=NONE
 highlight Exception                guifg=#d70087 guibg=NONE    gui=NONE
 highlight PreProc                  guifg=#d70087 guibg=NONE    gui=NONE
 highlight Include                  guifg=#d70087 guibg=NONE    gui=NONE
-highlight Define                   guifg=#008700 guibg=NONE    gui=NONE
+highlight Define                   guifg=#008700 guibg=NONE    gui=bold
 highlight PreCondit                guifg=#008700 guibg=NONE    gui=NONE
 highlight Type                     guifg=#8700af guibg=NONE    gui=nocombine,NONE
-highlight StorageClass             guifg=#8700af guibg=NONE    gui=nocombine,NONE
+highlight StorageClass             guifg=#008700 guibg=NONE    gui=nocombine,NONE
 highlight Structure                guifg=#8700af guibg=NONE    gui=nocombine,NONE
 highlight Typedef                  guifg=#8700af guibg=NONE    gui=NONE
 highlight Special                  guifg=#0087af guibg=NONE    gui=bold
