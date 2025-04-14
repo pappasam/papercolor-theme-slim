@@ -253,6 +253,8 @@ hi link @lsp.typemod.struct.definition         htmlBold
 " html
 hi link htmlUnderline                          Underlined
 hi link htmlTitle                              Title
-" misc
+" misc; corrections for bad upstream decisions
+hi link SnacksPickerListCursorLine             CursorLine
+hi link TelescopeSelection                     CursorLine
 hi link diffAdded                              DiffAdd
 hi link diffRemoved                            DiffDelete
