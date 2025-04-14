@@ -96,7 +96,7 @@ hi Type                     guifg=#8700af guibg=NONE    gui=nocombine,NONE
 hi StorageClass             guifg=#008700 guibg=NONE    gui=nocombine,NONE
 hi Structure                guifg=#8700af guibg=NONE    gui=nocombine,NONE
 hi Typedef                  guifg=#8700af guibg=NONE    gui=NONE
-hi Special                  guifg=#0087af guibg=NONE    gui=bold
+hi Special                  guifg=#005faf guibg=NONE    gui=bold
 hi SpecialChar              guifg=#5f8700 guibg=NONE    gui=NONE
 hi Tag                      guifg=#008700 guibg=NONE    gui=NONE
 hi Delimiter                guifg=#005f87 guibg=NONE    gui=NONE
