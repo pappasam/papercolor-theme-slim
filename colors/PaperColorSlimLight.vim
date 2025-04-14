@@ -84,7 +84,7 @@ highlight Function                 guifg=#0087af guibg=NONE    gui=NONE
 highlight Statement                guifg=#d70087 guibg=NONE    gui=NONE
 highlight Conditional              guifg=#d70087 guibg=NONE    gui=NONE
 highlight Repeat                   guifg=#d70087 guibg=NONE    gui=NONE
-highlight Label                    guifg=#005faf guibg=NONE    gui=bold,italic
+highlight Label                    guifg=#005faf guibg=NONE    gui=NONE
 highlight Operator                 guifg=#005faf guibg=NONE    gui=bold
 highlight Keyword                  guifg=#d70087 guibg=NONE    gui=NONE
 highlight Exception                guifg=#d70087 guibg=NONE    gui=NONE
