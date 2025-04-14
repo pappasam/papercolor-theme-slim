@@ -1,5 +1,5 @@
 " PaperColorSlim (written by Samuel Roeca <samuel.roeca@gmail.com>)
-highlight clear
+hi clear
 if exists("syntax_on")
   syntax reset
 endif
@@ -24,235 +24,235 @@ let g:terminal_color_13 = '#ff5faf'
 let g:terminal_color_14 = '#00afaf'
 let g:terminal_color_15 = '#5f8787'
 " built-in
-highlight ColorColumn              guifg=NONE    guibg=#303030 gui=NONE
-highlight Conceal                  guifg=#585858 guibg=NONE    gui=NONE
-highlight CurSearch                guifg=#87d700 guibg=#005f00 gui=NONE
-highlight Cursor                   guifg=#1c1c1c guibg=#A8A8A8 gui=NONE
-highlight TermCursor               guifg=#1c1c1c guibg=#A8A8A8 gui=NONE
-highlight CursorColumn             guifg=NONE    guibg=#303030 gui=NONE
-highlight CursorLine               guifg=NONE    guibg=#303030 gui=NONE
-highlight CursorLineNr             guifg=#ffff00 guibg=NONE    gui=NONE
-highlight DiffAdd                  guifg=NONE    guibg=#183300 gui=NONE
-highlight DiffChange               guifg=NONE    guibg=#183939 gui=NONE
-highlight DiffDelete               guifg=NONE    guibg=#550d0d gui=NONE
-highlight DiffText                 guifg=NONE    guibg=#004f4f gui=NONE
-highlight Directory                guifg=#5fafd7 guibg=NONE    gui=bold
-highlight EndOfBuffer              guifg=#585858 guibg=NONE    gui=NONE
-highlight ErrorMsg                 guifg=#af005f guibg=#5f0000 gui=NONE
-highlight Folded                   guifg=#bcbcbc guibg=#3a3a3a gui=NONE
-highlight IncSearch                guifg=#87d700 guibg=#005f00 gui=NONE
-highlight LineNr                   guifg=#808080 guibg=NONE    gui=NONE
-highlight MatchParen               guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
-highlight ModeMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
-highlight MoreMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
-highlight Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
-highlight NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=NONE
-highlight Pmenu                    guifg=#d0d0d0 guibg=#303030 gui=NONE
-highlight PmenuSel                 guifg=#d0d0d0 guibg=#585858 gui=NONE
-highlight Question                 guifg=#afd700 guibg=NONE    gui=NONE
-highlight Search                   guifg=#444444 guibg=#c6c6c6 gui=NONE
-highlight SignColumn               guifg=#d7af00 guibg=NONE    gui=NONE
-highlight SnippetTabstop           guifg=NONE    guibg=NONE    gui=underdotted
-highlight SpecialKey               guifg=#585858 guibg=NONE    gui=NONE
-highlight SpellBad                 guifg=#d787ff guibg=NONE    gui=undercurl,italic
-highlight SpellCap                 guifg=#ffff00 guibg=NONE    gui=undercurl,italic
-highlight SpellLocal               guifg=#5fffff guibg=NONE    gui=undercurl,italic
-highlight SpellRare                guifg=#5fffff guibg=NONE    gui=undercurl,italic
-highlight StatusLine               guifg=#1c1c1c guibg=#5f8787 gui=NONE
-highlight StatusLineNC             guifg=#bcbcbc guibg=#3a3a3a gui=NONE
-highlight Substitute               guifg=#87d700 guibg=#005f00 gui=NONE
-highlight TabLine                  guifg=#bcbcbc guibg=#585858 gui=NONE
-highlight TabLineFill              guifg=#262626 guibg=#262626 gui=NONE
-highlight TabLineSel               guifg=#1c1c1c guibg=#5f8787 gui=NONE
-highlight Title                    guifg=#d7af00 guibg=NONE    gui=bold
-highlight Visual                   guifg=#f0f0f0 guibg=#0087af gui=NONE
-highlight VisualNOS                guifg=#1c1c1c guibg=#00b7ec gui=NONE
-highlight WarningMsg               guifg=#ffff00 guibg=NONE    gui=NONE
-highlight Whitespace               guifg=#4e4e4e guibg=NONE    gui=NONE
-highlight WildMenu                 guifg=#1c1c1c guibg=#afd700 gui=NONE
-highlight WinSeparator             guifg=#5f8787 guibg=NONE    gui=NONE
+hi ColorColumn              guifg=NONE    guibg=#303030 gui=NONE
+hi Conceal                  guifg=#585858 guibg=NONE    gui=NONE
+hi CurSearch                guifg=#87d700 guibg=#005f00 gui=NONE
+hi Cursor                   guifg=#1c1c1c guibg=#A8A8A8 gui=NONE
+hi TermCursor               guifg=#1c1c1c guibg=#A8A8A8 gui=NONE
+hi CursorColumn             guifg=NONE    guibg=#303030 gui=NONE
+hi CursorLine               guifg=NONE    guibg=#303030 gui=NONE
+hi CursorLineNr             guifg=#ffff00 guibg=NONE    gui=NONE
+hi DiffAdd                  guifg=NONE    guibg=#183300 gui=NONE
+hi DiffChange               guifg=NONE    guibg=#183939 gui=NONE
+hi DiffDelete               guifg=NONE    guibg=#550d0d gui=NONE
+hi DiffText                 guifg=NONE    guibg=#004f4f gui=NONE
+hi Directory                guifg=#5fafd7 guibg=NONE    gui=bold
+hi EndOfBuffer              guifg=#585858 guibg=NONE    gui=NONE
+hi ErrorMsg                 guifg=#af005f guibg=#5f0000 gui=NONE
+hi Folded                   guifg=#bcbcbc guibg=#3a3a3a gui=NONE
+hi IncSearch                guifg=#87d700 guibg=#005f00 gui=NONE
+hi LineNr                   guifg=#808080 guibg=NONE    gui=NONE
+hi MatchParen               guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
+hi ModeMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
+hi MoreMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
+hi Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
+hi NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=NONE
+hi Pmenu                    guifg=#d0d0d0 guibg=#303030 gui=NONE
+hi PmenuSel                 guifg=#d0d0d0 guibg=#585858 gui=NONE
+hi Question                 guifg=#afd700 guibg=NONE    gui=NONE
+hi Search                   guifg=#444444 guibg=#c6c6c6 gui=NONE
+hi SignColumn               guifg=#d7af00 guibg=NONE    gui=NONE
+hi SnippetTabstop           guifg=NONE    guibg=NONE    gui=underdotted
+hi SpecialKey               guifg=#585858 guibg=NONE    gui=NONE
+hi SpellBad                 guifg=#d787ff guibg=NONE    gui=undercurl,italic
+hi SpellCap                 guifg=#ffff00 guibg=NONE    gui=undercurl,italic
+hi SpellLocal               guifg=#5fffff guibg=NONE    gui=undercurl,italic
+hi SpellRare                guifg=#5fffff guibg=NONE    gui=undercurl,italic
+hi StatusLine               guifg=#1c1c1c guibg=#5f8787 gui=NONE
+hi StatusLineNC             guifg=#bcbcbc guibg=#3a3a3a gui=NONE
+hi Substitute               guifg=#87d700 guibg=#005f00 gui=NONE
+hi TabLine                  guifg=#bcbcbc guibg=#585858 gui=NONE
+hi TabLineFill              guifg=#262626 guibg=#262626 gui=NONE
+hi TabLineSel               guifg=#1c1c1c guibg=#5f8787 gui=NONE
+hi Title                    guifg=#d7af00 guibg=NONE    gui=bold
+hi Visual                   guifg=#f0f0f0 guibg=#0087af gui=NONE
+hi VisualNOS                guifg=#1c1c1c guibg=#00b7ec gui=NONE
+hi WarningMsg               guifg=#ffff00 guibg=NONE    gui=NONE
+hi Whitespace               guifg=#4e4e4e guibg=NONE    gui=NONE
+hi WildMenu                 guifg=#1c1c1c guibg=#afd700 gui=NONE
+hi WinSeparator             guifg=#5f8787 guibg=NONE    gui=NONE
 " vim-preferred
-highlight Comment                  guifg=#808080 guibg=NONE    gui=NONE
-highlight Constant                 guifg=#d0d0d0 guibg=NONE    gui=NONE
-highlight String                   guifg=#d7af5f guibg=NONE    gui=NONE
-highlight Character                guifg=#d7af5f guibg=NONE    gui=bold
-highlight Number                   guifg=#ff5faf guibg=NONE    gui=NONE
-highlight Boolean                  guifg=#d7af00 guibg=NONE    gui=bold
-highlight Float                    guifg=#ff5faf guibg=NONE    gui=NONE
-highlight Identifier               guifg=#d7875f guibg=NONE    gui=NONE
-highlight Function                 guifg=#5fafd7 guibg=NONE    gui=NONE
-highlight Statement                guifg=#afd700 guibg=NONE    gui=NONE
-highlight Conditional              guifg=#afd700 guibg=NONE    gui=NONE
-highlight Repeat                   guifg=#afd700 guibg=NONE    gui=NONE
-highlight Label                    guifg=#00afaf guibg=NONE    gui=NONE
-highlight Operator                 guifg=#00afaf guibg=NONE    gui=bold
-highlight Keyword                  guifg=#afd700 guibg=NONE    gui=NONE
-highlight Exception                guifg=#afd700 guibg=NONE    gui=NONE
-highlight PreProc                  guifg=#afd700 guibg=NONE    gui=NONE
-highlight Include                  guifg=#afd700 guibg=NONE    gui=NONE
-highlight Define                   guifg=#5faf5f guibg=NONE    gui=bold
-highlight PreCondit                guifg=#5faf5f guibg=NONE    gui=NONE
-highlight Type                     guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
-highlight StorageClass             guifg=#5faf5f guibg=NONE    gui=nocombine,NONE
-highlight Structure                guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
-highlight Typedef                  guifg=#af87d7 guibg=NONE    gui=NONE
-highlight Special                  guifg=#5fafd7 guibg=NONE    gui=bold
-highlight SpecialChar              guifg=#d7af5f guibg=NONE    gui=NONE
-highlight Tag                      guifg=#d7af00 guibg=NONE    gui=NONE
-highlight Delimiter                guifg=#00afaf guibg=NONE    gui=NONE
-highlight SpecialComment           guifg=#808080 guibg=NONE    gui=bold
-highlight Debug                    guifg=#ff5faf guibg=NONE    gui=NONE
-highlight Underlined               guifg=NONE    guibg=NONE    gui=underline
-highlight Error                    guifg=#ff8080 guibg=NONE    gui=bold
-highlight Todo                     guifg=#ff8700 guibg=NONE    gui=bold
-highlight Ignore                   guifg=#303030 guibg=NONE    gui=NONE
+hi Comment                  guifg=#808080 guibg=NONE    gui=NONE
+hi Constant                 guifg=#d0d0d0 guibg=NONE    gui=NONE
+hi String                   guifg=#d7af5f guibg=NONE    gui=NONE
+hi Character                guifg=#d7af5f guibg=NONE    gui=bold
+hi Number                   guifg=#ff5faf guibg=NONE    gui=NONE
+hi Boolean                  guifg=#d7af00 guibg=NONE    gui=bold
+hi Float                    guifg=#ff5faf guibg=NONE    gui=NONE
+hi Identifier               guifg=#d7875f guibg=NONE    gui=NONE
+hi Function                 guifg=#5fafd7 guibg=NONE    gui=NONE
+hi Statement                guifg=#afd700 guibg=NONE    gui=NONE
+hi Conditional              guifg=#afd700 guibg=NONE    gui=NONE
+hi Repeat                   guifg=#afd700 guibg=NONE    gui=NONE
+hi Label                    guifg=#00afaf guibg=NONE    gui=NONE
+hi Operator                 guifg=#00afaf guibg=NONE    gui=bold
+hi Keyword                  guifg=#afd700 guibg=NONE    gui=NONE
+hi Exception                guifg=#afd700 guibg=NONE    gui=NONE
+hi PreProc                  guifg=#afd700 guibg=NONE    gui=NONE
+hi Include                  guifg=#afd700 guibg=NONE    gui=NONE
+hi Define                   guifg=#5faf5f guibg=NONE    gui=bold
+hi PreCondit                guifg=#5faf5f guibg=NONE    gui=NONE
+hi Type                     guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
+hi StorageClass             guifg=#5faf5f guibg=NONE    gui=nocombine,NONE
+hi Structure                guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
+hi Typedef                  guifg=#af87d7 guibg=NONE    gui=NONE
+hi Special                  guifg=#5fafd7 guibg=NONE    gui=bold
+hi SpecialChar              guifg=#d7af5f guibg=NONE    gui=NONE
+hi Tag                      guifg=#d7af00 guibg=NONE    gui=NONE
+hi Delimiter                guifg=#00afaf guibg=NONE    gui=NONE
+hi SpecialComment           guifg=#808080 guibg=NONE    gui=bold
+hi Debug                    guifg=#ff5faf guibg=NONE    gui=NONE
+hi Underlined               guifg=NONE    guibg=NONE    gui=underline
+hi Error                    guifg=#ff8080 guibg=NONE    gui=bold
+hi Todo                     guifg=#ff8700 guibg=NONE    gui=bold
+hi Ignore                   guifg=#303030 guibg=NONE    gui=NONE
 " diagnostics
-highlight DiagnosticError          guifg=#d787ff guibg=NONE    gui=NONE
-highlight DiagnosticWarn           guifg=#ffff00 guibg=NONE    gui=NONE
-highlight DiagnosticInfo           guifg=#5fffff guibg=NONE    gui=NONE
-highlight DiagnosticHint           guifg=#5fffff guibg=NONE    gui=NONE
-highlight DiagnosticOk             guifg=#5faf5f guibg=NONE    gui=NONE
-highlight DiagnosticUnderlineError guifg=NONE    guibg=NONE    gui=undercurl
-highlight DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE    gui=undercurl
-highlight DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl
-highlight DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
-highlight DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
+hi DiagnosticError          guifg=#d787ff guibg=NONE    gui=NONE
+hi DiagnosticWarn           guifg=#ffff00 guibg=NONE    gui=NONE
+hi DiagnosticInfo           guifg=#5fffff guibg=NONE    gui=NONE
+hi DiagnosticHint           guifg=#5fffff guibg=NONE    gui=NONE
+hi DiagnosticOk             guifg=#5faf5f guibg=NONE    gui=NONE
+hi DiagnosticUnderlineError guifg=NONE    guibg=NONE    gui=undercurl
+hi DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE    gui=undercurl
+hi DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl
+hi DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
+hi DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
 " html sections
-highlight htmlAnchor               guifg=#00afaf guibg=NONE    gui=underline
-highlight htmlH1                   guifg=#d7af00 guibg=NONE    gui=underline,bold
-highlight htmlH2                   guifg=#5fafd7 guibg=NONE    gui=underline,bold
-highlight htmlH3                   guifg=#af87d7 guibg=NONE    gui=underline,bold
-highlight htmlH4                   guifg=#ff5faf guibg=NONE    gui=underline,bold
-highlight htmlH5                   guifg=#ff5faf guibg=NONE    gui=underline
-highlight htmlH6                   guifg=#ff5faf guibg=NONE    gui=underline
-highlight htmlBold                 guifg=NONE    guibg=NONE    gui=bold
-highlight htmlBoldUnderline        guifg=NONE    guibg=NONE    gui=bold,underline
-highlight htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underline,italic
-highlight htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
-highlight htmlItalic               guifg=NONE    guibg=NONE    gui=italic
+hi htmlAnchor               guifg=#00afaf guibg=NONE    gui=underline
+hi htmlH1                   guifg=#d7af00 guibg=NONE    gui=underline,bold
+hi htmlH2                   guifg=#5fafd7 guibg=NONE    gui=underline,bold
+hi htmlH3                   guifg=#af87d7 guibg=NONE    gui=underline,bold
+hi htmlH4                   guifg=#ff5faf guibg=NONE    gui=underline,bold
+hi htmlH5                   guifg=#ff5faf guibg=NONE    gui=underline
+hi htmlH6                   guifg=#ff5faf guibg=NONE    gui=underline
+hi htmlBold                 guifg=NONE    guibg=NONE    gui=bold
+hi htmlBoldUnderline        guifg=NONE    guibg=NONE    gui=bold,underline
+hi htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underline,italic
+hi htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
+hi htmlItalic               guifg=NONE    guibg=NONE    gui=italic
 " custom
-highlight pcsClassCombine          guifg=#af87d7 guibg=NONE    gui=NONE
-highlight pcsClassBold             guifg=#af87d7 guibg=NONE    gui=bold
-highlight pcsFunctionBold          guifg=#5fafd7 guibg=NONE    gui=bold
-highlight pcsParameter             guifg=#87afaf guibg=NONE    gui=NONE
+hi pcsClassCombine          guifg=#af87d7 guibg=NONE    gui=NONE
+hi pcsClassBold             guifg=#af87d7 guibg=NONE    gui=bold
+hi pcsFunctionBold          guifg=#5fafd7 guibg=NONE    gui=bold
+hi pcsParameter             guifg=#87afaf guibg=NONE    gui=NONE
 " Linking -------------------------------------------------------------------
-highlight clear @variable
-highlight clear Added
-highlight clear Changed
-highlight clear Removed
-highlight clear NonText
-highlight clear QuickFixLine
-highlight clear NormalFloat
-highlight clear FloatTitle
-highlight clear FloatFooter
+hi clear @variable
+hi clear Added
+hi clear Changed
+hi clear Removed
+hi clear NonText
+hi clear QuickFixLine
+hi clear NormalFloat
+hi clear FloatTitle
+hi clear FloatFooter
 " built-in
-highlight link NormalFloat                            Normal
-highlight link FloatTitle                             Title
-highlight link FloatFooter                            htmlItalic
-highlight link Macro                                  Define
-highlight link FoldColumn                             LineNr
-highlight link Added                                  DiffAdd
-highlight link Changed                                DiffChange
-highlight link Removed                                DiffDelete
-highlight link NonText                                Comment
-highlight link QuickFixLine                           CursorLine
+hi link NormalFloat                            Normal
+hi link FloatTitle                             Title
+hi link FloatFooter                            htmlItalic
+hi link Macro                                  Define
+hi link FoldColumn                             LineNr
+hi link Added                                  DiffAdd
+hi link Changed                                DiffChange
+hi link Removed                                DiffDelete
+hi link NonText                                Comment
+hi link QuickFixLine                           CursorLine
 " nvim-treesitter matchers (general)
-highlight link @attribute                             Label
-highlight link @attribute.builtin                     NONE
-highlight link @constant.builtin                      Boolean
-highlight link @constructor                           NONE
-highlight link @diff.delta                            DiffChange
-highlight link @diff.minus                            DiffDelete
-highlight link @diff.plus                             DiffAdd
-highlight link @function                              pcsFunctionBold
-highlight link @function.builtin                      Function
-highlight link @function.call                         Function
-highlight link @function.macro                        Macro
-highlight link @function.method                       pcsFunctionBold
-highlight link @function.method.builtin               Function
-highlight link @function.method.call                  Function
-highlight link @keyword.conditional                   Conditional
-highlight link @keyword.directive                     SpecialComment
-highlight link @keyword.exception                     Exception
-highlight link @keyword.operator                      Operator
-highlight link @keyword.repeat                        Repeat
-highlight link @keyword.return                        Conditional
-highlight link @keyword.directive.define              Define
-highlight link @markup.heading                        Title
-highlight link @markup.heading.1                      htmlH1
-highlight link @markup.heading.2                      htmlH2
-highlight link @markup.heading.3                      htmlH3
-highlight link @markup.heading.4                      htmlH4
-highlight link @markup.heading.5                      htmlH5
-highlight link @markup.heading.6                      htmlH6
-highlight link @markup.italic                         htmlItalic
-highlight link @markup.link.label                     htmlAnchor
-highlight link @markup.link.url                       Underlined
-highlight link @markup.link.vimdoc                    htmlAnchor
-highlight link @markup.list                           Delimiter
-highlight link @markup.literal                        String
-highlight link @markup.raw                            String
-highlight link @markup.raw.block                      NormalNC
-highlight link @markup.strong                         htmlBold
-highlight link @module                                StorageClass
-highlight link @namespace                             StorageClass
-highlight link @string.escape                         Special
-highlight link @string.special.url                    Underlined
-highlight link @string.special.path                   Underlined
-highlight link @tag.attribute                         Identifier
-highlight link @tag.delimiter                         Operator
-highlight link @type                                  Type
-highlight link @type.builtin                          Type
-highlight link @type.definition                       pcsClassBold
-highlight link @variable                              NONE
-highlight link @variable.builtin                      htmlBold
-highlight link @variable.parameter                    pcsParameter
-highlight link @variable.member                       Identifier
+hi link @attribute                             Label
+hi link @attribute.builtin                     NONE
+hi link @constant.builtin                      Boolean
+hi link @constructor                           NONE
+hi link @diff.delta                            DiffChange
+hi link @diff.minus                            DiffDelete
+hi link @diff.plus                             DiffAdd
+hi link @function                              pcsFunctionBold
+hi link @function.builtin                      Function
+hi link @function.call                         Function
+hi link @function.macro                        Macro
+hi link @function.method                       pcsFunctionBold
+hi link @function.method.builtin               Function
+hi link @function.method.call                  Function
+hi link @keyword.conditional                   Conditional
+hi link @keyword.directive                     SpecialComment
+hi link @keyword.exception                     Exception
+hi link @keyword.operator                      Operator
+hi link @keyword.repeat                        Repeat
+hi link @keyword.return                        Conditional
+hi link @keyword.directive.define              Define
+hi link @markup.heading                        Title
+hi link @markup.heading.1                      htmlH1
+hi link @markup.heading.2                      htmlH2
+hi link @markup.heading.3                      htmlH3
+hi link @markup.heading.4                      htmlH4
+hi link @markup.heading.5                      htmlH5
+hi link @markup.heading.6                      htmlH6
+hi link @markup.italic                         htmlItalic
+hi link @markup.link.label                     htmlAnchor
+hi link @markup.link.url                       Underlined
+hi link @markup.link.vimdoc                    htmlAnchor
+hi link @markup.list                           Delimiter
+hi link @markup.literal                        String
+hi link @markup.raw                            String
+hi link @markup.raw.block                      NormalNC
+hi link @markup.strong                         htmlBold
+hi link @module                                StorageClass
+hi link @namespace                             StorageClass
+hi link @string.escape                         Special
+hi link @string.special.url                    Underlined
+hi link @string.special.path                   Underlined
+hi link @tag.attribute                         Identifier
+hi link @tag.delimiter                         Operator
+hi link @type                                  Type
+hi link @type.builtin                          Type
+hi link @type.definition                       pcsClassBold
+hi link @variable                              NONE
+hi link @variable.builtin                      htmlBold
+hi link @variable.parameter                    pcsParameter
+hi link @variable.member                       Identifier
 " nvim-treesitter matchers (language specific)
-highlight link @constructor.lua                       NONE
-highlight link @markup.link.markdown_inline           NONE
-highlight link @markup.quote.markdown                 htmlUnderlineItalic
+hi link @constructor.lua                       NONE
+hi link @markup.link.markdown_inline           NONE
+hi link @markup.quote.markdown                 htmlUnderlineItalic
 " lsp.type.<id>
-highlight link @lsp.type.boolean                      @boolean
-highlight link @lsp.type.builtinType                  @type.builtin
-highlight link @lsp.type.comment                      @comment
-highlight link @lsp.type.enum                         @type
-highlight link @lsp.type.enumMember                   @boolean
-highlight link @lsp.type.escapeSequence               @string.escape
-highlight link @lsp.type.formatSpecifier              @punctuation.special
-highlight link @lsp.type.function                     Function
-highlight link @lsp.type.interface                    @type
-highlight link @lsp.type.keyword                      @keyword
-highlight link @lsp.type.macro                        Macro
-highlight link @lsp.type.method                       Function
-highlight link @lsp.type.namespace                    @namespace
-highlight link @lsp.type.number                       @number
-highlight link @lsp.type.operator                     @operator
-highlight link @lsp.type.parameter                    @variable.parameter
-highlight link @lsp.type.property                     @property
-highlight link @lsp.type.selfKeyword                  @variable.builtin
-highlight link @lsp.type.typeAlias                    pcsClassCombine
-highlight link @lsp.type.typeParameter                pcsClassCombine
-highlight link @lsp.type.unresolvedReference          @comment.error
-highlight link @lsp.type.variable                     NONE
+hi link @lsp.type.boolean                      @boolean
+hi link @lsp.type.builtinType                  @type.builtin
+hi link @lsp.type.comment                      @comment
+hi link @lsp.type.enum                         @type
+hi link @lsp.type.enumMember                   @boolean
+hi link @lsp.type.escapeSequence               @string.escape
+hi link @lsp.type.formatSpecifier              @punctuation.special
+hi link @lsp.type.function                     Function
+hi link @lsp.type.interface                    @type
+hi link @lsp.type.keyword                      @keyword
+hi link @lsp.type.macro                        Macro
+hi link @lsp.type.method                       Function
+hi link @lsp.type.namespace                    @namespace
+hi link @lsp.type.number                       @number
+hi link @lsp.type.operator                     @operator
+hi link @lsp.type.parameter                    @variable.parameter
+hi link @lsp.type.property                     @property
+hi link @lsp.type.selfKeyword                  @variable.builtin
+hi link @lsp.type.typeAlias                    pcsClassCombine
+hi link @lsp.type.typeParameter                pcsClassCombine
+hi link @lsp.type.unresolvedReference          @comment.error
+hi link @lsp.type.variable                     NONE
 " lsp.typemod.<id>.[definition,declaration]
-highlight link @lsp.typemod.class.declaration         htmlBold
-highlight link @lsp.typemod.class.definition          htmlBold
-highlight link @lsp.typemod.function.declaration      htmlBold
-highlight link @lsp.typemod.function.definition       htmlBold
-highlight link @lsp.typemod.method.declaration        htmlBold
-highlight link @lsp.typemod.method.definition         htmlBold
-highlight link @lsp.typemod.namespace.declaration     htmlBold
-highlight link @lsp.typemod.namespace.definition      htmlBold
-highlight link @lsp.typemod.parameter.declaration     htmlItalic
-highlight link @lsp.typemod.parameter.definition      htmlItalic
-highlight link @lsp.typemod.property.declaration      htmlItalic
-highlight link @lsp.typemod.property.definition       htmlItalic
-highlight link @lsp.typemod.struct.declaration        htmlBold
-highlight link @lsp.typemod.struct.definition         htmlBold
+hi link @lsp.typemod.class.declaration         htmlBold
+hi link @lsp.typemod.class.definition          htmlBold
+hi link @lsp.typemod.function.declaration      htmlBold
+hi link @lsp.typemod.function.definition       htmlBold
+hi link @lsp.typemod.method.declaration        htmlBold
+hi link @lsp.typemod.method.definition         htmlBold
+hi link @lsp.typemod.namespace.declaration     htmlBold
+hi link @lsp.typemod.namespace.definition      htmlBold
+hi link @lsp.typemod.parameter.declaration     htmlItalic
+hi link @lsp.typemod.parameter.definition      htmlItalic
+hi link @lsp.typemod.property.declaration      htmlItalic
+hi link @lsp.typemod.property.definition       htmlItalic
+hi link @lsp.typemod.struct.declaration        htmlBold
+hi link @lsp.typemod.struct.definition         htmlBold
 " html
-highlight link htmlUnderline                          Underlined
-highlight link htmlTitle                              Title
+hi link htmlUnderline                          Underlined
+hi link htmlTitle                              Title
 " misc
-highlight link diffAdded                              DiffAdd
-highlight link diffRemoved                            DiffDelete
+hi link diffAdded                              DiffAdd
+hi link diffRemoved                            DiffDelete
