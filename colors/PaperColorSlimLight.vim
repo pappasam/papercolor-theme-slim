@@ -210,7 +210,7 @@ hi link @variable.member                       Identifier
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
 hi link @markup.link.markdown_inline           NONE
-hi link @markup.quote.markdown                 htmlUnderlineItalic
+hi link @markup.quote.markdown                 htmlItalic
 " lsp.type.<id>
 hi link @lsp.type.boolean                      @boolean
 hi link @lsp.type.builtinType                  @type.builtin
