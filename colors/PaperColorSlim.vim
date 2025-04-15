@@ -6,7 +6,6 @@ endif
 let g:colors_name="PaperColorSlim"
 set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
 set winborder=rounded
-" Non-Linking ---------------------------------------------------------------
 let g:terminal_color_0  = '#1c1c1c'
 let g:terminal_color_1  = '#af005f'
 let g:terminal_color_2  = '#5faf00'
