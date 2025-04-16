@@ -89,7 +89,8 @@ hi Keyword                  guifg=#afd700 guibg=NONE    gui=NONE
 hi Exception                guifg=#afd700 guibg=NONE    gui=NONE
 hi PreProc                  guifg=#afd700 guibg=NONE    gui=NONE
 hi Include                  guifg=#afd700 guibg=NONE    gui=NONE
-hi Define                   guifg=#5faf5f guibg=NONE    gui=bold
+hi Define                   guifg=#afd700 guibg=NONE    gui=NONE
+hi Macro                    guifg=#5faf5f guibg=NONE    gui=bold
 hi PreCondit                guifg=#5faf5f guibg=NONE    gui=NONE
 hi Type                     guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
 hi StorageClass             guifg=#5faf5f guibg=NONE    gui=nocombine,NONE
@@ -148,7 +149,6 @@ hi clear FloatFooter
 hi link NormalFloat                            Normal
 hi link FloatTitle                             Title
 hi link FloatFooter                            htmlItalic
-hi link Macro                                  Define
 hi link FoldColumn                             LineNr
 hi link Added                                  DiffAdd
 hi link Changed                                DiffChange
@@ -171,7 +171,7 @@ hi link @function.method                       pcsFunctionBold
 hi link @function.method.builtin               Function
 hi link @function.method.call                  Function
 hi link @keyword.conditional                   Conditional
-hi link @keyword.directive                     SpecialComment
+hi link @keyword.directive                     Conditional
 hi link @keyword.exception                     Exception
 hi link @keyword.operator                      Operator
 hi link @keyword.repeat                        Repeat
