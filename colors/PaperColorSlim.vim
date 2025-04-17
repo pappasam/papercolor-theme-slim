@@ -78,7 +78,7 @@ hi Character                guifg=#d7af5f guibg=NONE    gui=bold
 hi Number                   guifg=#ff5faf guibg=NONE    gui=NONE
 hi Boolean                  guifg=#d7af00 guibg=NONE    gui=bold
 hi Float                    guifg=#ff5faf guibg=NONE    gui=NONE
-hi Identifier               guifg=#d7875f guibg=NONE    gui=NONE
+hi Identifier               guifg=#d7875f guibg=NONE    gui=nocombine,NONE
 hi Function                 guifg=#5fafd7 guibg=NONE    gui=NONE
 hi Statement                guifg=#afd700 guibg=NONE    gui=NONE
 hi Conditional              guifg=#afd700 guibg=NONE    gui=NONE
