@@ -49,18 +49,16 @@ autocmd ColorScheme PaperColorSlimLight highlight Normal guibg=#fffff0
 
 ### Third party plugin support
 
-Sometimes you want to customize your experience for a specific plugin's syntax groups. See my full example below with overrides supporting [snacks.nvim] and [telescope.nvim]:
+Sometimes you want to customize your experience for a specific plugin's syntax groups. Here's a full example for how you might link a plugin's highlight group (`ExamplePluginHighlightGroup`) to another highlight group (`CursorLine`):
 
 ```vim
 function s:papercolor_slim_linking()
-  highlight link SnacksPickerListCursorLine CursorLine
-  highlight link TelescopeSelection CursorLine
+  highlight link ExamplePluginHighlightGroup CursorLine
 endfunction
 
 augroup colorscheme_overrides_custom
   autocmd!
   autocmd ColorScheme PaperColorSlim,PaperColorSlimLight call s:papercolor_slim_linking()
-  autocmd TextYankPost * silent! lua vim.highlight.on_yank({higroup="VisualNOS", timeout=200})
 augroup end
 ```
 
@@ -78,7 +76,7 @@ I'm open to feedback, but if we disagree, you can override anything easily for y
 
 ### My window border preference is overridden
 
-Because of [nvim_set_hl](<https://neovim.io/doc/user/api.html#nvim_set_hl()>)'s propensity to cause the background to default to the color set by `Normal`, I've found that plugin compatibility is best when `FloatNormal` is mapped to `Normal`. Because of this, there is no difference between the background color of a floating window and the color of a normal vim window. This plugin sets your floating window border for you to `rounded`.
+Because of [nvim_set_hl](<https://neovim.io/doc/user/api.html#nvim_set_hl()>)'s propensity to cause the background to default to the color set by `Normal`, I've found that plugin compatibility is best when `FloatNormal` is mapped to `Normal`. Because of this, there is no difference between a floating window's background color normal vim window's background color. This plugin sets your floating window border for you to `rounded`.
 
 If you're super specific about your winborder, add the following to your configuration.
 
@@ -112,8 +110,6 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
-[snacks.nvim]: https://github.com/folke/snacks.nvim
-[telescope.nvim]: https://github.com/nvim-telescope/telescope.nvim
 [treesitter-highlight-groups]: https://neovim.io/doc/user/treesitter.html#treesitter-highlight-groups
 [truecolor]: https://gist.github.com/sindresorhus/bed863fb8bedf023b833c88c322e44f9
 [winborder]: https://neovim.io/doc/user/options.html#'winborder'
