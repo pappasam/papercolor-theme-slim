@@ -203,7 +203,7 @@ hi link @tag.delimiter                         Operator
 hi link @type                                  Type
 hi link @type.builtin                          Type
 hi link @type.definition                       pcsClassBold
-hi link @variable                              NONE
+hi link @variable                              NormalNC
 hi link @variable.builtin                      htmlBold
 hi link @variable.parameter                    pcsParameter
 hi link @variable.member                       Identifier
