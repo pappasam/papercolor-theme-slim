@@ -219,11 +219,11 @@ hi link @lsp.type.enum                         @type
 hi link @lsp.type.enumMember                   @boolean
 hi link @lsp.type.escapeSequence               @string.escape
 hi link @lsp.type.formatSpecifier              @punctuation.special
-hi link @lsp.type.function                     Function
+hi link @lsp.type.function                     @function.call
 hi link @lsp.type.interface                    @type
 hi link @lsp.type.keyword                      @keyword
 hi link @lsp.type.macro                        Macro
-hi link @lsp.type.method                       Function
+hi link @lsp.type.method                       @function.method.call
 hi link @lsp.type.namespace                    @namespace
 hi link @lsp.type.number                       @number
 hi link @lsp.type.operator                     @operator
@@ -233,7 +233,7 @@ hi link @lsp.type.selfKeyword                  @variable.builtin
 hi link @lsp.type.typeAlias                    pcsClassCombine
 hi link @lsp.type.typeParameter                pcsClassCombine
 hi link @lsp.type.unresolvedReference          @comment.error
-hi link @lsp.type.variable                     NONE
+hi link @lsp.type.variable                     @variable
 " lsp.typemod.<id>.[definition,declaration]
 hi link @lsp.typemod.class.declaration         htmlBold
 hi link @lsp.typemod.class.definition          htmlBold
