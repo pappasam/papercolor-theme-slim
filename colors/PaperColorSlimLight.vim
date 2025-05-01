@@ -210,7 +210,7 @@ hi link @constructor.lua                       NONE
 hi link @markup.link.markdown_inline           NONE
 hi link @markup.quote.markdown                 htmlItalic
 hi link @tag.builtin.tsx                       Tag
-hi link @tag.tsx                               Type
+hi link @tag.tsx                               Tag
 hi link @variable.vim                          NONE
 " lsp.type.<id>
 hi link @lsp.type.boolean                      @boolean
@@ -235,21 +235,6 @@ hi link @lsp.type.typeAlias                    pcsClassCombine
 hi link @lsp.type.typeParameter                pcsClassCombine
 hi link @lsp.type.unresolvedReference          @comment.error
 hi link @lsp.type.variable                     @variable
-" lsp.typemod.<id>.[definition,declaration]
-hi link @lsp.typemod.class.declaration         htmlBold
-hi link @lsp.typemod.class.definition          htmlBold
-hi link @lsp.typemod.function.declaration      htmlBold
-hi link @lsp.typemod.function.definition       htmlBold
-hi link @lsp.typemod.method.declaration        htmlBold
-hi link @lsp.typemod.method.definition         htmlBold
-hi link @lsp.typemod.namespace.declaration     htmlBold
-hi link @lsp.typemod.namespace.definition      htmlBold
-hi link @lsp.typemod.parameter.declaration     htmlItalic
-hi link @lsp.typemod.parameter.definition      htmlItalic
-hi link @lsp.typemod.property.declaration      htmlItalic
-hi link @lsp.typemod.property.definition       htmlItalic
-hi link @lsp.typemod.struct.declaration        htmlBold
-hi link @lsp.typemod.struct.definition         htmlBold
 " html
 hi link htmlUnderline                          Underlined
 hi link htmlTitle                              Title
