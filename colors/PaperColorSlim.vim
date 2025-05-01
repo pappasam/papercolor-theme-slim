@@ -191,7 +191,9 @@ hi link @markup.raw                            String
 hi link @markup.raw.block                      NormalNC
 hi link @markup.strong                         htmlBold
 hi link @module                                StorageClass
+hi link @module.builtin                        StorageClass
 hi link @namespace                             StorageClass
+hi link @property                              NormalNC
 hi link @string.escape                         Special
 hi link @string.special.url                    Underlined
 hi link @string.special.path                   Underlined
@@ -201,7 +203,7 @@ hi link @type                                  Type
 hi link @type.builtin                          Type
 hi link @type.definition                       Type
 hi link @variable                              NormalNC
-hi link @variable.builtin                      NONE
+hi link @variable.builtin                      Identifier
 hi link @variable.parameter                    Identifier
 hi link @variable.member                       NONE
 " nvim-treesitter matchers (language specific)
@@ -229,7 +231,7 @@ hi link @lsp.type.number                       @number
 hi link @lsp.type.operator                     @operator
 hi link @lsp.type.parameter                    @variable.parameter
 hi link @lsp.type.property                     @property
-hi link @lsp.type.selfKeyword                  @variable.builtin
+hi link @lsp.type.selfKeyword                  Identifier
 hi link @lsp.type.typeAlias                    pcsClassCombine
 hi link @lsp.type.typeParameter                pcsClassCombine
 hi link @lsp.type.unresolvedReference          @comment.error
