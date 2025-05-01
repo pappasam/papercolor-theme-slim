@@ -98,7 +98,7 @@ hi Structure                guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
 hi Typedef                  guifg=#af87d7 guibg=NONE    gui=NONE
 hi Special                  guifg=#00afaf guibg=NONE    gui=bold
 hi SpecialChar              guifg=#d7af5f guibg=NONE    gui=NONE
-hi Tag                      guifg=#d7af00 guibg=NONE    gui=NONE
+hi Tag                      guifg=#5fafd7 guibg=NONE    gui=NONE
 hi Delimiter                guifg=#00afaf guibg=NONE    gui=NONE
 hi SpecialComment           guifg=#808080 guibg=NONE    gui=bold
 hi Debug                    guifg=#ff5faf guibg=NONE    gui=NONE
@@ -132,7 +132,6 @@ hi htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
 hi htmlItalic               guifg=NONE    guibg=NONE    gui=italic
 " custom
 hi pcsClassCombine          guifg=#af87d7 guibg=NONE    gui=NONE
-hi pcsParameter             guifg=#87afaf guibg=NONE    gui=NONE
 " Linking -------------------------------------------------------------------
 hi clear @variable
 hi clear Added
@@ -203,7 +202,7 @@ hi link @type.builtin                          Type
 hi link @type.definition                       Type
 hi link @variable                              NormalNC
 hi link @variable.builtin                      htmlBold
-hi link @variable.parameter                    pcsParameter
+hi link @variable.parameter                    Identifier
 hi link @variable.member                       Identifier
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE

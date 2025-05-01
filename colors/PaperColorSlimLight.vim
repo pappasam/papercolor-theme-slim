@@ -78,7 +78,7 @@ hi Character                guifg=#5f8700 guibg=NONE    gui=bold
 hi Number                   guifg=#d75f00 guibg=NONE    gui=NONE
 hi Boolean                  guifg=#af5f00 guibg=NONE    gui=bold
 hi Float                    guifg=#d75f00 guibg=NONE    gui=NONE
-hi Identifier               guifg=#005f87 guibg=NONE    gui=nocombine,NONE
+hi Identifier               guifg=#945d2d guibg=NONE    gui=nocombine,NONE
 hi Function                 guifg=#0087af guibg=NONE    gui=NONE
 hi Statement                guifg=#d70087 guibg=NONE    gui=NONE
 hi Conditional              guifg=#d70087 guibg=NONE    gui=NONE
@@ -98,7 +98,7 @@ hi Structure                guifg=#8700af guibg=NONE    gui=nocombine,NONE
 hi Typedef                  guifg=#8700af guibg=NONE    gui=NONE
 hi Special                  guifg=#005faf guibg=NONE    gui=bold
 hi SpecialChar              guifg=#5f8700 guibg=NONE    gui=NONE
-hi Tag                      guifg=#008700 guibg=NONE    gui=NONE
+hi Tag                      guifg=#0087af guibg=NONE    gui=NONE
 hi Delimiter                guifg=#005f87 guibg=NONE    gui=NONE
 hi SpecialComment           guifg=#878787 guibg=NONE    gui=bold
 hi Debug                    guifg=#d75f00 guibg=NONE    gui=NONE
@@ -132,7 +132,6 @@ hi htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
 hi htmlItalic               guifg=NONE    guibg=NONE    gui=italic
 " custom
 hi pcsClassCombine          guifg=#8700af guibg=NONE    gui=NONE
-hi pcsParameter             guifg=#945d2d guibg=NONE    gui=NONE
 " Linking -------------------------------------------------------------------
 hi clear @variable
 hi clear Added
@@ -203,7 +202,7 @@ hi link @type.builtin                          Type
 hi link @type.definition                       Type
 hi link @variable                              NormalNC
 hi link @variable.builtin                      htmlBold
-hi link @variable.parameter                    pcsParameter
+hi link @variable.parameter                    Identifier
 hi link @variable.member                       Identifier
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
