@@ -83,7 +83,7 @@ hi Function                 guifg=#5fafd7 guibg=NONE    gui=NONE
 hi Statement                guifg=#afd700 guibg=NONE    gui=NONE
 hi Conditional              guifg=#afd700 guibg=NONE    gui=NONE
 hi Repeat                   guifg=#afd700 guibg=NONE    gui=NONE
-hi Label                    guifg=#00afaf guibg=NONE    gui=NONE
+hi Label                    guifg=#00afaf guibg=NONE    gui=nocombine,NONE
 hi Operator                 guifg=#00afaf guibg=NONE    gui=bold
 hi Keyword                  guifg=#afd700 guibg=NONE    gui=NONE
 hi Exception                guifg=#afd700 guibg=NONE    gui=NONE
