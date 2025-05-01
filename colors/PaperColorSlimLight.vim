@@ -234,6 +234,8 @@ hi link @lsp.type.typeAlias                    pcsClassCombine
 hi link @lsp.type.typeParameter                pcsClassCombine
 hi link @lsp.type.unresolvedReference          @comment.error
 hi link @lsp.type.variable                     @variable
+" lsp (language-specific)
+hi link @lsp.type.class.markdown               NONE
 " html
 hi link htmlUnderline                          Underlined
 hi link htmlTitle                              Title
