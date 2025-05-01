@@ -201,9 +201,9 @@ hi link @type                                  Type
 hi link @type.builtin                          Type
 hi link @type.definition                       Type
 hi link @variable                              NormalNC
-hi link @variable.builtin                      htmlBold
+hi link @variable.builtin                      NONE
 hi link @variable.parameter                    Identifier
-hi link @variable.member                       Identifier
+hi link @variable.member                       NONE
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
 hi link @markup.link.markdown_inline           NONE
@@ -233,7 +233,7 @@ hi link @lsp.type.selfKeyword                  @variable.builtin
 hi link @lsp.type.typeAlias                    pcsClassCombine
 hi link @lsp.type.typeParameter                pcsClassCombine
 hi link @lsp.type.unresolvedReference          @comment.error
-hi link @lsp.type.variable                     @variable
+hi link @lsp.type.variable                     NONE
 " lsp (language-specific)
 hi link @lsp.type.class.markdown               NONE
 " html
