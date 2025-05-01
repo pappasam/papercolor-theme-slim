@@ -132,8 +132,6 @@ hi htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
 hi htmlItalic               guifg=NONE    guibg=NONE    gui=italic
 " custom
 hi pcsClassCombine          guifg=#8700af guibg=NONE    gui=NONE
-hi pcsClassBold             guifg=#8700af guibg=NONE    gui=bold
-hi pcsFunctionBold          guifg=#0087af guibg=NONE    gui=bold
 hi pcsParameter             guifg=#945d2d guibg=NONE    gui=NONE
 " Linking -------------------------------------------------------------------
 hi clear @variable
@@ -163,11 +161,11 @@ hi link @constructor                           NONE
 hi link @diff.delta                            DiffChange
 hi link @diff.minus                            DiffDelete
 hi link @diff.plus                             DiffAdd
-hi link @function                              pcsFunctionBold
+hi link @function                              Function
 hi link @function.builtin                      Function
 hi link @function.call                         Function
 hi link @function.macro                        Macro
-hi link @function.method                       pcsFunctionBold
+hi link @function.method                       Function
 hi link @function.method.builtin               Function
 hi link @function.method.call                  Function
 hi link @keyword.conditional                   Conditional
@@ -202,7 +200,7 @@ hi link @tag.attribute                         Identifier
 hi link @tag.delimiter                         Operator
 hi link @type                                  Type
 hi link @type.builtin                          Type
-hi link @type.definition                       pcsClassBold
+hi link @type.definition                       Type
 hi link @variable                              NormalNC
 hi link @variable.builtin                      htmlBold
 hi link @variable.parameter                    pcsParameter
