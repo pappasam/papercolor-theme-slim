@@ -8,8 +8,8 @@ This is a slimmed down re-implementation of [papercolor-theme] for Neovim 0.11+ 
 4. Limited to the following highlight groups for consistency across languages: [built-in groups], [diagnostic-highlight], [html-vim], [lsp-semantic-highlight], [treesitter-highlight-groups], [preferred groups], and some limited miscellaneous additions (see end of colorscheme).
 5. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
 
-| Language |         PaperColorSlim (dark)          |       PaperColorSlimLight (light)       |
-| -------- | :------------------------------------: | :-------------------------------------: |
+| Language | PaperColorSlim (dark)                  | PaperColorSlimLight (light)             |
+| -------- | -------------------------------------- | --------------------------------------- |
 | Python   | ![](./gallery/outputs/python_dark.png) | ![](./gallery/outputs/python_light.png) |
 
 <details closed>
@@ -17,21 +17,21 @@ This is a slimmed down re-implementation of [papercolor-theme] for Neovim 0.11+ 
 
 Note: this gallery is non-exhaustive. PaperColorSlim targets all filetypes.
 
-| Language   |              PaperColorSlim (dark)              |           PaperColorSlimLight (light)            |
-| ---------- | :---------------------------------------------: | :----------------------------------------------: |
-| C          |        ![](./gallery/outputs/c_dark.png)        |        ![](./gallery/outputs/c_light.png)        |
-| CSS        |       ![](./gallery/outputs/css_dark.png)       |       ![](./gallery/outputs/css_light.png)       |
-| Go         |       ![](./gallery/outputs/go_dark.png)        |       ![](./gallery/outputs/go_light.png)        |
-| HTML       |      ![](./gallery/outputs/html_dark.png)       |      ![](./gallery/outputs/html_light.png)       |
-| Lua        |       ![](./gallery/outputs/lua_dark.png)       |       ![](./gallery/outputs/lua_light.png)       |
-| Markdown   |    ![](./gallery/outputs/markdown_dark.png)     |    ![](./gallery/outputs/markdown_light.png)     |
-| Python     |     ![](./gallery/outputs/python_dark.png)      |     ![](./gallery/outputs/python_light.png)      |
-| Rust       |      ![](./gallery/outputs/rust_dark.png)       |      ![](./gallery/outputs/rust_light.png)       |
-| TOML       |      ![](./gallery/outputs/toml_dark.png)       |      ![](./gallery/outputs/toml_light.png)       |
-| TypeScript |   ![](./gallery/outputs/typescript_dark.png)    |   ![](./gallery/outputs/typescript_light.png)    |
+| Language   | PaperColorSlim (dark)                           | PaperColorSlimLight (light)                      |
+| ---------- | ----------------------------------------------- | ------------------------------------------------ |
+| C          | ![](./gallery/outputs/c_dark.png)               | ![](./gallery/outputs/c_light.png)               |
+| CSS        | ![](./gallery/outputs/css_dark.png)             | ![](./gallery/outputs/css_light.png)             |
+| Go         | ![](./gallery/outputs/go_dark.png)              | ![](./gallery/outputs/go_light.png)              |
+| HTML       | ![](./gallery/outputs/html_dark.png)            | ![](./gallery/outputs/html_light.png)            |
+| Lua        | ![](./gallery/outputs/lua_dark.png)             | ![](./gallery/outputs/lua_light.png)             |
+| Markdown   | ![](./gallery/outputs/markdown_dark.png)        | ![](./gallery/outputs/markdown_light.png)        |
+| Python     | ![](./gallery/outputs/python_dark.png)          | ![](./gallery/outputs/python_light.png)          |
+| Rust       | ![](./gallery/outputs/rust_dark.png)            | ![](./gallery/outputs/rust_light.png)            |
+| TOML       | ![](./gallery/outputs/toml_dark.png)            | ![](./gallery/outputs/toml_light.png)            |
+| TypeScript | ![](./gallery/outputs/typescript_dark.png)      | ![](./gallery/outputs/typescript_light.png)      |
 | TSX        | ![](./gallery/outputs/typescriptreact_dark.png) | ![](./gallery/outputs/typescriptreact_light.png) |
-| Vim        |       ![](./gallery/outputs/vim_dark.png)       |       ![](./gallery/outputs/vim_light.png)       |
-| YAML       |      ![](./gallery/outputs/yaml_dark.png)       |      ![](./gallery/outputs/yaml_light.png)       |
+| Vim        | ![](./gallery/outputs/vim_dark.png)             | ![](./gallery/outputs/vim_light.png)             |
+| YAML       | ![](./gallery/outputs/yaml_dark.png)            | ![](./gallery/outputs/yaml_light.png)            |
 
 </details>
 
