@@ -130,6 +130,7 @@ hi htmlBoldUnderline        guifg=NONE    guibg=NONE    gui=bold,underline
 hi htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underline,italic
 hi htmlUnderlineItalic      guifg=NONE    guibg=NONE    gui=underline,italic
 hi htmlItalic               guifg=NONE    guibg=NONE    gui=italic
+hi htmlBoldItalic           guifg=NONE    guibg=NONE    gui=bold,italic
 " custom
 hi pcsClassCombine          guifg=#8700af guibg=NONE    gui=NONE
 " Linking -------------------------------------------------------------------
@@ -203,8 +204,8 @@ hi link @type                                  Type
 hi link @type.builtin                          Type
 hi link @type.definition                       Type
 hi link @variable                              NormalNC
-hi link @variable.builtin                      Identifier
-hi link @variable.member                       NormalNC
+hi link @variable.builtin                      htmlBoldItalic
+hi link @variable.member                       Identifier
 hi link @variable.parameter                    NONE
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
@@ -231,7 +232,6 @@ hi link @lsp.type.number                       @number
 hi link @lsp.type.operator                     @operator
 hi link @lsp.type.parameter                    @variable.parameter
 hi link @lsp.type.property                     @property
-hi link @lsp.type.selfKeyword                  Identifier
 hi link @lsp.type.typeAlias                    pcsClassCombine
 hi link @lsp.type.typeParameter                pcsClassCombine
 hi link @lsp.type.unresolvedReference          @comment.error
