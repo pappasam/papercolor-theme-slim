@@ -166,7 +166,7 @@ hi link @diff.delta                            DiffChange
 hi link @diff.minus                            DiffDelete
 hi link @diff.plus                             DiffAdd
 hi link @function                              Function
-hi link @function.builtin                      NONE
+hi link @function.builtin                      Function
 hi link @function.call                         Function
 hi link @function.macro                        Macro
 hi link @function.method                       Function
