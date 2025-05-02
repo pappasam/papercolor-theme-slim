@@ -11,7 +11,6 @@ local filetypes = {
   typescript = "sample.ts",
   typescriptreact = "sample.tsx",
   vim = "sample.vim",
-  yaml = "sample.yaml",
 }
 
 local colorschemes = { dark = "PaperColorSlim", light = "PaperColorSlimLight" }
