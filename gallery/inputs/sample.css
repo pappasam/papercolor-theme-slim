@@ -1,0 +1,83 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main'
+    'sidebar footer';
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #648ca6;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #394263;
+}
+
+.main {
+  grid-area: main;
+  background-color: #8fd4d9;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
+}
+
+.menu-icon {
+  position: fixed;
+  display: flex;
+  top: 5px;
+  left: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  padding: 12px;
+  background-color: #dadae3;
+}
+
+/* Non-mobile styles, 750px breakpoint */
+@media only screen and (min-width: 46.875em) {
+  /* Show the sidebar */
+  .grid-container {
+    grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 46.875em) {
+  #open-sidebar-menu:checked ~ .sidebar {
+    transform: translateX(0);
+  }
+  #open-sidebar-menu:not(checked) ~ .header {
+    grid-column: sidebar-start / header-end;
+    grid-row: header;
+  }
+  #open-sidebar-menu:not(checked) ~ .main {
+    grid-column: sidebar-start / main-end;
+    grid-row: main;
+  }
+  #open-sidebar-menu:not(checked) ~ .footer {
+    grid-column: sidebar-start / footer-end;
+    grid-row: footer;
+  }
+}
+
+/* Medium-sized screen breakpoint (tablet, 1050px) */
+@media only screen and (min-width: 65.625em) {
+  /* Break out main cards into two columns */
+  .main-cards {
+    column-count: 2;
+  }
+}
