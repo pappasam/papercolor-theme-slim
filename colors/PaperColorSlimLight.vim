@@ -153,6 +153,10 @@ hi link Changed                                DiffChange
 hi link Removed                                DiffDelete
 hi link NonText                                Comment
 hi link QuickFixLine                           CursorLine
+hi link LspReferenceText                       CursorLine
+hi link LspReferenceRead                       CursorLine
+hi link LspReferenceWrite                      CursorLine
+hi link LspReferenceTarget                     CursorLine
 " nvim-treesitter matchers (general)
 hi link @attribute                             Label
 hi link @attribute.builtin                     NONE
