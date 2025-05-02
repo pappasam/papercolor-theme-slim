@@ -155,13 +155,13 @@ hi link QuickFixLine                           CursorLine
 " nvim-treesitter matchers (general)
 hi link @attribute                             Label
 hi link @attribute.builtin                     NONE
-hi link @constant.builtin                      Boolean
+hi link @constant.builtin                      NONE
 hi link @constructor                           NONE
 hi link @diff.delta                            DiffChange
 hi link @diff.minus                            DiffDelete
 hi link @diff.plus                             DiffAdd
 hi link @function                              Function
-hi link @function.builtin                      Function
+hi link @function.builtin                      NONE
 hi link @function.call                         Function
 hi link @function.macro                        Macro
 hi link @function.method                       Function
@@ -169,11 +169,11 @@ hi link @function.method.builtin               Function
 hi link @function.method.call                  Function
 hi link @keyword.conditional                   Conditional
 hi link @keyword.directive                     Conditional
+hi link @keyword.directive.define              Define
 hi link @keyword.exception                     Exception
 hi link @keyword.operator                      Operator
 hi link @keyword.repeat                        Repeat
 hi link @keyword.return                        Conditional
-hi link @keyword.directive.define              Define
 hi link @markup.heading                        Title
 hi link @markup.heading.1                      htmlH1
 hi link @markup.heading.2                      htmlH2
@@ -193,10 +193,10 @@ hi link @markup.strong                         htmlBold
 hi link @module                                StorageClass
 hi link @module.builtin                        StorageClass
 hi link @namespace                             StorageClass
-hi link @property                              NormalNC
+hi link @property                              Identifier
 hi link @string.escape                         Special
-hi link @string.special.url                    Underlined
 hi link @string.special.path                   Underlined
+hi link @string.special.url                    Underlined
 hi link @tag.attribute                         Identifier
 hi link @tag.delimiter                         Operator
 hi link @type                                  Type
@@ -204,8 +204,8 @@ hi link @type.builtin                          Type
 hi link @type.definition                       Type
 hi link @variable                              NormalNC
 hi link @variable.builtin                      Identifier
-hi link @variable.parameter                    Identifier
 hi link @variable.member                       NONE
+hi link @variable.parameter                    NONE
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
 hi link @markup.link.markdown_inline           NONE
