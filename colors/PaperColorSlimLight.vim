@@ -214,6 +214,7 @@ hi link @variable.parameter                    NONE
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
 hi link @markup.link.markdown_inline           NONE
+hi link @markup.link.url                       htmlAnchor
 hi link @markup.quote.markdown                 htmlItalic
 hi link @tag.builtin.tsx                       Tag
 hi link @tag.tsx                               Tag

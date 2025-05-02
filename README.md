@@ -8,7 +8,9 @@ This is a slimmed down re-implementation of [papercolor-theme] for Neovim 0.11+ 
 4. Limited to the following highlight groups for consistency across languages: [built-in groups], [diagnostic-highlight], [html-vim], [lsp-semantic-highlight], [treesitter-highlight-groups], [preferred groups], and some limited miscellaneous additions (see end of colorscheme).
 5. Provides both dark (`PaperColorSlim`) and light (`PaperColorSlimLight`) variants.
 
-[Click here to visit a screenshot gallery](https://github.com/pappasam/papercolor-theme-slim/wiki/Gallery)
+## Gallery
+
+See <https://github.com/pappasam/papercolor-theme-slim/wiki/Gallery>
 
 ## Installation
 
