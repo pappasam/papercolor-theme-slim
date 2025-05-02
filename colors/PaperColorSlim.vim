@@ -45,7 +45,7 @@ hi MatchParen               guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
 hi ModeMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 hi MoreMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 hi Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
-hi NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=NONE
+hi NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=nocombine,NONE
 hi Pmenu                    guifg=#d0d0d0 guibg=#303030 gui=NONE
 hi PmenuSel                 guifg=#d0d0d0 guibg=#585858 gui=NONE
 hi Question                 guifg=#afd700 guibg=NONE    gui=NONE
@@ -79,7 +79,7 @@ hi Number                   guifg=#ff5faf guibg=NONE    gui=NONE
 hi Boolean                  guifg=#d7af00 guibg=NONE    gui=bold
 hi Float                    guifg=#ff5faf guibg=NONE    gui=NONE
 hi Identifier               guifg=#d7875f guibg=NONE    gui=nocombine,NONE
-hi Function                 guifg=#5fafd7 guibg=NONE    gui=NONE
+hi Function                 guifg=#5fafd7 guibg=NONE    gui=nocombine,NONE
 hi Statement                guifg=#afd700 guibg=NONE    gui=NONE
 hi Conditional              guifg=#afd700 guibg=NONE    gui=NONE
 hi Repeat                   guifg=#afd700 guibg=NONE    gui=NONE
@@ -155,7 +155,7 @@ hi link QuickFixLine                           CursorLine
 " nvim-treesitter matchers (general)
 hi link @attribute                             Label
 hi link @attribute.builtin                     NONE
-hi link @constant.builtin                      NONE
+hi link @constant.builtin                      Boolean
 hi link @constructor                           NONE
 hi link @diff.delta                            DiffChange
 hi link @diff.minus                            DiffDelete
@@ -204,7 +204,7 @@ hi link @type.builtin                          Type
 hi link @type.definition                       Type
 hi link @variable                              NormalNC
 hi link @variable.builtin                      Identifier
-hi link @variable.member                       NONE
+hi link @variable.member                       NormalNC
 hi link @variable.parameter                    NONE
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
