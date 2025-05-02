@@ -6,5 +6,6 @@ help: ## Prints each target and its associated help message
 # NOTE: must hold terminal window focused and in the shape you'd like
 gen-gallery: ## Generate the gallery of images
 	@echo "Generating colorscheme screenshots..."
+	@mkdir -p ./gallery/outputs
 	@nvim -c "cd ./gallery" -c "luafile ./generate.lua" -c "echo ''" -c "qa!"
 	@echo "Screenshots generated in ./gallery/outputs/"
