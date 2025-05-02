@@ -90,7 +90,7 @@ hi Exception                guifg=#afd700 guibg=NONE    gui=NONE
 hi PreProc                  guifg=#afd700 guibg=NONE    gui=NONE
 hi Include                  guifg=#afd700 guibg=NONE    gui=NONE
 hi Define                   guifg=#afd700 guibg=NONE    gui=NONE
-hi Macro                    guifg=#5faf5f guibg=NONE    gui=bold
+hi Macro                    guifg=#00afaf guibg=NONE    gui=nocombine,NONE
 hi PreCondit                guifg=#5faf5f guibg=NONE    gui=NONE
 hi Type                     guifg=#af87d7 guibg=NONE    gui=nocombine,NONE
 hi StorageClass             guifg=#5faf5f guibg=NONE    gui=nocombine,NONE
