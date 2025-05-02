@@ -73,7 +73,7 @@ hi WinSeparator             guifg=#5f8787 guibg=NONE    gui=NONE
 " vim-preferred
 hi Comment                  guifg=#808080 guibg=NONE    gui=NONE
 hi Constant                 guifg=#d0d0d0 guibg=NONE    gui=NONE
-hi String                   guifg=#d7af5f guibg=NONE    gui=NONE
+hi String                   guifg=#d7af5f guibg=NONE    gui=nocombine,NONE
 hi Character                guifg=#d7af5f guibg=NONE    gui=bold
 hi Number                   guifg=#ff5faf guibg=NONE    gui=NONE
 hi Boolean                  guifg=#d7af00 guibg=NONE    gui=bold
