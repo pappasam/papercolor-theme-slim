@@ -4,8 +4,6 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name="PaperColorSlimLight"
-set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
-set winborder=rounded
 let g:terminal_color_0  = '#eeeeee'
 let g:terminal_color_1  = '#af0000'
 let g:terminal_color_2  = '#008700'
