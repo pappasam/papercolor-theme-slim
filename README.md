@@ -81,24 +81,6 @@ See [here](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more 
 
 I'm open to feedback, but if we disagree, you can override anything easily for yourself. See above for customizing things to your liking with [autocmd].
 
-### My window border preference is overridden
-
-Because of [nvim_set_hl](<https://neovim.io/doc/user/api.html#nvim_set_hl()>)'s propensity to cause the background to default to the color set by `Normal`, I've found that plugin compatibility is best when `FloatNormal` is mapped to `Normal`. Because of this, there is no difference between a floating window's background color normal vim window's background color. This plugin sets your floating window border for you to `rounded`.
-
-If you're super specific about your winborder, add the following to your configuration.
-
-```vim
-autocmd ColorScheme * set winborder=<your-config-here>
-```
-
-### My cursor preference is overridden
-
-If you're super specific about your terminal cursor, add the following to your configuration.
-
-```vim
-autocmd ColorScheme * set guicursor=<your-config-here>
-```
-
 ## Credits
 
 Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme] over the years!
