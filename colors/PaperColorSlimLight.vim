@@ -210,7 +210,7 @@ hi link @type.definition                       Type
 hi link @variable                              NormalNC
 hi link @variable.builtin                      htmlBoldItalic
 hi link @variable.member                       Identifier
-hi link @variable.parameter                    NONE
+hi link @variable.parameter                    NormalNC
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
 hi link @markup.link.markdown_inline           NONE

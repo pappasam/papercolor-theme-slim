@@ -45,7 +45,7 @@ hi MatchParen               guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
 hi ModeMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 hi MoreMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 hi Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
-hi NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=nocombine,NONE
+hi NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=NONE
 hi Pmenu                    guifg=#d0d0d0 guibg=#303030 gui=NONE
 hi PmenuSel                 guifg=#d0d0d0 guibg=#585858 gui=NONE
 hi Question                 guifg=#afd700 guibg=NONE    gui=NONE
@@ -210,7 +210,7 @@ hi link @type.definition                       Type
 hi link @variable                              NormalNC
 hi link @variable.builtin                      htmlBoldItalic
 hi link @variable.member                       Identifier
-hi link @variable.parameter                    NONE
+hi link @variable.parameter                    NormalNC
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
 hi link @markup.link.markdown_inline           NONE
