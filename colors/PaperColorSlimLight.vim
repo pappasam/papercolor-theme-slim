@@ -72,7 +72,7 @@ hi WildMenu                 guifg=#fffff0 guibg=#d70087 gui=NONE
 hi WinSeparator             guifg=#005f87 guibg=NONE    gui=NONE
 " vim-preferred
 hi Comment                  guifg=#878787 guibg=NONE    gui=NONE
-hi Constant                 guifg=#444444 guibg=NONE    gui=NONE
+hi Constant                 guifg=#444444 guibg=NONE    gui=bold
 hi String                   guifg=#5f8700 guibg=NONE    gui=nocombine,NONE
 hi Character                guifg=#5f8700 guibg=NONE    gui=bold
 hi Number                   guifg=#d75f00 guibg=NONE    gui=NONE
