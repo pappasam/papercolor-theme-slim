@@ -1,6 +1,6 @@
 # PaperColorSlim Colorscheme
 
-This is a slimmed down re-implementation of [papercolor-theme] for Neovim 0.11+ that:
+This is a slimmed down re-implementation of [papercolor-theme] for Neovim 0.8+ that:
 
 1. Has **no abstraction**, which [maximizes performance] and simplifies user color mapping overrides.
 2. Targets `gui` options (`guifg`, `guibg`, `gui`, `guicursor`) with [truecolor] support. Run `echo $COLORTERM` from your terminal. If it responds `truecolor`, you have `truecolor` support.
@@ -16,11 +16,16 @@ See <https://github.com/pappasam/papercolor-theme-slim/wiki/Gallery>
 
 This is a normal [Neovim Package]. Install it like you would any other [colorscheme].
 
-## Variants
+## Configuration
 
 ```vim
-colorscheme PaperColorSlim " dark variant
-colorscheme PaperColorSlimLight " light variant
+" Select one of these two variants
+colorscheme PaperColorSlim " dark
+colorscheme PaperColorSlimLight " light
+" ensure cursor highlights predictibly
+set guicursor=n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor
+" recommended if using Neovim 0.11+
+set winborder=rounded
 ```
 
 ## Customization
