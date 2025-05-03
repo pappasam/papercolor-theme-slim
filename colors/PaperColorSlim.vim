@@ -187,9 +187,8 @@ hi link @markup.heading.4                      htmlH4
 hi link @markup.heading.5                      htmlH5
 hi link @markup.heading.6                      htmlH6
 hi link @markup.italic                         htmlItalic
-hi link @markup.link.label                     htmlAnchor
-hi link @markup.link.url                       Underlined
-hi link @markup.link.vimdoc                    htmlAnchor
+hi link @markup.link                           htmlAnchor
+hi link @markup.link.label                     Label
 hi link @markup.list                           Delimiter
 hi link @markup.literal                        String
 hi link @markup.raw                            String
@@ -213,9 +212,8 @@ hi link @variable.member                       Identifier
 hi link @variable.parameter                    NormalNC
 " nvim-treesitter matchers (language specific)
 hi link @constructor.lua                       NONE
-hi link @markup.link.markdown_inline           NONE
-hi link @markup.link.url                       htmlAnchor
 hi link @markup.quote.markdown                 htmlItalic
+hi link @markup.link.markdown_inline           Label
 hi link @tag.builtin.tsx                       Tag
 hi link @tag.tsx                               Tag
 hi link @variable.vim                          NONE
