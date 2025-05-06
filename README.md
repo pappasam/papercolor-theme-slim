@@ -95,7 +95,6 @@ Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme]
 [html-vim]: https://neovim.io/doc/user/syntax.html#html.vim
 [lsp-semantic-highlight]: https://neovim.io/doc/user/lsp.html#_lsp-semantic-highlights
 [maximizes performance]: https://www.reddit.com/r/vim/comments/gc05k1/why_are_colorschemes_so_slow_to_load/
-[nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [papercolor-theme]: https://github.com/NLKNguyen/papercolor-theme
 [preferred groups]: https://neovim.io/doc/user/syntax.html#group-name
 [treesitter-highlight-groups]: https://neovim.io/doc/user/treesitter.html#treesitter-highlight-groups

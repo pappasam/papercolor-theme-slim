@@ -155,7 +155,7 @@ hi link LspReferenceText                       CursorLine
 hi link LspReferenceRead                       CursorLine
 hi link LspReferenceWrite                      CursorLine
 hi link LspReferenceTarget                     CursorLine
-" nvim-treesitter matchers (general)
+" treesitter-highlight-groups
 hi link @attribute                             Label
 hi link @attribute.builtin                     NONE
 hi link @constant.builtin                      Boolean
@@ -208,7 +208,7 @@ hi link @variable                              NormalNC
 hi link @variable.builtin                      htmlBold
 hi link @variable.member                       Identifier
 hi link @variable.parameter                    NormalNC
-" nvim-treesitter matchers (language specific)
+" treesitter-highlight-groups (lang-specific)
 hi link @constructor.lua                       NONE
 hi link @markup.quote.markdown                 htmlItalic
 hi link @markup.link.markdown_inline           Label
@@ -237,7 +237,7 @@ hi link @lsp.type.typeAlias                    pcsClassCombine
 hi link @lsp.type.typeParameter                pcsClassCombine
 hi link @lsp.type.unresolvedReference          @comment.error
 hi link @lsp.type.variable                     NONE
-" lsp (language-specific)
+" lsp (lang-specific)
 hi link @lsp.type.class.markdown               NONE
 " html
 hi link htmlUnderline                          Underlined
