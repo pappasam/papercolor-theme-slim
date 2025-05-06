@@ -210,8 +210,9 @@ hi link @variable.member                       Identifier
 hi link @variable.parameter                    NormalNC
 " nvim-treesitter matchers (lang-specific)
 hi link @constructor.lua                       NONE
-hi link @markup.quote.markdown                 htmlItalic
+hi link @function.macro.vim                    Keyword
 hi link @markup.link.markdown_inline           Label
+hi link @markup.quote.markdown                 htmlItalic
 hi link @tag.builtin.tsx                       Tag
 hi link @tag.tsx                               Tag
 hi link @variable.vim                          NONE
