@@ -117,12 +117,12 @@ hi DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
 hi DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
 " html sections
 hi htmlAnchor               guifg=#005f87 guibg=NONE    gui=underline
-hi htmlH1                   guifg=#008700 guibg=NONE    gui=underline,bold
-hi htmlH2                   guifg=#0087af guibg=NONE    gui=underline,bold
-hi htmlH3                   guifg=#8700af guibg=NONE    gui=underline,bold
-hi htmlH4                   guifg=#d70087 guibg=NONE    gui=underline,bold
-hi htmlH5                   guifg=#d70087 guibg=NONE    gui=underline
-hi htmlH6                   guifg=#d70087 guibg=NONE    gui=underline
+hi htmlH1                   guifg=#008700 guibg=NONE    gui=bold
+hi htmlH2                   guifg=#0087af guibg=NONE    gui=bold
+hi htmlH3                   guifg=#8700af guibg=NONE    gui=bold
+hi htmlH4                   guifg=#d70087 guibg=NONE    gui=bold
+hi htmlH5                   guifg=#d70087 guibg=NONE    gui=NONE
+hi htmlH6                   guifg=#d70087 guibg=NONE    gui=italic
 hi htmlBold                 guifg=NONE    guibg=NONE    gui=bold
 hi htmlBoldUnderline        guifg=NONE    guibg=NONE    gui=bold,underline
 hi htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underline,italic
