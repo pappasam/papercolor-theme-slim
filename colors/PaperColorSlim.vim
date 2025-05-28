@@ -116,7 +116,6 @@ hi DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl
 hi DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
 hi DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
 " html sections
-hi htmlAnchor               guifg=#00afaf guibg=NONE    gui=underline
 hi htmlH1                   guifg=#d7af00 guibg=NONE    gui=bold
 hi htmlH2                   guifg=#5fafd7 guibg=NONE    gui=bold
 hi htmlH3                   guifg=#af87d7 guibg=NONE    gui=bold
@@ -185,8 +184,7 @@ hi link @markup.heading.4                      htmlH4
 hi link @markup.heading.5                      htmlH5
 hi link @markup.heading.6                      htmlH6
 hi link @markup.italic                         htmlItalic
-hi link @markup.link                           htmlAnchor
-hi link @markup.link.label                     Label
+hi link @markup.link                           Label
 hi link @markup.list                           Delimiter
 hi link @markup.literal                        String
 hi link @markup.raw                            String
@@ -211,7 +209,6 @@ hi link @variable.parameter                    NormalNC
 " treesitter-highlight-groups (lang-specific)
 hi link @constructor.lua                       NONE
 hi link @function.macro.vim                    Keyword
-hi link @markup.link.markdown_inline           Label
 hi link @markup.quote.markdown                 htmlItalic
 hi link @tag.builtin.tsx                       Tag
 hi link @tag.tsx                               Tag
