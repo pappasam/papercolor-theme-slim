@@ -39,7 +39,7 @@ Some users want the background to match their terminal's background color.
 autocmd ColorScheme PaperColorSlim,PaperColorSlimLight highlight Normal guibg=NONE
 ```
 
-**Note:** if your terminal background differs too much from [#1c1c1c](https://www.color-hex.com/color/1c1c1c) when using `PaperColorSlim`, or [#eeeeee](https://www.color-hex.com/color/eeeeee) when using `PaperColorSlimLight`, the theme may not contrast well with your terminal's background. In this case, you will need to do one of the following:
+**Note:** if your terminal background differs too much from `#1c1c1c` when using `PaperColorSlim`, or `#eeeeee` when using `PaperColorSlimLight`, the theme may not contrast well with your terminal's background. In this case, you will need to do one of the following:
 
 1. Use the PaperColorSlim's colors (e.g., don't put the above in your `init.vim`)
 2. Perform further customization, tweaking `guifg` and `guibg` colors where necessary
@@ -47,7 +47,7 @@ autocmd ColorScheme PaperColorSlim,PaperColorSlimLight highlight Normal guibg=NO
 
 ### Override colors
 
-Suppose, hypothetically, that you like the default `guibg` color for `PaperColorSlimLight` to [#fffff0](https://www.color-hex.com/color/fffff0).
+Suppose, hypothetically, that you like the default `guibg` color for `PaperColorSlimLight` to `#fffff0`.
 
 ```vim
 autocmd ColorScheme PaperColorSlimLight highlight Normal guibg=#fffff0
@@ -74,7 +74,7 @@ augroup end
 
 As of January 2025, in this instance, a Vimscript implementation is (very marginally) faster than a Lua implementation. Special thanks to [darthbanana13] for their robust profiling efforts.
 
-See [here](https://github.com/pappasam/papercolor-theme-slim/issues/8) for more details.
+For more details see <https://github.com/pappasam/papercolor-theme-slim/issues/8>.
 
 ### I don't like specific color choices
 
