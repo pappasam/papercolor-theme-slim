@@ -193,6 +193,7 @@ hi link @markup.strong                         htmlBold
 hi link @module                                StorageClass
 hi link @module.builtin                        StorageClass
 hi link @namespace                             StorageClass
+hi link @none                                  Normal
 hi link @property                              Identifier
 hi link @string.escape                         Special
 hi link @string.special.path                   Underlined
