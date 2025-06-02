@@ -42,8 +42,8 @@ hi LineNr                   guifg=#808080 guibg=NONE    gui=NONE
 hi MatchParen               guifg=#c6c6c6 guibg=#4e4e4e gui=NONE
 hi ModeMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
 hi MoreMsg                  guifg=#d7af5f guibg=NONE    gui=NONE
-hi Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=NONE
-hi NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=NONE
+hi Normal                   guifg=#d0d0d0 guibg=#1c1c1c gui=nocombine,NONE
+hi NormalNC                 guifg=#d0d0d0 guibg=NONE    gui=nocombine,NONE
 hi Pmenu                    guifg=#d0d0d0 guibg=#303030 gui=NONE
 hi PmenuSel                 guifg=#d0d0d0 guibg=#585858 gui=NONE
 hi Question                 guifg=#afd700 guibg=NONE    gui=NONE

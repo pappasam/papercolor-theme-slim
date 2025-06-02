@@ -42,7 +42,7 @@ hi LineNr                   guifg=#878787 guibg=NONE    gui=NONE
 hi MatchParen               guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
 hi ModeMsg                  guifg=#5f8700 guibg=NONE    gui=NONE
 hi MoreMsg                  guifg=#5f8700 guibg=NONE    gui=NONE
-hi Normal                   guifg=#444444 guibg=#eeeeee gui=NONE
+hi Normal                   guifg=#444444 guibg=#eeeeee gui=nocombine,NONE
 hi NormalNC                 guifg=#444444 guibg=NONE    gui=nocombine,NONE
 hi Pmenu                    guifg=#444444 guibg=#e4e4e4 gui=NONE
 hi PmenuSel                 guifg=#444444 guibg=#c6c6c6 gui=NONE
