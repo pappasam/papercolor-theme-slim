@@ -29,10 +29,10 @@ hi TermCursor               guifg=#eeeeee guibg=#444444 gui=NONE
 hi CursorColumn             guifg=NONE    guibg=#e4e4e4 gui=NONE
 hi CursorLine               guifg=NONE    guibg=#e4e4e4 gui=NONE
 hi CursorLineNr             guifg=#af5f00 guibg=NONE    gui=NONE
-hi DiffAdd                  guifg=NONE    guibg=#c8e0c8 gui=NONE
-hi DiffChange               guifg=NONE    guibg=#c8dddd gui=NONE
-hi DiffDelete               guifg=NONE    guibg=#e0c8c8 gui=NONE
-hi DiffText                 guifg=NONE    guibg=#b0d0d0 gui=NONE
+hi DiffAdd                  guifg=#444444 guibg=#c8e0c8 gui=NONE
+hi DiffChange               guifg=#444444 guibg=#c8dddd gui=NONE
+hi DiffDelete               guifg=#444444 guibg=#e0c8c8 gui=NONE
+hi DiffText                 guifg=#444444 guibg=#b0d0d0 gui=NONE
 hi Directory                guifg=#0087af guibg=NONE    gui=bold
 hi EndOfBuffer              guifg=#444444 guibg=NONE    gui=NONE
 hi ErrorMsg                 guifg=#af0000 guibg=#ffd7ff gui=NONE
