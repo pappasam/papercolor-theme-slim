@@ -196,8 +196,8 @@ hi link @namespace                             StorageClass
 hi link @none                                  Normal
 hi link @property                              Identifier
 hi link @string.escape                         Special
-hi link @string.special.path                   Underlined
-hi link @string.special.url                    Underlined
+hi link @string.special.path                   NONE
+hi link @string.special.url                    NONE
 hi link @tag.attribute                         Identifier
 hi link @tag.delimiter                         Operator
 hi link @type                                  Type
