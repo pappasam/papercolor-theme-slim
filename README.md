@@ -80,6 +80,22 @@ For more details see <https://github.com/pappasam/papercolor-theme-slim/issues/8
 
 I'm open to feedback, but if we disagree, you can override anything easily for yourself. See above for customizing things to your liking with [autocmd].
 
+### Messy markdown highlighting
+
+By default, Treesitter parsing for Markdown files includes injections from various other languages. IMHO, one problematic default inclusion is latex. While useful for folks working in domains that use inline latex equations in Markdown, I've found that the latex injection causes `$` in my Markdown files to highlight as a markup equation. When working with markup for LLM consumption, this causes frequent formatting issues. To get around this, place the following content at `~/.config/nvim/queries/markdown_inline/injections.scm`:
+
+```scheme
+((html_tag) @injection.content
+  (#set! injection.language "html")
+  (#set! injection.combined))
+
+; Disables latex injection by omitting it (below for documentation's sake)
+; See: help treesitter-language-injections
+; ((latex_block) @injection.content
+;   (#set! injection.language "latex")
+;   (#set! injection.include-children))
+```
+
 ## Credits
 
 Special thanks to [Nikyle Nguyen] and all their great work on [papercolor-theme] over the years!
