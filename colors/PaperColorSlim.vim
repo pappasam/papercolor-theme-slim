@@ -210,6 +210,7 @@ hi link @variable.parameter                    NormalNC
 " treesitter-highlight-groups (lang-specific)
 hi link @constructor.lua                       NONE
 hi link @function.macro.vim                    Keyword
+hi link @markup.math.latex                     NONE
 hi link @markup.quote.markdown                 htmlItalic
 hi link @tag.builtin.tsx                       Tag
 hi link @tag.tsx                               Tag
@@ -238,6 +239,7 @@ hi link @lsp.type.unresolvedReference          @comment.error
 hi link @lsp.type.variable                     NONE
 " lsp (lang-specific)
 hi link @lsp.type.class.markdown               NONE
+hi link @lsp.type.enumMember.markdown          NONE
 " html
 hi link htmlUnderline                          Underlined
 hi link htmlTitle                              Title
