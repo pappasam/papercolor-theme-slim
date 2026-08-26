@@ -44,7 +44,6 @@ hi ModeMsg                  guifg=#5f8700 guibg=NONE    gui=NONE
 hi MoreMsg                  guifg=#5f8700 guibg=NONE    gui=NONE
 hi Normal                   guifg=#444444 guibg=#eeeeee gui=nocombine,NONE
 hi NormalNC                 guifg=#444444 guibg=NONE    gui=nocombine,NONE
-hi Pmenu                    guifg=#444444 guibg=#e4e4e4 gui=NONE
 hi PmenuSel                 guifg=#444444 guibg=#c6c6c6 gui=NONE
 hi Question                 guifg=#d70087 guibg=NONE    gui=NONE
 hi Search                   guifg=#444444 guibg=#e4e4e4 gui=NONE
@@ -140,6 +139,7 @@ hi clear QuickFixLine
 hi clear NormalFloat
 hi clear FloatTitle
 hi clear FloatFooter
+hi clear Pmenu
 " built-in
 hi link NormalFloat                            Normal
 hi link FloatTitle                             Title
@@ -154,6 +154,7 @@ hi link LspReferenceText                       Underlined
 hi link LspReferenceRead                       Underlined
 hi link LspReferenceWrite                      Underlined
 hi link LspReferenceTarget                     Underlined
+hi link Pmenu                                  Normal
 " treesitter-highlight-groups
 hi link @attribute                             Label
 hi link @attribute.builtin                     NONE
