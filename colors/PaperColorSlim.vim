@@ -50,10 +50,10 @@ hi Search                   guifg=#444444 guibg=#c6c6c6 gui=NONE
 hi SignColumn               guifg=#d7af00 guibg=NONE    gui=NONE
 hi SnippetTabstop           guifg=NONE    guibg=NONE    gui=underdotted
 hi SpecialKey               guifg=#585858 guibg=NONE    gui=NONE
-hi SpellBad                 guifg=#d787ff guibg=NONE    gui=undercurl,italic
-hi SpellCap                 guifg=#ffff00 guibg=NONE    gui=undercurl,italic
-hi SpellLocal               guifg=#5fffff guibg=NONE    gui=undercurl,italic
-hi SpellRare                guifg=#5fffff guibg=NONE    gui=undercurl,italic
+hi SpellBad                 guifg=#d787ff guibg=NONE    gui=undercurl,italic guisp=#d787ff
+hi SpellCap                 guifg=#ffff00 guibg=NONE    gui=undercurl,italic guisp=#ffff00
+hi SpellLocal               guifg=#5fffff guibg=NONE    gui=undercurl,italic guisp=#5fffff
+hi SpellRare                guifg=#5fffff guibg=NONE    gui=undercurl,italic guisp=#5fffff
 hi StatusLine               guifg=#1c1c1c guibg=#5f8787 gui=NONE
 hi StatusLineNC             guifg=#bcbcbc guibg=#3a3a3a gui=NONE
 hi Substitute               guifg=#87d700 guibg=#005f00 gui=NONE
@@ -109,11 +109,11 @@ hi DiagnosticWarn           guifg=#ffff00 guibg=NONE    gui=NONE
 hi DiagnosticInfo           guifg=#5fffff guibg=NONE    gui=NONE
 hi DiagnosticHint           guifg=#5fffff guibg=NONE    gui=NONE
 hi DiagnosticOk             guifg=#5faf5f guibg=NONE    gui=NONE
-hi DiagnosticUnderlineError guifg=NONE    guibg=NONE    gui=undercurl
-hi DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE    gui=undercurl
-hi DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl
-hi DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl
-hi DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl
+hi DiagnosticUnderlineError guifg=NONE    guibg=NONE    gui=undercurl guisp=#d787ff
+hi DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE    gui=undercurl guisp=#ffff00
+hi DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl guisp=#5fffff
+hi DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl guisp=#5fffff
+hi DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl guisp=#5faf5f
 " html sections
 hi htmlH1                   guifg=#d7af00 guibg=NONE    gui=bold
 hi htmlH2                   guifg=#5fafd7 guibg=NONE    gui=bold
@@ -130,6 +130,8 @@ hi htmlBoldItalic           guifg=NONE    guibg=NONE    gui=bold,italic
 " custom
 hi pcsClassCombine          guifg=#af87d7 guibg=NONE    gui=NONE
 " Linking -------------------------------------------------------------------
+hi clear @markup.italic
+hi clear @markup.strong
 hi clear @variable
 hi clear Added
 hi clear Changed
