@@ -6,121 +6,121 @@ endif
 let g:colors_name="PaperColorSlimLight"
 let g:terminal_color_0  = '#eeeeee'
 let g:terminal_color_1  = '#af0000'
-let g:terminal_color_2  = '#008700'
-let g:terminal_color_3  = '#5f8700'
-let g:terminal_color_4  = '#0087af'
-let g:terminal_color_5  = '#878787'
+let g:terminal_color_2  = '#007500'
+let g:terminal_color_3  = '#496900'
+let g:terminal_color_4  = '#006b8b'
+let g:terminal_color_5  = '#656565'
 let g:terminal_color_6  = '#005f87'
 let g:terminal_color_7  = '#444444'
 let g:terminal_color_8  = '#bcbcbc'
-let g:terminal_color_9  = '#af5f00'
-let g:terminal_color_10 = '#d70087'
+let g:terminal_color_9  = '#945000'
+let g:terminal_color_10 = '#bc0075'
 let g:terminal_color_11 = '#8700af'
-let g:terminal_color_12 = '#d75f00'
-let g:terminal_color_13 = '#d75f00'
+let g:terminal_color_12 = '#a64700'
+let g:terminal_color_13 = '#a64700'
 let g:terminal_color_14 = '#005faf'
 let g:terminal_color_15 = '#005f87'
 " built-in
 hi ColorColumn              guifg=NONE    guibg=#e4e4e4 gui=NONE
 hi Conceal                  guifg=#444444 guibg=NONE    gui=NONE
-hi CurSearch                guifg=#008700 guibg=#afff87 gui=NONE
+hi CurSearch                guifg=#007500 guibg=#afff87 gui=NONE
 hi Cursor                   guifg=#eeeeee guibg=#444444 gui=NONE
 hi TermCursor               guifg=#eeeeee guibg=#444444 gui=NONE
 hi CursorColumn             guifg=NONE    guibg=#e4e4e4 gui=NONE
 hi CursorLine               guifg=NONE    guibg=#e4e4e4 gui=NONE
-hi CursorLineNr             guifg=#af5f00 guibg=NONE    gui=NONE
+hi CursorLineNr             guifg=#945000 guibg=NONE    gui=NONE
 hi DiffAdd                  guifg=#444444 guibg=#c8e0c8 gui=NONE
 hi DiffChange               guifg=#444444 guibg=#c8dddd gui=NONE
 hi DiffDelete               guifg=#444444 guibg=#e0c8c8 gui=NONE
 hi DiffText                 guifg=#444444 guibg=#b0d0d0 gui=NONE
-hi Directory                guifg=#0087af guibg=NONE    gui=bold
+hi Directory                guifg=#006b8b guibg=NONE    gui=bold
 hi EndOfBuffer              guifg=#444444 guibg=NONE    gui=NONE
 hi ErrorMsg                 guifg=#af0000 guibg=#ffd7ff gui=NONE
 hi Folded                   guifg=#444444 guibg=#e4e4e4 gui=NONE
-hi IncSearch                guifg=#008700 guibg=#afff87 gui=NONE
-hi LineNr                   guifg=#878787 guibg=NONE    gui=NONE
+hi IncSearch                guifg=#007500 guibg=#afff87 gui=NONE
+hi LineNr                   guifg=#656565 guibg=NONE    gui=NONE
 hi MatchParen               guifg=#4e4e4e guibg=#c6c6c6 gui=NONE
-hi ModeMsg                  guifg=#5f8700 guibg=NONE    gui=NONE
-hi MoreMsg                  guifg=#5f8700 guibg=NONE    gui=NONE
+hi ModeMsg                  guifg=#496900 guibg=NONE    gui=NONE
+hi MoreMsg                  guifg=#496900 guibg=NONE    gui=NONE
 hi Normal                   guifg=#444444 guibg=#eeeeee gui=nocombine,NONE
 hi NormalNC                 guifg=#444444 guibg=NONE    gui=nocombine,NONE
 hi PmenuSel                 guifg=#444444 guibg=#c6c6c6 gui=NONE
-hi Question                 guifg=#d70087 guibg=NONE    gui=NONE
-hi Search                   guifg=#444444 guibg=#e4e4e4 gui=NONE
-hi SignColumn               guifg=#008700 guibg=NONE    gui=NONE
+hi Question                 guifg=#bc0075 guibg=NONE    gui=NONE
+hi Search                   guifg=#fffff0 guibg=#875f00 gui=NONE
+hi SignColumn               guifg=#007500 guibg=NONE    gui=NONE
 hi SnippetTabstop           guifg=NONE    guibg=NONE    gui=underdotted
 hi SpecialKey               guifg=#c6c6c6 guibg=NONE    gui=NONE
 hi SpellBad                 guifg=#af0000 guibg=NONE    gui=undercurl,italic guisp=#af0000
-hi SpellCap                 guifg=#af5f00 guibg=NONE    gui=undercurl,italic guisp=#af5f00
+hi SpellCap                 guifg=#945000 guibg=NONE    gui=undercurl,italic guisp=#945000
 hi SpellLocal               guifg=#005faf guibg=NONE    gui=undercurl,italic guisp=#005faf
 hi SpellRare                guifg=#005f87 guibg=NONE    gui=undercurl,italic guisp=#005f87
 hi StatusLine               guifg=#fffff0 guibg=#005f87 gui=NONE
 hi StatusLineNC             guifg=#444444 guibg=#c6c6c6 gui=NONE
-hi Substitute               guifg=#008700 guibg=#afff87 gui=NONE
+hi Substitute               guifg=#007500 guibg=#afff87 gui=NONE
 hi TabLine                  guifg=#444444 guibg=#c6c6c6 gui=NONE
 hi TabLineFill              guifg=#005f87 guibg=#005f87 gui=NONE
 hi TabLineSel               guifg=#444444 guibg=#e4e4e4 gui=NONE
-hi Title                    guifg=#008700 guibg=NONE    gui=bold
-hi Visual                   guifg=#fffff0 guibg=#0087af gui=NONE
-hi VisualNOS                guifg=#444444 guibg=#00B5E6 gui=NONE
-hi WarningMsg               guifg=#af5f00 guibg=NONE    gui=NONE
+hi Title                    guifg=#007500 guibg=NONE    gui=bold
+hi Visual                   guifg=#fffff0 guibg=#006b8b gui=NONE
+hi VisualNOS                guifg=#303030 guibg=#00B5E6 gui=NONE
+hi WarningMsg               guifg=#945000 guibg=NONE    gui=NONE
 hi Whitespace               guifg=#c6c6c6 guibg=NONE    gui=NONE
-hi WildMenu                 guifg=#fffff0 guibg=#d70087 gui=NONE
+hi WildMenu                 guifg=#fffff0 guibg=#bc0075 gui=NONE
 hi WinSeparator             guifg=#005f87 guibg=NONE    gui=NONE
 " vim-preferred
-hi Comment                  guifg=#878787 guibg=NONE    gui=NONE
+hi Comment                  guifg=#656565 guibg=NONE    gui=NONE
 hi Constant                 guifg=#444444 guibg=NONE    gui=bold
-hi String                   guifg=#5f8700 guibg=NONE    gui=nocombine,NONE
-hi Character                guifg=#5f8700 guibg=NONE    gui=bold
-hi Number                   guifg=#d75f00 guibg=NONE    gui=NONE
-hi Boolean                  guifg=#af5f00 guibg=NONE    gui=bold
-hi Float                    guifg=#d75f00 guibg=NONE    gui=NONE
-hi Identifier               guifg=#945d2d guibg=NONE    gui=nocombine,NONE
-hi Function                 guifg=#0087af guibg=NONE    gui=nocombine,NONE
-hi Statement                guifg=#d70087 guibg=NONE    gui=NONE
-hi Conditional              guifg=#d70087 guibg=NONE    gui=NONE
-hi Repeat                   guifg=#d70087 guibg=NONE    gui=NONE
+hi String                   guifg=#496900 guibg=NONE    gui=nocombine,NONE
+hi Character                guifg=#496900 guibg=NONE    gui=bold
+hi Number                   guifg=#a64700 guibg=NONE    gui=NONE
+hi Boolean                  guifg=#945000 guibg=NONE    gui=bold
+hi Float                    guifg=#a64700 guibg=NONE    gui=NONE
+hi Identifier               guifg=#895629 guibg=NONE    gui=nocombine,NONE
+hi Function                 guifg=#006b8b guibg=NONE    gui=nocombine,NONE
+hi Statement                guifg=#bc0075 guibg=NONE    gui=NONE
+hi Conditional              guifg=#bc0075 guibg=NONE    gui=NONE
+hi Repeat                   guifg=#bc0075 guibg=NONE    gui=NONE
 hi Label                    guifg=#005faf guibg=NONE    gui=nocombine,NONE
 hi Operator                 guifg=#005faf guibg=NONE    gui=bold
-hi Keyword                  guifg=#d70087 guibg=NONE    gui=NONE
-hi Exception                guifg=#d70087 guibg=NONE    gui=NONE
-hi PreProc                  guifg=#d70087 guibg=NONE    gui=NONE
-hi Include                  guifg=#d70087 guibg=NONE    gui=NONE
-hi Define                   guifg=#d70087 guibg=NONE    gui=NONE
+hi Keyword                  guifg=#bc0075 guibg=NONE    gui=NONE
+hi Exception                guifg=#bc0075 guibg=NONE    gui=NONE
+hi PreProc                  guifg=#bc0075 guibg=NONE    gui=NONE
+hi Include                  guifg=#bc0075 guibg=NONE    gui=NONE
+hi Define                   guifg=#bc0075 guibg=NONE    gui=NONE
 hi Macro                    guifg=#005faf guibg=NONE    gui=nocombine,NONE
-hi PreCondit                guifg=#008700 guibg=NONE    gui=NONE
+hi PreCondit                guifg=#007500 guibg=NONE    gui=NONE
 hi Type                     guifg=#8700af guibg=NONE    gui=nocombine,NONE
-hi StorageClass             guifg=#008700 guibg=NONE    gui=nocombine,NONE
+hi StorageClass             guifg=#007500 guibg=NONE    gui=nocombine,NONE
 hi Structure                guifg=#8700af guibg=NONE    gui=nocombine,NONE
 hi Typedef                  guifg=#8700af guibg=NONE    gui=NONE
 hi Special                  guifg=#005faf guibg=NONE    gui=bold
-hi SpecialChar              guifg=#5f8700 guibg=NONE    gui=NONE
-hi Tag                      guifg=#0087af guibg=NONE    gui=NONE
+hi SpecialChar              guifg=#496900 guibg=NONE    gui=NONE
+hi Tag                      guifg=#006b8b guibg=NONE    gui=NONE
 hi Delimiter                guifg=#005f87 guibg=NONE    gui=NONE
-hi SpecialComment           guifg=#878787 guibg=NONE    gui=bold
-hi Debug                    guifg=#d75f00 guibg=NONE    gui=NONE
+hi SpecialComment           guifg=#656565 guibg=NONE    gui=bold
+hi Debug                    guifg=#a64700 guibg=NONE    gui=NONE
 hi Underlined               guifg=NONE    guibg=NONE    gui=underline
-hi Error                    guifg=#e60000 guibg=NONE    gui=bold
-hi Todo                     guifg=#00af5f guibg=NONE    gui=bold
+hi Error                    guifg=#cf0000 guibg=NONE    gui=bold
+hi Todo                     guifg=#007038 guibg=NONE    gui=bold
 hi Ignore                   guifg=#005f87 guibg=NONE    gui=NONE
 " diagnostics
 hi DiagnosticError          guifg=#af0000 guibg=NONE    gui=NONE
-hi DiagnosticWarn           guifg=#af5f00 guibg=NONE    gui=NONE
+hi DiagnosticWarn           guifg=#945000 guibg=NONE    gui=NONE
 hi DiagnosticInfo           guifg=#005faf guibg=NONE    gui=NONE
 hi DiagnosticHint           guifg=#005faf guibg=NONE    gui=NONE
-hi DiagnosticOk             guifg=#008700 guibg=NONE    gui=NONE
+hi DiagnosticOk             guifg=#007500 guibg=NONE    gui=NONE
 hi DiagnosticUnderlineError guifg=NONE    guibg=NONE    gui=undercurl guisp=#af0000
-hi DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE    gui=undercurl guisp=#af5f00
+hi DiagnosticUnderlineWarn  guifg=NONE    guibg=NONE    gui=undercurl guisp=#945000
 hi DiagnosticUnderlineInfo  guifg=NONE    guibg=NONE    gui=undercurl guisp=#005faf
 hi DiagnosticUnderlineHint  guifg=NONE    guibg=NONE    gui=undercurl guisp=#005faf
-hi DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl guisp=#008700
+hi DiagnosticUnderlineOk    guifg=NONE    guibg=NONE    gui=undercurl guisp=#007500
 " html sections
-hi htmlH1                   guifg=#008700 guibg=NONE    gui=bold
-hi htmlH2                   guifg=#0087af guibg=NONE    gui=bold
+hi htmlH1                   guifg=#007500 guibg=NONE    gui=bold
+hi htmlH2                   guifg=#006b8b guibg=NONE    gui=bold
 hi htmlH3                   guifg=#8700af guibg=NONE    gui=bold
-hi htmlH4                   guifg=#d70087 guibg=NONE    gui=bold
-hi htmlH5                   guifg=#d70087 guibg=NONE    gui=NONE
-hi htmlH6                   guifg=#d70087 guibg=NONE    gui=italic
+hi htmlH4                   guifg=#bc0075 guibg=NONE    gui=bold
+hi htmlH5                   guifg=#bc0075 guibg=NONE    gui=NONE
+hi htmlH6                   guifg=#bc0075 guibg=NONE    gui=italic
 hi htmlBold                 guifg=NONE    guibg=NONE    gui=bold
 hi htmlBoldUnderline        guifg=NONE    guibg=NONE    gui=bold,underline
 hi htmlBoldUnderlineItalic  guifg=NONE    guibg=NONE    gui=bold,underline,italic

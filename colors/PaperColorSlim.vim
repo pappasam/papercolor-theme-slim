@@ -35,7 +35,7 @@ hi DiffDelete               guifg=#d0d0d0 guibg=#550d0d gui=NONE
 hi DiffText                 guifg=#d0d0d0 guibg=#004f4f gui=NONE
 hi Directory                guifg=#5fafd7 guibg=NONE    gui=bold
 hi EndOfBuffer              guifg=#585858 guibg=NONE    gui=NONE
-hi ErrorMsg                 guifg=#af005f guibg=#5f0000 gui=NONE
+hi ErrorMsg                 guifg=#ff8080 guibg=#5f0000 gui=NONE
 hi Folded                   guifg=#bcbcbc guibg=#3a3a3a gui=NONE
 hi IncSearch                guifg=#87d700 guibg=#005f00 gui=NONE
 hi LineNr                   guifg=#808080 guibg=NONE    gui=NONE
@@ -61,7 +61,7 @@ hi TabLine                  guifg=#bcbcbc guibg=#585858 gui=NONE
 hi TabLineFill              guifg=#262626 guibg=#262626 gui=NONE
 hi TabLineSel               guifg=#1c1c1c guibg=#5f8787 gui=NONE
 hi Title                    guifg=#d7af00 guibg=NONE    gui=bold
-hi Visual                   guifg=#f0f0f0 guibg=#0087af gui=NONE
+hi Visual                   guifg=#f0f0f0 guibg=#005f87 gui=NONE
 hi VisualNOS                guifg=#1c1c1c guibg=#00b7ec gui=NONE
 hi WarningMsg               guifg=#ffff00 guibg=NONE    gui=NONE
 hi Whitespace               guifg=#4e4e4e guibg=NONE    gui=NONE
